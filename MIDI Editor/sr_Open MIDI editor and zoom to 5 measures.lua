@@ -5,7 +5,7 @@
 --    # Description
 --    - this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the Enter key and it will open the MIDI Editor and zoom to 5 measures (default).
 --      You can adjust the measures in the user area.
---      this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.
+--    - this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.
 --
 -- @link https://forum.cockos.com/showpost.php?p=1923094&postcount=124
 --
