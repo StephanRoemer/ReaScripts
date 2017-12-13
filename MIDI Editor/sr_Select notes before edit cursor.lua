@@ -2,7 +2,8 @@
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about
---    # Select all notes, that are located before the edit cursor position
+--    # Description
+--    - select all notes, that are located before the edit cursor position
 --    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
