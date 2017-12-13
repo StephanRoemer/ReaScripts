@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="9d676e256b8be918c32ee1e64b418fde37026880">
+<index version="1" name="Stevie Scripts" commit="f05ee21443188d52c13dc81ec9697cd6d55e9305">
   <category name="MIDI Editor">
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
       <metadata>
@@ -28,7 +28,9 @@
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab deletes leftover short notes, that are created, when splitting (on grid) notes that are not hard quantized (humanized)\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab adjust the length of shortnote in the user area. To get an idea which values are typical for short notes, enable the\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab ShowConsoleMsg near the end of the script\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -104,6 +106,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script mimics the behaviour of Nuendo's Edit Mode. You select an item, execute the script and move/nudge the item with the mouse. As result, the edit cursor will follow.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the script is executed as an endless loop, so you have to terminate it, when you are done. Best is, to assign it as a shortcut and terminate it when pressing the shortcut again.\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showpost.php?p=1909014&amp;postcount=6</link>
