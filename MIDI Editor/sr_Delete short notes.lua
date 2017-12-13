@@ -5,7 +5,7 @@
 --    # Description
 --    - deletes leftover short notes, that are created, when splitting (on grid) notes that are not hard quantized (humanized)
 --    - this script works in arrangement, MIDI Editor and Inline Editor
---	  - adjust the length of shortnote in the user area. To get an idea which values are typical for short notes, enable the 
+--    - adjust the length of shortnote in the user area. To get an idea which values are typical for short notes, enable the 
 --    - ShowConsoleMsg near the end of the script
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
