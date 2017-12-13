@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="f05ee21443188d52c13dc81ec9697cd6d55e9305">
+<index version="1" name="Stevie Scripts" commit="3e5d9745f628fcebe4290a0eb8be9f6e7c553344">
   <category name="MIDI Editor">
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
       <metadata>
@@ -106,7 +106,7 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script mimics the behaviour of Nuendo's Edit Mode. You select an item, execute the script and move/nudge the item with the mouse. As result, the edit cursor will follow.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script mimics the behaviour of Nuendo's Edit Mode. You select an item, execute the script and move/nudge the item with the mouse. As result, the edit cursor will snap to the start of the item and follow your mouse movement.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the script is executed as an endless loop, so you have to terminate it, when you are done. Best is, to assign it as a shortcut and terminate it when pressing the shortcut again.\sa180\par}
 }
 ]]></description>
