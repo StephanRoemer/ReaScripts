@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="Stevie Scripts" commit="6ace3e405913e8833514c8ce2a3f5eef4aca5533">
+  <category name="MIDI Editor">
+    <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete all notes that are located before the edit cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Delete all notes that, are located before the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete short notes.lua" type="script" desc="sr_Delete short notes">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Delete short notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab deletes leftover short notes, that are created, when splitting (on grid) notes that are not hard quantized (humanized)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete_notes after edit cursor.lua" type="script" desc="sr_Delete all notes that are located after the edit cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Delete all notes, that are located after the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Delete_notes%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="sr_Select all notes that are located before the edit cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Select all notes, that are located before the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="sr_Select all notes that are located before the edit cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Select all notes, that are located before the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Transport">
+    <reapack name="sr_Edit cursor follows start of item.lua" type="script" desc="sr_Edit cursor follows start of item">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Edit cursor follows start of item\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showpost.php?p=1909014&amp;postcount=6</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T01:19:49Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaPack/raw/662d8711fa0d6d9b38bcb0715e5416b1ccb62cbe/Transport/sr_Edit%20cursor%20follows%20start%20of%20item.lua</source>
+      </version>
+    </reapack>
+  </category>
+</index>
