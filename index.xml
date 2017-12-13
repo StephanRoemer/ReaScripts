@@ -15,9 +15,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete short notes.lua" type="script" desc="sr_Delete short notes">
@@ -35,9 +35,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete_notes after edit cursor.lua" type="script" desc="sr_Delete notes after edit cursor">
@@ -54,9 +54,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Delete_notes%20after%20edit%20cursor.lua</source>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Delete_notes%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="sr_Open MIDI editor and zoom to 5 measures">
@@ -90,9 +90,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="sr_Select notes before edit cursor">
@@ -109,9 +109,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T00:48:17Z">
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaPack/raw/99f5fab8eda70c1eba718d1b0ae172f32a64cf71/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
   </category>
@@ -129,9 +129,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showpost.php?p=1909014&amp;postcount=6</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T01:19:49Z">
+      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaPack/raw/662d8711fa0d6d9b38bcb0715e5416b1ccb62cbe/Transport/sr_Edit%20cursor%20follows%20start%20of%20item.lua</source>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/Transport/sr_Edit%20cursor%20follows%20start%20of%20item.lua</source>
       </version>
     </reapack>
   </category>
