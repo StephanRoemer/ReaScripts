@@ -1,9 +1,10 @@
--- @description sr_Delete all notes that are located after the edit cursor position
+-- @description sr_Delete notes after edit cursor
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about
 --    # Delete all notes, that are located after the edit cursor position
 --    - this script works in arrangement, MIDI Editor and Inline Editor
+--    - for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --

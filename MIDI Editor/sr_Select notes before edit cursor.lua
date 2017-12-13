@@ -1,4 +1,4 @@
--- @description sr_Select all notes that are located before the edit cursor position
+-- @description sr_Select notes before edit cursor
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about
