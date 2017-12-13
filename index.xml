@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="1501d19f3e35de2b83a0a03d9ef472ea16b5b2a7">
+<index version="1" name="Stevie Scripts" commit="4b2787facdbf52ffeba934c835eaaa64f3ec1569">
   <category name="MIDI Editor">
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
       <metadata>
@@ -66,7 +66,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the Enter key and it will open the MIDI Editor and zoom to 5 measures (default). You can adjust the measures in the user area. this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the Enter key and it will open the MIDI Editor and zoom to 5 measures (default). You can adjust the measures in the user area.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forum.cockos.com/showpost.php?p=1923094&amp;postcount=124</link>
