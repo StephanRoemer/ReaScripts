@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="4b2787facdbf52ffeba934c835eaaa64f3ec1569">
+<index version="1" name="Stevie Scripts" commit="5fdd8aaee8c161b5e964be9cb1364d6f3455cfd3">
+  <category name="Items Editing">
+    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="sr_Open MIDI editor and zoom to 5 measures">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the Enter key and it will open the MIDI Editor and zoom to 5 measures (default). You can adjust the measures in the user area.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forum.cockos.com/showpost.php?p=1923094&amp;postcount=124</link>
+      </metadata>
+      <version name="1.0" author="Julian Sader, Stephan Römer" time="2017-12-13T04:51:03Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/5fdd8aaee8c161b5e964be9cb1364d6f3455cfd3/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
+      </version>
+    </reapack>
+  </category>
   <category name="MIDI Editor">
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
       <metadata>
@@ -57,24 +77,6 @@
       <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Delete_notes%20after%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="sr_Open MIDI editor and zoom to 5 measures">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the Enter key and it will open the MIDI Editor and zoom to 5 measures (default). You can adjust the measures in the user area.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forum.cockos.com/showpost.php?p=1923094&amp;postcount=124</link>
-      </metadata>
-      <version name="1.0" author="Julian Sader, Stephan Römer" time="2017-12-13T04:36:42Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/1501d19f3e35de2b83a0a03d9ef472ea16b5b2a7/MIDI%20Editor/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="sr_Select notes after the edit cursor">
