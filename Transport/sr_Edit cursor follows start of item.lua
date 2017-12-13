@@ -2,7 +2,7 @@
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about
---   # Description
+--    # Description
 --	  - this script mimics the behaviour of Nuendo's Edit Mode. You select an item, execute the script and move/nudge the item with the mouse. As result, the edit cursor will follow. 
 --    - the script is executed as an endless loop, so you have to terminate it, when you are done. Best is, to assign it as a shortcut and terminate it when pressing the shortcut again.
 --
