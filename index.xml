@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="5a1a3e162197b4cd3e6471e1aacd48ab23ad50f8">
+<index version="1" name="Stevie Scripts" commit="2ec15eef9731c96ae661b336154aad248ef14545">
   <category name="MIDI Editor">
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
       <metadata>
@@ -7,7 +7,8 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Delete all notes, that are located before the edit cursor position\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located before the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
 }
@@ -25,7 +26,7 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Delete short notes\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab deletes leftover short notes, that are created, when splitting (on grid) notes that are not hard quantized (humanized)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
@@ -43,7 +44,8 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Delete all notes, that are located after the edit cursor position\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located after the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
 }
@@ -61,7 +63,8 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Select all notes, that are located after the edit cursor position\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab select all notes, that are located after the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -78,7 +81,8 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Select all notes, that are located before the edit cursor position\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab select all notes, that are located before the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -97,7 +101,7 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Edit cursor follows start of item\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showpost.php?p=1909014&amp;postcount=6</link>
