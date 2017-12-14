@@ -35,9 +35,9 @@ reaper.Undo_BeginBlock() reaper.PreventUIRefresh(1)
 for n = 0, notes - 1 do -- loop thru all notes
     _, sel, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status, start and end position
     if start_note >= cursor_position_ppq and end_note > cursor_position_ppq then 
-      reaper.MIDI_SetNote(take, n, true, nil, nil, nil, nil, nil, nil) -- select note if condition above is true
+		reaper.MIDI_SetNote(take, n, true, nil, nil, nil, nil, nil, nil) -- select note if condition above is true
     else
-      reaper.MIDI_SetNote(take, n, false, nil, nil, nil, nil, nil, nil) -- unselect note if condition above is false
+		reaper.MIDI_SetNote(take, n, false, nil, nil, nil, nil, nil, nil) -- unselect note if condition above is false
     end
 end
 

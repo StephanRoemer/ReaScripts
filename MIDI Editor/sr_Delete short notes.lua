@@ -28,18 +28,18 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
         if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
             notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to "notes"
         
-        reaper.Undo_BeginBlock() reaper.PreventUIRefresh(1)
+			reaper.Undo_BeginBlock() reaper.PreventUIRefresh(1)
         
-        for n = notes-1, 0, -1 do -- loop thru all notes, back to front 
-            _, _, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get start and end position
-            note_length = end_note - start_note -- calculate note length
-            if  note_length < shortnote then
-            -- reaper.ShowConsoleMsg(note_length.."\n") -- shows all the note lengths in the console, remove the leading "--" to enable this
-            reaper.MIDI_DeleteNote(take, n) -- delete note if condition above is true
-            end
-        end
+			for n = notes-1, 0, -1 do -- loop thru all notes, back to front 
+				_, _, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get start and end position
+				note_length = end_note - start_note -- calculate note length
+				if  note_length < shortnote then
+					reaper.MIDI_DeleteNote(take, n) -- delete note if condition above is true
+				end
+			end
         
-        reaper.PreventUIRefresh(-1) reaper.Undo_EndBlock('Delete short notes', 2)    
+			reaper.PreventUIRefresh(-1) reaper.Undo_EndBlock('Delete short notes', 2)    
+
         end
     end
 end 

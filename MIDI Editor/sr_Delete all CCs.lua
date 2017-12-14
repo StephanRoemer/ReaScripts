@@ -1,9 +1,9 @@
--- @description sr_Move CC11 to CC7
--- @version 1.0    
+-- @description sr_Delete all CCs
+-- @version 1.0
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - this script moves CC11 data to CC7
+--    - this script deletes the data of all CC lanes
 --    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
@@ -18,12 +18,8 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
         take = reaper.GetTake(item, t)
         if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
             _, _, ccCount, _ = reaper.MIDI_CountEvts(take) -- count CCs and save amount to "ccCount"
-            for c = 0, ccCount - 1 do -- loop thru all CCs
-                _, _, _, ppqposOut, chanmsgOut, chanOut, cc, ccValue = reaper.MIDI_GetCC(take, c) -- get values from CCs
-                if cc == 11 then -- if CC is CC11
-					reaper.MIDI_InsertCC(take, false, false, ppqposOut, chanmsgOut, chanOut, 7, ccValue) -- insert CC11 values into CC7 lane
-					reaper.MIDI_DeleteCC(take, c) -- after copying CC11 to CC7, delete CC11 (=move)
-                end   
+            for c = ccCount - 1, 0, -1 do -- loop thru all CCs, back to forth
+				reaper.MIDI_DeleteCC(take, c) -- delete all CCs             
             end
         end
     end

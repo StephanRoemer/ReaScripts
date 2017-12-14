@@ -4,6 +4,7 @@
 -- @about
 --    # Description
 --    - this script moves CC11 data to CC1
+--    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
@@ -20,8 +21,8 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
             for c = 0, ccCount - 1 do -- loop thru all CCs
                 _, _, _, ppqposOut, chanmsgOut, chanOut, cc, ccValue = reaper.MIDI_GetCC(take, c) -- get values from CCs
                 if cc == 11 then -- if CC is CC11
-                  reaper.MIDI_InsertCC(take, false, false, ppqposOut, chanmsgOut, chanOut, 1, ccValue) -- insert CC11 values into CC1 lane
-                  reaper.MIDI_DeleteCC(take, c) -- after copying CC11 to CC1, delete CC11 (=move)
+					reaper.MIDI_InsertCC(take, false, false, ppqposOut, chanmsgOut, chanOut, 1, ccValue) -- insert CC11 values into CC1 lane
+					reaper.MIDI_DeleteCC(take, c) -- after copying CC11 to CC1, delete CC11 (=move)
                 end   
             end
         end
