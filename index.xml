@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="968191fedbf0f7e6dba5d9bd55a3fd0212aaf469">
+<index version="1" name="Stevie Scripts" commit="230ae05a0a1764e00bc797aedbcd7c6b460ec707">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="sr_Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -21,6 +21,366 @@
     </reapack>
   </category>
   <category name="MIDI Editor">
+    <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="sr_Delete all CCs after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the data of all CC lanes after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete all CCs beforer edit cursor.lua" type="script" desc="sr_Delete all CCs before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the data of all CC lanes before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20all%20CCs%20beforer%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete all CCs.lua" type="script" desc="sr_Delete all CCs">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the data of all CC lanes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC1 after edit cursor.lua" type="script" desc="sr_Delete CC1 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC1 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC1 after edit cursor_temp.lua" type="script" desc="sr_Move CC1 to CC11">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC1%20after%20edit%20cursor_temp.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC1 before edit cursor.lua" type="script" desc="sr_Delete CC1 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC1 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC1.lua" type="script" desc="sr_Delete CC1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC1 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC11 after edit cursor.lua" type="script" desc="sr_Delete CC11 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC11 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC11 before edit cursor.lua" type="script" desc="sr_Delete CC11 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC11 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC11.lua" type="script" desc="sr_Delete CC11">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC11 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC11.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC2 after edit cursor.lua" type="script" desc="sr_Delete CC2 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC2 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC2 before edit cursor.lua" type="script" desc="sr_Delete CC2 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC2 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC2.lua" type="script" desc="sr_Delete CC2">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC2 lane\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC64 after edit cursor.lua" type="script" desc="sr_Delete CC64 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC64 (sustain) data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC64 before edit cursor.lua" type="script" desc="sr_Delete CC64 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC64 (sustain) data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC64.lua" type="script" desc="sr_Delete CC64">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC64 (sustain) lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC64.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC7 after edit cursor.lua" type="script" desc="sr_Delete CC7 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC7 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC7 before edit cursor.lua" type="script" desc="sr_Delete CC7 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC7 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete CC7.lua" type="script" desc="sr_Delete CC7">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC7 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20CC7.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="sr_Delete notes after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located after the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -60,25 +420,6 @@
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete_notes after edit cursor.lua" type="script" desc="sr_Delete notes after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located after the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-13T02:46:44Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/MIDI%20Editor/sr_Delete_notes%20after%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="sr_Move CC1 to CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -86,7 +427,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC11\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -103,7 +445,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC2\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC2\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -120,7 +463,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC7\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC1 data to CC7\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -137,7 +481,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC11 data to CC1\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC11 data to CC1\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -154,7 +499,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC11 data to CC2\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC11 data to CC2\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -171,7 +517,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC11 data to CC7\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC11 data to CC7\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -188,7 +535,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC2 data to CC1\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC2 data to CC1\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -205,7 +553,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC2 data to CC11\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC2 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -222,7 +571,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC2 data to CC7\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC2 data to CC7\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -239,7 +589,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC7 data to CC1\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC7 data to CC1\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -256,7 +607,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC7 data to CC11\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC7 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -273,7 +625,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC7 data to CC2\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves CC7 data to CC2\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -281,6 +634,330 @@
       <version name="1.0" author="Stephan Römer" time="2017-12-13T15:42:59Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/968191fedbf0f7e6dba5d9bd55a3fd0212aaf469/MIDI%20Editor/sr_Move%20CC7%20to%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select all CCs after edit cursor.lua" type="script" desc="sr_Select all CCs after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects all CC data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select all CCs before edit cursor.lua" type="script" desc="sr_Select all CCs before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects all CC data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select all CCs.lua" type="script" desc="sr_Select all CCs">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects all CCs\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="sr_Select CC1 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC1 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC1 before edit cursor.lua" type="script" desc="sr_Select CC1 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC1 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC1.lua" type="script" desc="sr_Select CC1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the complete CC1 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC11 after edit cursor.lua" type="script" desc="sr_Select CC11 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC11 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC11 before edit cursor.lua" type="script" desc="sr_Delete CC11 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the CC11 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC11.lua" type="script" desc="sr_Select CC11">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the complete CC11 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC11.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC2 after edit cursor.lua" type="script" desc="sr_Select CC2 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC2 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC2 before edit cursor.lua" type="script" desc="sr_Select CC2 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC2 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC2.lua" type="script" desc="sr_Select CC2">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the complete CC2 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC64 after edit cursor.lua" type="script" desc="sr_Select CC64 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC64 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC64 before edit cursor.lua" type="script" desc="sr_Select CC64 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC64 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC64.lua" type="script" desc="sr_Select CC64">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the complete CC64 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC64.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC7 after edit cursor.lua" type="script" desc="sr_Select CC7 after edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC7 data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC7 before edit cursor.lua" type="script" desc="sr_Select CC7 before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC7 data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC7.lua" type="script" desc="sr_Select CC7">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the complete CC7 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-14T20:06:40Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/230ae05a0a1764e00bc797aedbcd7c6b460ec707/MIDI%20Editor/sr_Select%20CC7.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="sr_Select notes after the edit cursor">
