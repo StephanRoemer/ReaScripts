@@ -1,4 +1,4 @@
--- @description sr_Edit cursor follows start of item
+-- @description Edit cursor follows start of item
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about
