@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="bf177e8e222047c534437f369571de944fb5f649">
+<index version="1" name="Stevie Scripts" commit="69b2d611d2013c1c706bc331a3908338b87e9ae7">
   <category name="Items Editing">
-    <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="sr_Delete all CCs after edit cursor">
+    <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="Delete all CCs after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -19,7 +19,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete all CCs beforer edit cursor.lua" type="script" desc="sr_Delete all CCs before edit cursor">
+    <reapack name="sr_Delete all CCs beforer edit cursor.lua" type="script" desc="Delete all CCs before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -37,7 +37,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20all%20CCs%20beforer%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete all CCs.lua" type="script" desc="sr_Delete all CCs">
+    <reapack name="sr_Delete all CCs.lua" type="script" desc="Delete all CCs">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -55,7 +55,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20all%20CCs.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC1 after edit cursor.lua" type="script" desc="sr_Delete CC1 after edit cursor">
+    <reapack name="sr_Delete CC1 after edit cursor.lua" type="script" desc="Delete CC1 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -73,7 +73,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC1 after edit cursor_temp.lua" type="script" desc="sr_Move CC1 to CC11">
+    <reapack name="sr_Delete CC1 after edit cursor_temp.lua" type="script" desc="Move CC1 to CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -91,7 +91,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC1%20after%20edit%20cursor_temp.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC1 before edit cursor.lua" type="script" desc="sr_Delete CC1 before edit cursor">
+    <reapack name="sr_Delete CC1 before edit cursor.lua" type="script" desc="Delete CC1 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -109,7 +109,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC1.lua" type="script" desc="sr_Delete CC1">
+    <reapack name="sr_Delete CC1.lua" type="script" desc="Delete CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -127,7 +127,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC11 after edit cursor.lua" type="script" desc="sr_Delete CC11 after edit cursor">
+    <reapack name="sr_Delete CC11 after edit cursor.lua" type="script" desc="Delete CC11 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -145,7 +145,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC11 before edit cursor.lua" type="script" desc="sr_Delete CC11 before edit cursor">
+    <reapack name="sr_Delete CC11 before edit cursor.lua" type="script" desc="Delete CC11 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -163,7 +163,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC11.lua" type="script" desc="sr_Delete CC11">
+    <reapack name="sr_Delete CC11.lua" type="script" desc="Delete CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -181,7 +181,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC11.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC2 after edit cursor.lua" type="script" desc="sr_Delete CC2 after edit cursor">
+    <reapack name="sr_Delete CC2 after edit cursor.lua" type="script" desc="Delete CC2 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -199,7 +199,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC2 before edit cursor.lua" type="script" desc="sr_Delete CC2 before edit cursor">
+    <reapack name="sr_Delete CC2 before edit cursor.lua" type="script" desc="Delete CC2 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -217,14 +217,15 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC2.lua" type="script" desc="sr_Delete CC2">
+    <reapack name="sr_Delete CC2.lua" type="script" desc="Delete CC2">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC2 lane\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the complete CC2 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -234,7 +235,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC2.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC64 after edit cursor.lua" type="script" desc="sr_Delete CC64 after edit cursor">
+    <reapack name="sr_Delete CC64 after edit cursor.lua" type="script" desc="Delete CC64 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -252,7 +253,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC64 before edit cursor.lua" type="script" desc="sr_Delete CC64 before edit cursor">
+    <reapack name="sr_Delete CC64 before edit cursor.lua" type="script" desc="Delete CC64 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -270,7 +271,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC64.lua" type="script" desc="sr_Delete CC64">
+    <reapack name="sr_Delete CC64.lua" type="script" desc="Delete CC64">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -288,7 +289,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC64.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC7 after edit cursor.lua" type="script" desc="sr_Delete CC7 after edit cursor">
+    <reapack name="sr_Delete CC7 after edit cursor.lua" type="script" desc="Delete CC7 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -306,7 +307,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC7 before edit cursor.lua" type="script" desc="sr_Delete CC7 before edit cursor">
+    <reapack name="sr_Delete CC7 before edit cursor.lua" type="script" desc="Delete CC7 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -324,7 +325,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete CC7.lua" type="script" desc="sr_Delete CC7">
+    <reapack name="sr_Delete CC7.lua" type="script" desc="Delete CC7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -342,7 +343,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20CC7.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="sr_Delete notes after edit cursor">
+    <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="Delete notes after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -361,7 +362,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="sr_Delete notes before edit cursor">
+    <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="Delete notes before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -380,7 +381,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete short notes.lua" type="script" desc="sr_Delete short notes">
+    <reapack name="sr_Delete short notes.lua" type="script" desc="Delete short notes">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -400,7 +401,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="sr_Move CC1 to CC11">
+    <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="Move CC1 to CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -418,7 +419,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC1%20to%20CC11.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC1 to CC2.lua" type="script" desc="sr_Move CC1 to CC2">
+    <reapack name="sr_Move CC1 to CC2.lua" type="script" desc="Move CC1 to CC2">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -436,7 +437,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC1%20to%20CC2.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC1 to CC7.lua" type="script" desc="sr_Move CC1 to CC7">
+    <reapack name="sr_Move CC1 to CC7.lua" type="script" desc="Move CC1 to CC7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -454,7 +455,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC1%20to%20CC7.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC11 to CC1.lua" type="script" desc="sr_Move CC11 to CC1">
+    <reapack name="sr_Move CC11 to CC1.lua" type="script" desc="Move CC11 to CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -472,7 +473,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC11%20to%20CC1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC11 to CC2.lua" type="script" desc="sr_Move CC11 to CC2">
+    <reapack name="sr_Move CC11 to CC2.lua" type="script" desc="Move CC11 to CC2">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -490,7 +491,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC11%20to%20CC2.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC11 to CC7.lua" type="script" desc="sr_Move CC11 to CC7">
+    <reapack name="sr_Move CC11 to CC7.lua" type="script" desc="Move CC11 to CC7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -508,7 +509,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC11%20to%20CC7.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC2 to CC1.lua" type="script" desc="sr_Move CC2 to CC1">
+    <reapack name="sr_Move CC2 to CC1.lua" type="script" desc="Move CC2 to CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -526,7 +527,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC2%20to%20CC1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC2 to CC11.lua" type="script" desc="sr_Move CC2 to CC11">
+    <reapack name="sr_Move CC2 to CC11.lua" type="script" desc="Move CC2 to CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -544,7 +545,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC2%20to%20CC11.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC2 to CC7.lua" type="script" desc="sr_Move CC2 to CC7">
+    <reapack name="sr_Move CC2 to CC7.lua" type="script" desc="Move CC2 to CC7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -562,7 +563,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC2%20to%20CC7.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC7 to CC1.lua" type="script" desc="sr_Move CC7 to CC1">
+    <reapack name="sr_Move CC7 to CC1.lua" type="script" desc="Move CC7 to CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -580,7 +581,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC7%20to%20CC1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC7 to CC11.lua" type="script" desc="sr_Move CC7 to CC11">
+    <reapack name="sr_Move CC7 to CC11.lua" type="script" desc="Move CC7 to CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -598,7 +599,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC7%20to%20CC11.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move CC7 to CC2.lua" type="script" desc="sr_Move CC7 to CC2">
+    <reapack name="sr_Move CC7 to CC2.lua" type="script" desc="Move CC7 to CC2">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -616,7 +617,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Move%20CC7%20to%20CC2.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="sr_Open MIDI editor and zoom to 5 measures">
+    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -634,7 +635,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/5fdd8aaee8c161b5e964be9cb1364d6f3455cfd3/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select all CCs after edit cursor.lua" type="script" desc="sr_Select all CCs after edit cursor">
+    <reapack name="sr_Select all CCs after edit cursor.lua" type="script" desc="Select all CCs after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -652,7 +653,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select all CCs before edit cursor.lua" type="script" desc="sr_Select all CCs before edit cursor">
+    <reapack name="sr_Select all CCs before edit cursor.lua" type="script" desc="Select all CCs before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -670,7 +671,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select all CCs.lua" type="script" desc="sr_Select all CCs">
+    <reapack name="sr_Select all CCs.lua" type="script" desc="Select all CCs">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -688,7 +689,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20all%20CCs.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="sr_Select CC1 after edit cursor">
+    <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="Select CC1 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -706,7 +707,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC1 before edit cursor.lua" type="script" desc="sr_Select CC1 before edit cursor">
+    <reapack name="sr_Select CC1 before edit cursor.lua" type="script" desc="Select CC1 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -724,7 +725,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC1.lua" type="script" desc="sr_Select CC1">
+    <reapack name="sr_Select CC1.lua" type="script" desc="Select CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -742,7 +743,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC11 after edit cursor.lua" type="script" desc="sr_Select CC11 after edit cursor">
+    <reapack name="sr_Select CC11 after edit cursor.lua" type="script" desc="Select CC11 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -760,7 +761,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC11 before edit cursor.lua" type="script" desc="sr_Delete CC11 before edit cursor">
+    <reapack name="sr_Select CC11 before edit cursor.lua" type="script" desc="Delete CC11 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -778,7 +779,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC11.lua" type="script" desc="sr_Select CC11">
+    <reapack name="sr_Select CC11.lua" type="script" desc="Select CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -796,7 +797,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC11.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC2 after edit cursor.lua" type="script" desc="sr_Select CC2 after edit cursor">
+    <reapack name="sr_Select CC2 after edit cursor.lua" type="script" desc="Select CC2 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -814,7 +815,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC2 before edit cursor.lua" type="script" desc="sr_Select CC2 before edit cursor">
+    <reapack name="sr_Select CC2 before edit cursor.lua" type="script" desc="Select CC2 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -832,7 +833,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC2.lua" type="script" desc="sr_Select CC2">
+    <reapack name="sr_Select CC2.lua" type="script" desc="Select CC2">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -850,7 +851,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC2.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC64 after edit cursor.lua" type="script" desc="sr_Select CC64 after edit cursor">
+    <reapack name="sr_Select CC64 after edit cursor.lua" type="script" desc="Select CC64 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -868,7 +869,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC64 before edit cursor.lua" type="script" desc="sr_Select CC64 before edit cursor">
+    <reapack name="sr_Select CC64 before edit cursor.lua" type="script" desc="Select CC64 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -886,7 +887,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC64.lua" type="script" desc="sr_Select CC64">
+    <reapack name="sr_Select CC64.lua" type="script" desc="Select CC64">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -904,7 +905,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC64.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC7 after edit cursor.lua" type="script" desc="sr_Select CC7 after edit cursor">
+    <reapack name="sr_Select CC7 after edit cursor.lua" type="script" desc="Select CC7 after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -922,7 +923,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC7 before edit cursor.lua" type="script" desc="sr_Select CC7 before edit cursor">
+    <reapack name="sr_Select CC7 before edit cursor.lua" type="script" desc="Select CC7 before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -940,7 +941,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC7.lua" type="script" desc="sr_Select CC7">
+    <reapack name="sr_Select CC7.lua" type="script" desc="Select CC7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -958,7 +959,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20CC7.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="sr_Select notes after the edit cursor">
+    <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="Select notes after the edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -977,7 +978,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20notes%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="sr_Select notes before edit cursor">
+    <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="Select notes before edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -996,7 +997,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bde8d605ae80f6cf88dabc9ffe7a03cb659e5db4/Items%20Editing/sr_Select%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes +1.lua" type="script" desc="sr_Transpose notes +1">
+    <reapack name="sr_Transpose notes +1.lua" type="script" desc="Transpose notes +1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1014,7 +1015,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a10ecec9d9f9b3fd80ee39d99476723d938c86dd/Items%20Editing/sr_Transpose%20notes%20+1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes +12.lua" type="script" desc="sr_Transpose notes +12">
+    <reapack name="sr_Transpose notes +12.lua" type="script" desc="Transpose notes +12">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1032,7 +1033,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a10ecec9d9f9b3fd80ee39d99476723d938c86dd/Items%20Editing/sr_Transpose%20notes%20+12.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes +3.lua" type="script" desc="sr_Transpose notes +3">
+    <reapack name="sr_Transpose notes +3.lua" type="script" desc="Transpose notes +3">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1050,7 +1051,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a10ecec9d9f9b3fd80ee39d99476723d938c86dd/Items%20Editing/sr_Transpose%20notes%20+3.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes +5.lua" type="script" desc="sr_Transpose notes +5">
+    <reapack name="sr_Transpose notes +5.lua" type="script" desc="Transpose notes +5">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1068,7 +1069,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bf177e8e222047c534437f369571de944fb5f649/Items%20Editing/sr_Transpose%20notes%20+5.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes +7.lua" type="script" desc="sr_Transpose notes +7">
+    <reapack name="sr_Transpose notes +7.lua" type="script" desc="Transpose notes +7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1086,7 +1087,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bf177e8e222047c534437f369571de944fb5f649/Items%20Editing/sr_Transpose%20notes%20+7.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes -1.lua" type="script" desc="sr_Transpose notes -1">
+    <reapack name="sr_Transpose notes -1.lua" type="script" desc="Transpose notes -1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1104,7 +1105,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a10ecec9d9f9b3fd80ee39d99476723d938c86dd/Items%20Editing/sr_Transpose%20notes%20-1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes -12.lua" type="script" desc="sr_Transpose notes -12">
+    <reapack name="sr_Transpose notes -12.lua" type="script" desc="Transpose notes -12">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1122,7 +1123,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a10ecec9d9f9b3fd80ee39d99476723d938c86dd/Items%20Editing/sr_Transpose%20notes%20-12.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes -3.lua" type="script" desc="sr_Transpose notes -3">
+    <reapack name="sr_Transpose notes -3.lua" type="script" desc="Transpose notes -3">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1140,7 +1141,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a10ecec9d9f9b3fd80ee39d99476723d938c86dd/Items%20Editing/sr_Transpose%20notes%20-3.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes -5.lua" type="script" desc="sr_Transpose notes -5">
+    <reapack name="sr_Transpose notes -5.lua" type="script" desc="Transpose notes -5">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1158,7 +1159,7 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/bf177e8e222047c534437f369571de944fb5f649/Items%20Editing/sr_Transpose%20notes%20-5.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Transpose notes -7.lua" type="script" desc="sr_Transpose notes -7">
+    <reapack name="sr_Transpose notes -7.lua" type="script" desc="Transpose notes -7">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
