@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="69b2d611d2013c1c706bc331a3908338b87e9ae7">
+<index version="1" name="Stevie Scripts" commit="816c7ff698070346442e7bb3cc60988da13b1432">
   <category name="Items Editing">
     <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="Delete all CCs after edit cursor">
       <metadata>
@@ -1179,7 +1179,7 @@
     </reapack>
   </category>
   <category name="Transport">
-    <reapack name="sr_Edit cursor follows start of item.lua" type="script" desc="sr_Edit cursor follows start of item">
+    <reapack name="sr_Edit cursor follows start of item.lua" type="script" desc="Edit cursor follows start of item">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
