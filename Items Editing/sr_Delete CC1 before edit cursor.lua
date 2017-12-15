@@ -1,4 +1,4 @@
--- @description sr_Delete CC1 before edit cursor
+-- @description Delete CC1 before edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

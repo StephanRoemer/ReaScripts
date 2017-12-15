@@ -1,4 +1,4 @@
--- @description sr_Delete notes after edit cursor
+-- @description Delete notes after edit cursor
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about

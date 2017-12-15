@@ -1,4 +1,4 @@
--- @description sr_Delete all CCs after edit cursor
+-- @description Delete all CCs after edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

@@ -1,4 +1,4 @@
--- @description sr_Select notes after the edit cursor
+-- @description Select notes after the edit cursor
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about

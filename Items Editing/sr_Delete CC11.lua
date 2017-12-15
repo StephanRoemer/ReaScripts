@@ -1,4 +1,4 @@
--- @description sr_Delete CC11
+-- @description Delete CC11
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

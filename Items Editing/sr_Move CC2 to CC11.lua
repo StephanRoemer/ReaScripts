@@ -1,4 +1,4 @@
--- @description sr_Move CC2 to CC11
+-- @description Move CC2 to CC11
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

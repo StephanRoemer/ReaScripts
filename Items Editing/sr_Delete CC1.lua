@@ -1,4 +1,4 @@
--- @description sr_Delete CC1
+-- @description Delete CC1
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

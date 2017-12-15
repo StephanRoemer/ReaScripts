@@ -1,4 +1,4 @@
--- @description sr_Select CC7
+-- @description Select CC7
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

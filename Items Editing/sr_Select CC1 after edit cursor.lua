@@ -1,4 +1,4 @@
--- @description sr_Select CC1 after edit cursor
+-- @description Select CC1 after edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

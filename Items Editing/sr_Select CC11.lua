@@ -1,4 +1,4 @@
--- @description sr_Select CC11
+-- @description Select CC11
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

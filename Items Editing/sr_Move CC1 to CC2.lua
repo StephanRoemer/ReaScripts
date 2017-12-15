@@ -1,4 +1,4 @@
--- @description sr_Move CC1 to CC2
+-- @description Move CC1 to CC2
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

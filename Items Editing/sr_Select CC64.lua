@@ -1,4 +1,4 @@
--- @description sr_Select CC64
+-- @description Select CC64
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

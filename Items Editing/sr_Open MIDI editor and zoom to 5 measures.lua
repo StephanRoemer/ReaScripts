@@ -1,4 +1,4 @@
--- @description sr_Open MIDI editor and zoom to 5 measures
+-- @description Open MIDI editor and zoom to 5 measures
 -- @version 1.0    
 -- @author Julian Sader, Stephan Römer
 -- @about

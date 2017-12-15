@@ -1,4 +1,4 @@
--- @description sr_Delete CC64
+-- @description Delete CC64
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

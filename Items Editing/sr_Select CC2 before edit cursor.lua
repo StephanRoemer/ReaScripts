@@ -1,4 +1,4 @@
--- @description sr_Select CC2 before edit cursor
+-- @description Select CC2 before edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

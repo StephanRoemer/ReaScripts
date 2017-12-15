@@ -1,4 +1,4 @@
--- @description sr_Select all CCs before edit cursor
+-- @description Select all CCs before edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

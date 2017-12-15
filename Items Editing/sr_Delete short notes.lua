@@ -1,4 +1,4 @@
--- @description sr_Delete short notes
+-- @description Delete short notes
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about

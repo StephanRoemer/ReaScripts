@@ -1,10 +1,10 @@
--- @description sr_Delete CC2
+-- @description Delete CC2
 -- @version 1.0
 -- @author Stephan Römer
 -- @about
 --    # Description
 --    - this script deletes the complete CC2 lane
---   - this script works in arrangement, MIDI Editor and Inline Editor
+--    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --

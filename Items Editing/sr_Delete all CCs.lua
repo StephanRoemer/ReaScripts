@@ -1,4 +1,4 @@
--- @description sr_Delete all CCs
+-- @description Delete all CCs
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

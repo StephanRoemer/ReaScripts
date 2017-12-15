@@ -1,4 +1,4 @@
--- @description sr_Delete CC7 after edit cursor
+-- @description Delete CC7 after edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

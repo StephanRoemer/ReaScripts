@@ -1,4 +1,4 @@
--- @description sr_Select all CCs
+-- @description Select all CCs
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

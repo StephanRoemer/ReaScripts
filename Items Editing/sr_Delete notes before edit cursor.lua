@@ -1,4 +1,4 @@
--- @description sr_Delete notes before edit cursor
+-- @description Delete notes before edit cursor
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about

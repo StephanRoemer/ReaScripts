@@ -1,4 +1,4 @@
--- @description sr_Transpose notes -1
+-- @description Transpose notes -1
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

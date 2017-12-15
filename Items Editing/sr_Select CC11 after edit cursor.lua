@@ -1,4 +1,4 @@
--- @description sr_Select CC11 after edit cursor
+-- @description Select CC11 after edit cursor
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

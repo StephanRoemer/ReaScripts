@@ -1,4 +1,4 @@
--- @description sr_Delete CC7
+-- @description Delete CC7
 -- @version 1.0
 -- @author Stephan Römer
 -- @about

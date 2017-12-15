@@ -1,4 +1,4 @@
--- @description sr_Move CC1 to CC7
+-- @description Move CC1 to CC7
 -- @version 1.0
 -- @author Stephan Römer
 -- @about
