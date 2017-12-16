@@ -10,7 +10,7 @@
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
--- @provides [main=main,midi_editor,midi_inlineeditor]
+-- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
 --     v1.0
 -- 	  + Initial release
