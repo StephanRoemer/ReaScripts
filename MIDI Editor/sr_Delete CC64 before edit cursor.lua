@@ -1,5 +1,5 @@
 -- @description Delete CC64 before edit cursor
--- @version 1.0
+-- @version 1.11
 -- @author Stephan Römer
 -- @about
 --    # Description

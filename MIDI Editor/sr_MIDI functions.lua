@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.0
+-- @version 1.1
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -9,6 +9,8 @@
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @changelog
+--     v1.1 (2017-12-16)
+--     + fixed changes not being visually reflected in the arrangement (thanks Julian Sader!)
 --     v1.0
 --     + Initial release
 
@@ -37,6 +39,7 @@ function add_notes(interval)
 						reaper.MIDI_InsertNote(take, false, false, startppqposOut, endppqposOut, chanOut, pitchOut+interval, velOut, true) -- add notes by interval to all notes
 					end
 				end
+				reaper.MIDI_Sort(take)
 			end
 		end
 	end
@@ -67,6 +70,7 @@ function transpose(interval)
 					else
 						reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, pitchOut+interval, nil, true) -- transpose all notes by interval
 					end
+				reaper.MIDI_Sort(take)
 				end
 			end
 		end
@@ -214,6 +218,7 @@ function move_srcCC_to_destCC(srcCC, destCC)
 					end
 				end
 			end
+			reaper.MIDI_Sort(take)
 		end
 	end
 end
@@ -244,8 +249,8 @@ function increase_CC(destCC, increase)
 							reaper.MIDI_SetCC(take, c, nil, nil, nil, nil, nil, nil, math.min(127, (math.ceil(ccValue*increase))), true) -- multiply ccValue with increase, convert to integer and limit highest value to 127
 						end
 					end
-					reaper.UpdateArrange()
 				end
+				reaper.MIDI_Sort(take)
 			end
 		end
 	end
@@ -277,8 +282,8 @@ function decrease_CC(destCC, decrease)
 							reaper.MIDI_SetCC(take, c, nil, nil, nil, nil, nil, nil, math.max(1, (math.floor(ccValue/decrease))), true) -- divide ccValue by increase, convert to integer and limit lowest value to 0
 						end
 					end
-					reaper.UpdateArrange()
 				end
+				reaper.MIDI_Sort(take)
 			end
 		end
 	end

@@ -1,5 +1,5 @@
 -- @description Transpose notes +4
--- @version 1.1
+-- @version 1.11
 -- @author Stephan Römer
 -- @about
 --    # Description

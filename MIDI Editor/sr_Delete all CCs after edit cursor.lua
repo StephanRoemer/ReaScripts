@@ -1,5 +1,5 @@
 -- @description Delete all CCs after edit cursor
--- @version 1.0
+-- @version 1.1
 -- @author Stephan Römer
 -- @about
 --    # Description

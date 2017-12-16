@@ -1,5 +1,5 @@
 -- @description Add notes -12
--- @version 1.0
+-- @version 1.1
 -- @author Stephan Römer
 -- @about
 --    # Description
