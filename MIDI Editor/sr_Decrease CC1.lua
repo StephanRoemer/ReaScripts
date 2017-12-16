@@ -21,7 +21,7 @@ require 'sr_MIDI functions'
 decrease = 1.1 -- value to increase the CC event
 destCC = 1 -- destination CC
 
-decrease_CC(destCC, increase) -- call function
+decrease_CC(destCC, decrease) -- call function
 reaper.Undo_OnStateChange2(proj, "Decrease CC1")
 
 
