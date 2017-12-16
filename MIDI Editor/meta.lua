@@ -3,5 +3,5 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
-		[nomain] sr_MIDI functions.lua
-		[main=main,midi_editor,midi_inlineeditor] sr_*.lua
+--	  [nomain] sr_MIDI functions.lua
+--    [main=main,midi_editor,midi_inlineeditor] sr_*.lua
