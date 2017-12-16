@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="e0870a9291ea35ad9eccb51fa15abd82254453d3">
+<index version="1" name="Stevie Scripts" commit="edebda2f40cdecf92fdd10f55637904e65995d45">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -39,6 +39,13 @@
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Add%20notes%20+12.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0 (2017-12-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Add%20notes%20+12.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Add notes +24.lua" type="script" desc="Add notes +24">
       <metadata>
@@ -57,6 +64,13 @@
         <changelog><![CDATA[v1.0 (2017-12-15)
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Add%20notes%20+24.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0 (2017-12-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Add%20notes%20+24.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Add notes -12.lua" type="script" desc="Add notes -12">
@@ -77,6 +91,13 @@
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Add%20notes%20-12.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0 (2017-12-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Add%20notes%20-12.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Add notes -24.lua" type="script" desc="Add notes -24">
       <metadata>
@@ -95,6 +116,13 @@
         <changelog><![CDATA[v1.0 (2017-12-15)
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Add%20notes%20-24.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0 (2017-12-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Add%20notes%20-24.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Decrease CC1.lua" type="script" desc="Increase CC1">
@@ -115,6 +143,13 @@
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Decrease CC11.lua" type="script" desc="Increase CC11">
       <metadata>
@@ -133,6 +168,13 @@
         <changelog><![CDATA[v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="Delete all CCs after edit cursor">
@@ -153,6 +195,13 @@
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete all CCs beforer edit cursor.lua" type="script" desc="Delete all CCs before edit cursor">
       <metadata>
@@ -172,6 +221,13 @@
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20all%20CCs%20beforer%20edit%20cursor.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20all%20CCs%20beforer%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete all CCs.lua" type="script" desc="Delete all CCs">
       <metadata>
@@ -190,6 +246,13 @@
         <changelog><![CDATA[v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC1 after edit cursor.lua" type="script" desc="Delete CC1 after edit cursor">
@@ -212,6 +275,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC1 before edit cursor.lua" type="script" desc="Delete CC1 before edit cursor">
       <metadata>
@@ -232,6 +304,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC1.lua" type="script" desc="Delete CC1">
@@ -254,6 +335,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC1.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC1.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC11 after edit cursor.lua" type="script" desc="Delete CC11 after edit cursor">
       <metadata>
@@ -274,6 +364,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC11 before edit cursor.lua" type="script" desc="Delete CC11 before edit cursor">
@@ -296,6 +395,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC11.lua" type="script" desc="Delete CC11">
       <metadata>
@@ -316,6 +424,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC11.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC11.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC2 after edit cursor.lua" type="script" desc="Delete CC2 after edit cursor">
@@ -338,6 +455,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC2 before edit cursor.lua" type="script" desc="Delete CC2 before edit cursor">
       <metadata>
@@ -358,6 +484,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC2.lua" type="script" desc="Delete CC2">
@@ -380,6 +515,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC2.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC2.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC64 after edit cursor.lua" type="script" desc="Delete CC64 after edit cursor">
       <metadata>
@@ -400,6 +544,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC64 before edit cursor.lua" type="script" desc="Delete CC64 before edit cursor">
@@ -422,6 +575,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC64.lua" type="script" desc="Delete CC64">
       <metadata>
@@ -442,6 +604,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC64.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC64.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC7 after edit cursor.lua" type="script" desc="Delete CC7 after edit cursor">
@@ -464,6 +635,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC7 before edit cursor.lua" type="script" desc="Delete CC7 before edit cursor">
       <metadata>
@@ -484,6 +664,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC7.lua" type="script" desc="Delete CC7">
@@ -506,6 +695,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20CC7.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20CC7.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="Delete notes after edit cursor">
       <metadata>
@@ -524,6 +722,11 @@ v1.1 (2017-12-15)
       <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
         <changelog><![CDATA[v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="Delete notes before edit cursor">
@@ -544,6 +747,11 @@ v1.1 (2017-12-15)
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete short notes.lua" type="script" desc="Delete short notes">
       <metadata>
@@ -562,6 +770,12 @@ v1.1 (2017-12-15)
       <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
         <changelog><![CDATA[v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Increase CC1.lua" type="script" desc="Increase CC1">
@@ -601,6 +815,13 @@ v1.1 (2017-12-15)
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Increase%20CC11.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Increase%20CC11.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_MIDI functions.lua" type="script" desc="MIDI functions">
       <metadata>
@@ -618,6 +839,13 @@ v1.1 (2017-12-15)
         <changelog><![CDATA[v1.0
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/8082de35e9ec27b9283cdc566df036506f25589f/MIDI%20Editor/sr_MIDI%20functions.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ fixed changes not being visually reflected in the arrangement (thanks Julian Sader!)
+v1.0
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_MIDI%20functions.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="Move CC1 to CC11">
@@ -640,6 +868,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC1%20to%20CC11.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC1%20to%20CC11.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC2.lua" type="script" desc="Move CC1 to CC2">
       <metadata>
@@ -660,6 +897,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC1%20to%20CC2.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC1%20to%20CC2.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC7.lua" type="script" desc="Move CC1 to CC7">
@@ -682,6 +928,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC1%20to%20CC7.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC1%20to%20CC7.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC11 to CC1.lua" type="script" desc="Move CC11 to CC1">
       <metadata>
@@ -702,6 +957,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC11%20to%20CC1.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC11%20to%20CC1.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC11 to CC2.lua" type="script" desc="Move CC11 to CC2">
@@ -724,6 +988,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC11%20to%20CC2.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC11%20to%20CC2.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC11 to CC7.lua" type="script" desc="Move CC11 to CC7">
       <metadata>
@@ -744,6 +1017,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC11%20to%20CC7.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC11%20to%20CC7.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC2 to CC1.lua" type="script" desc="Move CC2 to CC1">
@@ -766,6 +1048,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC2%20to%20CC1.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC2%20to%20CC1.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC2 to CC11.lua" type="script" desc="Move CC2 to CC11">
       <metadata>
@@ -786,6 +1077,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC2%20to%20CC11.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC2%20to%20CC11.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC2 to CC7.lua" type="script" desc="Move CC2 to CC7">
@@ -808,6 +1108,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC2%20to%20CC7.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC2%20to%20CC7.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC7 to CC1.lua" type="script" desc="Move CC7 to CC1">
       <metadata>
@@ -828,6 +1137,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC7%20to%20CC1.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC7%20to%20CC1.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC7 to CC11.lua" type="script" desc="Move CC7 to CC11">
@@ -850,6 +1168,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC7%20to%20CC11.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC7%20to%20CC11.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC7 to CC2.lua" type="script" desc="Move CC7 to CC2">
       <metadata>
@@ -871,6 +1198,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Move%20CC7%20to%20CC2.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC7%20to%20CC2.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select all CCs after edit cursor.lua" type="script" desc="Select all CCs after edit cursor">
       <metadata>
@@ -889,6 +1225,13 @@ v1.1 (2017-12-15)
         <changelog><![CDATA[v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs before edit cursor.lua" type="script" desc="Select all CCs before edit cursor">
@@ -909,6 +1252,13 @@ v1.1 (2017-12-15)
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select all CCs.lua" type="script" desc="Select all CCs">
       <metadata>
@@ -927,6 +1277,13 @@ v1.1 (2017-12-15)
         <changelog><![CDATA[v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="Select CC1 after edit cursor">
@@ -949,6 +1306,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC1 before edit cursor.lua" type="script" desc="Select CC1 before edit cursor">
       <metadata>
@@ -969,6 +1335,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC1.lua" type="script" desc="Select CC1">
@@ -991,6 +1366,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC1.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC1.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC11 after edit cursor.lua" type="script" desc="Select CC11 after edit cursor">
       <metadata>
@@ -1011,6 +1395,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC11 before edit cursor.lua" type="script" desc="Select CC11 before edit cursor">
@@ -1033,6 +1426,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC11.lua" type="script" desc="Select CC11">
       <metadata>
@@ -1053,6 +1455,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC11.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC11.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC2 after edit cursor.lua" type="script" desc="Select CC2 after edit cursor">
@@ -1075,6 +1486,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC2 before edit cursor.lua" type="script" desc="Select CC2 before edit cursor">
       <metadata>
@@ -1095,6 +1515,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC2.lua" type="script" desc="Select CC2">
@@ -1117,6 +1546,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC2.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC2.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC64 after edit cursor.lua" type="script" desc="Select CC64 after edit cursor">
       <metadata>
@@ -1137,6 +1575,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC64 before edit cursor.lua" type="script" desc="Select CC64 before edit cursor">
@@ -1159,6 +1606,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC64.lua" type="script" desc="Select CC64">
       <metadata>
@@ -1179,6 +1635,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC64.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC64.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC7 after edit cursor.lua" type="script" desc="Select CC7 after edit cursor">
@@ -1201,6 +1666,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC7 before edit cursor.lua" type="script" desc="Select CC7 before edit cursor">
       <metadata>
@@ -1221,6 +1695,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC7.lua" type="script" desc="Select CC7">
@@ -1243,6 +1726,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC7.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC7.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="Select notes after the edit cursor">
       <metadata>
@@ -1262,6 +1754,12 @@ v1.1 (2017-12-15)
         <changelog><![CDATA[v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="Select notes before edit cursor">
       <metadata>
@@ -1280,6 +1778,12 @@ v1.1 (2017-12-15)
       <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
         <changelog><![CDATA[v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.1 (2017-12-16)
++ added undo state
+v1.0]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +1.lua" type="script" desc="Transpose notes +1">
@@ -1302,6 +1806,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+1.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+1.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes +10.lua" type="script" desc="Transpose notes +10">
       <metadata>
@@ -1322,6 +1835,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+10.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+10.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +11.lua" type="script" desc="Transpose notes +11">
@@ -1344,6 +1866,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+11.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+11.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes +12.lua" type="script" desc="Transpose notes +12">
       <metadata>
@@ -1364,6 +1895,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +2.lua" type="script" desc="Transpose notes +2">
@@ -1386,6 +1926,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+2.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+2.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes +3.lua" type="script" desc="Transpose notes +3">
       <metadata>
@@ -1406,6 +1955,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+3.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+3.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +4.lua" type="script" desc="Transpose notes +4">
@@ -1428,6 +1986,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+4.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+4.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes +5.lua" type="script" desc="Transpose notes +5">
       <metadata>
@@ -1448,6 +2015,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+5.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+5.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +6.lua" type="script" desc="Transpose notes +6">
@@ -1470,6 +2046,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+6.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+6.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes +7.lua" type="script" desc="Transpose notes +7">
       <metadata>
@@ -1490,6 +2075,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+7.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+7.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +8.lua" type="script" desc="Transpose notes +8">
@@ -1512,6 +2106,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+8.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+8.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes +9.lua" type="script" desc="Transpose notes +9">
       <metadata>
@@ -1532,6 +2135,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20+9.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20+9.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes -1.lua" type="script" desc="Transpose notes -1">
@@ -1554,6 +2166,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-1.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-1.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes -10.lua" type="script" desc="Transpose notes -10">
       <metadata>
@@ -1574,6 +2195,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-10.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-10.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes -11.lua" type="script" desc="Transpose notes -11">
@@ -1596,6 +2226,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-11.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-11.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes -12.lua" type="script" desc="Transpose notes -12">
       <metadata>
@@ -1616,6 +2255,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-12.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-12.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes -2.lua" type="script" desc="Transpose notes -2">
@@ -1638,6 +2286,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-2.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-2.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes -3.lua" type="script" desc="Transpose notes -3">
       <metadata>
@@ -1658,6 +2315,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-3.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-3.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes -4.lua" type="script" desc="Transpose notes -4">
@@ -1680,6 +2346,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-4.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-4.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes -5.lua" type="script" desc="Transpose notes -5">
       <metadata>
@@ -1700,6 +2375,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-5.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-5.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes -6.lua" type="script" desc="Transpose notes -6">
@@ -1722,6 +2406,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-6.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-6.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes -7.lua" type="script" desc="Transpose notes -7">
       <metadata>
@@ -1742,6 +2435,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-7.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-7.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes -8.lua" type="script" desc="Transpose notes -8">
@@ -1764,6 +2466,15 @@ v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-8.lua</source>
       </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-8.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Transpose notes -9.lua" type="script" desc="Transpose notes -9">
       <metadata>
@@ -1784,6 +2495,15 @@ v1.1 (2017-12-15)
 v1.1 (2017-12-15)
 + moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Transpose%20notes%20-9.lua</source>
+      </version>
+      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
+        <changelog><![CDATA[v1.11 (2017-12-16)
++ added undo state
+v1.1 (2017-12-15)
++ moved the functions to a seperate file "sr_MIDI functions"
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Transpose%20notes%20-9.lua</source>
       </version>
     </reapack>
   </category>
