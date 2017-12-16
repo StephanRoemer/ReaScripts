@@ -10,6 +10,7 @@
 -- @link https://forum.cockos.com/showpost.php?p=1923094&postcount=124
 --
 -- @changelog
+--    v1.0
 -- 	  + Initial release
 
 -- USER AREA
