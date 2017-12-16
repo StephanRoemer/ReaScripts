@@ -1,4 +1,3 @@
--- @noindex
 -- @description Move CC2 to CC11
 -- @version 1.1
 -- @author Stephan Römer
@@ -9,7 +8,7 @@
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
-
+-- @provides [main=main,midi_editor,midi_inlineeditor]
 -- @changelog
 --     v1.0
 --     + Initial release

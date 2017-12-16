@@ -1,4 +1,3 @@
--- @noindex
 -- @description Delete notes before edit cursor
 -- @version 1.0    
 -- @author Stephan Römer
@@ -10,7 +9,7 @@
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
-
+-- @provides [main=main,midi_editor,midi_inlineeditor]
 -- @changelog
 -- 	  + Initial release
 --     v1.0
