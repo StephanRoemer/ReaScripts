@@ -10,7 +10,7 @@
 --
 -- @changelog
 --     v1.1 (2017-12-16)
---     + fixed changes not being visually reflected in the arrangement (thanks Julian Sader!)
+--     + fixed changes not being visually updated in the arrangement -> MIDI_Sort (thanks Julian Sader!)
 --     v1.0
 --     + Initial release
 
