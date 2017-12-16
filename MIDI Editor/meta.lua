@@ -5,4 +5,4 @@
 -- @metapackage
 -- @provides
       [nomain] sr_MIDI functions.lua
-      [main,midi_editor,midi_inlineeditor] sr_*.lua
+      [main] sr_*.lua
