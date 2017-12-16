@@ -1,4 +1,4 @@
--- @description Increase CC11
+-- @description Decrease CC11
 -- @version 1.1
 -- @author Stephan Römer
 -- @about
@@ -21,6 +21,6 @@ require 'sr_MIDI functions'
 decrease = 1.1 -- value to increase the CC event
 destCC = 11 -- destination CC
 
-increase_CC(destCC, increase) -- call function
+decrease_CC(destCC, increase) -- call function
 reaper.Undo_OnStateChange2(proj, "Decrease CC11")
 
