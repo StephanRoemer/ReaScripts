@@ -10,6 +10,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.1 (2017-12-16)
+--     + added undo state
 --     v1.0
 --     + Initial release
 
@@ -34,6 +36,6 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
     end
 end
 
-
+reaper.Undo_OnStateChange2(proj, "Select all CCs after edit cursor")
 
 

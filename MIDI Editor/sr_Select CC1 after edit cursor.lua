@@ -10,18 +10,19 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
---     v1.0
---     + Initial release
+--     v1.11 (2017-12-16)
+--     + added undo state
 --     v1.1 (2017-12-15)
 --     + moved the functions to a seperate file "sr_MIDI functions"
+--     v1.0
+--     + Initial release
 
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_MIDI functions'
 
-destCC = 1
+destCC = 1 -- CC
 
-select_CC_after_edit_cursor(destCC)
-
-
+select_CC_after_edit_cursor(destCC) -- call function
+reaper.Undo_OnStateChange2(proj, "Select CC1 after edit cursor")
 
 

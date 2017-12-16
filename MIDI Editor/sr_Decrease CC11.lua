@@ -10,6 +10,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.1 (2017-12-16)
+--     + added undo state
 --     v1.0
 --     + Initial release
 
@@ -19,7 +21,6 @@ require 'sr_MIDI functions'
 decrease = 1.1 -- value to increase the CC event
 destCC = 11 -- destination CC
 
-decrease_CC(destCC, decrease)
-
-
+increase_CC(destCC, increase) -- call function
+reaper.Undo_OnStateChange2(proj, "Decrease CC11")
 

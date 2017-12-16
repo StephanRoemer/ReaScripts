@@ -11,7 +11,9 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
--- 	  + Initial release
+--     v1.1 (2017-12-16)
+--     + added undo state
+-- 	   + Initial release
 --     v1.0
 
 for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
@@ -26,22 +28,16 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
                 cursor_position = reaper.GetCursorPosition()  -- get edit cursor position 
                 cursor_position_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, cursor_position) -- convert to PPQ
                 notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to "notes"
-            
-				reaper.Undo_BeginBlock() reaper.PreventUIRefresh(1)
-            
 				for n = notes-1, 0, -1 do -- loop thru all notes, back to front 
 					_, _, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get start and end position
 					if start_note < cursor_position_ppq and end_note <= cursor_position_ppq or  start_note < cursor_position_ppq and end_note > cursor_position_ppq then
 						reaper.MIDI_DeleteNote(take, n) -- delete note if condition above is true
 					end
 				end
-            
-				reaper.PreventUIRefresh(-1) reaper.Undo_EndBlock('Delete notes before cursor', 2)
-				
             end
         end
     end 
 end
 
-
+reaper.Undo_OnStateChange2(proj, "Delete notes before edit cursor")
 

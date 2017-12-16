@@ -11,8 +11,10 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.1 (2017-12-16)
+--     + added undo state
 --     v1.0
--- 	  + Initial release
+-- 	   + Initial release
 
 for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
     item = reaper.GetSelectedMediaItem(0, i)
@@ -31,9 +33,6 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
     end 
 end
 
-
-reaper.Undo_BeginBlock() reaper.PreventUIRefresh(1)
-
 for n = 0, notes - 1 do -- loop thru all notes
     _, sel, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status, start and end position
     if start_note >= cursor_position_ppq and end_note > cursor_position_ppq then 
@@ -43,5 +42,4 @@ for n = 0, notes - 1 do -- loop thru all notes
     end
 end
 
-
-reaper.PreventUIRefresh(-1) reaper.Undo_EndBlock('Select notes before cursor', 2)
+reaper.Undo_OnStateChange2(proj, "Select all notes before edit cursor")
