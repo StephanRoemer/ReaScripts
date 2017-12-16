@@ -27,7 +27,6 @@ function add_notes(interval)
 						break -- break the for loop, because at least one selected note was found
 					end
 				end
-			
 				for n = 0, notes - 1 do -- loop thru all notes
 					_, selectedOut, _, startppqposOut, endppqposOut, chanOut, pitchOut, velOut = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
 					if notes_selected == true then -- if there is a note selection
@@ -245,6 +244,7 @@ function increase_CC(destCC, increase)
 							reaper.MIDI_SetCC(take, c, nil, nil, nil, nil, nil, nil, math.min(127, (math.ceil(ccValue*increase))), true) -- multiply ccValue with increase, convert to integer and limit highest value to 127
 						end
 					end
+					reaper.UpdateArrange()
 				end
 			end
 		end
@@ -277,6 +277,7 @@ function decrease_CC(destCC, decrease)
 							reaper.MIDI_SetCC(take, c, nil, nil, nil, nil, nil, nil, math.max(1, (math.floor(ccValue/decrease))), true) -- divide ccValue by increase, convert to integer and limit lowest value to 0
 						end
 					end
+					reaper.UpdateArrange()
 				end
 			end
 		end
