@@ -32,7 +32,7 @@ function add_notes(interval)
 					_, selectedOut, _, startppqposOut, endppqposOut, chanOut, pitchOut, velOut = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
 					if notes_selected == true then -- if there is a note selection
 						if selectedOut == true then -- filter out selected notes to add notes
-							reaper.MIDI_InsertNote(take, true, false, startppqposOut, endppqposOut, chanOut, pitchOut+interval, velOut, true) -- add notes by interval to selected notes, keep notes selected
+							reaper.MIDI_InsertNote(take, false, false, startppqposOut, endppqposOut, chanOut, pitchOut+interval, velOut, true) -- add notes by interval to selected notes
 						end
 					else
 						reaper.MIDI_InsertNote(take, false, false, startppqposOut, endppqposOut, chanOut, pitchOut+interval, velOut, true) -- add notes by interval to all notes
