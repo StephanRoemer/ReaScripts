@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="edebda2f40cdecf92fdd10f55637904e65995d45">
+<index version="1" name="Stevie Scripts" commit="8c6c348edabb8fedab9543999d5c8ab5f1d0c4f1">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -125,7 +125,7 @@ v1.0 (2017-12-15)
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Add%20notes%20-24.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Decrease CC1.lua" type="script" desc="Increase CC1">
+    <reapack name="sr_Decrease CC1.lua" type="script" desc="Decrease CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -151,7 +151,7 @@ v1.0
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Decrease CC11.lua" type="script" desc="Increase CC11">
+    <reapack name="sr_Decrease CC11.lua" type="script" desc="Decrease CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
