@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="b5a50fc6227bf288c751a419462eb24dabbc4d09">
+<index version="1" name="Stevie Scripts" commit="cc67415d880cf23bcf86eaa1ba03ea025ff11e29">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -969,6 +969,17 @@ v1.1 (2017-12-16)
 v1.0
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/b5a50fc6227bf288c751a419462eb24dabbc4d09/MIDI%20Editor/sr_MIDI%20functions.lua</source>
+      </version>
+      <version name="1.21" author="Stephan Römer" time="2017-12-17T23:40:03Z">
+        <changelog><![CDATA[v1.21 (2017-12-17)
++ fixed an issue, where the first selected note would trigger a quantize all notes (removed EnumSelNotes)
+v1.2 (2017-12-17)
++ new quantize functions
+v1.1 (2017-12-16)
++ fixed changes not being visually reflected in the arrangement (thanks Julian Sader!)
+v1.0
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/cc67415d880cf23bcf86eaa1ba03ea025ff11e29/MIDI%20Editor/sr_MIDI%20functions.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="Move CC1 to CC11">
