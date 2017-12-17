@@ -25,7 +25,8 @@ function quantize()
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
 				notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
 				for n = 0, notes - 1 do -- loop thru all notes
-					if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
+					_, selectedOut, _, _, _, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note values
+					if selectedOut == true then -- if at least one note is selected
 						notes_selected = true -- set notes_selected to true
 						break -- break the for loop, because at least one selected note was found
 					end
@@ -62,7 +63,8 @@ function human_quantize(humanize)
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
 				notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
 				for n = 0, notes - 1 do -- loop thru all notes
-					if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
+					_, selectedOut, _, _, _, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note values
+					if selectedOut == true then -- if at least one note is selected
 						notes_selected = true -- set notes_selected to true
 						break -- break the for loop, because at least one selected note was found
 					end
@@ -76,7 +78,6 @@ function human_quantize(humanize)
 						if selectedOut == true then -- filter out selected notes to quantize
 							if closestGridPPQ ~= startppqposOut then -- if note is not on grid
 								reaper.MIDI_SetNote(take, n, true, false, startppqposOut - humanize / 100 * (startppqposOut-closestGridPPQ), startppqposOut - humanize / 100 * (startppqposOut-closestGridPPQ)+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- quantize selected notes by humanize value
-								
 							end
 						end
 					else
