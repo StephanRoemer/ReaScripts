@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.1
+-- @version 1.2
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -9,6 +9,8 @@
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @changelog
+--     v1.2 (2017-12-17)
+--     + new quantize functions
 --     v1.1 (2017-12-16)
 --     + fixed changes not being visually reflected in the arrangement (thanks Julian Sader!)
 --     v1.0
