@@ -9,6 +9,7 @@
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @changelog
+--     + fixed an issue, where the first selected note would would trigger a quantize all (removed EnumSelNotes)
 --     v1.2 (2017-12-17)
 --     + new quantize functions
 --     v1.1 (2017-12-16)
