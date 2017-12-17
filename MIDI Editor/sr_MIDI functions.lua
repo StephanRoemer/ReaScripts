@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.2
+-- @version 1.21
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -10,7 +10,7 @@
 --
 -- @changelog
 --     v1.21 (2017-12-17)
---     + fixed an issue, where the first selected note would would trigger a quantize all (removed EnumSelNotes)
+--     + fixed an issue, where the first selected note would trigger a quantize all notes (removed EnumSelNotes)
 --     v1.2 (2017-12-17)
 --     + new quantize functions
 --     v1.1 (2017-12-16)
