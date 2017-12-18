@@ -3,7 +3,7 @@
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - set the editor cursor to the beginning of the last note in selected items
+--    - this script sets the editor cursor to the beginning of the last note in selected items
 --    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
