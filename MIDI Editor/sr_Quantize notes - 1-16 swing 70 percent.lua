@@ -1,9 +1,9 @@
--- @description Quantize notes - 1/2
+-- @description Quantize notes - 1/16 - swing 70%
 -- @version 1.0
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - this script quantizes either all notes or selected notes to 1/2
+--    - this script quantizes either all notes or selected notes to 1/16 swing 70%
 --    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
@@ -18,12 +18,12 @@ package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;
 require 'sr_MIDI functions'
 
 
-grid = 1/2 -- 1/2 grid
-swing = 0 -- swing off
-swingAmt = 0 -- swing amount
+grid = 1/16 -- 1/16 grid
+swing = 1 -- swing off
+swingAmt = 0.7 -- swing amount
 
 _, saveProjectGrid, saveSwing, saveSwingAmt = reaper.GetSetProjectGrid(proj, false) -- backup current grid settings
 reaper.GetSetProjectGrid(proj, true, grid, swing, swingAmt) -- set new grid settings according variable grid, swing and swingAmt
 quantize() -- call function
 reaper.GetSetProjectGrid(proj, true, saveProjectGrid, saveSwing, saveSwingAmt) -- restore saved grid settings
-reaper.Undo_OnStateChange2(proj, "Quantize notes - 1/2")
+reaper.Undo_OnStateChange2(proj, "Quantize notes - 1/16 swing 70%")

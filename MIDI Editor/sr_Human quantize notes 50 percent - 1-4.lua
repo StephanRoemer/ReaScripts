@@ -18,7 +18,7 @@ package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;
 require 'sr_MIDI functions'
 
 
-grid = 0.25 -- 1/4 grid
+grid = 1/4 -- 1/4 grid
 swing = 0 -- swing off
 swingAmt = 0 -- swing amount
 humanize = 50 -- humanize value in percent
