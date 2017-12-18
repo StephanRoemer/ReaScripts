@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="28c5c7d3591085a726920a66afecad9aeab5edcf">
+<index version="1" name="Stevie Scripts" commit="3b2ecde66b6936ade5dc8f56bcde722174be1c85">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -2260,6 +2260,42 @@ v1.0]]></changelog>
 + added undo state
 v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Set edit cursor to first note in item.lua" type="script" desc="Set edit cursor to first note in selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab set the editor cursor to the beginning of the first note in selected items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-18T05:15:51Z">
+        <changelog><![CDATA[v1.0 (2017-12-18)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3b2ecde66b6936ade5dc8f56bcde722174be1c85/MIDI%20Editor/sr_Set%20edit%20cursor%20to%20first%20note%20in%20item.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Set edit cursor to last note in item.lua" type="script" desc="Set edit cursor to last note in selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab set the editor cursor to the beginning of the last note in selected items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2017-12-18T05:15:51Z">
+        <changelog><![CDATA[v1.0 (2017-12-18)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3b2ecde66b6936ade5dc8f56bcde722174be1c85/MIDI%20Editor/sr_Set%20edit%20cursor%20to%20last%20note%20in%20item.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Transpose notes +1.lua" type="script" desc="Transpose notes +1">
