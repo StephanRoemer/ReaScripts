@@ -1,5 +1,5 @@
 -- @description Select CC2 within boundaries of selected notes
--- @version 1.0
+-- @version 1.01
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -10,6 +10,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.01 (2017-12-19)
+--     + fixed wrong assigned CC
 --     v1.0
 --     + Initial release
 
