@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.22
+-- @version 1.23
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -9,6 +9,8 @@
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @changelog
+--     v1.23 (2017-12-19)
+--     + fixed a selection issue in Select CC within boundaries of selected notes
 --     v1.22 (2017-12-18)
 --     + added Select CC within boundaries of selected notes
 --     v1.21 (2017-12-17)
@@ -244,7 +246,7 @@ function select_CC_within_note_boundaries(destCC)
 						reaper.ShowMessageBox("Please select notes first", "Error", 0)
 						break
 					else
-						if  selectedOut == true then -- if CC is selected
+						if  selectedOut == true and cc == destCC then -- if CC is selected
 							reaper.MIDI_SetCC(take, c, false, nil, nil, nil, nil, nil, nil, true) -- unseselect CCs   
 						elseif ppqposOut >= firstNotePPQ and ppqposOut < lastNotePPQ and cc == destCC then -- if CC events are within the boundaries of selected notes
 							reaper.MIDI_SetCC(take, c, true, nil, nil, nil, nil, nil, nil, true) -- select CCs   
