@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.21
+-- @version 1.22
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -9,6 +9,8 @@
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @changelog
+--     v1.22 (2017-12-18)
+--     + added Select CC within boundaries of selected notes
 --     v1.21 (2017-12-17)
 --     + fixed an issue, where the first selected note would trigger a quantize all notes (removed EnumSelNotes)
 --     v1.2 (2017-12-17)
@@ -218,6 +220,42 @@ function select_CC_after_edit_cursor(destCC)
 		end
 	end
 end
+
+
+function select_CC_within_note_boundaries(destCC)
+	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
+		item = reaper.GetSelectedMediaItem(0, i) -- 
+		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
+			take = reaper.GetTake(item, t)
+			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+				_, noteCount, ccCount, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs save 
+				for n = 0, noteCount - 1 do -- loop thru all notes
+					_, selectedOut, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection, start and end position from notes
+					if selectedOut == true and firstNotePPQ == nil then -- if note is selected and firsteNotePPQ has no value
+						firstNotePPQ = startppqposOut -- write current start position to firstNotePPQ
+						lastNotePPQ = endppqposOut -- write end position to lasteNotePPQ
+					elseif selectedOut == true then -- if note is selected and firstNotePPQ has already a value
+						lastNotePPQ = endppqposOut -- write end position to lasteNotePPQ
+					end
+				end
+				for c = 0, ccCount - 1 do -- loop thru all CCs
+					_, selectedOut, _, ppqposOut, _, _, cc, _ = reaper.MIDI_GetCC(take, c) -- get CC position
+					if firstNotePPQ == nil then -- if firstNotePPQ is nil, e.g. if there are no notes selected
+						reaper.ShowMessageBox("Please select notes first", "Error", 0)
+						break
+					else
+						if  selectedOut == true then -- if CC is selected
+							reaper.MIDI_SetCC(take, c, false, nil, nil, nil, nil, nil, nil, true) -- unseselect CCs   
+						elseif ppqposOut >= firstNotePPQ and ppqposOut < lastNotePPQ and cc == destCC then -- if CC events are within the boundaries of selected notes
+							reaper.MIDI_SetCC(take, c, true, nil, nil, nil, nil, nil, nil, true) -- select CCs   
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
 
 function delete_CC (destCC)
 	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
