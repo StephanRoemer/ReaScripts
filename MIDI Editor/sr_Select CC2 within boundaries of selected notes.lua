@@ -16,7 +16,7 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_MIDI functions'
 
-destCC = 1 -- destination CC
+destCC = 2 -- destination CC
 
 select_CC_within_note_boundaries(destCC) -- call function
 
