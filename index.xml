@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="f075af217e7926c4463847e6dccd01658b840008">
+<index version="1" name="Stevie Scripts" commit="7996acbffeafb0be3b5c47378b93fb79bf6f9c00">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -132,7 +132,7 @@ v1.0 (2017-12-15)
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all values from the CC1 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script decreases all or selected CC events in the CC1 lane\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -158,7 +158,7 @@ v1.0
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all values from the CC11 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script decreases all or selected CC events in the CC1 lane\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -1013,7 +1013,7 @@ v1.0]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all values from the CC1 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all or selected CC events in the CC1 lane\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -1032,7 +1032,7 @@ v1.0]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all values from the CC11 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all or selected CC events in the CC11 lane\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
