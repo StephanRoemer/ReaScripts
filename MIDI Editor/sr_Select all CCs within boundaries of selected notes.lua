@@ -1,5 +1,5 @@
 -- @description Select all CCs within boundaries of selected notes
--- @version 1.0
+-- @version 1.01
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -11,6 +11,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.01 (2017-12-21)
+-- 	   + fixed an issue with wrong assigned notesCount
 --     v1.0 (2017-12-18)
 --     + initial release
 
@@ -20,8 +22,8 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
     for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
         take = reaper.GetTake(item, t)
         if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-            _, noteCount, ccCount, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs save 
-         	for n = 0, noteCount - 1 do -- loop thru all notes
+            _, notesCount, ccCount, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs 
+         	for n = 0, notesCount - 1 do -- loop thru all notes
 				_, selectedOut, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection, start and end position from notes
 				if selectedOut == true and firstNotePPQ == nil then -- if note is selected and firsteNotePPQ has no value
 					firstNotePPQ = startppqposOut -- write current start position to firstNotePPQ

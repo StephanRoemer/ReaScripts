@@ -1,5 +1,5 @@
 -- @description Delete notes after edit cursor
--- @version 1.1
+-- @version 1.11
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -11,6 +11,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.11 (2017-12-21)
+-- 	   + fixed an issue with wrong assigned notesCount
 --     v1.1 (2017-12-16)
 --     + added undo state
 -- 	   + Initial release
@@ -27,8 +29,8 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
             if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
                 cursor_position = reaper.GetCursorPosition()  -- get edit cursor position 
                 cursor_position_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, cursor_position) -- convert to PPQ
-                notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to "notes"
-				for n = notes-1, 0, -1 do -- loop thru all notes, back to front 
+                _, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notesCount
+				for n = notesCount-1, 0, -1 do -- loop thru all notes, back to front 
 					_, _, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get start and end position
 					if start_note >= cursor_position_ppq and end_note > cursor_position_ppq then 
 						reaper.MIDI_DeleteNote(take, n) -- delete note if condition above is true

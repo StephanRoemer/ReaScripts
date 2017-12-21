@@ -1,5 +1,5 @@
 -- @description Delete short notes
--- @version 1.1
+-- @version 1.12
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -12,6 +12,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.11 (2017-12-21)
+-- 	   + fixed an issue with wrong assigned notesCount
 --     v1.1 (2017-12-16)
 --     + added undo state
 --     v1.0
@@ -30,8 +32,8 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
     for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
         take = reaper.GetTake(item, t)
         if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-            notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to "notes"
-			for n = notes-1, 0, -1 do -- loop thru all notes, back to front 
+            _, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notesCount
+			for n = notesCount-1, 0, -1 do -- loop thru all notes, back to front 
 				_, _, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get start and end position
 				note_length = end_note - start_note -- calculate note length
 				if  note_length < shortnote then
