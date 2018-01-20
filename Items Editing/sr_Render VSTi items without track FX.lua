@@ -10,7 +10,6 @@
 --
 -- @provides [main].
 -- @changelog
-
 --     v1.01  (2018-01-21)
 --     + minor OCD script adjustments
 --     v1.0 (2018-01-19)
