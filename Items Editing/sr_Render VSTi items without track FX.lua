@@ -1,5 +1,5 @@
 -- @description Render VSTi items without track FX
--- @version 1.0
+-- @version 1.01
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -10,11 +10,13 @@
 --
 -- @provides [main].
 -- @changelog
+
+--     v1.01  (2018-01-21)
+--     + minor OCD script adjustments
 --     v1.0 (2018-01-19)
 --     + initial release
 
   
-script_title = "Render VSTi items without track FX"
 reaper.Undo_BeginBlock()
  
 for i = 0, reaper.CountSelectedTracks(0)-1 do -- loop through all selected tracks
@@ -52,4 +54,4 @@ for i = 0, reaper.CountSelectedTracks(0)-1 do -- loop through all selected track
 	end
 end
 					
-reaper.Undo_EndBlock(script_title, 0)
+reaper.Undo_EndBlock("Render VSTi items without track FX", 0)
