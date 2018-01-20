@@ -1,4 +1,4 @@
--- @description sr_Toggle collapse selected folders 
+-- @description Toggle collapse selected folders 
 -- @version 1.0    
 -- @author Stephan Römer
 -- @about
