@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="ed91016d43a7a9ef6f8fd8697afd4d786c57dd71">
+<index version="1" name="Stevie Scripts" commit="0b249d97ecdd8254bade90841d66f4d658d23f3d">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -3394,7 +3394,7 @@ v1.0
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7952b064de3a1a4a74ca382d35cdbfc011f82170/Tracks%20Properties/sr_Add%20Vienna%20Instruments%20Pro%20and%20replace%20existing%20VSTi.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Toggle collapse selected folders.lua" type="script" desc="sr_Toggle collapse selected folders">
+    <reapack name="sr_Toggle collapse selected folders.lua" type="script" desc="Toggle collapse selected folders">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
