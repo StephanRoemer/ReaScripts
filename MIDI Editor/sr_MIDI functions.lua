@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.24
+-- @version 1.25
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -8,7 +8,10 @@
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
+-- @provides [nomain] .
 -- @changelog
+--     v1.25 (2018-01-22)
+-- 	   + removed the script to be displayed in the action list
 --     v1.24 (2017-12-19)
 -- 	   + fixed an issue with wrong assigned notesCount
 --     v1.23 (2017-12-19)
