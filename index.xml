@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="b9168d41d9bbcb5f0cf04e36139ef2f030ef692e">
+<index version="1" name="Stevie Scripts" commit="68a14d56c013e9bf62185766facaa46c58ae7e2a">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -1164,6 +1164,10 @@ v1.0
       <version name="1.24" author="Stephan Römer" time="2018-01-22T16:07:13Z">
         <changelog><![CDATA[v1.24 (2017-12-19)]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/b9168d41d9bbcb5f0cf04e36139ef2f030ef692e/MIDI%20Editor/sr_MIDI%20functions.lua</source>
+      </version>
+      <version name="1.25" author="Stephan Römer" time="2018-01-22T16:39:51Z">
+        <changelog><![CDATA[v1.25 (2018-01-22)]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/68a14d56c013e9bf62185766facaa46c58ae7e2a/MIDI%20Editor/sr_MIDI%20functions.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="Move CC1 to CC11">
@@ -2491,7 +2495,7 @@ v1.0]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sets the editor cursor to the beginning of the first note in selected items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sets the edit cursor to the beginning of the first note in selected items\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -2509,7 +2513,7 @@ v1.0]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab set the editor cursor to the beginning of the last note in selected items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sets the edit cursor to the beginning of the last note in selected items\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
