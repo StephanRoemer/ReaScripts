@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.23
+-- @version 1.24
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -9,6 +9,8 @@
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @changelog
+--     v1.24 (2017-12-19)
+-- 	   + fixed an issue with wrong assigned notesCount
 --     v1.23 (2017-12-19)
 --     + fixed a selection issue in Select CC within boundaries of selected notes
 --     v1.22 (2017-12-18)
@@ -29,15 +31,15 @@ function quantize()
 		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
 			take = reaper.GetTake(item, t)
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
-				for n = 0, notes - 1 do -- loop thru all notes
+				_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					_, selectedOut, _, _, _, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note values
 					if selectedOut == true then -- if at least one note is selected
 						notes_selected = true -- set notes_selected to true
 						break -- break the for loop, because at least one selected note was found
 					end
 				end
-				for n = 0, notes - 1 do -- loop thru all notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					_, selectedOut, _, startppqposOut, endppqposOut, chanOut, pitchOut, velOut = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
 					noteStart = reaper.MIDI_GetProjTimeFromPPQPos(take, startppqposOut) -- convert note start to seconds
 					closestGrid = reaper.SnapToGrid(0, noteStart) -- get closest grid for current note (return value in seconds)
@@ -67,15 +69,15 @@ function human_quantize(humanize)
 		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
 			take = reaper.GetTake(item, t)
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
-				for n = 0, notes - 1 do -- loop thru all notes
+				_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					_, selectedOut, _, _, _, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note values
 					if selectedOut == true then -- if at least one note is selected
 						notes_selected = true -- set notes_selected to true
 						break -- break the for loop, because at least one selected note was found
 					end
 				end
-				for n = 0, notes - 1 do -- loop thru all notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					_, selectedOut, _, startppqposOut, endppqposOut, chanOut, pitchOut, velOut = reaper.MIDI_GetNote(take, n) -- get note values
 					noteStart = reaper.MIDI_GetProjTimeFromPPQPos(take, startppqposOut) -- convert note start to seconds
 					closestGrid = reaper.SnapToGrid(0, noteStart) -- get closest grid for current note (return value in seconds)
@@ -104,14 +106,14 @@ function add_notes(interval)
 		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
 			take = reaper.GetTake(item, t)
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
-				for n = 0, notes - 1 do -- loop thru all notes
+				_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
 						notes_selected = true -- set notes_selected to true
 						break -- break the for loop, because at least one selected note was found
 					end
 				end
-				for n = 0, notes - 1 do -- loop thru all notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					_, selectedOut, _, startppqposOut, endppqposOut, chanOut, pitchOut, velOut = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
 					if notes_selected == true then -- if there is a note selection
 						if selectedOut == true then -- filter out selected notes to add notes
@@ -134,15 +136,15 @@ function transpose(interval)
 		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
 			take = reaper.GetTake(item, t)
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				notes = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
-				for n = 0, notes - 1 do -- loop thru all notes
+				_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
 						notes_selected = true -- set notes_selected to true
 						break -- break the for loop, because at least one selected note was found
 					end
 				end
 			
-				for n = 0, notes - 1 do -- loop thru all notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
 					_, selectedOut, _, _, _, _, pitchOut, _ = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
 					if notes_selected == true then -- if there is a note selection
 						if selectedOut == true then -- filter out selected notes to apply transpose
@@ -230,7 +232,7 @@ function select_CC_within_note_boundaries(destCC)
 		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
 			take = reaper.GetTake(item, t)
 			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				_, noteCount, ccCount, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs save 
+				_, noteCount, ccCount, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs
 				for n = 0, noteCount - 1 do -- loop thru all notes
 					_, selectedOut, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection, start and end position from notes
 					if selectedOut == true and firstNotePPQ == nil then -- if note is selected and firsteNotePPQ has no value
