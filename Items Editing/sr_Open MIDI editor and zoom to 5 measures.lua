@@ -1,5 +1,5 @@
--- @description sr_Open MIDI editor and zoom to 5 measures
--- @version 1.1
+-- @description Open MIDI editor and zoom to 5 measures
+-- @version 1.11
 -- @author Julian Sader, Stephan Römer
 -- @about
 --    # Description
@@ -10,6 +10,8 @@
 -- @link https://forum.cockos.com/showpost.php?p=1923094&postcount=124
 --
 -- @changelog
+--     v1.1 (2018-01-23)
+--     + removed sr from description
 --     v1.1 (2018-01-23)
 --     + added a "no undo" function
 --     v1.0
