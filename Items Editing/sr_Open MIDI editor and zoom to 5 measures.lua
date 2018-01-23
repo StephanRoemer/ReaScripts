@@ -1,5 +1,5 @@
--- @description Open MIDI editor and zoom to 5 measures
--- @version 1.0    
+-- @description sr_Open MIDI editor and zoom to 5 measures
+-- @version 1.1
 -- @author Julian Sader, Stephan Römer
 -- @about
 --    # Description
@@ -10,7 +10,9 @@
 -- @link https://forum.cockos.com/showpost.php?p=1923094&postcount=124
 --
 -- @changelog
---    v1.0
+--     v1.1 (2018-01-23)
+--     + added a "no undo" function
+--     v1.0
 -- 	  + Initial release
 
 -- USER AREA
@@ -53,3 +55,6 @@ reaper.GetSet_LoopTimeRange2(0, true, true, loopStart, loopEnd, false)
 
 reaper.PreventUIRefresh(-1)
 reaper.UpdateTimeline()
+
+function NoUndoPoint() end 
+reaper.defer(NoUndoPoint)
