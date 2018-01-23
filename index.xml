@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="68a14d56c013e9bf62185766facaa46c58ae7e2a">
+<index version="1" name="Stevie Scripts" commit="60256accce66def043e8c22c4d09accf731bcc0e">
   <category name="Items Editing">
-    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
+    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="sr_Open MIDI editor and zoom to 5 measures">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -17,6 +17,12 @@
       <version name="1.0" author="Julian Sader, Stephan Römer" time="2017-12-13T04:51:03Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/5fdd8aaee8c161b5e964be9cb1364d6f3455cfd3/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
+      </version>
+      <version name="1.1" author="Julian Sader, Stephan Römer" time="2018-01-23T01:30:06Z">
+        <changelog><![CDATA[v1.1 (2018-01-23)
++ added a "no undo" function
+v1.0]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/60256accce66def043e8c22c4d09accf731bcc0e/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Render VSTi items without track FX.lua" type="script" desc="Render VSTi items without track FX">
