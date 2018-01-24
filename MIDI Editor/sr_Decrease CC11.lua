@@ -1,15 +1,17 @@
--- @description Decrease CC11
--- @version 1.1
+-- @description Increase CC11
+-- @version 1.11
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - this script decreases all or selected CC events in the CC1 lane
+--    - this script increases all values from the CC11 lane
 --    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.11 (2018-01-24)
+--     + fixed wrong function call
 --     v1.1 (2017-12-16)
 --     + added undo state
 --     v1.0
