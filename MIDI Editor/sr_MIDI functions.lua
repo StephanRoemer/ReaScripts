@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.25
+-- @version 1.26
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -10,6 +10,8 @@
 --
 -- @provides [nomain] .
 -- @changelog
+--     v1.26 (2018-06-27)
+-- 	   + added nudge notes function
 --     v1.25 (2018-01-22)
 -- 	   + removed the script to be displayed in the action list
 --     v1.24 (2017-12-19)
@@ -27,6 +29,37 @@
 --     v1.0
 --     + Initial release
 
+
+
+function nudgenotes(newPosition)
+	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
+			item = reaper.GetSelectedMediaItem(0, i)
+			for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
+				take = reaper.GetTake(item, t)
+				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+					_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
+					for n = 0, notesCount - 1 do -- loop thru all notes
+						if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
+							notes_selected = true -- set notes_selected to true
+							break -- break the for loop, because at least one selected note was found
+						end
+					end
+				
+					for n = 0, notesCount - 1 do -- loop thru all notes
+						_, selectedOut, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status, start and end position
+						if notes_selected == true then -- if there is a note selection
+							if selectedOut == true then -- filter out selected notes to apply nudge
+								reaper.MIDI_SetNote(take, n, true, nil, startppqposOut+newPosition, endppqposOut+newPosition, nil, nil, nil, true) -- nudge selected notes by newPosition
+							end
+						else
+							reaper.MIDI_SetNote(take, n, false, nil, startppqposOut+newPosition, endppqposOut+newPosition, nil, nil, nil, true) -- nudge all notes by newPosition
+						end
+					reaper.MIDI_Sort(take)
+					end
+				end
+			end
+		end
+	end
 
 function quantize()
 	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
