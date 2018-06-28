@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="0e477ec05d5903cddd4c94938209559d6aeeaef2">
+<index version="1" name="Stevie Scripts" commit="4a126a4ebed38fcf9ecd09fe69eae1ceb44dd5e0">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -1201,6 +1201,10 @@ v1.0
         <changelog><![CDATA[v1.25 (2018-01-22)]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/68a14d56c013e9bf62185766facaa46c58ae7e2a/MIDI%20Editor/sr_MIDI%20functions.lua</source>
       </version>
+      <version name="1.26" author="Stephan Römer" time="2018-06-28T01:26:16Z">
+        <changelog><![CDATA[v1.26 (2018-06-27)]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/4a126a4ebed38fcf9ecd09fe69eae1ceb44dd5e0/MIDI%20Editor/sr_MIDI%20functions.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="Move CC1 to CC11">
       <metadata>
@@ -1560,6 +1564,44 @@ v1.1 (2017-12-15)
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC7%20to%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Nudge notes left by 9 ticks.lua" type="script" desc="Nudge notes left by 9 ticks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script nudges either all notes or selected notes left by 9 ticks\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-06-28T01:26:16Z">
+        <changelog><![CDATA[v1.0 (2018-06-27)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/4a126a4ebed38fcf9ecd09fe69eae1ceb44dd5e0/MIDI%20Editor/sr_Nudge%20notes%20left%20by%209%20ticks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Nudge notes right by 9 ticks.lua" type="script" desc="Nudge notes right by 9 ticks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script nudges either all notes or selected notes right by 9 ticks\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-06-28T01:26:16Z">
+        <changelog><![CDATA[v1.0 (2018-06-27)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/4a126a4ebed38fcf9ecd09fe69eae1ceb44dd5e0/MIDI%20Editor/sr_Nudge%20notes%20right%20by%209%20ticks.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Quantize notes - 1-1.lua" type="script" desc="Quantize notes - 1/1">
