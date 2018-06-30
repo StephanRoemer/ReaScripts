@@ -4,6 +4,7 @@
 -- @about
 --    # Description
 --    - this script changes the note length via mousewheel
+--    - when there is no note selection, only the note under the mouse cursor is altered
 --    - this script works in the MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
