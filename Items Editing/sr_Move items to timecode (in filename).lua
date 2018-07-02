@@ -1,5 +1,5 @@
 -- @description Move items to timecode (in filename)
--- @version 1.1
+-- @version 1.2
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -11,6 +11,8 @@
 --
 -- @provides [main=main] .
 -- @changelog
+--     v1.2 (2018-07-02)
+--	   + fixed a bug
 --     v1.1 (2018-07-02)
 --	   + added a case to ignore files with no timecode in the filename
 --     v1.0 (2018-07-02)
