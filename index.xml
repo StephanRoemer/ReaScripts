@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="f3730ba55349154c340f07093bbb7a11c8023c1d">
+<index version="1" name="Stevie Scripts" commit="84a02337eea20e8407dd4e4feb6b69a785e28727">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -183,6 +183,46 @@ v1.0 (2017-12-15)
         <changelog><![CDATA[v1.0 (2018-06-30)
 + Initial release]]></changelog>
         <source main="midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/bb526968b527161b81be74c8f65b3c748dee2bed/MIDI%20Editor/sr_Change%20note%20length%20(mousewheel).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Change note position (mousewheel).lua" type="script" desc="Change note start (mousewheel)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script changes the note position via mousewheel\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab when there is no note selection, only the note under the mouse cursor is altered\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in the MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-02T09:47:07Z">
+        <changelog><![CDATA[v1.0 (2018-07-02)
++ Initial release]]></changelog>
+        <source main="midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/84a02337eea20e8407dd4e4feb6b69a785e28727/MIDI%20Editor/sr_Change%20note%20position%20(mousewheel).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Change note start (mousewheel).lua" type="script" desc="Change note start (mousewheel)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script changes the note start position via mousewheel\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab when there is no note selection, only the note under the mouse cursor is altered\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in the MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-02T09:47:07Z">
+        <changelog><![CDATA[v1.0 (2018-07-02)
++ Initial release]]></changelog>
+        <source main="midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/84a02337eea20e8407dd4e4feb6b69a785e28727/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Decrease CC1.lua" type="script" desc="Increase CC1">
