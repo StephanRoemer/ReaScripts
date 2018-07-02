@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="84a02337eea20e8407dd4e4feb6b69a785e28727">
+<index version="1" name="Stevie Scripts" commit="767bef64c37db67c6df57ddd6148a4480f2a2af9">
   <category name="Items Editing">
+    <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves either all or selected items to their timecode position (written in the filename)\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-02T14:41:17Z">
+        <changelog><![CDATA[v1.0 (2018-07-02)
++ Initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/767bef64c37db67c6df57ddd6148a4480f2a2af9/Items%20Editing/sr_Move%20items%20to%20timecode%20(in%20filename).lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
