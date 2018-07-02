@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="bb526968b527161b81be74c8f65b3c748dee2bed">
+<index version="1" name="Stevie Scripts" commit="f3730ba55349154c340f07093bbb7a11c8023c1d">
   <category name="Items Editing">
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
       <metadata>
@@ -173,6 +173,7 @@ v1.0 (2017-12-15)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script changes the note length via mousewheel\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab when there is no note selection, only the note under the mouse cursor is altered\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in the MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
