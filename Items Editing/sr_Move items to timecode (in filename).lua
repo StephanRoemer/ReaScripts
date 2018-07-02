@@ -29,7 +29,7 @@ if reaper.CountSelectedMediaItems(0) == 0 then
 			reaperTime = reaper.parse_timestr_len(timecode, 0, 5)  -- convert timecode to Reaper time
 			projectStart = reaper.GetProjectTimeOffset(0, false) -- get project start
 			newPosition = reaperTime - projectStart -- mind the project start and calculate new position!
-			reaper.SetMediaItemPosition(selectedItem, newPosition, true)-- move item to timecode
+			reaper.SetMediaItemPosition(item, newPosition, true)-- move item to timecode
 		end
 	end
 else	
