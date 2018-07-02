@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="cee45981e7b0ed5b89a4aac1fd6a3000e40849a9">
+<index version="1" name="Stevie Scripts" commit="ac2eb4bea9aca7ab7e3776d77d37d0f8dd8c2e2f">
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
@@ -21,6 +21,10 @@
       <version name="1.1" author="Stephan Römer" time="2018-07-02T14:59:43Z">
         <changelog><![CDATA[v1.1 (2018-07-02)]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/cee45981e7b0ed5b89a4aac1fd6a3000e40849a9/Items%20Editing/sr_Move%20items%20to%20timecode%20(in%20filename).lua</source>
+      </version>
+      <version name="1.2" author="Stephan Römer" time="2018-07-02T15:11:47Z">
+        <changelog><![CDATA[v1.2 (2018-07-02)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/ac2eb4bea9aca7ab7e3776d77d37d0f8dd8c2e2f/Items%20Editing/sr_Move%20items%20to%20timecode%20(in%20filename).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
