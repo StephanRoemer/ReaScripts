@@ -4,7 +4,7 @@
 -- @about
 --    # Description
 --    - this script selects the notes under the edit cursor, all other notes will be unselected
---    - this script works in arrangement, the MIDI Editor and Inline Editor
+--    - this script works in arrangement (an item has to be selected), the MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
