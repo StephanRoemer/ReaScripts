@@ -10,6 +10,8 @@
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.1 (2018-07-05)
+--     + case for "unselected item"
 --     v1.0 (2018-07-05)
 --     + Initial release
 
@@ -18,7 +20,7 @@ reaper.Undo_BeginBlock()
 editCursorPos = reaper.GetCursorPosition() -- get edit cursor position
 selectedItem = reaper.GetSelectedMediaItem(0, 0)
 if selectedItem == nil then
-	reaper.ShowMessageBox("You have to select an item", "Error", 0)
+	reaper.ShowMessageBox("Please select an item", "Error", 0)
 else
 	for t = 0, reaper.CountTakes(selectedItem)-1 do -- Loop through all takes within each selected item
 		take = reaper.GetTake(selectedItem, t)
