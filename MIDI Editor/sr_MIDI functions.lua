@@ -1,6 +1,6 @@
 -- @nomain
 -- @description MIDI functions
--- @version 1.26
+-- @version 1.27
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -10,6 +10,9 @@
 --
 -- @provides [nomain] .
 -- @changelog
+--     v1.27 (2018-07-05)
+-- 	   + added reaper.UpdateArrange() for Inline Editor
+--	   + several smaller bug fixes
 --     v1.26 (2018-06-27)
 -- 	   + added nudge notes function
 --     v1.25 (2018-01-22)
@@ -33,33 +36,33 @@
 
 function nudgenotes(newPosition)
 	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-			item = reaper.GetSelectedMediaItem(0, i)
-			for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
-				take = reaper.GetTake(item, t)
-				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-					_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
-					for n = 0, notesCount - 1 do -- loop thru all notes
-						if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
-							notes_selected = true -- set notes_selected to true
-							break -- break the for loop, because at least one selected note was found
-						end
+		item = reaper.GetSelectedMediaItem(0, i)
+		for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
+			take = reaper.GetTake(item, t)
+			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+				_, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes
+				for n = 0, notesCount - 1 do -- loop thru all notes
+					if reaper.MIDI_EnumSelNotes(take, n) > 0 then -- if at least one note is selected
+						notes_selected = true -- set notes_selected to true
+						break -- break the for loop, because at least one selected note was found
 					end
-				
-					for n = 0, notesCount - 1 do -- loop thru all notes
-						_, selectedOut, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status, start and end position
-						if notes_selected == true then -- if there is a note selection
-							if selectedOut == true then -- filter out selected notes to apply nudge
-								reaper.MIDI_SetNote(take, n, true, nil, startppqposOut+newPosition, endppqposOut+newPosition, nil, nil, nil, true) -- nudge selected notes by newPosition
-							end
-						else
-							reaper.MIDI_SetNote(take, n, false, nil, startppqposOut+newPosition, endppqposOut+newPosition, nil, nil, nil, true) -- nudge all notes by newPosition
+				end
+				for n = 0, notesCount - 1 do -- loop thru all notes
+					_, selectedOut, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status, start and end position
+					if notes_selected == true then -- if there is a note selection
+						if selectedOut == true then -- filter out selected notes to apply nudge
+							reaper.MIDI_SetNote(take, n, true, nil, startppqposOut+newPosition, endppqposOut+newPosition, nil, nil, nil, true) -- nudge selected notes by newPosition
 						end
-					reaper.MIDI_Sort(take)
+					else
+						reaper.MIDI_SetNote(take, n, false, nil, startppqposOut+newPosition, endppqposOut+newPosition, nil, nil, nil, true) -- nudge all notes by newPosition
 					end
+				reaper.MIDI_Sort(take)
+				reaper.UpdateArrange()
 				end
 			end
 		end
 	end
+end
 
 function quantize()
 	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
@@ -83,16 +86,17 @@ function quantize()
 					if notes_selected == true then -- if there is a note selection
 						if selectedOut == true then -- filter out selected notes to add notes
 							if closestGridPPQ ~= startppqposOut then
-								reaper.MIDI_SetNote(take, n, true, false, closestGridPPQ, closestGridPPQ+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- add notes by interval to all notes
+								reaper.MIDI_SetNote(take, n, true, false, closestGridPPQ, closestGridPPQ+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- quantize selected notes
 							end
 						end
-					else
+					else -- if there is no note selection
 						if closestGridPPQ ~= startppqposOut then
-							reaper.MIDI_SetNote(take, n, false, false, closestGridPPQ, closestGridPPQ+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- add notes by interval to all notes
+							reaper.MIDI_SetNote(take, n, false, false, closestGridPPQ, closestGridPPQ+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- quantize all notes
 						end
 					end
 				end
 				reaper.MIDI_Sort(take)
+				reaper.UpdateArrange()
 			end
 		end
 	end
@@ -126,13 +130,14 @@ function human_quantize(humanize)
 						end
 					else
 						if closestGridPPQ ~= startppqposOut then
-							reaper.MIDI_SetNote(take, n, false, false, startppqposOut - humanize / 100 * (startppqposOut-closestGridPPQ), startppqposOut - humanize / 100 * (startppqposOut-closestGridPPQ)+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- add notes by interval to all notes
+							reaper.MIDI_SetNote(take, n, false, false, startppqposOut - humanize / 100 * (startppqposOut-closestGridPPQ), startppqposOut - humanize / 100 * (startppqposOut-closestGridPPQ)+endppqposOut-startppqposOut, chanOut, pitchOut, velOut, true) -- quantize all notes by humanize value
 						end
 					end
 				end
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -160,6 +165,7 @@ function add_notes(interval)
 					end
 				end
 				reaper.MIDI_Sort(take)
+				reaper.UpdateArrange()
 			end
 		end
 	end
@@ -190,6 +196,7 @@ function transpose(interval)
 						reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, pitchOut+interval, nil, true) -- transpose all notes by interval
 					end
 				reaper.MIDI_Sort(take)
+				reaper.UpdateArrange()
 				end
 			end
 		end
@@ -213,6 +220,7 @@ function select_CC(destCC)
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -236,6 +244,7 @@ function select_CC_before_edit_cursor(destCC)
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -259,6 +268,7 @@ function select_CC_after_edit_cursor(destCC)
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -294,6 +304,7 @@ function select_CC_within_note_boundaries(destCC)
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -308,11 +319,13 @@ function delete_CC (destCC)
 					_, _, _, _, _, _, cc, _ = reaper.MIDI_GetCC(take, c) -- get values from CCs
 					if cc == destCC then -- if CC is destCC
 						reaper.MIDI_DeleteCC(take, c) -- delete destCC
+						reaper.UpdateArrange()
 					end
 				end
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -329,11 +342,13 @@ function delete_CC_after_edit_cursor(destCC)
 					_, _, _, ppqposOut, _, _, cc, _ = reaper.MIDI_GetCC(take, c) -- get values from CCs
 					if cc == destCC and ppqposOut >= cursor_position_ppq then -- if CC is destCC and CC position is after edit cursor
 						reaper.MIDI_DeleteCC(take, c) -- delete CC
+						reaper.UpdateArrange()
 					end
 				end
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 	
@@ -350,11 +365,13 @@ function delete_CC_before_edit_cursor(destCC)
 					_, _, _, ppqposOut, _, _, cc, _ = reaper.MIDI_GetCC(take, c) -- get values from CCs
 					if cc == destCC and ppqposOut < cursor_position_ppq then -- if CC is destCC
 						reaper.MIDI_DeleteCC(take, c) -- delete destCC
+						reaper.UpdateArrange()
 					end
 				end
 			end
 		end
 	end
+	reaper.UpdateArrange()
 end
 
 
@@ -374,6 +391,7 @@ function move_srcCC_to_destCC(srcCC, destCC)
 				end
 			end
 			reaper.MIDI_Sort(take)
+			reaper.UpdateArrange()
 		end
 	end
 end
@@ -405,6 +423,7 @@ function increase_CC(destCC, increase)
 					end
 				end
 				reaper.MIDI_Sort(take)
+				reaper.UpdateArrange()
 			end
 		end
 	end
@@ -437,6 +456,7 @@ function decrease_CC(destCC, decrease)
 					end
 				end
 				reaper.MIDI_Sort(take)
+				reaper.UpdateArrange()
 			end
 		end
 	end
