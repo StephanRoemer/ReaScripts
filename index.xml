@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="fe7e5548d108e2f1bd804df1bb3de3957fb2b59d">
+<index version="1" name="Stevie Scripts" commit="9fac2644cc871dd76625f0354a6881a5c829ef1e">
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
@@ -862,7 +862,7 @@ v1.0
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located after the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -880,6 +880,10 @@ v1.0
         <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
+        <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="Delete notes before edit cursor">
       <metadata>
@@ -890,7 +894,7 @@ v1.0
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located before the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -907,6 +911,10 @@ v1.0
       <version name="1.11" author="Stephan Römer" time="2017-12-21T10:14:52Z">
         <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
+        <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete short notes.lua" type="script" desc="Delete short notes">
@@ -1294,6 +1302,10 @@ v1.0
       <version name="1.26" author="Stephan Römer" time="2018-06-28T01:26:16Z">
         <changelog><![CDATA[v1.26 (2018-06-27)]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/4a126a4ebed38fcf9ecd09fe69eae1ceb44dd5e0/MIDI%20Editor/sr_MIDI%20functions.lua</source>
+      </version>
+      <version name="1.27" author="Stephan Römer" time="2018-07-05T21:22:02Z">
+        <changelog><![CDATA[v1.27 (2018-07-05)]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_MIDI%20functions.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move CC1 to CC11.lua" type="script" desc="Move CC1 to CC11">
@@ -2603,7 +2615,7 @@ v1.0
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab select all notes, that are located after the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -2622,6 +2634,10 @@ v1.0]]></changelog>
         <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
+        <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="Select notes before edit cursor">
       <metadata>
@@ -2632,7 +2648,7 @@ v1.0]]></changelog>
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab select all notes, that are located before the edit cursor position\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -2651,6 +2667,10 @@ v1.0]]></changelog>
         <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
       </version>
+      <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
+        <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select notes under edit cursor.lua" type="script" desc="Select notes under edit cursor">
       <metadata>
@@ -2660,7 +2680,7 @@ v1.0]]></changelog>
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the notes under the edit cursor, all other notes will be unselected\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, the MIDI Editor and Inline Editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement (an item has to be selected), the MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
