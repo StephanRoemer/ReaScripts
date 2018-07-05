@@ -15,19 +15,29 @@
 
 reaper.Undo_BeginBlock()
 
-curEditor = reaper.MIDIEditor_GetActive() -- get current editor
-take = reaper.MIDIEditor_GetTake(curEditor) -- get current take opened in editor
 editCursorPos = reaper.GetCursorPosition() -- get edit cursor position
-editCursor_ppq_pos = reaper.MIDI_GetPPQPosFromProjTime(take, editCursorPos) -- convert project time to PPQ
-notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes in current take
-
-for n = 0, notesCount - 1 do
-	_, selected, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note start/end position
-	if startppqposOut < editCursor_ppq_pos and endppqposOut > editCursor_ppq_pos then -- is current note under the cursor?
-		reaper.MIDI_SetNote(take, n, true, nil, nil, nil, nil, nil, nil, true) -- select notes
-	else
-		reaper.MIDI_SetNote(take, n, false, nil, nil, nil, nil, nil, nil, true) -- unselect notes
+selectedItem = reaper.GetSelectedMediaItem(0, 0)
+if selectedItem == nil then
+	reaper.ShowMessageBox("You have to select an item", "Error", 0)
+else
+	for t = 0, reaper.CountTakes(selectedItem)-1 do -- Loop through all takes within each selected item
+		take = reaper.GetTake(selectedItem, t)
+		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+			editCursor_ppq_pos = reaper.MIDI_GetPPQPosFromProjTime(take, editCursorPos) -- convert project time to PPQ
+			notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes in current take
+			for n = 0, notesCount - 1 do
+				_, selected, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note start/end position
+				if startppqposOut < editCursor_ppq_pos and endppqposOut > editCursor_ppq_pos then -- is current note the note under the cursor?
+					reaper.MIDI_SetNote(take, n, true, nil, nil, nil, nil, nil, nil, true) -- select notes
+				else
+					reaper.MIDI_SetNote(take, n, false, nil, nil, nil, nil, nil, nil, true) -- unselect notes
+				end
+			end
+		end
 	end
+	reaper.UpdateArrange()
+	reaper.Undo_EndBlock("Select notes under edit cursor", -1)
 end
 
-reaper.Undo_EndBlock("Select notes under edit cursor", -1)
+
+
