@@ -23,7 +23,7 @@ notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes in current take
 
 for n = 0, notesCount - 1 do
 	_, selected, _, startppqposOut, endppqposOut, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note start/end position
-	if startppqposOut < editCursor_ppq_pos and endppqposOut > editCursor_ppq_pos then -- is current note the note under the cursor?
+	if startppqposOut < editCursor_ppq_pos and endppqposOut > editCursor_ppq_pos then -- is current note under the cursor?
 		reaper.MIDI_SetNote(take, n, true, nil, nil, nil, nil, nil, nil, true) -- select notes
 	else
 		reaper.MIDI_SetNote(take, n, false, nil, nil, nil, nil, nil, nil, true) -- unselect notes
