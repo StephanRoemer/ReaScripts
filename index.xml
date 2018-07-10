@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="531486b1f61b4e54ae211b811e011820cac5d934">
+<index version="1" name="Stevie Scripts" commit="52cb505c3d67536c1abc5d4c6d63fcbd8462fe45">
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
@@ -255,14 +255,14 @@ v1.0 (2017-12-15)
         <source main="midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/84a02337eea20e8407dd4e4feb6b69a785e28727/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Decrease CC1.lua" type="script" desc="Increase CC1">
+    <reapack name="sr_Decrease CC1.lua" type="script" desc="Decrease CC1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all values from the CC1 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script decreases all values from the CC1 lane\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -289,15 +289,26 @@ v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d5d5d1d692b2234f11ec5785c3be88cb4cedb01b/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
       </version>
+      <version name="1.12" author="Stephan Römer" time="2018-07-10T23:52:03Z">
+        <changelog><![CDATA[v1.12 (2018-07-11)
++ fixed wrong script name
+v1.11 (2018-01-24)
++ fixed wrong function call
+v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/52cb505c3d67536c1abc5d4c6d63fcbd8462fe45/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
+      </version>
     </reapack>
-    <reapack name="sr_Decrease CC11.lua" type="script" desc="Increase CC11">
+    <reapack name="sr_Decrease CC11.lua" type="script" desc="Decrease CC11">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script increases all values from the CC11 lane\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script decreases all values from the CC11 lane\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -323,6 +334,17 @@ v1.1 (2017-12-16)
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d5d5d1d692b2234f11ec5785c3be88cb4cedb01b/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
+      </version>
+      <version name="1.12" author="Stephan Römer" time="2018-07-10T23:52:03Z">
+        <changelog><![CDATA[v1.12 (2018-07-11)
++ fixed wrong script name
+v1.11 (2018-01-24)
++ fixed wrong function call
+v1.1 (2017-12-16)
++ added undo state
+v1.0
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/52cb505c3d67536c1abc5d4c6d63fcbd8462fe45/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="Delete all CCs after edit cursor">
