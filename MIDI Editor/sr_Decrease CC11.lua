@@ -1,15 +1,17 @@
--- @description Increase CC11
--- @version 1.11
+-- @description Decrease CC11
+-- @version 1.12
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - this script increases all values from the CC11 lane
+--    - this script decreases all values from the CC11 lane
 --    - this script works in arrangement, MIDI Editor and Inline Editor
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
+--     v1.12 (2018-07-11)
+--     + fixed wrong script name
 --     v1.11 (2018-01-24)
 --     + fixed wrong function call
 --     v1.1 (2017-12-16)
@@ -20,7 +22,7 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_MIDI functions'
 
-decrease = 1.1 -- value to increase the CC event
+decrease = 1.1 -- value to decrease the CC event
 destCC = 11 -- destination CC
 
 decrease_CC(destCC, decrease) -- call function
