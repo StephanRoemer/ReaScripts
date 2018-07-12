@@ -1,5 +1,5 @@
 -- @description Change note position to grid (mousewheel)
--- @version 1.0
+-- @version 1.1
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -12,10 +12,10 @@
 --
 -- @provides [main=midi_editor] .
 -- @changelog
+--     v1.11 (2018-07-12)
+--     + some code optimizations
 --     v1.0 (2018-07-12)
 --     + Initial release
-
-reaper.Undo_BeginBlock()
 
 _,_,_,_,_,_, val = reaper.get_action_context() -- receive mousewheel action
 take = reaper.MIDIEditor_GetTake(reaper.MIDIEditor_GetActive()) -- get current take opened in editor
@@ -76,5 +76,3 @@ for n = 0, notesCount - 1 do
 		end
 	end
 end
-
-reaper.Undo_EndBlock("Change note position to grid (mousewheel)", -1)
