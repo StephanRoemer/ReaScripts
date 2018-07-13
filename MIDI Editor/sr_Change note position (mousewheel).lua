@@ -1,5 +1,5 @@
 -- @description Change note position (mousewheel)
--- @version 1.11
+-- @version 1.12
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -11,6 +11,8 @@
 --
 -- @provides [main=midi_editor] .
 -- @changelog
+--     v1.12 (2018-07-13)
+--     + added undo text
 --     v1.11 (2018-07-12)
 --     + some code optimizations
 --     v1.0 (2018-07-02)
@@ -48,3 +50,5 @@ for n = 0, notesCount - 1 do
 		end
 	end
 end
+
+reaper.Undo_OnStateChange2(proj, "Change note position (mousewheel)")
