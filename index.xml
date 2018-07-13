@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="629bee9fc6c2f0f1339754323634ffbdd71c63a8">
+<index version="1" name="Stevie Scripts" commit="978368413060854db55e86973c556fb9a5a222f2">
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
@@ -228,6 +228,15 @@ v1.0 (2018-06-30)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/629bee9fc6c2f0f1339754323634ffbdd71c63a8/MIDI%20Editor/sr_Change%20note%20length%20(mousewheel).lua</source>
       </version>
+      <version name="1.12" author="Stephan Römer" time="2018-07-13T11:45:55Z">
+        <changelog><![CDATA[v1.12 (2018-07-13)
++ added undo text
+v1.11 (2018-07-12)
++ some code optimizations
+v1.0 (2018-06-30)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Change%20note%20length%20(mousewheel).lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Change note position (mousewheel).lua" type="script" desc="Change note position (mousewheel)">
       <metadata>
@@ -262,6 +271,15 @@ v1.0 (2018-07-02)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/629bee9fc6c2f0f1339754323634ffbdd71c63a8/MIDI%20Editor/sr_Change%20note%20position%20(mousewheel).lua</source>
       </version>
+      <version name="1.12" author="Stephan Römer" time="2018-07-13T11:45:55Z">
+        <changelog><![CDATA[v1.12 (2018-07-13)
++ added undo text
+v1.11 (2018-07-12)
++ some code optimizations
+v1.0 (2018-07-02)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Change%20note%20position%20(mousewheel).lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Change note position to grid (mousewheel).lua" type="script" desc="Change note position to grid (mousewheel)">
       <metadata>
@@ -286,6 +304,15 @@ v1.0 (2018-07-02)
 v1.0 (2018-07-12)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/629bee9fc6c2f0f1339754323634ffbdd71c63a8/MIDI%20Editor/sr_Change%20note%20position%20to%20grid%20(mousewheel).lua</source>
+      </version>
+      <version name="1.12" author="Stephan Römer" time="2018-07-13T11:45:55Z">
+        <changelog><![CDATA[v1.12 (2018-07-13)
++ added undo text
+v1.11 (2018-07-12)
++ some code optimizations
+v1.0 (2018-07-12)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Change%20note%20position%20to%20grid%20(mousewheel).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Change note start (mousewheel).lua" type="script" desc="Change note start (mousewheel)">
@@ -320,6 +347,15 @@ v1.0 (2018-07-02)
 v1.0 (2018-07-02)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/629bee9fc6c2f0f1339754323634ffbdd71c63a8/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
+      </version>
+      <version name="1.12" author="Stephan Römer" time="2018-07-13T11:45:55Z">
+        <changelog><![CDATA[v1.12 (2018-07-13)
++ added undo text
+v1.11 (2018-07-12)
++ some code optimizations
+v1.0 (2018-07-02)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Decrease CC1.lua" type="script" desc="Decrease CC1">
@@ -1755,6 +1791,25 @@ v1.1 (2017-12-15)
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Move%20CC7%20to%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Move notes to edit cursor (relative).lua" type="script" desc="Move notes to edit cursor (relative)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves all selected notes to the edit cursor and keeps their relative offsets\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script only works in the MIDI Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-13T11:45:55Z">
+        <changelog><![CDATA[v1.0 (2018-07-13)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Move%20notes%20to%20edit%20cursor%20(relative).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Nudge notes left by 9 ticks.lua" type="script" desc="Nudge notes left by 9 ticks">
