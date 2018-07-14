@@ -1,5 +1,5 @@
 -- @description Change note position to grid (mousewheel)
--- @version 1.2
+-- @version 1.20
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -12,7 +12,7 @@
 --
 -- @provides [main=midi_editor] .
 -- @changelog
---     v1.2 (2018-07-14)
+--     v1.20 (2018-07-14)
 --     + the script now reacts based on the grid set in the MIDI editor
 --     v1.12 (2018-07-13)
 --     + added undo text
