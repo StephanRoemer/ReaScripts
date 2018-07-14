@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="56e05dea131d5beed217cf6162fb436b77d0579e">
+<index version="1" name="Stevie Scripts" commit="80aa6f2664c2a0f2e89e8ce62737bbe71b766d81">
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
@@ -324,6 +324,17 @@ v1.11 (2018-07-12)
 v1.0 (2018-07-12)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/56e05dea131d5beed217cf6162fb436b77d0579e/MIDI%20Editor/sr_Change%20note%20position%20to%20grid%20(mousewheel).lua</source>
+      </version>
+      <version name="1.20" author="Stephan Römer" time="2018-07-14T00:46:56Z">
+        <changelog><![CDATA[v1.20 (2018-07-14)
++ the script now reacts based on the grid set in the MIDI editor
+v1.12 (2018-07-13)
++ added undo text
+v1.11 (2018-07-12)
++ some code optimizations
+v1.0 (2018-07-12)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/80aa6f2664c2a0f2e89e8ce62737bbe71b766d81/MIDI%20Editor/sr_Change%20note%20position%20to%20grid%20(mousewheel).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Change note start (mousewheel).lua" type="script" desc="Change note start (mousewheel)">
