@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="494a1c12994ae5d1310a764395a3c1397b3ae3ef">
+<index version="1" name="Stevie Scripts" commit="6402c3e2fbc72cd7c994b109c56c86a2dad1c1af">
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
@@ -306,6 +306,24 @@ v1.0 (2018-07-16)
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/494a1c12994ae5d1310a764395a3c1397b3ae3ef/MIDI%20Editor/sr_Change%20note%20position%20by%20grid%20-%20no%20quantize%20(mousewheel).lua</source>
       </version>
     </reapack>
+    <reapack name="sr_Change note position by grid - quantize (mousewheel).lua" type="script" desc="Change note position by grid - quantize (mousewheel)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script changes the note position (based on the grid, if snap in the MIDI editor is turned on) via mousewheel\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer, Lokasenna" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-16)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Change%20note%20position%20by%20grid%20-%20quantize%20(mousewheel).lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Change note position to grid (mousewheel).lua" type="script" desc="Change note position to grid (mousewheel)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -416,6 +434,234 @@ v1.11 (2018-07-12)
 v1.0 (2018-07-02)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC1 to CC11.lua" type="script" desc="Copy CC1 to CC11">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC1 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC1%20to%20CC11.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC1 to CC2.lua" type="script" desc="Copy CC1 to CC2">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC1 data to CC2\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC1%20to%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC1 to CC7.lua" type="script" desc="Copy CC1 to CC7">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC1 data to CC7\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC1%20to%20CC7.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC11  to CC1.lua" type="script" desc="Copy CC11 to CC1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC11 data to CC1\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC11%20%20to%20CC1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC11  to CC2.lua" type="script" desc="Copy CC11 to CC2">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC11 data to CC2\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC11%20%20to%20CC2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC11  to CC7.lua" type="script" desc="Copy CC11 to CC7">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC11 data to CC7\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC11%20%20to%20CC7.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC2 to CC1.lua" type="script" desc="Copy CC2 to CC1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC2 data to CC1\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC2%20to%20CC1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC2 to CC11.lua" type="script" desc="Copy CC2 to CC11">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC2 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC2%20to%20CC11.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC2 to CC7.lua" type="script" desc="Copy CC2 to CC7">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC2 data to CC7\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC2%20to%20CC7.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC7  to CC1.lua" type="script" desc="Copy CC7 to CC1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC7 data to CC1\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC7%20%20to%20CC1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC7  to CC11.lua" type="script" desc="Copy CC7 to CC11">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC7 data to CC11\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC7%20%20to%20CC11.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Copy CC7  to CC2.lua" type="script" desc="Copy CC7 to CC2">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script copies CC7 data to CC2\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-15)
++ Initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Copy%20CC7%20%20to%20CC2.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Decrease CC1.lua" type="script" desc="Decrease CC1">
@@ -535,6 +781,28 @@ v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.2" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.2 (2018-07-15)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete all CCs before edit cursor.lua" type="script" desc="Delete all CCs before edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script deletes the data of all CC lanes before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.2" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.2 (2018-07-15)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete all CCs beforer edit cursor.lua" type="script" desc="Delete all CCs before edit cursor">
       <metadata>
@@ -586,6 +854,10 @@ v1.0
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
+      </version>
+      <version name="1.2" author="Stephan Römer, Julian Sader" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.2 (2018-07-15)]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC1 after edit cursor.lua" type="script" desc="Delete CC1 after edit cursor">
@@ -1069,6 +1341,10 @@ v1.0
         <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.3" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.3 (2018-07-15]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="Delete notes before edit cursor">
       <metadata>
@@ -1100,6 +1376,10 @@ v1.0
       <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
         <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.3" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.3 (2018-07-15]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete short notes.lua" type="script" desc="Delete short notes">
@@ -1870,6 +2150,13 @@ v1.0
         <changelog><![CDATA[v1.0 (2018-07-13)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/978368413060854db55e86973c556fb9a5a222f2/MIDI%20Editor/sr_Move%20notes%20to%20edit%20cursor%20(relative).lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2018-07-16T12:05:29Z">
+        <changelog><![CDATA[v1.0 (2018-07-16)
++ Bugfix
+v1.0 (2018-07-13)
++ Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Move%20notes%20to%20edit%20cursor%20(relative).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Nudge notes left by 9 ticks.lua" type="script" desc="Nudge notes left by 9 ticks">
