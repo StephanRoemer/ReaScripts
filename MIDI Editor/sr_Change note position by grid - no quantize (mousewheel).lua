@@ -1,5 +1,5 @@
 -- @description Change note position by grid - no quantize (mousewheel)
--- @version 1.0
+-- @version 1.1
 -- @author Stephan Römer
 -- @about
 --    # Description
@@ -12,12 +12,16 @@
 --
 -- @provides [main=midi_editor] .
 -- @changelog
+--     v1.1 (2018-07-16)
+--     + reaper.SNM_GetIntConfigVar('miditicksperbeat', 0) to get ticks from Reaper settings
 --     v1.0 (2018-07-16)
 --     + Initial release
 
 _,_,_,_,_,_, val = reaper.get_action_context() -- receive mousewheel action
 take = reaper.MIDIEditor_GetTake(reaper.MIDIEditor_GetActive()) -- get current take opened in editor
-editorGridPPQ = reaper.MIDI_GetPPQPosFromProjQN(take, reaper.MIDI_GetGrid(take)) -- get editor grid and convert grid (QN) to PPQ
+editorGridQN = reaper.MIDI_GetGrid(take)
+ticksPerBeat = reaper.SNM_GetIntConfigVar('miditicksperbeat', 0) -- get ticks per beat from Reaper project settings
+grid = ticksPerBeat * editorGridQN -- calculate grid steps in ticks
 _, _, _ = reaper.BR_GetMouseCursorContext() -- initiate "get mouse cursor context"
 _, _, noteRow, _, _, _ = reaper.BR_GetMouseCursorContext_MIDI() -- get note row under mouse cursor
 mouse_ppq_pos = reaper.MIDI_GetPPQPosFromProjTime(take, reaper.BR_GetMouseCursorContext_Position()) -- get mouse position in project time and convert to PPQ
@@ -35,17 +39,17 @@ for n = 0, notesCount - 1 do -- loop through notes
 		if notesSelected == true then -- if there are selected notes
 			if selectedOut == true then -- is current note selected?
 				if val > 0 then -- if mousewheel up
-					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut+editorGridPPQ, endppqposOut+editorGridPPQ, nil, nil, nil, true) -- set new position = forward one grid position
+					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut+grid, endppqposOut+grid, nil, nil, nil, true) -- set new position = forward one grid position
 				else -- if mousewheel down
-					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut-editorGridPPQ, endppqposOut-editorGridPPQ, nil, nil, nil, true) -- set new position = go one grid position backwards
+					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut-grid, endppqposOut-grid, nil, nil, nil, true) -- set new position = go one grid position backwards
 				end
 			end
 		else -- if there are no selected notes, only change the position of the note under the mouse cursor
 			if startppqposOut < mouse_ppq_pos and endppqposOut > mouse_ppq_pos and noteRow == pitch then -- is current note the note under the cursor?
 				if val > 0 then -- if mousewheel up
-					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut+editorGridPPQ, endppqposOut+editorGridPPQ, nil, nil, nil, true) -- set new position = forward one grid
+					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut+grid, endppqposOut+grid, nil, nil, nil, true) -- set new position = forward one grid
 				else -- if mousewheel down
-					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut-editorGridPPQ, endppqposOut-editorGridPPQ, nil, nil, nil, true) -- quantize notes to the left grid, until all selected notes are quantized
+					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut-grid, endppqposOut-grid, nil, nil, nil, true) -- quantize notes to the left grid, until all selected notes are quantized
 				end
 			end
 		end
@@ -62,7 +66,7 @@ for n = 0, notesCount - 1 do -- loop through notes
 			if startppqposOut < mouse_ppq_pos and endppqposOut > mouse_ppq_pos and noteRow == pitch then -- is current note the note under the cursor?
 				if val > 0 then -- if mousewheel up
 					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut+val, endppqposOut+val, nil, nil, nil, true) -- increase note position by val
-				else 			-- if mousewheel down
+				else -- if mousewheel down
 					reaper.MIDI_SetNote(take, n, nil, nil, startppqposOut+val, endppqposOut+val, nil, nil, nil, true) -- decrease note position by val
 				end
 			end
