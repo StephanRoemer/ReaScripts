@@ -113,7 +113,6 @@ for n = 0, notesCount - 1 do -- loop through notes
 			end
 		end
 	end
-	reaper.MIDI_Sort(take)
 	reaper.UpdateArrange()
 end
 

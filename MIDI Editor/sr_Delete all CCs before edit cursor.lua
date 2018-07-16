@@ -1,26 +1,22 @@
--- @description Delete notes before edit cursor
--- @version 1.3
+-- @description Delete all CCs before edit cursor
+-- @version 1.2
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - delete all notes, that are located before the edit cursor position
+--    - this script deletes the data of all CC lanes before the edit cursor
 --    - this script works in arrangement, MIDI Editor and Inline Editor
---    - for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @changelog
---     	v1.3 (2018-07-15
+--     	v1.2 (2018-07-15)
 -- 	   	+ switched to Get/SetAllEvnts (Julian Sader)
---     	v1.2 (2018-07-05)
--- 	   	+ added a case for "no item selected"
---     	v1.11 (2017-12-21)
--- 	   	+ fixed an issue with wrong assigned notesCount
 --     	v1.1 (2017-12-16)
 --     	+ added undo state
 --     	v1.0
--- 	   	+ Initial release
+--     	+ Initial release
+
 
 cursorPosition = reaper.GetCursorPosition()  -- get edit cursor position 
 sumOffset = 0 -- initialize sumOffset (adds all offsets to get the position of every event in ticks)
@@ -50,7 +46,7 @@ elseif reaper.CountSelectedMediaItems(0) == 1 then
 					eventStart = itemStartPPQ+sumOffset -- calculate event start position based on item start position
 					if msg:len() == 3 then -- if msg consists of 3 bytes (= channel message)
 						msg_b1_nib1 = msg:byte(1)>>4 -- save 1st nibble of status byte (contains info about the data type) to msg_b1_nib1, >>4 shifts the channel nibble into oblivion
-						if msg_b1_nib1 == 9 and eventStart <= cursorPositionPPQ then -- if status byte is a note on and events are before cursor position
+						if msg_b1_nib1 == 9 and eventStart <= cursorPositionPPQ then -- if status byte is a note on and events are after cursor position
 							msg ="" -- delete event (msg = "")
 						end
 					end
@@ -65,4 +61,6 @@ reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
 reaper.MIDI_Sort(take)
 reaper.UpdateArrange()
 
-reaper.Undo_OnStateChange2(proj, "Delete notes before edit cursor")
+reaper.Undo_OnStateChange2(proj, "Delete all CCs before edit cursor")
+
+

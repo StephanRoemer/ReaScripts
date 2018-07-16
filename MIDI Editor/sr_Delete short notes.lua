@@ -22,7 +22,7 @@
 
 -- User Area Start
 
-shortnote = 70 -- define the length of the leftover notes that should be deleted
+shortnote = 40 -- define the length of the leftover notes that should be deleted
 
 -- User Area End
 
