@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="6f7ba13cd51e29ae4c9a96d9ab78b71c179184f3">
+<index version="1" name="Stevie Scripts" commit="7e97952132284c2150f16714ea98b4ca7a39ddb1">
+  <category name="FX">
+    <reapack name="sr_Send selected tracks to FX1.lua" type="script" desc="Send selected tracks to FX1">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab sends all selected tracks to an FX track prefixed with FX1\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Send selected tracks to FX2.lua" type="script" desc="Send selected tracks to FX2">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab sends all selected tracks to an FX track prefixed with FX2\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Send selected tracks to FX3.lua" type="script" desc="Send selected tracks to FX3">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab sends all selected tracks to an FX track prefixed with FX3\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Send selected tracks to FX4.lua" type="script" desc="Send selected tracks to FX4">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab sends all selected tracks to an FX track prefixed with FX4\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX4.lua</source>
+      </version>
+    </reapack>
+  </category>
   <category name="Items Editing">
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
