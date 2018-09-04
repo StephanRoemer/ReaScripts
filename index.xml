@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="7e97952132284c2150f16714ea98b4ca7a39ddb1">
+<index version="1" name="Stevie Scripts" commit="9b5b194f4d39a291baa8875f1b55df87c6997fd6">
   <category name="FX">
+    <reapack name="sr_Remove 1st send FX.lua" type="script" desc="Remove 1st send FX">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab removes the 1st send FX in the send slot of selected track(s)\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T17:37:22Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/9b5b194f4d39a291baa8875f1b55df87c6997fd6/FX/sr_Remove%201st%20send%20FX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Remove 2nd send FX.lua" type="script" desc="Remove 2nd send FX">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab removes the 2nd send FX in the send slot of selected track(s)\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T17:37:22Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/9b5b194f4d39a291baa8875f1b55df87c6997fd6/FX/sr_Remove%202nd%20send%20FX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Remove 3rd send FX.lua" type="script" desc="Remove 3rd send FX">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab removes the 3rd send FX in the send slot of selected track(s)\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T17:37:22Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/9b5b194f4d39a291baa8875f1b55df87c6997fd6/FX/sr_Remove%203rd%20send%20FX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Remove 4th send FX.lua" type="script" desc="Remove 4th send FX">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab removes the 4th send FX in the send slot of selected track(s)\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-04T17:37:22Z">
+        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/9b5b194f4d39a291baa8875f1b55df87c6997fd6/FX/sr_Remove%204th%20send%20FX.lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Send selected tracks to FX1.lua" type="script" desc="Send selected tracks to FX1">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
