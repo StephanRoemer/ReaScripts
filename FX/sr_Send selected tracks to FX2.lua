@@ -12,38 +12,49 @@
 --     	v1.0 (2018-09-04)
 -- 	   	+ Initial release
 
-if reaper.CountSelectedTracks(0) == 0 then
-  reaper.ShowMessageBox("Please select the tracks you want to send to FX2", "Error", 0)
-else
-  track_count = reaper.GetNumTracks()
-  selected_tracks ={} -- create table for selected tracks
+local selected_tracks = reaper.CountSelectedTracks(0)
 
+
+function GetFX2()
+  local track_name
+  local track_count = reaper.GetNumTracks()  
+  
   for i = 0, track_count-1 do -- loop thru all tracks
-    track = reaper.GetTrack(0, i) -- get media track by track index
-    _, track_name = reaper.GetSetMediaTrackInfo_String(track, "P_NAME", "", false)
-
-    if reaper.IsTrackSelected(track) then
-      if not string.match(string.sub(track_name, 1,3), "FX2") then -- prefix is not FX2
-        table.insert(selected_tracks, track) -- write selected track to table
-      else
-        reaper.ShowMessageBox("Please don't select the FX2 track itself", "Error", 0)
-        return false
-      end
-    else
-      if string.match(string.sub(track_name, 1,3), "FX2") then -- prefix equals FX2
-        fx2_track = track -- FX2 track found
-      end
+    local track = reaper.GetTrack(0, i) -- get current track
+    _, track_name = reaper.GetTrackName(track, "")
+    if string.match(string.sub(track_name, 1,3), "FX2") then -- prefix equals FX2
+      return track -- FX2 track found
     end
   end
+  return false -- no FX2 track found
+end
 
-  if fx2_track ~= nil then -- FX2 track does exist
-    for i = 1, #selected_tracks do
-      reaper.CreateTrackSend(selected_tracks[i], fx2_track)
+
+function Main(fx2_track)
+  local track_name
+
+  for i = 0, selected_tracks-1 do -- loop thru all selected tracks
+    local track = reaper.GetSelectedTrack(0, i) -- get current selected track
+    _, track_name = reaper.GetTrackName(track, "")
+    if not string.match(string.sub(track_name, 1,3), "FX2") then -- prefix is not FX2
+      reaper.CreateTrackSend(track, fx2_track)
+    else
+        reaper.ShowMessageBox("Please don't select the FX2 track itself", "Error", 0)
+        return false
     end
-  else
-    reaper.ShowMessageBox("An FX track with prefix \"FX2\" does not exist.", "Error", 0) 
   end
 end
 
-reaper.Undo_OnStateChange2(proj, "Send selected tracks to FX2")
 
+if selected_tracks == 0 then
+  reaper.ShowMessageBox("Please select at least one track", "Error", 0)
+else
+  local fx2_track = GetFX2()
+  if fx2_track == false then -- FX2 track doesn't exist
+    reaper.ShowMessageBox("An FX track with prefix \"FX2\" does not exist.", "Error", 0)
+  else
+    reaper.Undo_BeginBlock()
+    Main(fx2_track)
+    reaper.Undo_EndBlock("Send selected tracks to FX2", 1)  
+  end
+end
