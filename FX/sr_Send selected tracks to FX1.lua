@@ -1,7 +1,7 @@
 -- @description Send selected tracks to FX1
--- @version 1.1
+-- @version 1.11
 -- @changelog
---   switched to functions
+--   changed reapack header
 -- @author Stephan Römer
 -- @provides [main=main] .
 -- @about

@@ -1,7 +1,7 @@
 -- @description Remove 1st send FX from selected tracks
--- @version 1.0
+-- @version 1.01
 -- @changelog
---   Initial release
+--   changed reapack header
 -- @author Stephan Römer
 -- @provides [main=main] .
 -- @about
