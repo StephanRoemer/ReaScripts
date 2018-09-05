@@ -1,4 +1,4 @@
--- @description Remove 4th send FX
+-- @description Remove 4th send FX from selected tracks
 -- @version 1.0
 -- @author Stephan Römer
 -- @about
