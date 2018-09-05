@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="05481d343e1ca1f543b45d9795c0b32ec655a44a">
+<index version="1" name="Stevie Scripts" commit="5772a55b606559c57fa0f50e14a9f4200a0a69d7">
   <category name="FX">
     <reapack name="sr_Remove 1st send FX from selected tracks.lua" type="script" desc="Remove 1st send FX from selected tracks">
       <metadata>
@@ -197,7 +197,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves either all or selected items to their timecode position (written in the filename)\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Link</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-07-02T14:41:17Z">
         <changelog><![CDATA[v1.0 (2018-07-02)
