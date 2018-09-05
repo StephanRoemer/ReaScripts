@@ -1,5 +1,5 @@
 -- @description Move items to timecode (in filename)
--- @version 1.3
+-- @version 1.31
 -- @changelog
 --   switched to tables
 -- @author Stephan Römer
