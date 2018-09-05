@@ -3,13 +3,13 @@
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - removes the 1st send FX in the send slot of selected track(s)
+--    - this script removes the 1st send FX in the send slot of selected track(s)
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
 -- @provides [main=main] .
 -- @changelog
---     	v1.0 (2018-09-04)
+--      v1.0 (2018-09-04)
 -- 	   	+ Initial release
 
 reaper.Undo_BeginBlock()

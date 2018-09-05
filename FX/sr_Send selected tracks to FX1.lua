@@ -3,7 +3,7 @@
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - sends all selected tracks to an FX track prefixed with FX1
+--    - this script sends all selected tracks to an FX track prefixed with FX1
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --

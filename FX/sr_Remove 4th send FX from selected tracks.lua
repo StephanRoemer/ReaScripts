@@ -3,7 +3,7 @@
 -- @author Stephan Römer
 -- @about
 --    # Description
---    - removes the 4th send FX in the send slot of selected track(s)
+--    - this script removes the 4th send FX in the send slot of selected track(s)
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 --
