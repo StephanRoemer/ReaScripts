@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="abed16a18d57b27dcf21d2c8609895c54dd85c95">
+<index version="1" name="Stevie Scripts" commit="e9e3faffe605e9cfe9766e5d71e30e0a1172feb9">
   <category name="FX">
     <reapack name="sr_Remove 1st send FX from selected tracks.lua" type="script" desc="Remove 1st send FX from selected tracks">
       <metadata>
@@ -215,6 +215,10 @@
       <version name="1.3" author="Stephan Römer" time="2018-07-02T16:53:23Z">
         <changelog><![CDATA[switched to tables]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/abed16a18d57b27dcf21d2c8609895c54dd85c95/Items%20Editing/sr_Move%20items%20to%20timecode%20(in%20filename).lua</source>
+      </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-05T12:12:44Z">
+        <changelog><![CDATA[switched to tables]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/e9e3faffe605e9cfe9766e5d71e30e0a1172feb9/Items%20Editing/sr_Move%20items%20to%20timecode%20(in%20filename).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
