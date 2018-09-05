@@ -1,18 +1,16 @@
---[[
-@description Remove 3rd send FX from selected tracks
-@version 1.0
-@author Stephan Römer
-@about
-    # Description
-    - this script removes the 3rd send FX in the send slot of selected track(s)
-
-@link https://forums.cockos.com/showthread.php?p=1923923
-
-@provides [main=main] .
-@changelog
-    v1.0 (2018-09-04)
-    + Initial release
-]]
+-- @description Remove 3rd send FX from selected tracks
+-- @version 1.0
+-- @author Stephan Römer
+-- @about
+--    # Description
+--    - this script removes the 3rd send FX in the send slot of selected track(s)
+--
+-- @link https://forums.cockos.com/showthread.php?p=1923923
+--
+-- @provides [main=main] .
+-- @changelog
+--     	v1.0 (2018-09-04)
+-- 	   	+ Initial release
 
 reaper.Undo_BeginBlock()
 
