@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="cf0d4eb9d591f62f29fb0c858c59adb5cfa82ae1">
+<index version="1" name="Stevie Scripts" commit="949b1ae7f04e1f710d7c0c48704f0655a4f74087">
   <category name="FX">
     <reapack name="sr_Remove 1st send FX from selected tracks.lua" type="script" desc="Remove 1st send FX from selected tracks">
       <metadata>
@@ -11,7 +11,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 1st send FX in the send slot of selected track(s)\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -28,7 +28,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 2nd send FX in the send slot of selected track(s)\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -45,7 +45,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 3rd send FX in the send slot of selected track(s)\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -62,7 +62,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 4th send FX in the send slot of selected track(s)\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -79,7 +79,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX1\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -100,7 +100,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX2\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -121,7 +121,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX3\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
@@ -142,7 +142,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX4\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
         <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
