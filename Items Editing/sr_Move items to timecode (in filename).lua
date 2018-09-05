@@ -1,15 +1,14 @@
 -- @description Move items to timecode (in filename)
 -- @version 1.3
 -- @changelog
---   v1.3 (2018-07-02)
---   + switched to tables
+--   switched to tables
 -- @author Stephan Römer
 -- @provides [main=main] .
 -- @about
---    # Description
---    - this script moves either all or selected items to their timecode position (written in the filename)
---	  - the timecode needs to be in the format xx.xx.xx.xx (Windows does not allow : in filenames)
---	  - this script is useful for audio formats, where Reaper can't read the BWF chunk (FLAC for example)
+--   # Description
+--   - this script moves either all or selected items to their timecode position (written in the filename)
+--	 - the timecode needs to be in the format xx.xx.xx.xx (Windows does not allow : in filenames)
+--	 - this script is useful for audio formats, where Reaper can't read the BWF chunk (FLAC for example)
 -- @link Forum Link https://forums.cockos.com/showthread.php?p=1923923
 
 
