@@ -1,18 +1,13 @@
 -- @description Send selected tracks to FX2
 -- @version 1.1
--- @author Stephan Römer
--- @about
---    # Description
---    - this script sends all selected tracks to an FX track prefixed with FX2
---
--- @link https://forums.cockos.com/showthread.php?p=1923923
---
--- @provides [main=main] .
 -- @changelog
---     	v1.1 (2018-09-04)
--- 	   	+ switched to functions
---     	v1.0 (2018-09-04)
--- 	   	+ Initial release
+--   switched to functions
+-- @author Stephan Römer
+-- @provides [main=main] .
+-- @about
+--   # Description
+--   - this script sends all selected tracks to an FX track prefixed with FX2
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 
 local selected_tracks = reaper.CountSelectedTracks(0)
 
