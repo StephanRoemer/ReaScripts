@@ -1,19 +1,15 @@
--- @description Render VSTi items without track FX
--- @version 1.01
+-- @description Render VSTi items without track FX and delete MIDI
+-- @version 1.1
+-- @changelog
+--   changed script name
 -- @author Stephan Römer
+-- @provides [main].
 -- @about
 --    # Description
 --    - this script will render a VSTi item to audio, without applying the track FX
 --    - this script 
 --
 -- @link https://forums.cockos.com/showthread.php?p=1923923
---
--- @provides [main].
--- @changelog
---     v1.01  (2018-01-21)
---     + minor OCD script adjustments
---     v1.0 (2018-01-19)
---     + initial release
 
   
 reaper.Undo_BeginBlock()
