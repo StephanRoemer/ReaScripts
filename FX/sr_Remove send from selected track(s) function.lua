@@ -4,7 +4,6 @@
 --   switched to external function file and put all scripts in a bundle
 -- @author Stephan Römer
 -- @provides
--- 	. > sr_Remove send from selected tracks function
 -- 	. > sr_Remove send from selected track(s) function
 -- 	. > sr_Remove send 1 from selected track(s)
 -- 	. > sr_Remove send 2 from selected track(s)
