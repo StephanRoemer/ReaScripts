@@ -1,4 +1,4 @@
--- @description Send selected track(s) to FX track
+-- @description Send selected track(s) to FX track (bundle)
 -- @version 1.11
 -- @changelog
 --   switched to external function file and put all scripts in a bundle
