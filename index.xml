@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="bb1be0b0ddad61e02e1f3b5c0a89d77be08fb6aa">
+<index version="1" name="Stevie Scripts" commit="c13cd802aa70c556afbc2179144997ae8810ca04">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -86,6 +86,15 @@
         <source main="main" file="sr_Send selected track(s) to FX4.lua">https://github.com/StephanRoemer/ReaScripts/raw/bb1be0b0ddad61e02e1f3b5c0a89d77be08fb6aa/FX/sr_Send%20selected%20track(s)%20to%20FX4.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/bb1be0b0ddad61e02e1f3b5c0a89d77be08fb6aa/FX/sr_Send%20selected%20track(s)%20to%20FX%20track%20(bundle).lua</source>
         <source file="sr_Send selected track(s) to FX track function.lua">https://github.com/StephanRoemer/ReaScripts/raw/bb1be0b0ddad61e02e1f3b5c0a89d77be08fb6aa/FX/sr_Send%20selected%20track(s)%20to%20FX%20track%20function.lua</source>
+      </version>
+      <version name="1.21" author="Stephan Römer" time="2018-09-08T17:15:44Z">
+        <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
+        <source main="main" file="sr_Send selected track(s) to FX1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c13cd802aa70c556afbc2179144997ae8810ca04/FX/sr_Send%20selected%20track(s)%20to%20FX1.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c13cd802aa70c556afbc2179144997ae8810ca04/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX3.lua">https://github.com/StephanRoemer/ReaScripts/raw/c13cd802aa70c556afbc2179144997ae8810ca04/FX/sr_Send%20selected%20track(s)%20to%20FX3.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX4.lua">https://github.com/StephanRoemer/ReaScripts/raw/c13cd802aa70c556afbc2179144997ae8810ca04/FX/sr_Send%20selected%20track(s)%20to%20FX4.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/c13cd802aa70c556afbc2179144997ae8810ca04/FX/sr_Send%20selected%20track(s)%20to%20FX%20track%20(bundle).lua</source>
+        <source file="sr_Send selected track(s) to FX track function.lua">https://github.com/StephanRoemer/ReaScripts/raw/c13cd802aa70c556afbc2179144997ae8810ca04/FX/sr_Send%20selected%20track(s)%20to%20FX%20track%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Toggle show UI of all FX in send (bundle).lua" type="script" desc="Toggle show UI of all FX in send track (bundle)">
