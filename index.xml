@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="a571216ef6a8035df6ee02473997f87d9e680430">
+<index version="1" name="Stevie Scripts" commit="cd43a7c6840e56638be3f94f4bb7c236c5b2ccce">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -196,22 +196,38 @@ v1.0]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/1ef5a4846d9ed9931b26999470d3146795123611/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Render VSTi items without track FX and delete MIDI.lua" type="script" desc="Render VSTi items without track FX and delete MIDI">
+    <reapack name="sr_Render VSTi item(s) without track FX and delete MIDI take(s).lua" type="script" desc="Render VSTi item(s) without track FX and delete MIDI takes">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script will render a VSTi item to audio, without applying the track FX\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script will render a VSTi item to audio, without applying the track FX\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.1" author="Stephan Römer" time="2018-09-08T17:40:19Z">
+      <version name="1.1" author="Stephan Römer" time="2018-09-08T18:59:17Z">
         <changelog><![CDATA[changed script name]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a571216ef6a8035df6ee02473997f87d9e680430/Items%20Editing/sr_Render%20VSTi%20items%20without%20track%20FX%20and%20delete%20MIDI.lua</source>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/cd43a7c6840e56638be3f94f4bb7c236c5b2ccce/Items%20Editing/sr_Render%20VSTi%20item(s)%20without%20track%20FX%20and%20delete%20MIDI%20take(s).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Render VSTi item(s) without track FX.lua" type="script" desc="Render VSTi item(s) without track FX">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script will render a VSTi item to audio, without applying the track FX. The track FX are kept intact.\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-08T18:59:17Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/cd43a7c6840e56638be3f94f4bb7c236c5b2ccce/Items%20Editing/sr_Render%20VSTi%20item(s)%20without%20track%20FX.lua</source>
       </version>
     </reapack>
   </category>
