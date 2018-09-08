@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="ed25fa0032a0275f6f3fd205db54da19fde26814">
+<index version="1" name="Stevie Scripts" commit="9f0110b0570eae9b794c9ab2c7487519e1b8b586">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -88,10 +88,12 @@
       </metadata>
       <version name="1.1" author="Stephan Römer" time="2018-09-08T15:42:50Z">
         <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
-        <source main="main" file="sr_Toggle show UI of all FX in send 1.lua">https://github.com/StephanRoemer/ReaScripts/raw/ed25fa0032a0275f6f3fd205db54da19fde26814/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%201.lua</source>
-        <source main="main" file="sr_Toggle show UI of all FX in send 2.lua">https://github.com/StephanRoemer/ReaScripts/raw/ed25fa0032a0275f6f3fd205db54da19fde26814/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%202.lua</source>
-        <source main="main" file="sr_Toggle show UI of all FX in send 3.lua">https://github.com/StephanRoemer/ReaScripts/raw/ed25fa0032a0275f6f3fd205db54da19fde26814/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%203.lua</source>
-        <source main="main" file="sr_Toggle show UI of all FX in send 4.lua">https://github.com/StephanRoemer/ReaScripts/raw/ed25fa0032a0275f6f3fd205db54da19fde26814/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%204.lua</source>
+        <source main="main" file="sr_Toggle show UI of all FX in send 1.lua">https://github.com/StephanRoemer/ReaScripts/raw/9f0110b0570eae9b794c9ab2c7487519e1b8b586/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%201.lua</source>
+        <source main="main" file="sr_Toggle show UI of all FX in send 2.lua">https://github.com/StephanRoemer/ReaScripts/raw/9f0110b0570eae9b794c9ab2c7487519e1b8b586/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%202.lua</source>
+        <source main="main" file="sr_Toggle show UI of all FX in send 3.lua">https://github.com/StephanRoemer/ReaScripts/raw/9f0110b0570eae9b794c9ab2c7487519e1b8b586/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%203.lua</source>
+        <source main="main" file="sr_Toggle show UI of all FX in send 4.lua">https://github.com/StephanRoemer/ReaScripts/raw/9f0110b0570eae9b794c9ab2c7487519e1b8b586/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%204.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/9f0110b0570eae9b794c9ab2c7487519e1b8b586/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%20(bundle).lua</source>
+        <source file="sr_Toggle show UI of all FX in send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/9f0110b0570eae9b794c9ab2c7487519e1b8b586/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%20function.lua</source>
       </version>
     </reapack>
   </category>
