@@ -5,6 +5,7 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 -- 	[nomain] sr_Send selected track(s) to FX track function.lua
 -- 	[main] sr_Send selected track(s) to FX1.lua
 -- 	[main] sr_Send selected track(s) to FX2.lua
