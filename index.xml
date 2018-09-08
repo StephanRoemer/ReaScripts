@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="ca4da6ae4b2bb221919019ec1dd4126111b53d0a">
+<index version="1" name="Stevie Scripts" commit="adf691504b9b22581e4b9dbeafaab9b21aef3d91">
   <category name="FX">
-    <reapack name="sr_Remove send 1 from selected track(s).lua" type="script" desc="Remove send from selected track(s)">
+    <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -13,13 +13,13 @@
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.1" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+      <version name="1.1" author="Stephan Römer" time="2018-09-08T15:26:01Z">
         <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
-        <source main="main" file="sr_Remove send from selected track(s) function">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
-        <source main="main" file="sr_Remove send 1 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
-        <source main="main" file="sr_Remove send 2 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
-        <source main="main" file="sr_Remove send 3 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
-        <source main="main" file="sr_Remove send 4 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
+        <source file="sr_Remove send from selected track(s) function.lua">https://github.com/StephanRoemer/ReaScripts/raw/adf691504b9b22581e4b9dbeafaab9b21aef3d91/FX/sr_Remove%20send%20from%20selected%20track(s)%20function.lua</source>
+        <source main="main" file="sr_Remove send 1 from selected track(s).lua">https://github.com/StephanRoemer/ReaScripts/raw/adf691504b9b22581e4b9dbeafaab9b21aef3d91/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 2 from selected track(s).lua">https://github.com/StephanRoemer/ReaScripts/raw/adf691504b9b22581e4b9dbeafaab9b21aef3d91/FX/sr_Remove%20send%202%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 3 from selected track(s).lua">https://github.com/StephanRoemer/ReaScripts/raw/adf691504b9b22581e4b9dbeafaab9b21aef3d91/FX/sr_Remove%20send%203%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 4 from selected track(s).lua">https://github.com/StephanRoemer/ReaScripts/raw/adf691504b9b22581e4b9dbeafaab9b21aef3d91/FX/sr_Remove%20send%204%20from%20selected%20track(s).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Send selected track(s) to BUS12 and remove master send.lua" type="script" desc="Send selected track(s) to BUS track and remove master send">
