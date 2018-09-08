@@ -5,7 +5,7 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [nomain] .
+--  [nomain] sr_Send selected track(s) to BUS and remove master send (bundle).lua
 -- 	[nomain] sr_Send selected track(s) to BUS and remove master send function.lua
 -- 	[main] sr_Send selected track(s) to BUS01 and remove master send.lua
 -- 	[main] sr_Send selected track(s) to BUS02 and remove master send.lua

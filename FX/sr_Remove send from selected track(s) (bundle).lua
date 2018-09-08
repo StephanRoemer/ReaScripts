@@ -5,7 +5,7 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [nomain] .
+--  [nomain] sr_Remove send from selected track(s) (bundle).lua
 --  [nomain] sr_Remove send from selected track(s) function.lua
 --  [main] sr_Remove send 1 from selected track(s).lua
 --  [main] sr_Remove send 2 from selected track(s).lua
