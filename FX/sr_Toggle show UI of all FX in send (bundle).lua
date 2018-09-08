@@ -5,10 +5,10 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
--- 	[main] sr_Toggle show UI of all FX in send 1.lua
--- 	[main] sr_Toggle show UI of all FX in send 2.lua
--- 	[main] sr_Toggle show UI of all FX in send 3.lua
--- 	[main] sr_Toggle show UI of all FX in send 4.lua
+--  [main] sr_Toggle show UI of all FX in send 1.lua
+--  [main] sr_Toggle show UI of all FX in send 2.lua
+--  [main] sr_Toggle show UI of all FX in send 3.lua
+--  [main] sr_Toggle show UI of all FX in send 4.lua
 --  [nomain] sr_Toggle show UI of all FX in send (bundle).lua
 --  [nomain] sr_Toggle show UI of all FX in send function.lua
 -- @about
