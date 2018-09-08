@@ -1,5 +1,5 @@
 -- @description Render VSTi item(s) without track FX and delete MIDI take(s)
--- @version 1.1
+-- @version 1.11
 -- @changelog
 --   changed script name
 -- @author Stephan Römer
