@@ -1,5 +1,5 @@
 -- @description Remove send from selected track(s) (bundle)
--- @version 1.1
+-- @version 1.2
 -- @changelog
 --   switched to external function file and put all scripts in a bundle
 -- @author Stephan Römer
