@@ -3,7 +3,6 @@
 -- @changelog
 --   switched to external function file and put all scripts in a bundle
 -- @author Stephan Römer
--- @noindex
 -- @provides
 -- 	. > sr_Remove send from selected tracks function
 -- 	. > sr_Remove send from selected track(s) function

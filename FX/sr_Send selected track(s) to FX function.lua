@@ -3,7 +3,6 @@
 -- @changelog
 --   switched to external function file and put all scripts in a bundle
 -- @author Stephan Römer
--- @noindex
 -- @provides
 -- 	. > sr_Send selected track(s) to FX function.lua
 -- 	. > sr_Send selected track(s) to FX1.lua
