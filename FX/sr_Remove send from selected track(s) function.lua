@@ -1,3 +1,5 @@
+-- @noindex
+
 function RemoveSend(send_number)
 
     reaper.Undo_BeginBlock()
