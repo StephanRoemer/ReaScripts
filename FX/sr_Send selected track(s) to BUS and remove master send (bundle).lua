@@ -5,8 +5,6 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [nomain] sr_Send selected track(s) to BUS and remove master send (bundle).lua
--- 	[nomain] sr_Send selected track(s) to BUS and remove master send function.lua
 -- 	[main] sr_Send selected track(s) to BUS01 and remove master send.lua
 -- 	[main] sr_Send selected track(s) to BUS02 and remove master send.lua
 -- 	[main] sr_Send selected track(s) to BUS03 and remove master send.lua
@@ -23,6 +21,8 @@
 -- 	[main] sr_Send selected track(s) to BUS14 and remove master send.lua
 -- 	[main] sr_Send selected track(s) to BUS15 and remove master send.lua
 -- 	[main] sr_Send selected track(s) to BUS16 and remove master send.lua
+--  [nomain] sr_Send selected track(s) to BUS and remove master send (bundle).lua
+-- 	[nomain] sr_Send selected track(s) to BUS and remove master send function.lua
 -- @about
 --   # Description
 --  This script bundle consists of 16 scripts that will send all selected tracks 

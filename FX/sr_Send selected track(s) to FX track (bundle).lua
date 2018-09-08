@@ -5,12 +5,12 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [nomain] sr_Send selected track(s) to FX track (bundle).lua
--- 	[nomain] sr_Send selected track(s) to FX track function.lua
 -- 	[main] sr_Send selected track(s) to FX1.lua
 -- 	[main] sr_Send selected track(s) to FX2.lua
 -- 	[main] sr_Send selected track(s) to FX3.lua
 -- 	[main] sr_Send selected track(s) to FX4.lua
+--  [nomain] sr_Send selected track(s) to FX track (bundle).lua
+-- 	[nomain] sr_Send selected track(s) to FX track function.lua
 -- @about
 --   # Description
 --   This script bundle consists of 4 scripts that will send all selected tracks to an FX track prefixed with FX1-4
