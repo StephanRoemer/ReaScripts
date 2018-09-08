@@ -3,6 +3,7 @@
 -- @changelog
 --   switched to external function file and put all scripts in a bundle
 -- @author Stephan Römer
+-- @metapackage
 -- @provides
 --  [main] sr_Toggle show UI of all FX in send function.lua
 -- 	[main] sr_Toggle show UI of all FX in send 1.lua
