@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="adf691504b9b22581e4b9dbeafaab9b21aef3d91">
+<index version="1" name="Stevie Scripts" commit="79b5de33040d5bd311e3b06db9c7094177075684">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -22,7 +22,7 @@
         <source main="main" file="sr_Remove send 4 from selected track(s).lua">https://github.com/StephanRoemer/ReaScripts/raw/adf691504b9b22581e4b9dbeafaab9b21aef3d91/FX/sr_Remove%20send%204%20from%20selected%20track(s).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Send selected track(s) to BUS12 and remove master send.lua" type="script" desc="Send selected track(s) to BUS track and remove master send">
+    <reapack name="sr_Send selected track(s) to BUS and remove master send (bundle).lua" type="script" desc="Send selected track(s) to BUS track and remove master send (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -33,28 +33,29 @@
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+      <version name="1.0" author="Stephan Römer" time="2018-09-08T15:42:50Z">
         <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main" file="sr_Send selected track(s) to BUS and remove master send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS01 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS02 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS03 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS04 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS05 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS06 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS07 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS08 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS09 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS10 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS11 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS12 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS13 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS14 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS15 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
-        <source main="main" file="sr_Send selected track(s) to BUS16 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS%20and%20remove%20master%20send%20(bundle).lua</source>
+        <source file="sr_Send selected track(s) to BUS and remove master send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS%20and%20remove%20master%20send%20function.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS01 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS01%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS02 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS02%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS03 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS03%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS04 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS04%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS05 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS05%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS06 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS06%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS07 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS07%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS08 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS08%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS09 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS09%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS10 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS10%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS11 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS11%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS12 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS13 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS13%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS14 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS14%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS15 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS15%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS16 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20BUS16%20and%20remove%20master%20send.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Send selected track(s) to FX2.lua" type="script" desc="Send selected track(s) to FX track">
+    <reapack name="sr_Send selected track(s) to FX track (bundle).lua" type="script" desc="Send selected track(s) to FX track">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -66,16 +67,17 @@
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.11" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+      <version name="1.11" author="Stephan Römer" time="2018-09-08T15:42:50Z">
         <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
-        <source main="main" file="sr_Send selected track(s) to FX function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
-        <source main="main" file="sr_Send selected track(s) to FX1.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
-        <source main="main" file="sr_Send selected track(s) to FX2.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
-        <source main="main" file="sr_Send selected track(s) to FX3.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
-        <source main="main" file="sr_Send selected track(s) to FX4.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20FX%20track%20(bundle).lua</source>
+        <source file="sr_Send selected track(s) to FX track function.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20FX%20track%20function.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX1.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20FX1.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX2.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX3.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20FX3.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX4.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Send%20selected%20track(s)%20to%20FX4.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Toggle show UI of all FX in send 1.lua" type="script" desc="Toggle show UI of all FX in send track">
+    <reapack name="sr_Toggle show UI of all FX in send (bundle).lua" type="script" desc="Toggle show UI of all FX in send track">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -87,9 +89,10 @@
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.1" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+      <version name="1.1" author="Stephan Römer" time="2018-09-08T15:42:50Z">
         <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
-        <source main="main" file="sr_Toggle show UI of all FX in send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%201.lua</source>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%20(bundle).lua</source>
+        <source main="main" file="sr_Toggle show UI of all FX in send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/79b5de33040d5bd311e3b06db9c7094177075684/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%20function.lua</source>
       </version>
     </reapack>
   </category>
