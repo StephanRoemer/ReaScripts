@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="8726a4207870c0b58122252807b0f77ce868153d">
+<index version="1" name="Stevie Scripts" commit="a571216ef6a8035df6ee02473997f87d9e680430">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -196,7 +196,7 @@ v1.0]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/1ef5a4846d9ed9931b26999470d3146795123611/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Render VSTi items without track FX.lua" type="script" desc="Render VSTi items without track FX">
+    <reapack name="sr_Render VSTi items without track FX and delete MIDI.lua" type="script" desc="Render VSTi items without track FX and delete MIDI">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -209,17 +209,9 @@ v1.0]]></changelog>
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-01-20T00:30:10Z">
-        <changelog><![CDATA[v1.0 (2018-01-19)
-+ initial release]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/55c44962992a5beafba379030be38ce5ab862f29/Items%20Editing/sr_Render%20VSTi%20items%20without%20track%20FX.lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2018-01-20T23:47:22Z">
-        <changelog><![CDATA[v1.01  (2018-01-21)
-+ minor OCD script adjustments
-v1.0 (2018-01-19)
-+ initial release]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/ed91016d43a7a9ef6f8fd8697afd4d786c57dd71/Items%20Editing/sr_Render%20VSTi%20items%20without%20track%20FX.lua</source>
+      <version name="1.1" author="Stephan Römer" time="2018-09-08T17:40:19Z">
+        <changelog><![CDATA[changed script name]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/a571216ef6a8035df6ee02473997f87d9e680430/Items%20Editing/sr_Render%20VSTi%20items%20without%20track%20FX%20and%20delete%20MIDI.lua</source>
       </version>
     </reapack>
   </category>
