@@ -1,4 +1,4 @@
--- @description Render VSTi item(s) without track FX and delete MIDI takes
+-- @description Render VSTi item(s) without track FX and delete MIDI take(s)
 -- @version 1.1
 -- @changelog
 --   changed script name
