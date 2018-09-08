@@ -1,188 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="e9e3faffe605e9cfe9766e5d71e30e0a1172feb9">
+<index version="1" name="Stevie Scripts" commit="ca4da6ae4b2bb221919019ec1dd4126111b53d0a">
   <category name="FX">
-    <reapack name="sr_Remove 1st send FX from selected tracks.lua" type="script" desc="Remove 1st send FX from selected tracks">
+    <reapack name="sr_Remove send 1 from selected track(s).lua" type="script" desc="Remove send from selected track(s)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 1st send FX in the send slot of selected track(s)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script bundle consists of 4 scripts that remove sends 1-4 from the selected track(s)\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4811b8a5999ae15f894beedf24f5af98fa538418/FX/sr_Remove%201st%20send%20FX%20from%20selected%20tracks.lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Remove%201st%20send%20FX%20from%20selected%20tracks.lua</source>
+      <version name="1.1" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+        <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
+        <source main="main" file="sr_Remove send from selected track(s) function">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 1 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 2 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 3 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
+        <source main="main" file="sr_Remove send 4 from selected track(s)">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Remove%20send%201%20from%20selected%20track(s).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Remove 2nd send FX from selected tracks.lua" type="script" desc="Remove 2nd send FX from selected tracks">
+    <reapack name="sr_Send selected track(s) to BUS12 and remove master send.lua" type="script" desc="Send selected track(s) to BUS track and remove master send">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 2nd send FX in the send slot of selected track(s)\sa180\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4811b8a5999ae15f894beedf24f5af98fa538418/FX/sr_Remove%202nd%20send%20FX%20from%20selected%20tracks.lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Remove%202nd%20send%20FX%20from%20selected%20tracks.lua</source>
+      <version name="1.0" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main" file="sr_Send selected track(s) to BUS and remove master send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS01 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS02 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS03 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS04 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS05 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS06 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS07 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS08 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS09 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS10 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS11 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS12 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS13 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS14 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS15 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
+        <source main="main" file="sr_Send selected track(s) to BUS16 and remove master send.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20BUS12%20and%20remove%20master%20send.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Remove 3rd send FX from selected tracks.lua" type="script" desc="Remove 3rd send FX from selected tracks">
+    <reapack name="sr_Send selected track(s) to FX2.lua" type="script" desc="Send selected track(s) to FX track">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 3rd send FX in the send slot of selected track(s)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script bundle consists of 4 scripts that will send all selected tracks to an FX track prefixed with FX1-4\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4811b8a5999ae15f894beedf24f5af98fa538418/FX/sr_Remove%203rd%20send%20FX%20from%20selected%20tracks.lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Remove%203rd%20send%20FX%20from%20selected%20tracks.lua</source>
+      <version name="1.11" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+        <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
+        <source main="main" file="sr_Send selected track(s) to FX function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX1.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX2.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX3.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
+        <source main="main" file="sr_Send selected track(s) to FX4.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Send%20selected%20track(s)%20to%20FX2.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Remove 4th send FX from selected tracks.lua" type="script" desc="Remove 4th send FX from selected tracks">
+    <reapack name="sr_Toggle show UI of all FX in send 1.lua" type="script" desc="Toggle show UI of all FX in send track">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script removes the 4th send FX in the send slot of selected track(s)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This script bundle consists of 4 scripts that shows/hide the UI of all FX in send 1-4\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-05T09:43:22Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4811b8a5999ae15f894beedf24f5af98fa538418/FX/sr_Remove%204th%20send%20FX%20from%20selected%20tracks.lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Remove%204th%20send%20FX%20from%20selected%20tracks.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Send selected tracks to FX1.lua" type="script" desc="Send selected tracks to FX1">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX1\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX1.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2018-09-04T23:23:51Z">
-        <changelog><![CDATA[v1.1 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/2a196a369638cf98969d3c4c75c4908963e3694c/FX/sr_Send%20selected%20tracks%20to%20FX1.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Send%20selected%20tracks%20to%20FX1.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Send selected tracks to FX2.lua" type="script" desc="Send selected tracks to FX2">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX2\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX2.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2018-09-04T23:23:51Z">
-        <changelog><![CDATA[v1.1 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/2a196a369638cf98969d3c4c75c4908963e3694c/FX/sr_Send%20selected%20tracks%20to%20FX2.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Send%20selected%20tracks%20to%20FX2.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Send selected tracks to FX3.lua" type="script" desc="Send selected tracks to FX3">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX3\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX3.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2018-09-04T23:23:51Z">
-        <changelog><![CDATA[v1.1 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/2a196a369638cf98969d3c4c75c4908963e3694c/FX/sr_Send%20selected%20tracks%20to%20FX3.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Send%20selected%20tracks%20to%20FX3.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Send selected tracks to FX4.lua" type="script" desc="Send selected tracks to FX4">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script sends all selected tracks to an FX track prefixed with FX4\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-04T12:24:47Z">
-        <changelog><![CDATA[v1.0 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7e97952132284c2150f16714ea98b4ca7a39ddb1/FX/sr_Send%20selected%20tracks%20to%20FX4.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2018-09-04T23:23:51Z">
-        <changelog><![CDATA[v1.1 (2018-09-04)]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/2a196a369638cf98969d3c4c75c4908963e3694c/FX/sr_Send%20selected%20tracks%20to%20FX4.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2018-09-05T11:41:22Z">
-        <changelog><![CDATA[changed reapack header]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/05481d343e1ca1f543b45d9795c0b32ec655a44a/FX/sr_Send%20selected%20tracks%20to%20FX4.lua</source>
+      <version name="1.1" author="Stephan Römer" time="2018-09-08T14:08:01Z">
+        <changelog><![CDATA[switched to external function file and put all scripts in a bundle]]></changelog>
+        <source main="main" file="sr_Toggle show UI of all FX in send function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ca4da6ae4b2bb221919019ec1dd4126111b53d0a/FX/sr_Toggle%20show%20UI%20of%20all%20FX%20in%20send%201.lua</source>
       </version>
     </reapack>
   </category>

@@ -3,6 +3,7 @@
 -- @changelog
 --   Initial release
 -- @author Stephan Römer
+-- @noindex
 -- @provides
 -- 	. > sr_Send selected track(s) to BUS and remove master send function.lua
 -- 	. > sr_Send selected track(s) to BUS01 and remove master send.lua
