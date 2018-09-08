@@ -23,3 +23,8 @@
 --  [main] sr_Send selected track(s) to BUS16 and remove master send.lua
 --  [nomain] sr_Send selected track(s) to BUS and remove master send (bundle).lua
 --  [nomain] sr_Send selected track(s) to BUS and remove master send function.lua
+-- @about
+--  # Description
+--  This script bundle consists of 16 scripts that will send all selected tracks
+--  to a BUS track prefixed with BUS01-16 and remove the parent/master send
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
