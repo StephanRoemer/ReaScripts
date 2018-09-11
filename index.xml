@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="30b884cd754541b34aa8b75d11ecd67bf9b1b552">
+<index version="1" name="Stevie Scripts" commit="fe7b0d3df16a602851b4db3d6b655b068a0bf89d">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
