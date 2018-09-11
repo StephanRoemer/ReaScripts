@@ -1,7 +1,7 @@
 -- @description Toggle show UI of all FX in send track (bundle)
--- @version 1.1
+-- @version 1.11
 -- @changelog
---   switched to external function file and put all scripts in a bundle
+--   minor github issue fixed: scripts couldn't find external function
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

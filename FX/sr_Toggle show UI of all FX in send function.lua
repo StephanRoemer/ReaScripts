@@ -21,9 +21,9 @@ function ToggleShowUISend(send_slot)
             if fx_count ~= 0 then
                 for i = 0, fx_count do
                     if not reaper.TrackFX_GetOpen(send_track, i) then -- UI closed?
-                        reaper.TrackFX_SetOpen(send_track, i, true) -- open 3rd send UI
+                        reaper.TrackFX_SetOpen(send_track, i, true) -- open send UI
                     else
-                        reaper.TrackFX_SetOpen(send_track, i, false) -- close 3rd send UI
+                        reaper.TrackFX_SetOpen(send_track, i, false) -- close send UI
                     end
                 end
             else
