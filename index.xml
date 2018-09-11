@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="ab377ecbb1e8c8afe0ccfc2b99176f9a436b3c05">
+<index version="1" name="Stevie Scripts" commit="f89328ed0bb96fa8d1d7b598cac56352757eb588">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2590,30 +2590,6 @@ v1.0
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select CC (bundle).lua" type="script" desc="Select CC (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of scripts that select the complete CC lane in one or multiple items\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.30" author="Stephan Römer" time="2018-09-11T18:16:29Z">
-        <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle has its own external function file.  ]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC7.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC11.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC64.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC%20(bundle).lua</source>
-        <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/7383237a7a81888b7e171c4be5c4fad221066eb4/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="Select CC1 after edit cursor">
