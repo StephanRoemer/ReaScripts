@@ -5,30 +5,30 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [main] sr_Transpose notes -1.lua
---  [main] sr_Transpose notes -2.lua
---  [main] sr_Transpose notes -3.lua
---  [main] sr_Transpose notes -4.lua
---  [main] sr_Transpose notes -5.lua
---  [main] sr_Transpose notes -6.lua
---  [main] sr_Transpose notes -7.lua
---  [main] sr_Transpose notes -8.lua
---  [main] sr_Transpose notes -9.lua
---  [main] sr_Transpose notes -10.lua
---  [main] sr_Transpose notes -11.lua
---  [main] sr_Transpose notes -12.lua
---  [main] sr_Transpose notes +1.lua
---  [main] sr_Transpose notes +2.lua
---  [main] sr_Transpose notes +3.lua
---  [main] sr_Transpose notes +4.lua
---  [main] sr_Transpose notes +5.lua
---  [main] sr_Transpose notes +6.lua
---  [main] sr_Transpose notes +7.lua
---  [main] sr_Transpose notes +8.lua
---  [main] sr_Transpose notes +9.lua
---  [main] sr_Transpose notes +10.lua
---  [main] sr_Transpose notes +11.lua
---  [main] sr_Transpose notes +12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -3.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -4.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -6.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -7.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -8.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -9.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -10.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -11.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +3.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +4.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +6.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +7.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +8.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +9.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +10.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +11.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +12.lua
 --  [nomain] sr_Transpose notes (bundle).lua
 --  [nomain] sr_Transpose notes function.lua
 -- @about
