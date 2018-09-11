@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="62efa9ee43df6a8c1a0a6d328a711001c63cb17c">
+<index version="1" name="Stevie Scripts" commit="d671c9a05f22273758143e97670236ca7802b9bb">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1473,15 +1473,15 @@ v1.0]]></changelog>
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.30" author="Stephan Römer" time="2018-09-11T15:17:17Z">
+      <version name="1.30" author="Stephan Römer" time="2018-09-11T15:27:16Z">
         <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle has its own external function file. 
 Furthermore, the scripts have been renamed to a more meaningful title.]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes -24.lua">https://github.com/StephanRoemer/ReaScripts/raw/fcda7b5ba3fa94984307775df33762a0291e717d/MIDI%20Editor/sr_Double%20notes%20-24.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/fcda7b5ba3fa94984307775df33762a0291e717d/MIDI%20Editor/sr_Double%20notes%20-12.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/fcda7b5ba3fa94984307775df33762a0291e717d/MIDI%20Editor/sr_Double%20notes%20+12.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/fcda7b5ba3fa94984307775df33762a0291e717d/MIDI%20Editor/sr_Double%20notes%20+24.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/fcda7b5ba3fa94984307775df33762a0291e717d/MIDI%20Editor/sr_Double%20notes%20(bundle).lua</source>
-        <source file="sr_Double notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/fcda7b5ba3fa94984307775df33762a0291e717d/MIDI%20Editor/sr_Double%20notes%20function.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes -24.lua">https://github.com/StephanRoemer/ReaScripts/raw/a7ffb889bdaf11cb6e610eab6fd3cd01d488b7d6/MIDI%20Editor/sr_Double%20notes%20-24.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/a7ffb889bdaf11cb6e610eab6fd3cd01d488b7d6/MIDI%20Editor/sr_Double%20notes%20-12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/a7ffb889bdaf11cb6e610eab6fd3cd01d488b7d6/MIDI%20Editor/sr_Double%20notes%20+12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Double notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/a7ffb889bdaf11cb6e610eab6fd3cd01d488b7d6/MIDI%20Editor/sr_Double%20notes%20+24.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/a7ffb889bdaf11cb6e610eab6fd3cd01d488b7d6/MIDI%20Editor/sr_Double%20notes%20(bundle).lua</source>
+        <source file="sr_Double notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/a7ffb889bdaf11cb6e610eab6fd3cd01d488b7d6/MIDI%20Editor/sr_Double%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Human quantize notes 50 percent - 1-1.lua" type="script" desc="Human quantize notes 50% - 1/1">
@@ -3322,34 +3322,34 @@ v1.0 (2018-07-05)
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.30" author="Stephan Römer" time="2018-09-11T13:39:55Z">
+      <version name="1.30" author="Stephan Römer" time="2018-09-11T15:27:27Z">
         <changelog><![CDATA[the scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle has its own external function file.  ]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -3.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-3.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -4.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-4.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -7.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-7.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -8.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-8.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -9.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-9.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -10.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-10.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -11.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-11.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20-12.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +3.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+3.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +4.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+4.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +7.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+7.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +8.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+8.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +9.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+9.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +10.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+10.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +11.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+11.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20(bundle).lua</source>
-        <source file="sr_Transpose notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/62efa9ee43df6a8c1a0a6d328a711001c63cb17c/MIDI%20Editor/sr_Transpose%20notes%20function.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -3.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-3.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -4.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-4.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-5.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-6.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -7.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -8.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-8.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -9.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-9.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -10.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-10.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -11.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20-12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +3.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+3.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +4.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+4.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+5.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+6.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +7.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +8.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+8.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +9.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+9.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +10.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+10.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +11.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20(bundle).lua</source>
+        <source file="sr_Transpose notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/d671c9a05f22273758143e97670236ca7802b9bb/MIDI%20Editor/sr_Transpose%20notes%20function.lua</source>
       </version>
     </reapack>
   </category>
