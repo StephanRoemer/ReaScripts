@@ -6,12 +6,12 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [main] Double notes -24.lua
---  [main] Double notes -12.lua
---  [main] Double notes +12.lua
---  [main] Double notes +24.lua
---  [nomain] Double notes (bundle).lua
---  [nomain] Double notes function.lua
+--  [main] sr_Double notes -24.lua
+--  [main] sr_Double notes -12.lua
+--  [main] sr_Double notes +12.lua
+--  [main] sr_Double notes +24.lua
+--  [nomain] sr_Double notes (bundle).lua
+--  [nomain] sr_Double notes function.lua
 -- @about
 --   # Description
 --    This script bundle consists of scripts that doubles either all or selected notes in items.
