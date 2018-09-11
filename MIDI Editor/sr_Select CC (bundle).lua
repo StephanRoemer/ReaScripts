@@ -1,7 +1,7 @@
 -- @description Select CC (bundle)
 -- @version 1.30
 -- @changelog
---  The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle has its own external function file.  
+--   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle has its own external function file.  
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
