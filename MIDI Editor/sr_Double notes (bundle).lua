@@ -6,10 +6,10 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [main] sr_Double notes -24.lua
---  [main] sr_Double notes -12.lua
---  [main] sr_Double notes +12.lua
---  [main] sr_Double notes +24.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Double notes -24.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Double notes -12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Double notes +12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Double notes +24.lua
 --  [nomain] sr_Double notes (bundle).lua
 --  [nomain] sr_Double notes function.lua
 -- @about
