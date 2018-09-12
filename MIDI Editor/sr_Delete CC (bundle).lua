@@ -1,0 +1,20 @@
+-- @description Delete CC (bundle)
+-- @version 1.30
+-- @changelog
+--   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
+--   Instead the bundle has its own external function file.  
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC7.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC11.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC64.lua
+--  [nomain] sr_Delete CC (bundle).lua
+--  [nomain] sr_Delete CC function.lua
+-- @about
+--    # Description
+--    * This script bundle consists of scripts that delete the complete CC lane in one or multiple items
+--    * These scripts work in arrangement, MIDI Editor and Inline Editor
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
