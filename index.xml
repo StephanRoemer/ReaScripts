@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="9eeb3d79db8aa2a31f726078237eecbc765bc6f9">
+<index version="1" name="Stevie Scripts" commit="f28d15f0d3cbf26753216400694b51a59dd1620f">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -518,96 +518,28 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Copy CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/944c054f92fb491be3807e8d8d234b569993f5ba/MIDI%20Editor/sr_Copy%20CC%20to%20CC%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Decrease CC1.lua" type="script" desc="Decrease CC1">
+    <reapack name="sr_Decrease CC (bundle).lua" type="script" desc="Decrease CC (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script decreases all values from the CC1 lane\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of scripts that decrease all or selected CC events in one or multiple items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0 (2017-12-15)
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2018-01-24T14:36:58Z">
-        <changelog><![CDATA[v1.11 (2018-01-24)
-+ fixed wrong function call
-v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d5d5d1d692b2234f11ec5785c3be88cb4cedb01b/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
-      </version>
-      <version name="1.12" author="Stephan Römer" time="2018-07-10T23:52:03Z">
-        <changelog><![CDATA[v1.12 (2018-07-11)
-+ fixed wrong script name
-v1.11 (2018-01-24)
-+ fixed wrong function call
-v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/52cb505c3d67536c1abc5d4c6d63fcbd8462fe45/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Decrease CC11.lua" type="script" desc="Decrease CC11">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script decreases all values from the CC11 lane\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2018-01-24T14:36:58Z">
-        <changelog><![CDATA[v1.11 (2018-01-24)
-+ fixed wrong function call
-v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d5d5d1d692b2234f11ec5785c3be88cb4cedb01b/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
-      </version>
-      <version name="1.12" author="Stephan Römer" time="2018-07-10T23:52:03Z">
-        <changelog><![CDATA[v1.12 (2018-07-11)
-+ fixed wrong script name
-v1.11 (2018-01-24)
-+ fixed wrong function call
-v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/52cb505c3d67536c1abc5d4c6d63fcbd8462fe45/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
+      <version name="1.30" author="Stephan Römer" time="2018-09-12T20:18:06Z">
+        <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
+Instead the bundle has its own external function file.  ]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/f28d15f0d3cbf26753216400694b51a59dd1620f/MIDI%20Editor/sr_Decrease%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/f28d15f0d3cbf26753216400694b51a59dd1620f/MIDI%20Editor/sr_Decrease%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/f28d15f0d3cbf26753216400694b51a59dd1620f/MIDI%20Editor/sr_Decrease%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/f28d15f0d3cbf26753216400694b51a59dd1620f/MIDI%20Editor/sr_Decrease%20CC11.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/f28d15f0d3cbf26753216400694b51a59dd1620f/MIDI%20Editor/sr_Decrease%20CC%20(bundle).lua</source>
+        <source file="sr_Decrease CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f28d15f0d3cbf26753216400694b51a59dd1620f/MIDI%20Editor/sr_Decrease%20CC%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all CCs after edit cursor.lua" type="script" desc="Delete all CCs after edit cursor">
