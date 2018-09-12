@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="f2a234799221ae99f3050fcded66c9573895b818">
+<index version="1" name="Stevie Scripts" commit="f85c1d55ffad778eb6932b659c4339d96e9fee47">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1162,25 +1162,6 @@ v1.0
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all CCs within note selection.lua" type="script" desc="Select all CCs within note selection">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script select all CCs within the boundaries of selected notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Executing the scripts again toggles the CC selection\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.30" author="Stephan Römer" time="2018-09-12T21:00:30Z">
-        <changelog><![CDATA[Changed the script name]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/f2a234799221ae99f3050fcded66c9573895b818/MIDI%20Editor/sr_Select%20all%20CCs%20within%20note%20selection.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs.lua" type="script" desc="Select all CCs">
