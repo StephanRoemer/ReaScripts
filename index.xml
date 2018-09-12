@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="6edc1479c088f4b4b16c4e081c7b5794f9263d96">
+<index version="1" name="Stevie Scripts" commit="f2a234799221ae99f3050fcded66c9573895b818">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1164,7 +1164,7 @@ v1.0
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select all CCs within boundaries of selected notes.lua" type="script" desc="Select all CCs within note selection">
+    <reapack name="sr_Select all CCs within note selection.lua" type="script" desc="Select all CCs within note selection">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1178,18 +1178,9 @@ v1.0
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-19T01:58:05Z">
-        <changelog><![CDATA[v1.0 (2017-12-18)
-+ initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/95527f3e81581e00eb971b52bba83b43366516cd/MIDI%20Editor/sr_Select%20all%20CCs%20within%20boundaries%20of%20selected%20notes.lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2017-12-21T10:14:52Z">
-        <changelog><![CDATA[v1.01 (2017-12-21)]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Select%20all%20CCs%20within%20boundaries%20of%20selected%20notes.lua</source>
-      </version>
-      <version name="1.30" author="Stephan Römer" time="2018-09-12T20:57:57Z">
+      <version name="1.30" author="Stephan Römer" time="2018-09-12T21:00:30Z">
         <changelog><![CDATA[Changed the script name]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6edc1479c088f4b4b16c4e081c7b5794f9263d96/MIDI%20Editor/sr_Select%20all%20CCs%20within%20boundaries%20of%20selected%20notes.lua</source>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/f2a234799221ae99f3050fcded66c9573895b818/MIDI%20Editor/sr_Select%20all%20CCs%20within%20note%20selection.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs.lua" type="script" desc="Select all CCs">
