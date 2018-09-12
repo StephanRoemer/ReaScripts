@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="1c9d8f6262ee8423cfac22da880d08618d2c8cdc">
+<index version="1" name="Stevie Scripts" commit="557932fc70c33084286994726d3faf613e72447b">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1701,6 +1701,31 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/6eaf785f6194210510e2ea623acf5441248ac8ca/MIDI%20Editor/sr_Select%20CC64.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/6eaf785f6194210510e2ea623acf5441248ac8ca/MIDI%20Editor/sr_Select%20CC%20(bundle).lua</source>
         <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/6eaf785f6194210510e2ea623acf5441248ac8ca/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select CC before edit cursor (bundle).lua" type="script" desc="Select CC before edit cursor (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of scripts that select the complete CC lane before the edit cursor in one or multiple items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.30" author="Stephan Römer" time="2018-09-12T17:56:32Z">
+        <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
+Instead the bundle has its own external function file.  ]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
+        <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="Select CC1 after edit cursor">
