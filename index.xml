@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="9ac87c92b50521f10821cb161a6f3a83f7eab9fa">
+<index version="1" name="Stevie Scripts" commit="44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1736,6 +1736,39 @@ v1.0 (2018-07-13)
         <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
         <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Quantize notes (bundle).lua" type="script" desc="Quantize notes (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of various quantize scripts that affect either all or selected notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.30" author="Stephan Römer" time="2018-09-12T15:57:01Z">
+        <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
+Instead the bundle has its own external function file.  ]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-2.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-4.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4 swing 70 percent.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-4%20swing%2070%20percent.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-4%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-8.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8 swing 70 percent.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-8%20swing%2070%20percent.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-8%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-16.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16 swing 70 percent.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-16%20swing%2070%20percent.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%201-16%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20-%20grid.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20(bundle).lua</source>
+        <source file="sr_Quantize notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/44a18d5ef7a0af8e0b0f1e58fce1ed37e26bc79f/MIDI%20Editor/sr_Quantize%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs after edit cursor.lua" type="script" desc="Select all CCs after edit cursor">
