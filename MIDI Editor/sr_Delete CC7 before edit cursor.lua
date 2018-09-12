@@ -1,28 +1,11 @@
--- @description Delete CC7 before edit cursor
--- @version 1.11
--- @author Stephan Römer
--- @about
---    # Description
---    - this script deletes the CC7 data before the edit cursor
---    - this script works in arrangement, MIDI Editor and Inline Editor
---
--- @link https://forums.cockos.com/showthread.php?p=1923923
---
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @changelog
---     v1.11 (2017-12-16)
---     + added undo state
---     v1.1 (2017-12-15)
---     + moved the functions to a seperate file "sr_MIDI functions"
---     v1.0
---     + Initial release
+--  @noindex
 
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
-require 'sr_MIDI functions'
+require 'sr_Delete CC before edit cursor function'
 
-destCC = 7 -- destination CC
+dest_cc = 7 -- destination CC
 
-delete_CC_before_edit_cursor(destCC) -- call function
+DeleteCCBeforeEditCursor(dest_cc) -- call function
 reaper.Undo_OnStateChange2(proj, "Delete CC7 before edit cursor")
 
 
