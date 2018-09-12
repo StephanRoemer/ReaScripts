@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="557932fc70c33084286994726d3faf613e72447b">
+<index version="1" name="Stevie Scripts" commit="775e87d743aebde7ea70c279b46ef42fe2d12885">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1703,6 +1703,31 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/6eaf785f6194210510e2ea623acf5441248ac8ca/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
       </version>
     </reapack>
+    <reapack name="sr_Select CC after edit cursor (bundle).lua" type="script" desc="Select CC after edit cursor (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of scripts that select the complete CC lane after the edit cursor in one or multiple items\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.30" author="Stephan Römer" time="2018-09-12T18:22:58Z">
+        <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
+Instead the bundle has its own external function file.  ]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
+        <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Select CC before edit cursor (bundle).lua" type="script" desc="Select CC before edit cursor (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1728,36 +1753,6 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC1 after edit cursor.lua" type="script" desc="Select CC1 after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC1 data after the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.11 (2017-12-16)
-+ added undo state
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Select CC1 within boundaries of selected notes.lua" type="script" desc="Select CC1 within boundaries of selected notes">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1778,36 +1773,6 @@ v1.0
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/95527f3e81581e00eb971b52bba83b43366516cd/MIDI%20Editor/sr_Select%20CC1%20within%20boundaries%20of%20selected%20notes.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC11 after edit cursor.lua" type="script" desc="Select CC11 after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC11 data after the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.11 (2017-12-16)
-+ added undo state
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Select CC11 within boundaries of selected notes.lua" type="script" desc="Select CC11 within boundaries of selected notes">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1826,36 +1791,6 @@ v1.0
         <changelog><![CDATA[v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/95527f3e81581e00eb971b52bba83b43366516cd/MIDI%20Editor/sr_Select%20CC11%20within%20boundaries%20of%20selected%20notes.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select CC2 after edit cursor.lua" type="script" desc="Select CC2 after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC2 data after the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.11 (2017-12-16)
-+ added undo state
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC2 within boundaries of selected notes.lua" type="script" desc="Select CC2 within boundaries of selected notes">
@@ -1884,36 +1819,6 @@ v1.0
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/ce34a4207128b538626e304f730ed144f46c9903/MIDI%20Editor/sr_Select%20CC2%20within%20boundaries%20of%20selected%20notes.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select CC64 after edit cursor.lua" type="script" desc="Select CC64 after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC64 data after the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.11 (2017-12-16)
-+ added undo state
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Select CC64 within boundaries of selected notes.lua" type="script" desc="Select CC64 within boundaries of selected notes">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1939,36 +1844,6 @@ v1.0
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/ce34a4207128b538626e304f730ed144f46c9903/MIDI%20Editor/sr_Select%20CC64%20within%20boundaries%20of%20selected%20notes.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select CC7 after edit cursor.lua" type="script" desc="Select CC7 after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects the CC7 data after the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.11 (2017-12-16)
-+ added undo state
-v1.1 (2017-12-15)
-+ moved the functions to a seperate file "sr_MIDI functions"
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC7 within boundaries of selected notes.lua" type="script" desc="Select CC7 within boundaries of selected notes">
