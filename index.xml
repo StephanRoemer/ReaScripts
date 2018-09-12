@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="b0ee69ba2f88397015413fc53c1e9ed677dd4157">
+<index version="1" name="Stevie Scripts" commit="1610427d54c2cc686bbd2be839a9d843043f5121">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -946,7 +946,7 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Human quantize notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f5c45969a96aaf1b8eb7cf143c8c0561a81ca2d4/MIDI%20Editor/sr_Human%20quantize%20notes%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Increase CC (bundle).lua" type="script" desc="Increase (bundle)">
+    <reapack name="sr_Increase CC (bundle).lua" type="script" desc="Increase CC (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
