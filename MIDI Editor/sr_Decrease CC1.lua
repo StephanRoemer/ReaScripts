@@ -1,29 +1,10 @@
--- @description Decrease CC1
--- @version 1.12
--- @author Stephan Römer
--- @about
---    # Description
---    - this script decreases all values from the CC1 lane
---    - this script works in arrangement, MIDI Editor and Inline Editor
---
--- @link https://forums.cockos.com/showthread.php?p=1923923
---
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @changelog
---     v1.12 (2018-07-11)
---     + fixed wrong script name
---     v1.11 (2018-01-24)
---     + fixed wrong function call
---     v1.1 (2017-12-16)
---     + added undo state
---     v1.0
---     + Initial release
+--  @noindex
 
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
-require 'sr_MIDI functions'
+require 'sr_Increase CC function'
 
 decrease = 1.1 -- value to decrease the CC event
-destCC = 1 -- destination CC
+dest_cc = 1 -- destination CC
 
-decrease_CC(destCC, decrease) -- call function
+DecreaseCC(dest_cc, decrease) -- call function
 reaper.Undo_OnStateChange2(proj, "Decrease CC1")
