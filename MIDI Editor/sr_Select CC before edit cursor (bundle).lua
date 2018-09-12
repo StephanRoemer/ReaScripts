@@ -11,7 +11,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC7 before edit cursor.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC11 before edit cursor.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC64 before edit cursor.lua
---  [nomain] sr_Select CC before edit cursor function.lua
+--  [nomain] sr_Select CC before edit cursor function (bundle).lua
 --  [nomain] sr_Select CC before edit cursor (bundle).lua
 -- @about
 --    # Description
