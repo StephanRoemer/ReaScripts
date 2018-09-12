@@ -1,0 +1,20 @@
+-- @description Select CC after edit cursor (bundle)
+-- @version 1.30
+-- @changelog
+--   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
+--   Instead the bundle has its own external function file.  
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select CC1 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select CC2 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select CC7 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select CC11 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select CC64 after edit cursor.lua
+--  [nomain] sr_Select CC after edit cursor function.lua
+--  [nomain] sr_Select CC after edit cursor (bundle).lua
+-- @about
+--    # Description
+--    * This script bundle consists of scripts that select the complete CC lane after the edit cursor in one or multiple items
+--    * These scripts work in arrangement, MIDI Editor and Inline Editor
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
