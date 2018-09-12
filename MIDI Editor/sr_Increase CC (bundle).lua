@@ -1,4 +1,4 @@
--- @description Increase (bundle)
+-- @description Increase CC (bundle)
 -- @version 1.30
 -- @changelog
 --   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
