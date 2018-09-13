@@ -2,11 +2,13 @@
 
 function double_notes(interval)
     
-    for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-		item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-        
-        for t = 0, reaper.CountTakes(item)-1 do -- loop through all takes within each selected item
-			take = reaper.GetTake(item, t) -- get current take
+    if reaper.CountSelectedMediaItems(0) == 0 then
+		reaper.ShowMessageBox("Please select at least one item", "Error", 0)
+		return false
+	else 
+		for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
+			local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+			local take = reaper.GetActiveTake(item)
             
             if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
 				gotAllOK, MIDIstring = reaper.MIDI_GetAllEvts(take, "") -- write MIDI events to MIDIstring, get all events okay
@@ -42,9 +44,9 @@ function double_notes(interval)
 					end
         		end
 			end
+			reaper.MIDI_Sort(take)
+			reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
 		end
 	end
-	reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
-	reaper.MIDI_Sort(take)
 	reaper.UpdateArrange()
 end

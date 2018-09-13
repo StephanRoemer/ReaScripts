@@ -1,5 +1,5 @@
 -- @description Delete all CCs after edit cursor
--- @version 1.3
+-- @version 1.31
 -- @changelog
 --   code tidying
 -- @author Stephan Römer

@@ -1,7 +1,7 @@
 -- @description Nudge notes (bundle)
 -- @version 1.30
 -- @changelog
---   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle includes its own external function file.  
+--   Fallback for no selected item
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

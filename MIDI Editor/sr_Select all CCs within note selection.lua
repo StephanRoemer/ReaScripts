@@ -1,7 +1,7 @@
 -- @description Select all CCs within note selection
--- @version 1.30
+-- @version 1.31
 -- @changelog
---   Changed the script name
+--   Fallback for no selected item
 -- @author Stephan Römer
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @about
@@ -11,13 +11,14 @@
 --    * These scripts work in arrangement, MIDI Editor and Inline Editor
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
-
-for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-    item = reaper.GetSelectedMediaItem(0, i) -- 
-	
-	for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
-        take = reaper.GetTake(item, t)
-	
+if reaper.CountSelectedMediaItems(0) == 0 then
+	reaper.ShowMessageBox("Please select at least one item", "Error", 0)
+	return false
+else 
+	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
+		local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+		local take = reaper.GetActiveTake(item)
+		
 		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
             _, notesCount, ccCount, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs 
 	

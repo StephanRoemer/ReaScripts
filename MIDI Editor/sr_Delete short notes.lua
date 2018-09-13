@@ -1,7 +1,7 @@
 -- @description Delete short notes
--- @version 1.2
+-- @version 1.21
 -- @changelog
---   code tidying
+--   Fallback for no selected item
 -- @author Stephan Römer
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @about
@@ -17,10 +17,14 @@
 shortnote = 40 -- define the length of the leftover notes that should be deleted
 -- User Area End
 
-for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-    item = reaper.GetSelectedMediaItem(0, i)
-    for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
-        take = reaper.GetTake(item, t)
+if reaper.CountSelectedMediaItems(0) == 0 then
+    reaper.ShowMessageBox("Please select at least one item", "Error", 0)
+    return false
+else 
+    for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
+        local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+        local take = reaper.GetActiveTake(item)
+        
         if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
             _, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 			for n = notes_count-1, 0, -1 do -- loop thru all notes, back to front 
@@ -33,7 +37,6 @@ for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected i
         end
     end
 end 
-
 reaper.Undo_OnStateChange2(proj, "Delete short notes")
 
 
