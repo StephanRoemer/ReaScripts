@@ -2,12 +2,14 @@
 
 function SelectCCWithinNoteSelection(dest_cc)
 
-    for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-		item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-
-        for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
-			take = reaper.GetTake(item, t) -- get current take
-
+    if reaper.CountSelectedMediaItems(0) == 0 then
+		reaper.ShowMessageBox("Please select at least one item", "Error", 0)
+		return false
+	else 
+		for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
+			local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+			local take = reaper.GetActiveTake(item)
+            
             if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
 				_, note_count, cc_count, _ = reaper.MIDI_CountEvts(take) -- count notes and CCs
 
