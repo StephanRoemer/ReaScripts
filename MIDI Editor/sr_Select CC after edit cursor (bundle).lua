@@ -1,8 +1,7 @@
 -- @description Select CC after edit cursor (bundle)
--- @version 1.30
+-- @version 1.31
 -- @changelog
---   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
---   Instead the bundle has its own external function file.  
+--   code tydying
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

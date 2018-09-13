@@ -1,53 +1,95 @@
--- @description Select notes after the edit cursor
--- @version 1.2
--- @author Stephan Römer
+-- @description Select notes after edit cursor
+-- @version 1.3
+-- @changelog
+--   switched to Get/SetAllEvts
+-- @author Stephan Römer, with a lot of help from FnA and Julian Sader
+-- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @about
 --    # Description
---    - select all notes, that are located after the edit cursor position
---    - this script works in arrangement, MIDI Editor and Inline Editor
---    - for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all
---
+--    * Select all notes, that are after the edit cursor position
+--    * This script works in arrangement, MIDI Editor and Inline Editor
 -- @link https://forums.cockos.com/showthread.php?p=1923923
---
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @changelog
---     v1.2 (2018-07-05)
--- 	   + added a case for "no item selected"
---     v1.11 (2017-12-21)
--- 	   + fixed an issue with wrong assigned notesCount
---     v1.1 (2017-12-16)
---     + added undo state
---     v1.0
--- 	   + Initial release
 
-if reaper.CountSelectedMediaItems(0) > 1 then
-	reaper.ShowMessageBox("Please select only one item", "Error" , 0) -- popup error message, if more than 1 item is selected
-	return
-elseif reaper.CountSelectedMediaItems(0) == 0 then 
-	reaper.ShowMessageBox("Please select one item", "Error" , 0) -- popup error message, if no item is selected
-	return
-elseif reaper.CountSelectedMediaItems(0) == 1 then
+local cursor_position = reaper.GetCursorPosition()  -- get edit cursor position 
+
+if reaper.CountSelectedMediaItems(0) == 0 then
+	reaper.ShowMessageBox("Please select at least one item", "Error", 0)
+	return false
+else 
 	for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-		item = reaper.GetSelectedMediaItem(0, i)
-        for t = 0, reaper.CountTakes(item)-1 do -- Loop through all takes within each selected item
-            take = reaper.GetTake(item, t)
-            if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-                cursor_position = reaper.GetCursorPosition()  -- get edit cursor position 
-                cursor_position_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, cursor_position) -- convert to PPQ
-                _, notesCount, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notesCount
-				for n = 0, notesCount - 1 do -- loop thru all notes
-					_, sel, _, start_note, end_note, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status, start and end position
-					if start_note >= cursor_position_ppq and end_note > cursor_position_ppq then 
-						reaper.MIDI_SetNote(take, n, true, nil, nil, nil, nil, nil, nil) -- select note if condition above is true
-					else
-						reaper.MIDI_SetNote(take, n, false, nil, nil, nil, nil, nil, nil) -- unselect note if condition above is false
-					end
+		local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+		local item_start = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
+		local take = reaper.GetActiveTake(item)
+		local cursor_position_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, cursor_position) -- convert cursor_position to PPQ
+		local item_start_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, item_start) -- convert item_start to PPQ
+			
+		if reaper.TakeIsMIDI(take) then
+
+			local c, m
+
+			-- create table for note-ons
+			note_on_selection = {}
+			for c = 0, 15 do -- channel table
+				note_on_selection[c] = {}
+				for m = 0, 2, 2 do -- mute table
+					note_on_selection[c][m] = {}
 				end
 			end
-        end
-    end
-	reaper.UpdateArrange()
-	reaper.Undo_OnStateChange2(proj, "Select all notes before edit cursor")
+
+			gotAllOK, MIDIstring = reaper.MIDI_GetAllEvts(take, "") -- write MIDI events to MIDIstring, get all events okay
+			if not gotAllOK then reaper.ShowMessageBox("Error while loading MIDI", "Error", 0) return(false) end -- if getting the MIDI data failed
+			
+			MIDIlen = #MIDIstring -- get string length
+			tableEvents = {} -- initialize table, MIDI events will temporarily be stored in this table until they are concatenated into a string again
+			local stringPos = 1 -- position in MIDIstring while parsing through events 
+			local sum_offset = 0 -- initialize sum_offset (adds all offsets to get the position of every event in ticks)
+
+			while stringPos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
+				offset, flags, msg, stringPos = string.unpack("i4Bs4", MIDIstring, stringPos) -- unpack MIDI-string on stringPos
+				sum_offset = sum_offset+offset -- add all event offsets to get next start position of event on each iteration
+				local event_start = item_start_ppq+sum_offset -- calculate event start position based on item start position
+				local event_type = msg:byte(1)>>4 -- save 1st nibble of status byte (contains info about the data type) to event_type, >>4 shifts the channel nibble into oblivion
+				
+				if event_type == 9 and msg:byte(3) ~= 0 then -- if note-on and velocity is not 0
+					local channel = msg:byte(1)&0x0F
+					local pitch = msg:byte(2)
+					
+					if note_on_selection[channel][flags&2][pitch] then
+						reaper.ShowMessageBox("Can't select, because overlapping notes in selected item #" .. i+1 .. " were found", "Error", 0)
+						return false
+
+					-- note-on after cursor position? select	
+					elseif event_start > cursor_position_ppq then
+						flags = flags|1 -- select
+						note_on_selection[channel][flags&2][pitch] = true -- tag note-on
+
+					-- note-on before cursor position? unselect 
+					elseif event_start <= cursor_position_ppq then 
+						flags = flags &~ 1 -- unselect
+						note_on_selection[channel][flags&2][pitch] = nil -- untag note-on
+					end
+					
+				elseif event_type == 8 or (event_type == 9 and msg:byte(3) == 0) then -- if note-off
+						
+					local channel = msg:byte(1)&0x0F
+					local pitch = msg:byte(2)
+
+					-- note-off anywhere and note-on after cursor? select
+					if note_on_selection[channel][flags&2][pitch] then -- matching note-on tagged for selection?
+						flags = flags|1 -- select
+						note_on_selection[channel][flags&2][pitch] = nil -- untag note-on
+
+					-- note-off and note-on before cursor? unselect
+					else
+						flags = flags &~ 1 -- unselect
+					end
+				end
+				table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string and write to table
+			end
+		end
+		reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
+		reaper.MIDI_Sort(take)
+	end
 end
-
-
+reaper.UpdateArrange()
+reaper.Undo_OnStateChange2(proj, "Select all notes after edit cursor")
