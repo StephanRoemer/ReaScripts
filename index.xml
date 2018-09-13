@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="945069e78e03969f6efba97583525ada151ba7fe">
+<index version="1" name="Stevie Scripts" commit="d9bf938aa15ae5949bded9d8f336262c7a648eb8">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1224,8 +1224,8 @@ v1.0
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects all CCs\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CCs\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1241,6 +1241,10 @@ v1.0
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
+      </version>
+      <version name="1.30" author="Stephan Römer, Julian Sader" time="2018-09-13T02:09:44Z">
+        <changelog><![CDATA[Switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d9bf938aa15ae5949bded9d8f336262c7a648eb8/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC (bundle).lua" type="script" desc="Select CC (bundle)">
