@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="8259ffad02dae670a39797ac553d0f462ea3117a">
+<index version="1" name="Stevie Scripts" commit="3c4b54c5a4456a585ed6351e5e6866f881832bd1">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -597,7 +597,7 @@ v1.0
       </version>
       <version name="1.3" author="Stephan Römer" time="2018-09-12T21:25:54Z">
         <changelog><![CDATA[code tidying]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/535adae87dc400c3ab95db1a99a74f5bfe1f544f/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all CCs before edit cursor.lua" type="script" desc="Delete all CCs before edit cursor">
@@ -619,7 +619,7 @@ v1.0
       </version>
       <version name="1.3" author="Stephan Römer" time="2018-09-12T21:25:54Z">
         <changelog><![CDATA[code tidying]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/535adae87dc400c3ab95db1a99a74f5bfe1f544f/MIDI%20Editor/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all CCs.lua" type="script" desc="Delete all CCs">
@@ -705,6 +705,16 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/465ec86744f2e5793995dae517026de8d7f1c63b/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20(bundle).lua</source>
         <source file="sr_Delete CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/465ec86744f2e5793995dae517026de8d7f1c63b/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20function.lua</source>
       </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tydying]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+        <source file="sr_Delete CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20function.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC before edit cursor (bundle).lua" type="script" desc="Delete CC before edit cursor (bundle)">
       <metadata>
@@ -730,6 +740,16 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/6605629aeded57304a6e83cd661251cab8a75ffb/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20(bundle).lua</source>
         <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/6605629aeded57304a6e83cd661251cab8a75ffb/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
       </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tydying]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20(bundle).lua</source>
+        <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="Delete notes after edit cursor">
       <metadata>
@@ -738,9 +758,9 @@ Instead the bundle has its own external function file.  ]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located after the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Delete all notes, that are located after the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab For obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -763,8 +783,8 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
       </version>
       <version name="1.3" author="Stephan Römer" time="2018-07-16T12:05:29Z">
-        <changelog><![CDATA[v1.3 (2018-07-15]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
+        <changelog><![CDATA[switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="Delete notes before edit cursor">
@@ -774,9 +794,9 @@ Instead the bundle has its own external function file.  ]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab delete all notes, that are located before the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Delete all notes, that are located before the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab For obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -799,8 +819,8 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
       <version name="1.3" author="Stephan Römer" time="2018-07-16T12:05:29Z">
-        <changelog><![CDATA[v1.3 (2018-07-15]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
+        <changelog><![CDATA[switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete short notes.lua" type="script" desc="Delete short notes">
@@ -810,9 +830,9 @@ Instead the bundle has its own external function file.  ]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab deletes leftover short notes, that are created, when splitting (on grid) notes that are not hard quantized (humanized)\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab adjust the length of shortnote in the user area. To get an idea which values are typical for short notes, enable the ShowConsoleMsg near the end of the script\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Deletes leftover short notes, that are created, when splitting (on grid) notes that are not hard quantized (humanized)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Adjust the length of shortnote in the user area. To get an idea which values are typical for short notes, enable the ShowConsoleMsg near the end of the script\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -830,6 +850,10 @@ v1.0]]></changelog>
       <version name="1.12" author="Stephan Römer" time="2017-12-21T10:14:52Z">
         <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
+      </version>
+      <version name="1.2" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tidying]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Double notes (bundle).lua" type="script" desc="Double notes (bundle)">
@@ -1040,7 +1064,7 @@ Instead the bundle has its own external function file.  ]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script moves all selected notes to the edit cursor and keeps their relative offsets\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script moves all selected notes to the edit cursor and keeps their relative offsets\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1065,6 +1089,10 @@ v1.1 (2018-07-16)
 v1.0 (2018-07-13)
 + Initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6f7ba13cd51e29ae4c9a96d9ab78b71c179184f3/MIDI%20Editor/sr_Move%20notes%20to%20edit%20cursor%20(relative).lua</source>
+      </version>
+      <version name="1.3" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tidying]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Move%20notes%20to%20edit%20cursor%20(relative).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Nudge notes (bundle).lua" type="script" desc="Nudge notes (bundle)">
@@ -1129,8 +1157,8 @@ Instead the bundle has its own external function file.  ]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects all CC data after the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC data after the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1147,6 +1175,10 @@ v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.2" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select all CCs before edit cursor.lua" type="script" desc="Select all CCs before edit cursor">
       <metadata>
@@ -1155,8 +1187,8 @@ v1.0
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script selects all CC data before the edit cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC data before the edit cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1172,6 +1204,10 @@ v1.0
 v1.0
 + Initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.2" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs within note selection.lua" type="script" desc="Select all CCs within note selection">
@@ -1243,6 +1279,16 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/b87d63dabbe7594f55204d767a8060b24cc3302f/MIDI%20Editor/sr_Select%20CC%20(bundle).lua</source>
         <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b87d63dabbe7594f55204d767a8060b24cc3302f/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
       </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tydying]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC64.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20(bundle).lua</source>
+        <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC after edit cursor (bundle).lua" type="script" desc="Select CC after edit cursor (bundle)">
       <metadata>
@@ -1268,6 +1314,16 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/775e87d743aebde7ea70c279b46ef42fe2d12885/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20(bundle).lua</source>
       </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tydying]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
+        <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC before edit cursor (bundle).lua" type="script" desc="Select CC before edit cursor (bundle)">
       <metadata>
@@ -1292,6 +1348,16 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
         <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/557932fc70c33084286994726d3faf613e72447b/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
+      </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[code tydying]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
+        <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC within note selection (bundle).lua" type="script" desc="Select CC within note selection (bundle)">
@@ -1320,16 +1386,15 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/0d9e33cdf142fa1b11745876d85410c6e9df1e28/MIDI%20Editor/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="Select notes after the edit cursor">
+    <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="Select notes after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab select all notes, that are located after the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Select all notes, that are after the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1352,6 +1417,10 @@ v1.0]]></changelog>
         <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
       </version>
+      <version name="1.3" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="Select notes before edit cursor">
       <metadata>
@@ -1360,9 +1429,8 @@ v1.0]]></changelog>
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab select all notes, that are located before the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab for obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Select all notes, that are located before the edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1384,6 +1452,10 @@ v1.0]]></changelog>
       <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
         <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.3" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2018-09-13T01:10:26Z">
+        <changelog><![CDATA[switched to Get/SetAllEvts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes under edit cursor.lua" type="script" desc="Select notes under edit cursor">
