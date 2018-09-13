@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="d9bf938aa15ae5949bded9d8f336262c7a648eb8">
+<index version="1" name="Stevie Scripts" commit="b23c5d5967f88d3cad800f3e58b872d3cd74936c">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1376,6 +1376,16 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/0d9e33cdf142fa1b11745876d85410c6e9df1e28/MIDI%20Editor/sr_Select%20CC64%20within%20note%20selection.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/0d9e33cdf142fa1b11745876d85410c6e9df1e28/MIDI%20Editor/sr_Select%20CC%20within%20note%20selection%20(bundle).lua</source>
         <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/0d9e33cdf142fa1b11745876d85410c6e9df1e28/MIDI%20Editor/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
+      </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-13T02:12:05Z">
+        <changelog><![CDATA[Fallback for no selected item]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC1%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC2%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC7%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC11%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC64%20within%20note%20selection.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC%20within%20note%20selection%20(bundle).lua</source>
+        <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="Select notes after edit cursor">
