@@ -1,14 +1,4 @@
--- @description Delete all CCs before edit cursor
--- @version 1.3
--- @changelog
---   code tidying
--- @author Stephan Römer
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @about
---    # Description
---    * This script deletes the data of all CC lanes before the edit cursor
---    * This script works in arrangement, MIDI Editor and Inline Editor
--- @link https://forums.cockos.com/showthread.php?p=1923923
+-- @noindex
 
 local cursor_position = reaper.GetCursorPosition()  -- get edit cursor position 
 

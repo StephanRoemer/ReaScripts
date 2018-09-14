@@ -10,6 +10,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC7 after edit cursor.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC11 after edit cursor.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC64 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select all CCs after edit cursor.lua
 --  [nomain] sr_Select CC after edit cursor function.lua
 --  [nomain] sr_Select CC after edit cursor (bundle).lua
 -- @about

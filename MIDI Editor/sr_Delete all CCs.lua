@@ -1,6 +1,5 @@
 -- @noindex
 
-
 if reaper.CountSelectedMediaItems(0) == 0 then
 	reaper.ShowMessageBox("Please select at least one item", "Error", 0)
 	return false

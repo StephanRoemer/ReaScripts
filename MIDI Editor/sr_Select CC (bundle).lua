@@ -10,6 +10,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC7.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC11.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Select CC64.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Select all CCs.lua
 --  [nomain] sr_Select CC (bundle).lua
 --  [nomain] sr_Select CC function.lua
 -- @about

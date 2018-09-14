@@ -10,6 +10,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC7 before edit cursor.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC11 before edit cursor.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC64 before edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete all CCs before edit cursor.lua
 --  [nomain] sr_Delete CC before edit cursor (bundle).lua
 --  [nomain] sr_Delete CC before edit cursor function.lua
 -- @about

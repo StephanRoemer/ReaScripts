@@ -1,14 +1,4 @@
--- @description Select all CCs after edit cursor
--- @version 1.2
--- @changelog
---   switched to Get/SetAllEvts
--- @author Stephan Römer
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @about
---    # Description
---    * This script selects all CC data after the edit cursor
---    * This script works in arrangement, MIDI Editor and Inline Editor
--- @link https://forums.cockos.com/showthread.php?p=1923923
+-- @noindex
 
 local cursor_position = reaper.GetCursorPosition()  -- get edit cursor position 
 

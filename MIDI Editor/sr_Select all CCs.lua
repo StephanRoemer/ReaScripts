@@ -1,14 +1,4 @@
--- @description Select all CCs
--- @version 1.30
--- @changelog
---   Switched to Get/SetAllEvts
--- @author Stephan Römer, Julian Sader
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @about
---    # Description
---    * This script selects all CCs
---    * This script works in arrangement, MIDI Editor and Inline Editor
--- @link https://forums.cockos.com/showthread.php?p=1923923
+-- @noindex
 
 if reaper.CountSelectedMediaItems(0) == 0 then
 	reaper.ShowMessageBox("Please select at least one item", "Error", 0)
