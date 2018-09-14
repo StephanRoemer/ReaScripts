@@ -1,14 +1,4 @@
--- @description Delete all CCs
--- @version 1.31
--- @changelog
---   Fallback for no selected item
--- @author Stephan Römer, Julian Sader
--- @provides [main=main,midi_editor,midi_inlineeditor] .
--- @about
---    # Description
---     * This script deletes the data of all CC lanes
---     * This script works in arrangement, MIDI Editor and Inline Editor
--- @link https://forums.cockos.com/showthread.php?p=1923923
+-- @noindex
 
 
 if reaper.CountSelectedMediaItems(0) == 0 then

@@ -10,6 +10,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC7.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC11.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Delete CC64.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Delete all CCs.lua
 --  [nomain] sr_Delete CC (bundle).lua
 --  [nomain] sr_Delete CC function.lua
 -- @about
