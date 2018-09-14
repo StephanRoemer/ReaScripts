@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="b23c5d5967f88d3cad800f3e58b872d3cd74936c">
+<index version="1" name="Stevie Scripts" commit="3f1345fb0ab7d57db372a00fcd95771d2de46d4c">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -650,44 +650,6 @@ v1.0
       <version name="1.3" author="Stephan Römer" time="2018-09-12T21:25:54Z">
         <changelog><![CDATA[code tidying]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Delete all CCs.lua" type="script" desc="Delete all CCs">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script deletes the data of all CC lanes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.1 (2017-12-16)
-+ added undo state
-v1.0
-+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
-      </version>
-      <version name="1.2" author="Stephan Römer, Julian Sader" time="2018-07-16T12:05:29Z">
-        <changelog><![CDATA[v1.2 (2018-07-15)]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
-      </version>
-      <version name="1.3" author="Stephan Römer, Julian Sader" time="2018-09-12T21:05:35Z">
-        <changelog><![CDATA[code tidying]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/93b7f7f46cab78541e5c5192f5ef5e28909c0ce4/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
-      </version>
-      <version name="1.31" author="Stephan Römer, Julian Sader" time="2018-09-13T01:58:00Z">
-        <changelog><![CDATA[Fallback for no selected item]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete CC (bundle).lua" type="script" desc="Delete CC (bundle)">
