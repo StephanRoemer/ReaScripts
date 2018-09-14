@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="cf49bdc07cfa8e70a31006a698b9899228439ae6">
+<index version="1" name="Stevie Scripts" commit="56f22e600502471d54a9dd93abdbba1aebbe1c3c">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -616,6 +616,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/8dc8ed0f18a00f68feb8a8a6fde1a40fda0f03c3/MIDI%20Editor/sr_Delete%20CC%20(bundle).lua</source>
         <source file="sr_Delete CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/8dc8ed0f18a00f68feb8a8a6fde1a40fda0f03c3/MIDI%20Editor/sr_Delete%20CC%20function.lua</source>
       </version>
+      <version name="1.31" author="Stephan Römer" time="2018-09-14T20:25:02Z">
+        <changelog><![CDATA[now includes "Delete all CCs" scripts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20(bundle).lua</source>
+        <source file="sr_Delete CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20function.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC after edit cursor (bundle).lua" type="script" desc="Delete CC after edit cursor (bundle)">
       <metadata>
@@ -651,6 +662,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20(bundle).lua</source>
         <source file="sr_Delete CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20function.lua</source>
       </version>
+      <version name="1.32" author="Stephan Römer" time="2018-09-14T20:25:02Z">
+        <changelog><![CDATA[now includes "Delete all CCs after cursor"]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+        <source file="sr_Delete CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20after%20edit%20cursor%20function.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Delete CC before edit cursor (bundle).lua" type="script" desc="Delete CC before edit cursor (bundle)">
       <metadata>
@@ -685,6 +707,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20(bundle).lua</source>
         <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
+      </version>
+      <version name="1.32" author="Stephan Römer" time="2018-09-14T20:25:02Z">
+        <changelog><![CDATA[now includes "Delete all CCs before edit cursor"]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20(bundle).lua</source>
+        <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="Delete notes after edit cursor">
@@ -1093,6 +1126,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20(bundle).lua</source>
         <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
       </version>
+      <version name="1.32" author="Stephan Römer" time="2018-09-14T20:25:02Z">
+        <changelog><![CDATA[now includes "Select all CCs"]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20all%20CCs.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC%20(bundle).lua</source>
+        <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC%20function.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC after edit cursor (bundle).lua" type="script" desc="Select CC after edit cursor (bundle)">
       <metadata>
@@ -1128,6 +1172,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20(bundle).lua</source>
       </version>
+      <version name="1.32" author="Stephan Römer" time="2018-09-14T20:25:02Z">
+        <changelog><![CDATA[now includes "Select all CCs after edit cursor"]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
+        <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Select CC before edit cursor (bundle).lua" type="script" desc="Select CC before edit cursor (bundle)">
       <metadata>
@@ -1162,6 +1217,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
         <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/3c4b54c5a4456a585ed6351e5e6866f881832bd1/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
+      </version>
+      <version name="1.32" author="Stephan Römer" time="2018-09-14T20:25:02Z">
+        <changelog><![CDATA[now includes "Select all CCs before edit cursor"]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
+        <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC within note selection (bundle).lua" type="script" desc="Select CC within note selection (bundle)">
