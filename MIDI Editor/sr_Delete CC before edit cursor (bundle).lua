@@ -1,7 +1,7 @@
 -- @description Delete CC before edit cursor (bundle)
--- @version 1.31
+-- @version 1.32
 -- @changelog
---   code tydying
+--   now includes "Delete all CCs before edit cursor"
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

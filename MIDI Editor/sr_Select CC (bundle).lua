@@ -1,7 +1,7 @@
 -- @description Select CC (bundle)
--- @version 1.31
+-- @version 1.32
 -- @changelog
---   code tydying
+--   now includes "Select all CCs"
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
