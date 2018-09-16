@@ -1,4 +1,4 @@
--- @description Select all events in CC lane before and under mouse cursor (exclussive)
+-- @description Select all events in CC lane after and under mouse cursor (exclusive)
 -- @version 1.0
 -- @changelog
 --   initial release
@@ -6,8 +6,8 @@
 -- @provides [main=midi_editor] .
 -- @about
 --    # Description
---    * This script selects all CC events in the lane before and under the mouse cursor
---    * A CC selection is exclussive, e.g. another selected CC will get unselected
+--    * This script selects all CC events in the lane after and under the mouse cursor
+--    * A CC selection is exclusive, e.g. another selected CC will get unselected
 --    * This script works only in the MIDI Editor
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
@@ -19,7 +19,7 @@ local take = reaper.MIDIEditor_GetTake(reaper.MIDIEditor_GetActive()) -- get act
 local mouse_pos_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, reaper.BR_GetMouseCursorContext_Position()) -- get mouse position in project time and convert to PPQ
 
 
-function SelectCCBeforeMouse(cc_lane)
+function SelectCCAfterMouse(cc_lane)
 
     local item = reaper.GetMediaItemTake_Item(take)
     local item_start = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
@@ -43,12 +43,12 @@ function SelectCCBeforeMouse(cc_lane)
             if #msg == 3 then -- if msg consists of 3 bytes (= channel message)
                 
                 if (msg:byte(1)>>4) == 11 and msg:byte(2) == cc_lane -- if status byte is a CC and CC# equals cc_lane 
-                and event_start < mouse_pos_ppq -- events in cc_lane are before mouse position
+                and event_start > mouse_pos_ppq -- events in cc_lane are after mouse position
                 then 
                     flags = flags|1 -- select muted and unmuted CC events
                 
                 elseif (msg:byte(1)>>4) == 11 and (msg:byte(2) ~= cc_lane) or -- events are not in cc_lane
-                (msg:byte(2) == cc_lane and event_start > mouse_pos_ppq) -- events in cc_lane are after mouse position
+                (msg:byte(2) == cc_lane and event_start < mouse_pos_ppq) -- events in cc_lane are before mouse position
                 then 
                     flags = flags&0 -- unselect muted and unmuted CC events
                 end
@@ -60,7 +60,7 @@ function SelectCCBeforeMouse(cc_lane)
     reaper.MIDI_Sort(take)
 end
 
-SelectCCBeforeMouse(cc_lane)
+SelectCCAfterMouse(cc_lane)
 
 reaper.UpdateArrange()
-reaper.Undo_OnStateChange2(proj, "Select all events in CC"..cc_lane.." lane before and under mouse cursor (exclussive)")
+reaper.Undo_OnStateChange2(proj, "Select all events in CC"..cc_lane.." lane after and under mouse cursor (exclusive)")

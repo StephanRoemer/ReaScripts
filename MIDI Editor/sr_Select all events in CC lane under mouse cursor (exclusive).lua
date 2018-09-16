@@ -1,4 +1,4 @@
--- @description Select all events in CC lane under mouse cursor (exclussive)
+-- @description Select all events in CC lane under mouse cursor (exclusive)
 -- @version 1.0
 -- @changelog
 --   initial release
@@ -7,7 +7,7 @@
 -- @about
 --    # Description
 --    * This script selects all CC events in the lane under the mouse cursor
---    * A CC selection is exclussive, e.g. another selected CC will get unselected
+--    * A CC selection is exclusive, e.g. another selected CC will get unselected
 --    * This script works only in the MIDI Editor
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
@@ -49,4 +49,4 @@ if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
 end
 
 reaper.UpdateArrange()
-reaper.Undo_OnStateChange2(proj, "Select all events in CC"..cc_lane.." lane under mouse cursor (exclussive)")
+reaper.Undo_OnStateChange2(proj, "Select all events in CC"..cc_lane.." lane under mouse cursor (exclusive)")
