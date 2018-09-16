@@ -1,7 +1,7 @@
 -- @description Select all events in CC lane before and under mouse cursor (exclussive)
--- @version 1.0
+-- @version 1.01
 -- @changelog
---   initial release
+--   typo fix
 -- @author Stephan Römer
 -- @provides [main=midi_editor] .
 -- @about
@@ -19,7 +19,7 @@ local take = reaper.MIDIEditor_GetTake(reaper.MIDIEditor_GetActive()) -- get act
 local mouse_pos_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, reaper.BR_GetMouseCursorContext_Position()) -- get mouse position in project time and convert to PPQ
 
 
-function SelectCCAftBeforeerEditCursor(cc_lane)
+function SelectCCBeforeEditCursor(cc_lane)
 
     local item = reaper.GetMediaItemTake_Item(take)
     local item_start = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
