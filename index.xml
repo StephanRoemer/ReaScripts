@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="355057aea93c5133397276ef2e5059ba9e7c42d7">
+<index version="1" name="Stevie Scripts" commit="1b8fb763f266131000c0bb5d5ba68d8e1a5474a7">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -592,42 +592,6 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Decrease CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Decrease%20CC%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Decrease events in CC lane under mouse cursor.lua" type="script" desc="Decrease events in CC lane under mouse cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script decreases all or selected CC events in the lane under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Decrease%20events%20in%20CC%20lane%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Delete all events in CC lane under mouse cursor.lua" type="script" desc="Delete all events in CC lane under mouse cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script deletes all CC events in the lane under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Delete%20all%20events%20in%20CC%20lane%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Delete CC (bundle).lua" type="script" desc="Delete CC (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -963,24 +927,6 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Increase CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Increase%20CC%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Increase events in CC lane under mouse cursor.lua" type="script" desc="Increase events in CC lane under mouse cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script increases all or selected CC events in the lane under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Increase%20events%20in%20CC%20lane%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Move CC to CC (bundle).lua" type="script" desc="Move CC to CC (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1144,124 +1090,6 @@ Instead the bundle has its own external function file.  ]]></changelog>
       <version name="1.31" author="Stephan Römer" time="2018-09-13T01:58:00Z">
         <changelog><![CDATA[Fallback for no selected item]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Select%20all%20CCs%20within%20note%20selection.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all events in CC lane after and under mouse cursor (exclussive).lua" type="script" desc="Select all events in CC lane after and under mouse cursor (exclussive)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC events in the lane after and under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab A CC selection is exclussive, e.g. another selected CC will get unselected\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20after%20and%20under%20mouse%20cursor%20(exclussive).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all events in CC lane after and under mouse cursor.lua" type="script" desc="Select all events in CC lane after and under mouse cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC events in the lane after and under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When a CC selection already exists, the new selection will be added\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20after%20and%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all events in CC lane before and under mouse cursor (exclussive).lua" type="script" desc="Select all events in CC lane before and under mouse cursor (exclussive)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC events in the lane before and under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab A CC selection is exclussive, e.g. another selected CC will get unselected\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20before%20and%20under%20mouse%20cursor%20(exclussive).lua</source>
-      </version>
-      <version name="1.01" author="Stephan Römer" time="2018-09-16T12:31:43Z">
-        <changelog><![CDATA[typo fix]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/355057aea93c5133397276ef2e5059ba9e7c42d7/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20before%20and%20under%20mouse%20cursor%20(exclussive).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all events in CC lane before and under mouse cursor.lua" type="script" desc="Select all events in CC lane before and under mouse cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC events in the lane before and under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When a CC selection already exists, the new selection will be added\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20before%20and%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all events in CC lane under mouse cursor (exclussive).lua" type="script" desc="Select all events in CC lane under mouse cursor (exclussive)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC events in the lane under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab A CC selection is exclussive, e.g. another selected CC will get unselected\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20under%20mouse%20cursor%20(exclussive).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select all events in CC lane under mouse cursor.lua" type="script" desc="Select all events in CC lane under mouse cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CC events in the lane under the mouse cursor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When a CC selection already exists, the new selection will be added\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI Editor\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-16T12:09:09Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/75311824315f338710716c6436882a5b71d81e5f/MIDI%20Editor/sr_Select%20all%20events%20in%20CC%20lane%20under%20mouse%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select CC (bundle).lua" type="script" desc="Select CC (bundle)">
