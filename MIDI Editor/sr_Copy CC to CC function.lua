@@ -30,7 +30,7 @@ function CopySrcCCToDestCC(src_cc, dest_cc)
 					end
 				end
     
-                -- second iteration to increase dest_cc based on selection or no selection
+                -- second iteration to copy dest_cc based on selection or no selection
 				tableEvents = {} -- initialize table, MIDI events will temporarily be stored in this table until they are concatenated into a string again
 				stringPos = 1 -- position in MIDIstring while parsing through events 
     
