@@ -5,13 +5,14 @@ function SendTrackToBUS(bus_prefix)
     local selected_tracks = reaper.CountSelectedTracks(0)
 
     function GetBUS()
+        local bus_prefix_len = #bus_prefix -- get length of bus_prefix
         local track_name
         local track_count = reaper.GetNumTracks()  
         
         for i = 0, track_count-1 do -- loop thru all tracks
             local track = reaper.GetTrack(0, i) -- get current track
             _, track_name = reaper.GetTrackName(track, "")
-            if string.match(string.sub(track_name, 1,5), bus_prefix) then -- prefix equals bus_prefix
+            if string.match(string.sub(track_name, 1, bus_prefix_len), bus_prefix) then -- prefix equals bus_prefix
                 return track -- bus_prefix track found
             end
         end

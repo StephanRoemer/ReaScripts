@@ -1,7 +1,7 @@
 -- @description Send selected track(s) to BUS track and remove master send (bundle)
--- @version 1.0
+-- @version 1.1
 -- @changelog
---   Initial release
+--   The prefix length is no longer "limited" to 5 chars, instead the function will check for the prefix length and adapt accordingly
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
