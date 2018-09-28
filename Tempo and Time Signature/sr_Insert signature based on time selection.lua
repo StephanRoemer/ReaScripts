@@ -3,7 +3,7 @@
 -- @changelog
 --   initial release
 -- @author Stephan Römer
--- @provides [main=main, midi_editor] .
+-- @provides [main=main,midi_editor] .
 -- @about
 --    # Description
 --    * This script inserts a signature based on the grid value and the time selection
