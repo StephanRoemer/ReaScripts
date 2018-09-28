@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="26083ba18a23c3acba4ba636f7c565ff64e1f607">
+<index version="1" name="Stevie Scripts" commit="27d9281c840946f3765a45a9d70a792db853dc3e">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1752,6 +1752,26 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Transpose%20notes%20(bundle).lua</source>
         <source file="sr_Transpose notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Transpose%20notes%20function.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Tempo and Time Signature">
+    <reapack name="sr_Insert signature based on time selection.lua" type="script" desc="Insert signature based on time selection">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script inserts a signature based on the grid value and the time selection\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI Editor and the Arrange view\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-09-28T00:47:55Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/27d9281c840946f3765a45a9d70a792db853dc3e/Tempo%20and%20Time%20Signature/sr_Insert%20signature%20based%20on%20time%20selection.lua</source>
       </version>
     </reapack>
   </category>
