@@ -1,7 +1,7 @@
 -- @description Change note length (mousewheel)
--- @version 1.2
+-- @version 1.21
 -- @changelog
---   code tidying
+--   bug fix
 -- @author Stephan Römer
 -- @provides [main=midi_editor] .
 -- @about
@@ -44,4 +44,5 @@ for n = 0, notes_count - 1 do
 	end
 end
 
+reaper.MIDI_Sort(take)
 reaper.Undo_OnStateChange2(proj, "Change note length (mousewheel)")

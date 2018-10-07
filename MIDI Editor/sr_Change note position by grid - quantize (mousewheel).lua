@@ -1,7 +1,7 @@
 -- @description Change note position by grid - quantize (mousewheel)
--- @version 1.2
+-- @version 1.21
 -- @changelog
---   code tidying
+--   bug fix
 -- @author Stephan Römer, Lokasenna
 -- @provides [main=midi_editor] .
 -- @about
@@ -72,4 +72,5 @@ for n = 0, notes_count - 1 do -- loop through notes
 	reaper.UpdateArrange()
 end
 
+reaper.MIDI_Sort(take)
 reaper.Undo_OnStateChange2(proj, "Change note position to grid (mousewheel)")
