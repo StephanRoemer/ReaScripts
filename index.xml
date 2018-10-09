@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="91c5eea8871bef83dde5ca402d563dc2f38c2d88">
+<index version="1" name="Stevie Scripts" commit="4450f57fd47e574d8bc129fa0780ac04bca74879">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1816,6 +1816,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2018-09-28T00:47:55Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/27d9281c840946f3765a45a9d70a792db853dc3e/Tempo%20and%20Time%20Signature/sr_Insert%20signature%20based%20on%20time%20selection.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2018-10-09T00:21:48Z">
+        <changelog><![CDATA[a lot of bug fixes, the script was very buggy in some edge cases]]></changelog>
+        <source main="main midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/4450f57fd47e574d8bc129fa0780ac04bca74879/Tempo%20and%20Time%20Signature/sr_Insert%20signature%20based%20on%20time%20selection.lua</source>
       </version>
     </reapack>
   </category>
