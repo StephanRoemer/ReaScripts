@@ -1,7 +1,7 @@
 -- @description Insert signature based on time selection
--- @version 1.0
+-- @version 1.1
 -- @changelog
---   initial release
+--   a lot of bug fixes, the script was very buggy in some edge cases
 -- @author Stephan Römer
 -- @provides [main=main,midi_editor] .
 -- @about
@@ -12,8 +12,6 @@
 
 
 timesel_start, timesel_end = reaper.GetSet_LoopTimeRange(0, 0, 0, 0, 0) -- get time selection
-timesel_start_qn = reaper.TimeMap_QNToTime(timesel_start) -- convert to QN
-timesel_end_qn = reaper.TimeMap_QNToTime(timesel_end) -- convert to QN
 
 midi_editor = reaper.MIDIEditor_GetActive() -- get active MIDI Editor
 
@@ -24,16 +22,24 @@ else
     grid = grid / 4 -- grid needs to be corrected, not sure why
 end
 
-signature = timesel_end_qn - timesel_start_qn -- calculate signature, 1 would be 4/4, 8/8, etc...
-numerator = signature / grid
+_, _, _, fullbeats_timesel_start, cdenom = reaper.TimeMap2_timeToBeats(0, timesel_start) -- time selection start in beats
+_, _, _, fullbeats_timesel_end, _ = reaper.TimeMap2_timeToBeats(0, timesel_end) -- time selection end in beats
+
+fullbeats_timesel_distance = fullbeats_timesel_end - fullbeats_timesel_start -- time selection distance in beats
+
 denominator = 1 / grid
+numerator = fullbeats_timesel_distance/cdenom*denominator --
+numerator = math.modf(numerator+0.5) -- "convert" float to integer by rounding
 
-if math.floor(numerator) ~= numerator then -- if number can be rounded, then it's not an integer
-    reaper.ShowMessageBox("The numerator is not an integer. The time selection does not fit in your current grid resolution. Please change your grid setting.", "Error", 0)
-    return false
-end
+_, _, tempo = reaper.TimeMap_GetTimeSigAtTime(0, timesel_start) -- get tempo
+reaper.SetTempoTimeSigMarker(0, -1, timesel_start, -1, -1, tempo, numerator, denominator, true) -- insert signature and tempo
 
-reaper.SetTempoTimeSigMarker(0, -1, timesel_start, -1, -1, 0, numerator, denominator, true) -- insert signature
+
+
+-- signature = timesel_end_qn - timesel_start_qn -- calculate signature, 1 would be 4/4, 8/8, etc...
+
+-- retval, timepos, measurepos, beatpos, bpm, timesig_num, timesig_denom, lineartempo = reaper.GetTempoTimeSigMarker( proj, ptidx )
+
 
 reaper.UpdateTimeline()
 reaper.UpdateArrange()
