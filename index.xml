@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="9e3dada9a4f6acac1a9d67e215a191d3ec738c69">
+<index version="1" name="Stevie Scripts" commit="cf2530bc95ec3cf25070aab6c1c99c57e28d52ae">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -160,7 +160,7 @@
     </reapack>
   </category>
   <category name="Items Editing">
-    <reapack name="sr_Align selected items to item under mouse cursor.lua" type="script" desc="Align selected items to item under mouse cursor">
+    <reapack name="sr_Align selected item(s) to item under mouse cursor.lua" type="script" desc="Align selected items to item under mouse cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -175,9 +175,9 @@
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-10-14T01:39:34Z">
+      <version name="1.0" author="Stephan Römer" time="2018-10-14T02:37:26Z">
         <changelog><![CDATA[initial release]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/9e3dada9a4f6acac1a9d67e215a191d3ec738c69/Items%20Editing/sr_Align%20selected%20items%20to%20item%20under%20mouse%20cursor.lua</source>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/Items%20Editing/sr_Align%20selected%20item(s)%20to%20item%20under%20mouse%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
@@ -574,8 +574,8 @@ v1.0 (2018-07-02)
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundles consists of 2 scripts that nudges either all notes or selected notes left/right.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The amount of ticks can be adjusted in the scripts. That way, you can easily create different versions that fit your personal needs.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of several scripts that increase/decrease the velocity of either all or selected notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The amount can be adjusted in the scripts. That way, you can easily create different versions that fit your personal needs.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI Editor and Inline Editor\sa180\par}
 }
 ]]></description>
@@ -583,16 +583,16 @@ v1.0 (2018-07-02)
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2018-10-07T22:36:27Z">
         <changelog><![CDATA[initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20+1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20+2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20+5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20-5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20+6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20-6.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20(bundle).lua</source>
-        <source file="sr_Change velocity function.lua">https://github.com/StephanRoemer/ReaScripts/raw/91c5eea8871bef83dde5ca402d563dc2f38c2d88/MIDI%20Editor/sr_Change%20velocity%20function.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20+1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20+2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20+5.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20-5.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20+6.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20-6.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20(bundle).lua</source>
+        <source file="sr_Change velocity function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf2530bc95ec3cf25070aab6c1c99c57e28d52ae/MIDI%20Editor/sr_Change%20velocity%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Copy CC to CC (bundle).lua" type="script" desc="Copy CC to CC (bundle)">
