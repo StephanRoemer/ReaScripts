@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="4450f57fd47e574d8bc129fa0780ac04bca74879">
+<index version="1" name="Stevie Scripts" commit="9e3dada9a4f6acac1a9d67e215a191d3ec738c69">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -160,6 +160,26 @@
     </reapack>
   </category>
   <category name="Items Editing">
+    <reapack name="sr_Align selected items to item under mouse cursor.lua" type="script" desc="Align selected items to item under mouse cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script aligns selected takes to the take under the mouse\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Depending on where the mouse is located (near the start or end of the item), seleczed items will be aligned to their start or end\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Items with a snap offset will always be aligned to their offset\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script only works in the Arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2018-10-14T01:39:34Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/9e3dada9a4f6acac1a9d67e215a191d3ec738c69/Items%20Editing/sr_Align%20selected%20items%20to%20item%20under%20mouse%20cursor.lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Move items to timecode (in filename).lua" type="script" desc="Move items to timecode (in filename)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
