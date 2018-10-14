@@ -17,8 +17,8 @@
 --  [nomain] sr_Change velocity function.lua
 -- @about
 --    # Description
---    * This script bundles consists of 2 scripts that nudges either all notes or selected notes left/right.
---    * The amount of ticks can be adjusted in the scripts. That way, you can easily create different versions
+--    * This script bundle consists of several scripts that increase/decrease the velocity of either all or selected notes
+--    * The amount can be adjusted in the scripts. That way, you can easily create different versions
 --      that fit your personal needs. 
 --    * The scripts work in arrangement, MIDI Editor and Inline Editor
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
