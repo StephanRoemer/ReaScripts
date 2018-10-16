@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="debcaf3c5e4da4cca7e9602e76946647b6b65c5e">
+<index version="1" name="Stevie Scripts" commit="05529494e79c4749332d2189cd2623bcfba1d4c9">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1151,7 +1151,7 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Move CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Move%20CC%20to%20CC%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Move legato point of 2 selected notes.lua" type="script" desc="Move legato point of 2 selected notes (mousewheel)">
+    <reapack name="sr_Move legato point of 2 selected notes (mousewheel).lua" type="script" desc="Move legato point of 2 selected notes (mousewheel)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -1165,9 +1165,9 @@ Instead the bundle has its own external function file.  ]]></changelog>
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-10-16T11:31:05Z">
+      <version name="1.0" author="Stephan Römer" time="2018-10-16T11:32:20Z">
         <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/debcaf3c5e4da4cca7e9602e76946647b6b65c5e/MIDI%20Editor/sr_Move%20legato%20point%20of%202%20selected%20notes.lua</source>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/05529494e79c4749332d2189cd2623bcfba1d4c9/MIDI%20Editor/sr_Move%20legato%20point%20of%202%20selected%20notes%20(mousewheel).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move notes to edit cursor (relative).lua" type="script" desc="Move notes to edit cursor (relative)">
