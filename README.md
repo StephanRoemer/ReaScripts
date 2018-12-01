@@ -8,7 +8,3 @@ My scripts can be added via ReaPack into Reaper. Here's the repository URL:
 https://github.com/StephanRoemer/ReaScripts/raw/master/index.xml
 ```
 
-```diff
--> Please install the "sr_MIDI functions" package, when installing any MIDI Editor scripts. 
--> Most of the functions are stored in this file and some scripts won't work without it!
-```
