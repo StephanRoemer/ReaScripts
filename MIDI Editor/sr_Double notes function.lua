@@ -49,4 +49,4 @@ function double_notes(interval)
 		end
 	end
 	reaper.UpdateArrange()
-end 
+end

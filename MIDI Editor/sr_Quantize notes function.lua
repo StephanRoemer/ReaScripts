@@ -57,4 +57,4 @@ function Quantize()
 	end
 	reaper.MIDI_Sort(take)
 	reaper.UpdateArrange()
-end 
+end

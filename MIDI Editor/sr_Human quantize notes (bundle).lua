@@ -1,5 +1,5 @@
 -- @description Human quantize notes (bundle)
--- @version 1.31
+-- @version 1.32
 -- @changelog
 --   switched from SnapToGrid() to BR_GetClosestGridDivision(), as this function will always snap to grid, 
 --   even if the gridlines are not visible due to zoom factor. Thanks to X-Raym, for the heads up!
