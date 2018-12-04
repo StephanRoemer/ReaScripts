@@ -1,8 +1,8 @@
 -- @description Quantize notes (bundle)
--- @version 1.30
+-- @version 1.31
 -- @changelog
---   The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. 
---   Instead the bundle has its own external function file.  
+--   switched from SnapToGrid() to BR_GetClosestGridDivision(), as this function will always snap to grid, 
+--   even if the gridlines are not visible due to zoom factor. Thanks X-Raym, for the heads up!
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

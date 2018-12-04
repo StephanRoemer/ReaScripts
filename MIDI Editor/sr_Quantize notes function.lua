@@ -21,7 +21,7 @@ function Quantize()
     
                 if MIDIEditor == nil then -- if user is in the Arrangement (MIDI Editor is closed), use project grid for quantize
 					noteStart = reaper.MIDI_GetProjTimeFromPPQPos(take, startppqposOut) -- convert note start to seconds
-					closestGrid = reaper.SnapToGrid(0, noteStart) -- get closest grid for current note (return value in seconds)
+					closestGrid = reaper.BR_GetClosestGridDivision(noteStart) -- get closest grid for current note (return value in seconds)
 					closestGridPPQ = reaper.MIDI_GetPPQPosFromProjTime(take, closestGrid) -- convert closest grid to PPQ
 					if notesSelected == true then -- if there is a note selection
 						if selectedOut == true then -- filter out selected notes to quantize
