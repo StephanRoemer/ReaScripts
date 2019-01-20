@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="f6e39ec172f3cb6e8440031b7ca62349f6a6d09c">
+<index version="1" name="Stevie Scripts" commit="aa31917308fa5b79bea6abca3b2d75fd3428dd1c">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -214,36 +214,42 @@
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/e9e3faffe605e9cfe9766e5d71e30e0a1172feb9/Items%20Editing/sr_Move%20items%20to%20timecode%20(in%20filename).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Open MIDI editor and zoom to 5 measures.lua" type="script" desc="Open MIDI editor and zoom to 5 measures">
+    <reapack name="sr_Open MIDI editor and zoom to 5 measures (zoom center is edit cursor).lua" type="script" desc="Open MIDI editor and zoom to 5 measures (zoom center is edit cursor)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the Enter key and it will open the MIDI Editor and zoom to 5 measures (default). You can adjust the measures in the user area.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab this script should ultimately help you to get rid of any MIDI Editor zooming issues. Assign it to the enter key and it will open\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the MIDI Editor and zoom to 5 measures (default). Whereas the edit cursor represents the zoom center.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can adjust the measures in the user area.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The code is based to 99% on Julian's code, I only added the open MIDI editor command and cleaned up unnecessary parts.\sa180\par}
 }
 ]]></description>
-        <link rel="website">https://forum.cockos.com/showpost.php?p=1923094&amp;postcount=124</link>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
       </metadata>
-      <version name="1.0" author="Julian Sader, Stephan Römer" time="2017-12-13T04:51:03Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/5fdd8aaee8c161b5e964be9cb1364d6f3455cfd3/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
+      <version name="1.12" author="Stephan Römer" time="2019-01-20T17:42:40Z">
+        <changelog><![CDATA[code tidying, renamed the script]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/aa31917308fa5b79bea6abca3b2d75fd3428dd1c/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures%20(zoom%20center%20is%20edit%20cursor).lua</source>
       </version>
-      <version name="1.1" author="Julian Sader, Stephan Römer" time="2018-01-23T01:30:06Z">
-        <changelog><![CDATA[v1.1 (2018-01-23)
-+ added a "no undo" function
-v1.0]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/60256accce66def043e8c22c4d09accf731bcc0e/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
-      </version>
-      <version name="1.11" author="Julian Sader, Stephan Römer" time="2018-01-23T02:45:49Z">
-        <changelog><![CDATA[v1.1 (2018-01-23)
-+ removed sr from description
-v1.1 (2018-01-23)
-+ added a "no undo" function
-v1.0]]></changelog>
-        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/1ef5a4846d9ed9931b26999470d3146795123611/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%205%20measures.lua</source>
+    </reapack>
+    <reapack name="sr_Open MIDI editor and zoom to content.lua" type="script" desc="Open MIDI editor and zoom to content">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script open the MIDI editor and zooms to the content of the MIDI item, without changing the horizontal zoom of the notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-01-20T17:42:40Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/aa31917308fa5b79bea6abca3b2d75fd3428dd1c/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%20content.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Render VSTi item(s) without track FX and delete MIDI take(s).lua" type="script" desc="Render VSTi item(s) without track FX and delete MIDI take(s)">
@@ -1907,6 +1913,24 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Transpose%20notes%20(bundle).lua</source>
         <source file="sr_Transpose notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Transpose%20notes%20function.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Zoom MIDI editor to content.lua" type="script" desc="Zoom MIDI editor to content">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script zooms to the content of the MIDI item, without changing the horizontal zoom of the notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI editor\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-01-20T17:42:40Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/aa31917308fa5b79bea6abca3b2d75fd3428dd1c/MIDI%20Editor/sr_Zoom%20MIDI%20editor%20to%20content.lua</source>
       </version>
     </reapack>
   </category>
