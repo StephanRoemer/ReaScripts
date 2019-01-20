@@ -1,8 +1,8 @@
 -- @description Zoom MIDI editor to content
--- @version 1.0
+-- @version 1.1
 -- @changelog
---   initial release
--- @author Stephan Römer
+--   undo function added
+-- @author Julian Sader, Stephan Römer
 -- @provides [main=midi_editor] .
 -- @about
 --    # Description
@@ -14,7 +14,8 @@
 -- is there an active MIDI editor?
 editor = reaper.MIDIEditor_GetActive()
 if editor == nil then return end
-    
+
+reaper.Undo_BeginBlock2(0)
 reaper.PreventUIRefresh(1)
 
 -- get item range
@@ -34,6 +35,4 @@ reaper.GetSet_LoopTimeRange2(0, true, true, loopStart, loopEnd, false)
 
 reaper.PreventUIRefresh(-1)
 reaper.UpdateTimeline()
-
-function NoUndoPoint() end 
-reaper.defer(NoUndoPoint)
+reaper.Undo_EndBlock2(0, "Zoom MIDI editor to content", -1)

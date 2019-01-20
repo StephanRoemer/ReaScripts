@@ -1,13 +1,13 @@
 -- @description Open MIDI editor and zoom to content
--- @version 1.0
+-- @version 1.1
 -- @changelog
---   initial release
--- @author Stephan Römer
+--   fixed typo
+-- @author Julian Sader, Stephan Römer
 -- @provides [main=main] .
 -- @about
 --    # Description
---    * This script open the MIDI editor and zooms to the content of the MIDI item, without changing the horizontal zoom of the notes
---    * This script works only in the MIDI editor
+--    * This script opens the MIDI editor and zooms to the content of the MIDI item, without changing the horizontal zoom of the notes
+--    * This script works only in the arrangement
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
 
