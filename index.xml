@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="aa31917308fa5b79bea6abca3b2d75fd3428dd1c">
+<index version="1" name="Stevie Scripts" commit="4c36f0db5d006af9cee21e7643e45ad1fd4623ad">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -241,8 +241,8 @@
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script open the MIDI editor and zooms to the content of the MIDI item, without changing the horizontal zoom of the notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the MIDI editor\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script opens the MIDI editor and zooms to the content of the MIDI item, without changing the horizontal zoom of the notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -250,6 +250,10 @@
       <version name="1.0" author="Stephan Römer" time="2019-01-20T17:42:40Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/aa31917308fa5b79bea6abca3b2d75fd3428dd1c/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%20content.lua</source>
+      </version>
+      <version name="1.1" author="Julian Sader, Stephan Römer" time="2019-01-20T19:58:54Z">
+        <changelog><![CDATA[fixed typo]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/Items%20Editing/sr_Open%20MIDI%20editor%20and%20zoom%20to%20content.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Render VSTi item(s) without track FX and delete MIDI take(s).lua" type="script" desc="Render VSTi item(s) without track FX and delete MIDI take(s)">
@@ -1932,6 +1936,10 @@ v1.0 (2018-07-05)
         <changelog><![CDATA[initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/aa31917308fa5b79bea6abca3b2d75fd3428dd1c/MIDI%20Editor/sr_Zoom%20MIDI%20editor%20to%20content.lua</source>
       </version>
+      <version name="1.1" author="Julian Sader, Stephan Römer" time="2019-01-20T19:58:54Z">
+        <changelog><![CDATA[undo function added]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/MIDI%20Editor/sr_Zoom%20MIDI%20editor%20to%20content.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="Tempo and Time Signature">
@@ -2253,6 +2261,44 @@ v1.0 (2018-07-05)
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/07d1e071225738af86804d7508e089e7f9f63d41/Transport/sr_Edit%20cursor%20follows%20start%20of%20item.lua</source>
       </version>
     </reapack>
+    <reapack name="sr_Go to end marker.lua" type="script" desc="Go to end marker">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script puts the edit / play cursor to the marker named "=END"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-01-20T19:58:54Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/Transport/sr_Go%20to%20end%20marker.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Go to start marker.lua" type="script" desc="Go to start marker">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script puts the edit / play cursor to the marker named "=START"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-01-20T19:58:54Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/Transport/sr_Go%20to%20start%20marker.lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Move cursor to start of selected item and preserve play state.lua" type="script" desc="Move cursor to start of selected item and preserve play state">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -2364,6 +2410,28 @@ v1.0 (2018-07-05)
         <changelog><![CDATA[v1.0 (2018-01-23)
 + Initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/c02c6bdfb6f56a871f5043d75488c23700b90c40/Transport/sr_Toggle%20play%20-%20stop.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Various">
+    <reapack name="sr_Zoom to start and end marker.lua" type="script" desc="Zoom to start and end marker">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script zooms in between the boundaries of the start and end marker\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab To undo the zoom, use "View: Restore previous zoom level"\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-01-20T19:58:54Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/Various/sr_Zoom%20to%20start%20and%20end%20marker.lua</source>
       </version>
     </reapack>
   </category>
