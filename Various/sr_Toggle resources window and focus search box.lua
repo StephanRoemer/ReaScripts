@@ -1,13 +1,13 @@
--- @description Zoom MIDI editor to content
+-- @description Toggle resources window and focus search box
 -- @version 1.0
 -- @changelog
 --   initial release
 -- @author Stephan Römer
--- @provides [main=midi_editor] .
+-- @provides [main=main] .
 -- @about
 --    # Description
---    * This script zooms to the content of the MIDI item, without changing the horizontal zoom of the notes
---    * This script works only in the MIDI editor
+--    * This script toggles the resources window and puts the focus on the search box
+--    * This script works only in the arrangement
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
 reaper.Main_OnCommand(reaper.NamedCommandLookup("_S&M_SHOW_RESOURCES_VIEW"), 0) -- open/close resources window
