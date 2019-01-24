@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="023e1856b0a9c26b9ddde61ecf28756b92f7e319">
+<index version="1" name="Stevie Scripts" commit="e646be6b32748f0c695bbda01f26a59f238d74e2">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2414,24 +2414,6 @@ v1.0 (2018-07-05)
     </reapack>
   </category>
   <category name="Various">
-    <reapack name="sr_Toggle resources window and focus search box.lua" type="script" desc="Toggle resources window and focus search box">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script toggles the resources window and puts the focus on the search box\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2019-01-24T17:22:32Z">
-        <changelog><![CDATA[initial release]]></changelog>
-        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/0c634179999fdb1e1dd465c9dbb863d30b72ef33/Various/sr_Toggle%20resources%20window%20and%20focus%20search%20box.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Zoom to start and end marker.lua" type="script" desc="Zoom to start and end marker">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
