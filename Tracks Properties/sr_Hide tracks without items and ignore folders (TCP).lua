@@ -1,4 +1,4 @@
--- @description Hide tracks without items and ignore folder tracks (TCP)
+-- @description Hide tracks without items and ignore folder tracks
 -- @version 1.0
 -- @changelog
 --   initial release
