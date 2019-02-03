@@ -1,4 +1,4 @@
--- @description Hide tracks without items and ignore folder tracks
+-- @description Hide tracks without items (TCP)
 -- @version 1.0
 -- @changelog
 --   initial release
@@ -6,7 +6,7 @@
 -- @provides [main=main] .
 -- @about
 --    # Description
---    * this script hides all tracks, that have no items but will ignore folder tracks
+--    * this script hides all tracks in the TCP, that have no items
 --    * This script works only in the arrangement
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
@@ -15,8 +15,7 @@ tracks_amount = reaper.GetNumTracks()
 for t = 0, tracks_amount-1 do
     track = reaper.GetTrack(0, t)
     items = reaper.CountTrackMediaItems(track)
-    _, flags = reaper.GetTrackState(track) -- get folder state
-    if items == 0 and flags&1 ~= 1 then -- does track have items and isn't folder?
+    if items == 0 then -- does track have items?
         if reaper.GetMediaTrackInfo_Value(track, "B_SHOWINTCP") == 1.0 then -- is track visible?
             reaper.SetMediaTrackInfo_Value(track, "B_SHOWINTCP", 0) -- hide track
         end
@@ -24,6 +23,5 @@ for t = 0, tracks_amount-1 do
 end
 
 reaper.TrackList_AdjustWindows(false) 
-reaper.UpdateTimeline()
 reaper.UpdateArrange()
 reaper.Main_OnCommand(40913, 0) -- scroll view to selected track
