@@ -1,5 +1,5 @@
 -- @description Quantize notes (bundle)
--- @version 1.4
+-- @version 1.40
 -- @changelog
 --   + fixed a lot of bugs and tidied the code
 --   + if you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
