@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="590563dc29fff216810e9502b7e416a095113265">
+<index version="1" name="Stevie Scripts" commit="be0504a335f245e8b2553233435be7f305a96b3a">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2493,7 +2493,7 @@ v1.0 (2018-07-05)
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script toggles the resources window and puts the focus on the search box\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script toggles the resources window, puts the focus on the search box and clears it\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
 }
 ]]></description>
@@ -2502,6 +2502,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2019-01-24T18:08:08Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/69819ddd38dfc146ec38be8d51ea66ebe2767f70/Various/sr_Toggle%20resources%20window%20and%20focus%20search%20box.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2019-02-05T01:05:30Z">
+        <changelog><![CDATA[the search box gets cleared, when the resource window opens]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/be0504a335f245e8b2553233435be7f305a96b3a/Various/sr_Toggle%20resources%20window%20and%20focus%20search%20box.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Zoom to start and end marker.lua" type="script" desc="Zoom to start and end marker">
