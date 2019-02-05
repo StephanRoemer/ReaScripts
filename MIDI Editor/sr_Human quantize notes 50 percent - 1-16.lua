@@ -3,7 +3,7 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_Human quantize notes function'
 
-grid = 1/24 -- 1/16 triplets grid
+grid = 1/16 -- 1/16 grid
 swing = 0 -- swing off
 swing_amt = 0 -- swing amount
 humanize = 50 -- humanize value in percent

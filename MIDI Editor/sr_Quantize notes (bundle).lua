@@ -1,21 +1,21 @@
 -- @description Quantize notes (bundle)
--- @version 1.32
+-- @version 1.4
 -- @changelog
---   switched from SnapToGrid() to BR_GetClosestGridDivision(), as this function will always snap to grid, 
---   even if the gridlines are not visible due to zoom factor. Thanks to X-Raym, for the heads up!
+--   + fixed a lot of bugs and tidied the code
+--   + if you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
+--   the arrangement. Therefore support for the inline editor had to be re-written. When you want to quantize from the inline editor,
+--   you MUST hover the mouse over the active inline editor, otherwise ALL notes will be quantized, instead of only the selected ones.
+--   - had to get rid of the swing presets, since they don't work, have yet to find out what the problem is
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-1.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-2.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-4.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-4 swing 70 percent.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-4 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-8.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-8 swing 70 percent.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-8 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16 swing 70 percent.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - grid.lua
 --  [nomain] sr_Quantize notes (bundle).lua
