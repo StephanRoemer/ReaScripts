@@ -43,27 +43,26 @@ function HumanQuantize(humanize)
 			return false
 		else
 			for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-				local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-				local take = reaper.GetActiveTake(item)
-			
-					if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-						_, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
+			local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+			local take = reaper.GetActiveTake(item)
 		
-						for n = 0, notes_count - 1 do -- loop through all notes
-							local _, selected_out, _, startppqpos_out, endppqpos_out, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
-				
-							local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, startppqpos_out) -- convert note start to seconds
-							local closest_grid = reaper.BR_GetClosestGridDivision(note_start) -- get closest grid for current note (return value in seconds)
-							local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
+				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+					_, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
+	
+					for n = 0, notes_count - 1 do -- loop through all notes
+						local _, selected_out, _, startppqpos_out, endppqpos_out, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status and pitch
+			
+						local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, startppqpos_out) -- convert note start to seconds
+						local closest_grid = reaper.BR_GetClosestGridDivision(note_start) -- get closest grid for current note (return value in seconds)
+						local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
 
-							if closest_grid_ppq ~= startppqpos_out then -- if notes are not on the grid
-							reaper.MIDI_SetNote(take, n, nil, nil, startppqpos_out+(closest_grid_ppq-startppqpos_out)*humanize/100, startppqpos_out+(closest_grid_ppq-startppqpos_out)*humanize/100+endppqpos_out-startppqpos_out, nil, nil, nil, true) -- quantize all notes
-							end
+						if closest_grid_ppq ~= startppqpos_out then -- if notes are not on the grid
+						reaper.MIDI_SetNote(take, n, nil, nil, startppqpos_out+(closest_grid_ppq-startppqpos_out)*humanize/100, startppqpos_out+(closest_grid_ppq-startppqpos_out)*humanize/100+endppqpos_out-startppqpos_out, nil, nil, nil, true) -- quantize all notes
 						end
-						reaper.MIDI_Sort(take)
-					else
-						reaper.ShowMessageBox("The selected item #".. i+1 .." does not contain a MIDI take and won't be altered", "Error", 0)
 					end
+					reaper.MIDI_Sort(take)
+				else
+					reaper.ShowMessageBox("The selected item #".. i+1 .." does not contain a MIDI take and won't be altered", "Error", 0)
 				end
 			end
 		end
