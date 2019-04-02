@@ -1,7 +1,10 @@
 -- @description Nudge notes (bundle)
--- @version 1.30
+-- @version 1.41
 -- @changelog
---   Fallback for no selected item
+--   + fixed a lot of bugs and tidied the code
+--   + if you nudge notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
+--   the arrangement. When you want to nudge notes from the inline editor, you MUST hover the mouse over the active inline editor, 
+--   otherwise ALL notes will be nudged, instead of only the selected ones.
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
@@ -12,7 +15,9 @@
 -- @about
 --    # Description
 --    * This script bundles consists of 2 scripts that nudges either all notes or selected notes left/right.
---    * The amount of ticks can be adjusted in the scripts. That way, you can easily create different versions
---      that fit your personal needs. 
---    * The scripts work in arrangement, MIDI Editor and Inline Editor
+--    * If you nudge from the arrangement, selected notes are not taken into account, because you can't see what is selected from
+--    the arrangement. If you want to nudge from the inline editor, you MUST hover the mouse over the active inline editor, otherwise 
+--    ALL notes will be affected, instead of only the selected ones.
+--    * You can easily edit the scripts to adjust them to your needs or create new ones
+--    * The scripts work in arrangement, MIDI editor and inline editor
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

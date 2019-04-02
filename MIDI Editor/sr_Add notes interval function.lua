@@ -1,12 +1,12 @@
--- @noindex
+--  @noindex
 
-function Transpose(interval)
+function Add_Notes_Interval(interval)
 	
+	
+	-- add notes interval in MIDI/inline editor
 
-	-- transpose notes in in MIDI/inline editor
-	
-	function Transpose_MIDI_Editor(take)
-	
+	function Add_Notes_Interval_MIDI_Editor(take)
+
 		local _, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 		
 		if reaper.MIDI_EnumSelNotes(take, -1) ~= -1 then notes_selected = true end -- check, if there are selected notes, set notes_selected to true
@@ -17,8 +17,8 @@ function Transpose(interval)
 		MIDIlen = #MIDIstring -- get string length
 		tableEvents = {} -- initialize table, MIDI events will temporarily be stored in this table until they are concatenated into a string again
 		stringPos = 1 -- position in MIDIstring while parsing through events 
-					
-		while stringPos < MIDIlen-12 do -- Now parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
+				
+		while stringPos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
 			offset, flags, msg, stringPos = string.unpack("i4Bs4", MIDIstring, stringPos) -- unpack MIDI-string on stringPos
 			new_pitch = msg:byte(2) + interval -- get current pitch, add interval and write new value to pitch
 			
@@ -31,21 +31,22 @@ function Transpose(interval)
 					return
 				end
 				
-				msg = msg:sub(1,1) .. string.char(new_pitch) .. msg:sub(3,3) -- if transposition is in range, concatenate msg with new pitch values
-				table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string with new_pitch and write to table
+				table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string and write original notes to table. Repack here already, so that offset = 0 has reference points
+				msg_addNotes = msg:sub(1,1) .. string.char(new_pitch) .. msg:sub(3,3) -- if new notes are in range, concatenate msg with new pitch values
+				table.insert(tableEvents, string.pack("i4Bs4", 0, flags, msg_addNotes)) -- re-pack MIDI string and write added notes to table
 			else 
-				table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string and write untouched events to table
+				table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg))
 			end
 		end
-		reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
 		reaper.MIDI_Sort(take)
+		reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
 	end
-	
-	
-	-- transpose notes in selected item(s) in arrangement
-	
-	function Transpose_Arrangement()	
-		
+
+
+	-- add notes interval in MIDI/inline editor
+
+	function Add_Notes_Interval_Arrangement()
+
 		if reaper.CountSelectedMediaItems(0) == 0 then
 			reaper.ShowMessageBox("Please select at least one item", "Error", 0)
 			return false
@@ -62,26 +63,29 @@ function Transpose(interval)
 					tableEvents = {} -- initialize table, MIDI events will temporarily be stored in this table until they are concatenated into a string again
 					stringPos = 1 -- position in MIDIstring while parsing through events 
 					
-					while stringPos < MIDIlen-12 do -- Now parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
+					while stringPos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
 						offset, flags, msg, stringPos = string.unpack("i4Bs4", MIDIstring, stringPos) -- unpack MIDI-string on stringPos
 						new_pitch = msg:byte(2) + interval -- get current pitch, add interval and write new value to pitch
 						
 						if #msg == 3 -- if msg consists of 3 bytes (= channel message)
 						and ((msg:byte(1)>>4) == 9 or (msg:byte(1)>>4) == 8) -- Is note-on or note-off?
+						and (flags&1 == 1 or not notesSelected) -- selected notes always move, unselected only move if no notes are selected
 						then
 							if new_pitch < 0 or new_pitch > 127 then -- if new notes are out of range
-								reaper.ShowMessageBox("Notes are out of range","Error", 0) -- error message
+								reaper.ShowMessageBox("Added notes out of range","Error",0) -- error message
 								return
 							end
-						
-							msg = msg:sub(1,1) .. string.char(new_pitch) .. msg:sub(3,3) -- if transposition is in range, concatenate msg with new pitch values
-							table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string with new_pitch and write to table
+							
+							table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string and write original notes to table. Repack here already, so that offset = 0 has reference points
+							
+							msg_addNotes = msg:sub(1,1) .. string.char(new_pitch) .. msg:sub(3,3) -- if new notes are in range, concatenate msg with new pitch values
+							table.insert(tableEvents, string.pack("i4Bs4", 0, flags, msg_addNotes)) -- re-pack MIDI string and write added notes to table
 						else 
-							table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg)) -- re-pack MIDI string and write untouched events to table
+							table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg))
 						end
 					end
-					reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
 					reaper.MIDI_Sort(take)
+					reaper.MIDI_SetAllEvts(take, table.concat(tableEvents) .. MIDIstring:sub(-12))
 				else
 					reaper.ShowMessageBox("The selected item #".. i+1 .." does not contain a MIDI take and won't be altered", "Error", 0)
 				end
@@ -97,17 +101,17 @@ function Transpose(interval)
 
 	if inline_editor then
 		local take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
-		Transpose_MIDI_Editor(take) -- execute function and pass over take
+		Add_Notes_Interval_MIDI_Editor(take) -- execute function and pass over take
 
 	else -- no inline editor hovered, check for MIDI editor
 
 		if window ~= "midi_editor" then -- MIDI editor is not focused
-			Transpose_Arrangement()
+			Add_Notes_Interval_Arrangement()
 
 		else -- MIDI editor is focused
 			local midi_editor = reaper.MIDIEditor_GetActive() -- get active MIDI editor 
 			local take = reaper.MIDIEditor_GetTake(midi_editor) -- get take from active MIDI editor
-			Transpose_MIDI_Editor(take) -- execute function and pass over take
+			Add_Notes_Interval_MIDI_Editor(take) -- execute function and pass over take
 		end
 	end
 

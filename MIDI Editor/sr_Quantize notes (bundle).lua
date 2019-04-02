@@ -1,11 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 1.40
+-- @version 1.41
 -- @changelog
---   + fixed a lot of bugs and tidied the code
---   + if you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
---   the arrangement. Therefore support for the inline editor had to be re-written. When you want to quantize from the inline editor,
---   you MUST hover the mouse over the active inline editor, otherwise ALL notes will be quantized, instead of only the selected ones.
---   - had to get rid of the swing presets, since they don't work, have yet to find out what the problem is
+--   + code optimization
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
@@ -23,6 +19,9 @@
 -- @about
 --    # Description
 --    * This script bundle consists of various quantize scripts that affect either all or selected notes
+--    * If you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
+--    the arrangement. If you want to quantize from the inline editor, you MUST hover the mouse over the active inline editor, otherwise 
+--    ALL notes will be affected, instead of only the selected ones.
 --    * You can easily edit the scripts to adjust them to your needs or create new ones
---    * The scripts work in arrangement, MIDI Editor and Inline Editor
+--    * The scripts work in arrangement, MIDI editor and inline editor
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

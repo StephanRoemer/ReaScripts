@@ -5,5 +5,5 @@ require 'sr_Transpose notes function'
 
 interval = 12 -- semitones
 
-transpose(interval) -- call function
-reaper.Undo_OnStateChange2(proj, "Transpose notes 12")
+Transpose(interval) -- call function
+reaper.Undo_OnStateChange2(proj, "Transpose notes +12")

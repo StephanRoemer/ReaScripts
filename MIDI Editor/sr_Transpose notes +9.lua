@@ -5,5 +5,5 @@ require 'sr_MIDI functions'
 
 interval = 9 -- semitones
 
-transpose(interval) -- call function
-reaper.Undo_OnStateChange2(proj, "Transpose notes 9")
+Transpose(interval) -- call function
+reaper.Undo_OnStateChange2(proj, "Transpose notes +9")
