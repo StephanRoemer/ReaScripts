@@ -1,5 +1,5 @@
 -- @description Nudge notes (bundle)
--- @version 1.41
+-- @version 1.42
 -- @changelog
 --   + fixed a lot of bugs and tidied the code
 --   + if you nudge notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 

@@ -1,5 +1,5 @@
 -- @description Add notes interval (bundle)
--- @version 1.41
+-- @version 1.42
 -- @changelog
 --   + code optimization
 -- @author Stephan Römer

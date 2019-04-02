@@ -1,5 +1,5 @@
 -- @description Change velocity (bundle)
--- @version 1.41
+-- @version 1.42
 -- @changelog
 --   when in arrangement, always all notes are altered, in inline and MIDI editor, either all or selected notes are altered.
 -- @author Stephan Römer
