@@ -1,0 +1,26 @@
+-- @description Change velocity (bundle)
+-- @version 1.41
+-- @changelog
+--   when in arrangement, always all notes are altered, in inline and MIDI editor, either all or selected notes are altered.
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +6.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -6.lua
+--  [nomain] sr_Change velocity (bundle).lua
+--  [nomain] sr_Change velocity function.lua
+-- @about
+--    # Description
+--    * This script bundle consists of several scripts that increase/decrease the velocity of either all or selected notes
+--    * If you change the velocity from the arrangement, selected notes are not taken into account, because you can't see what is selected from
+--    the arrangement. If you want to change the velocity from the inline editor, you MUST hover the mouse over the active inline editor, otherwise 
+--    ALL notes will be affected, instead of only the selected ones.
+--    * You can easily edit the scripts to adjust them to your needs or create new ones
+--    * The scripts work in the arrangement, MIDI editor and inline editor
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
