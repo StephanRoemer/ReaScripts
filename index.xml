@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="eebc4e4534a420f9d6957e19a0676edf58da35e7">
+<index version="1" name="Stevie Scripts" commit="715d63ab71871b22e96ecb7fe4bc5a53c2b4870e">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1159,49 +1159,6 @@ v1.0 (2018-07-13)
       <version name="1.0" author="Stephan Römer" time="2018-09-18T15:37:42Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/b86836fba9d4e635a2c0ba0830c186bcff16f465/MIDI%20Editor/sr_Move%20selected%20CC%20events%20to%20lane%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Nudge notes (bundle).lua" type="script" desc="Nudge notes (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundles consists of 2 scripts that nudges either all notes or selected notes left/right.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you nudge from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to nudge from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.30" author="Stephan Römer" time="2018-09-11T15:54:45Z">
-        <changelog><![CDATA[The scripts are now available in a single bundle and the MIDI functions.lua is not necessary anymore. Instead the bundle includes its own external function file.  ]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes left by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20left%20by%2010%20ticks.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
-        <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/ac2c6e258804b7d48134929f29975d3e37d10668/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
-      </version>
-      <version name="1.41" author="Stephan Römer" time="2019-04-02T20:51:10Z">
-        <changelog><![CDATA[+ fixed a lot of bugs and tidied the code
-+ if you nudge notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
-the arrangement. When you want to nudge notes from the inline editor, you MUST hover the mouse over the active inline editor, 
-otherwise ALL notes will be nudged, instead of only the selected ones.]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes left by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/f4a1f19d7e9c6ff2b08b29b7adaa5ee6387d623c/MIDI%20Editor/sr_Nudge%20notes%20left%20by%2010%20ticks.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/f4a1f19d7e9c6ff2b08b29b7adaa5ee6387d623c/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/f4a1f19d7e9c6ff2b08b29b7adaa5ee6387d623c/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
-        <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f4a1f19d7e9c6ff2b08b29b7adaa5ee6387d623c/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
-      </version>
-      <version name="1.42" author="Stephan Römer" time="2019-04-02T23:51:07Z">
-        <changelog><![CDATA[+ fixed a lot of bugs and tidied the code
-+ if you nudge notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
-the arrangement. When you want to nudge notes from the inline editor, you MUST hover the mouse over the active inline editor, 
-otherwise ALL notes will be nudged, instead of only the selected ones.]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes left by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/b12c0184dad4ba692aee8bfdd824e2aa0a95207e/MIDI%20Editor/sr_Nudge%20notes%20left%20by%2010%20ticks.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/b12c0184dad4ba692aee8bfdd824e2aa0a95207e/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/b12c0184dad4ba692aee8bfdd824e2aa0a95207e/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
-        <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b12c0184dad4ba692aee8bfdd824e2aa0a95207e/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs within note selection.lua" type="script" desc="Select all CCs within note selection">
