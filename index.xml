@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="deb2f1f53d1e13c1d9682328f6435b5947e12494">
+<index version="1" name="Stevie Scripts" commit="c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1026,6 +1026,38 @@ v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
+    <reapack name="sr_Human quantize notes (bundle).lua" type="script" desc="Human quantize notes (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of various quantize scripts that affect either all or selected notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to quantize from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.50" author="Stephan Römer" time="2019-04-03T10:37:37Z">
+        <changelog><![CDATA[+ the scripts now affect all notes and not only selected notes, when applied in the arrangement  (as it should be)
++ several code optimizations
++ fallback for non selected items in the arrange]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-4.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-4.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-4 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-4%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-8.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-8.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-8 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-8%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-16.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-16.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-16%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%20grid.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%20(bundle).lua</source>
+        <source file="sr_Human quantize notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Human%20quantize%20notes%20function.lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Increase CC (bundle).lua" type="script" desc="Increase CC (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1242,6 +1274,38 @@ v1.0 (2018-07-13)
         <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/f02a9af787856aa8488e308d441cdd4791d45af2/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/f02a9af787856aa8488e308d441cdd4791d45af2/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
         <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f02a9af787856aa8488e308d441cdd4791d45af2/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Quantize notes (bundle).lua" type="script" desc="Quantize notes (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of various quantize scripts that affect either all or selected notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, the arrangement. If you want to quantize from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.50" author="Stephan Römer" time="2019-04-03T10:37:37Z">
+        <changelog><![CDATA[+ the scripts now affect all notes and not only selected notes, when applied in the arrangement  (as it should be)
++ several code optimizations
++ fallback for non selected items in the arrange]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-4.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-4%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-8.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-8%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-16.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%201-16%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20-%20grid.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20(bundle).lua</source>
+        <source file="sr_Quantize notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/c220cea6d0aa86f3f061b5b5e8b5a2ed74b6a227/MIDI%20Editor/sr_Quantize%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs within note selection.lua" type="script" desc="Select all CCs within note selection">
