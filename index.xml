@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="af46c00ea1d1ede1bc9b85f17affbc93c96f6139">
+<index version="1" name="Stevie Scripts" commit="c0b575b55beae00cde17b39fa17a31bc3fa00748">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -600,35 +600,6 @@ v1.0 (2018-07-02)
       <version name="1.2" author="Stephan Römer" time="2018-09-12T21:52:11Z">
         <changelog><![CDATA[code tidying]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/8259ffad02dae670a39797ac553d0f462ea3117a/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Change velocity (bundle).lua" type="script" desc="Change velocity (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of several scripts that increase/decrease the velocity of either all or selected notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you change the velocity from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to change the velocity from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the arrangement, MIDI editor and inline editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.42" author="Stephan Römer" time="2019-04-03T09:27:55Z">
-        <changelog><![CDATA[when in arrangement, always all notes are altered, in inline and MIDI editor, either all or selected notes are altered.]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20+1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20+2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20+5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20-5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20+6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20-6.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20(bundle).lua</source>
-        <source file="sr_Change velocity function.lua">https://github.com/StephanRoemer/ReaScripts/raw/af46c00ea1d1ede1bc9b85f17affbc93c96f6139/MIDI%20Editor/sr_Change%20velocity%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Copy CC to CC (bundle).lua" type="script" desc="Copy CC to CC (bundle)">
