@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="d04ac397a36e2e67eae11bcfcded175432920c20">
+<index version="1" name="Stevie Scripts" commit="39ce4ea1a84967eaff48d4dca3d1564eb7cb2195">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -296,31 +296,6 @@
     </reapack>
   </category>
   <category name="MIDI Editor">
-    <reapack name="sr_Add notes interval (bundle).lua" type="script" desc="Add notes interval (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of scripts that add intervals to either all or only selected notes.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you add intervals from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to add intervals from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor.\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.41" author="Stephan Römer" time="2019-04-03T09:24:36Z">
-        <changelog><![CDATA[+ code optimization]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes -24.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Add%20notes%20-24.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Add%20notes%20-12.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Add%20notes%20+12.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Add%20notes%20+24.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Add%20notes%20interval%20(bundle).lua</source>
-        <source file="sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Add%20notes%20interval%20function.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Change note length (mousewheel).lua" type="script" desc="Change note length (mousewheel)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -600,35 +575,6 @@ v1.0 (2018-07-02)
       <version name="1.2" author="Stephan Römer" time="2018-09-12T21:52:11Z">
         <changelog><![CDATA[code tidying]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/8259ffad02dae670a39797ac553d0f462ea3117a/MIDI%20Editor/sr_Change%20note%20start%20(mousewheel).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Change velocity (bundle).lua" type="script" desc="Change velocity (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of several scripts that increase/decrease the velocity of either all or selected notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you change the velocity from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to change the velocity from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the arrangement, MIDI editor and inline editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.41" author="Stephan Römer" time="2019-04-03T09:31:40Z">
-        <changelog><![CDATA[when in arrangement, always all notes are altered, in inline and MIDI editor, either all or selected notes are altered.]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20+1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20+2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20+5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20-5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20+6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20-6.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20(bundle).lua</source>
-        <source file="sr_Change velocity function.lua">https://github.com/StephanRoemer/ReaScripts/raw/d04ac397a36e2e67eae11bcfcded175432920c20/MIDI%20Editor/sr_Change%20velocity%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Copy CC to CC (bundle).lua" type="script" desc="Copy CC to CC (bundle)">
@@ -1022,36 +968,6 @@ v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/945069e78e03969f6efba97583525ada151ba7fe/MIDI%20Editor/sr_Delete%20short%20notes.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Human quantize notes (bundle).lua" type="script" desc="Human quantize notes (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of various quantize scripts that affect either all or selected notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to quantize from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.41" author="Stephan Römer" time="2019-04-03T09:24:36Z">
-        <changelog><![CDATA[+ code optimization]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-4.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-4.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-4 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-4%20triplets.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-8.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-8.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-8 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-8%20triplets.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-16.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-16.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%201-16%20triplets.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Human quantize notes 50 percent - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%2050%20percent%20-%20grid.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%20(bundle).lua</source>
-        <source file="sr_Human quantize notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Human%20quantize%20notes%20function.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Increase CC (bundle).lua" type="script" desc="Increase CC (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1243,62 +1159,6 @@ v1.0 (2018-07-13)
       <version name="1.0" author="Stephan Römer" time="2018-09-18T15:37:42Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/b86836fba9d4e635a2c0ba0830c186bcff16f465/MIDI%20Editor/sr_Move%20selected%20CC%20events%20to%20lane%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Nudge notes (bundle).lua" type="script" desc="Nudge notes (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundles consists of 2 scripts that nudges either all notes or selected notes left/right.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you nudge from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to nudge from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.41" author="Stephan Römer" time="2019-04-03T09:24:36Z">
-        <changelog><![CDATA[+ fixed a lot of bugs and tidied the code
-+ if you nudge notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, 
-the arrangement. When you want to nudge notes from the inline editor, you MUST hover the mouse over the active inline editor, 
-otherwise ALL notes will be nudged, instead of only the selected ones.]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes left by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Nudge%20notes%20left%20by%2010%20ticks.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
-        <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Quantize notes (bundle).lua" type="script" desc="Quantize notes (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of various quantize scripts that affect either all or selected notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you quantize notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from, the arrangement. If you want to quantize from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.41" author="Stephan Römer" time="2019-04-03T09:24:36Z">
-        <changelog><![CDATA[+ code optimization]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-4.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-4 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-4%20triplets.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-8.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-8 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-8%20triplets.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-16.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%201-16%20triplets.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize notes - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20-%20grid.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20(bundle).lua</source>
-        <source file="sr_Quantize notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Quantize%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all CCs within note selection.lua" type="script" desc="Select all CCs within note selection">
@@ -1766,51 +1626,6 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2018-09-16T14:06:23Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/1ea0fb5a889cd35c26ce5685722f5d87807c0d60/MIDI%20Editor/sr_Toggle%20select%20all%20events%20in%20CC%20lane%20under%20mouse%20cursor.lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Transpose notes (bundle).lua" type="script" desc="Transpose notes (bundle)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of scripts that transpose either all notes or selected notes.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If you tranpose notes from the arrangement, selected notes are not taken into account, because you can't see what is selected from the arrangement. If you want to tranpose from the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will be affected, instead of only the selected ones.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily edit the scripts to adjust them to your needs or create new ones\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in arrangement, MIDI editor and inline editor.\sa180\par}
-}
-]]></description>
-        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
-      </metadata>
-      <version name="1.41" author="Stephan Römer" time="2019-04-03T09:24:36Z">
-        <changelog><![CDATA[+ code optimization]]></changelog>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -3.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-3.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -4.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-4.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -7.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-7.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -8.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-8.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -9.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-9.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -10.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-10.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -11.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-11.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20-12.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+1.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+2.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +3.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+3.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +4.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+4.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+5.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+6.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +7.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+7.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +8.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+8.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +9.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+9.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +10.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+10.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +11.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+11.lua</source>
-        <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20+12.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20(bundle).lua</source>
-        <source file="sr_Transpose notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1158f143d979796dcef8246e7457dfea52ed8c60/MIDI%20Editor/sr_Transpose%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Zoom MIDI editor to content.lua" type="script" desc="Zoom MIDI editor to content">
