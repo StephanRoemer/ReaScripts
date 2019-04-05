@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="fd07a7ad1f28280e67c84bfd3fc8e3b88f2f49c4">
+<index version="1" name="Stevie Scripts" commit="bd32d349a606d4625d927dcca3ef0959bac55229">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1691,27 +1691,6 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b23c5d5967f88d3cad800f3e58b872d3cd74936c/MIDI%20Editor/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select notes after edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Select notes after edit cursor (in selected item(s) or MIDI editor)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes after the edit cursor in the currently focused MIDI editor or inline editor.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrangement.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrangement, as stated above\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.3" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-05T00:28:51Z">
-        <changelog><![CDATA[* switched to Get/SetAllEvts method for faster MIDI processing
-* better differentiation if user is in arrangement or MIDI editor
-* changed the script name to something more descriptive]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/fd07a7ad1f28280e67c84bfd3fc8e3b88f2f49c4/MIDI%20Editor/sr_Select%20notes%20after%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Select notes after edit cursor.lua" type="script" desc="Select notes after edit cursor">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -1765,27 +1744,6 @@ v1.0]]></changelog>
       <version name="1.0" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-05T00:28:51Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/fd07a7ad1f28280e67c84bfd3fc8e3b88f2f49c4/MIDI%20Editor/sr_Select%20notes%20after%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Select notes before edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Select notes before edit cursor (in selected item(s) or MIDI editor)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes before the edit cursor in the currently focused MIDI editor or inline editor.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrangement.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrangement, as stated above\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.3" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-05T00:28:51Z">
-        <changelog><![CDATA[* switched to Get/SetAllEvts method for faster MIDI processing
-* better differentiation if user is in arrangement or MIDI editor
-* changed the script name to something more descriptive]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/fd07a7ad1f28280e67c84bfd3fc8e3b88f2f49c4/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes before edit cursor.lua" type="script" desc="Select notes before edit cursor">
