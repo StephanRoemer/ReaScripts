@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="d1324ae9c93e8ddfe049a3f88ed89aa8a10abe47">
+<index version="1" name="Stevie Scripts" commit="9984b6e7b58d28ce1ac1ee1fb5ee1cdede6cf1a0">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -296,6 +296,27 @@
     </reapack>
   </category>
   <category name="MIDI Editor">
+    <reapack name="sr_ Delete notes before edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Delete notes before edit cursor (in selected item(s) or MIDI editor)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes before the edit cursor in currently selected items or in the currently opened take in the MIDI editor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically, when you select notes in the arrangement.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.3" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-05T01:57:40Z">
+        <changelog><![CDATA[* switched to Get/SetAllEvts method for faster MIDI processing
+* better differentiation if user is in arrangement or MIDI editor
+* changed the script name to something more descriptive]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9984b6e7b58d28ce1ac1ee1fb5ee1cdede6cf1a0/MIDI%20Editor/sr_%20Delete%20notes%20before%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
+      </version>
+    </reapack>
     <reapack name="sr_Add notes interval (bundle).lua" type="script" desc="Add notes interval (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -915,6 +936,27 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20(bundle).lua</source>
         <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete notes after edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Delete notes after edit cursor (in selected item(s) or MIDI editor)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes after the edit cursor in currently selected items or in the currently opened take in the MIDI editor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically, when you select notes in the arrangement.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.3" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-05T01:57:40Z">
+        <changelog><![CDATA[* switched to Get/SetAllEvts method for faster MIDI processing
+* better differentiation if user is in arrangement or MIDI editor
+* changed the script name to something more descriptive]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9984b6e7b58d28ce1ac1ee1fb5ee1cdede6cf1a0/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="Delete notes after edit cursor">
