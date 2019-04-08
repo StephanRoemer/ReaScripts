@@ -1,9 +1,7 @@
 -- @description Nudge notes (bundle)
--- @version 1.50
+-- @version 1.51
 -- @changelog
---   + the scripts now affect all notes and not only selected notes, when applied in the arrangement  (as it should be)
---   + several code optimizations
---   + fallback for non selected items in the arrange
+--   + fixed a typo in the script
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

@@ -16,17 +16,17 @@ function NudgeNotes(new_position)
 		if not gotAllOK then reaper.ShowMessageBox("Error while loading MIDI", "Error", 0) return(false) end -- if getting the MIDI data failed
 		MIDIlen = #MIDIstring -- get string length
 		tableEvents = {} -- initialize table, MIDI events will temporarily be stored in this table until they are concatenated into a string again
-		stringPos = 1 -- position in MIDIstring while parsing through events 
+		string_pos = 1 -- position in MIDIstring while parsing through events 
 		
-		while stringPos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
-			offset, flags, msg, stringPos = string.unpack("i4Bs4", MIDIstring, stringPos) -- unpack MIDI-string on stringPos
+		while string_pos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
+			offset, flags, msg, string_pos = string.unpack("i4Bs4", MIDIstring, string_pos) -- unpack MIDI-string on string_pos
 
 			if #msg == 3 
 			and ((msg:byte(1)>>4) == 9 or (msg:byte(1)>>4) == 8) -- Is note-on or note-off?
 			and (flags&1 == 1 or not notes_selected) -- selected notes always move, unselected only move if no notes are selected
 			then
-				table.insert(tableEvents, string.pack("i4Bs4", offset+newPosition, flags, msg)) -- move the note on event by newPosition
-				table.insert(tableEvents, string.pack("i4Bs4", -newPosition, 0, "")) -- put an empty event after the note on event, to maintain the distance
+				table.insert(tableEvents, string.pack("i4Bs4", offset+new_position, flags, msg)) -- move the note on event by new_position
+				table.insert(tableEvents, string.pack("i4Bs4", -new_position, 0, "")) -- put an empty event after the note on event, to maintain the distance
 			else
 				table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg))
 			end
@@ -54,16 +54,16 @@ function NudgeNotes(new_position)
 					if not gotAllOK then reaper.ShowMessageBox("Error while loading MIDI", "Error", 0) return(false) end -- if getting the MIDI data failed
 					MIDIlen = #MIDIstring -- get string length
 					tableEvents = {} -- initialize table, MIDI events will temporarily be stored in this table until they are concatenated into a string again
-					stringPos = 1 -- position in MIDIstring while parsing through events 
+					string_pos = 1 -- position in MIDIstring while parsing through events 
 		
-					while stringPos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
-						offset, flags, msg, stringPos = string.unpack("i4Bs4", MIDIstring, stringPos) -- unpack MIDI-string on stringPos
+					while string_pos < MIDIlen-12 do -- parse through all events in the MIDI string, one-by-one, excluding the final 12 bytes, which provides REAPER's All-notes-off end-of-take message
+						offset, flags, msg, string_pos = string.unpack("i4Bs4", MIDIstring, string_pos) -- unpack MIDI-string on string_pos
 		
 						if #msg == 3 
 						and ((msg:byte(1)>>4) == 9 or (msg:byte(1)>>4) == 8) -- Is note-on or note-off?
 						then
-							table.insert(tableEvents, string.pack("i4Bs4", offset+newPosition, flags, msg)) -- move the note on event by newPosition
-							table.insert(tableEvents, string.pack("i4Bs4", -newPosition, 0, "")) -- put an empty event after the note on event, to maintain the distance
+							table.insert(tableEvents, string.pack("i4Bs4", offset+new_position, flags, msg)) -- move the note on event by new_position
+							table.insert(tableEvents, string.pack("i4Bs4", -new_position, 0, "")) -- put an empty event after the note on event, to maintain the distance
 						else
 							table.insert(tableEvents, string.pack("i4Bs4", offset, flags, msg))
 						end
