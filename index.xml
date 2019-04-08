@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="9984b6e7b58d28ce1ac1ee1fb5ee1cdede6cf1a0">
+<index version="1" name="Stevie Scripts" commit="5792b3bb98698a2de7f103c48e57cb5f3ba37a0c">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1388,6 +1388,13 @@ v1.0 (2018-07-13)
         <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/f02a9af787856aa8488e308d441cdd4791d45af2/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/f02a9af787856aa8488e308d441cdd4791d45af2/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
         <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f02a9af787856aa8488e308d441cdd4791d45af2/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
+      </version>
+      <version name="1.51" author="Stephan Römer" time="2019-04-08T21:56:36Z">
+        <changelog><![CDATA[+ fixed a typo in the script]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes left by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/5792b3bb98698a2de7f103c48e57cb5f3ba37a0c/MIDI%20Editor/sr_Nudge%20notes%20left%20by%2010%20ticks.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Nudge notes right by 10 ticks.lua">https://github.com/StephanRoemer/ReaScripts/raw/5792b3bb98698a2de7f103c48e57cb5f3ba37a0c/MIDI%20Editor/sr_Nudge%20notes%20right%20by%2010%20ticks.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/5792b3bb98698a2de7f103c48e57cb5f3ba37a0c/MIDI%20Editor/sr_Nudge%20notes%20(bundle).lua</source>
+        <source file="sr_Nudge notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/5792b3bb98698a2de7f103c48e57cb5f3ba37a0c/MIDI%20Editor/sr_Nudge%20notes%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Quantize notes (bundle).lua" type="script" desc="Quantize notes (bundle)">
