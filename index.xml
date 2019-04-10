@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="5792b3bb98698a2de7f103c48e57cb5f3ba37a0c">
+<index version="1" name="Stevie Scripts" commit="b40c830ca1af3d9e85ffc4ca9c4e946c927375d6">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -292,6 +292,44 @@
       <version name="1.0" author="Stephan Römer" time="2018-09-08T18:59:17Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/cd43a7c6840e56638be3f94f4bb7c236c5b2ccce/Items%20Editing/sr_Render%20VSTi%20item(s)%20without%20track%20FX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Trim head of item(s) and delete item(s) before mouse cursor.lua" type="script" desc="Trim head of item(s) and delete item(s) before mouse cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script trims the head of all or selected items before the mouse cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Additionally, all items located before the mouse cursor will be deleted\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script only works in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-04-10T01:53:20Z">
+        <changelog><![CDATA[* initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7160992343362ceb7e26d54d192a4853a6bf90cc/Items%20Editing/sr_Trim%20head%20of%20item(s)%20and%20delete%20item(s)%20before%20mouse%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Trim tail of item(s) and delete item(s) after mouse cursor.lua" type="script" desc="Trim tail of item(s) and delete item(s) after mouse cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script trims the tail of all or selected items after the mouse cursor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Additionally, all items located behind the mouse cursor will be deleted\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script only works in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-04-10T01:53:20Z">
+        <changelog><![CDATA[* initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7160992343362ceb7e26d54d192a4853a6bf90cc/Items%20Editing/sr_Trim%20tail%20of%20item(s)%20and%20delete%20item(s)%20after%20mouse%20cursor.lua</source>
       </version>
     </reapack>
   </category>
