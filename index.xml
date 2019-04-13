@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="b40c830ca1af3d9e85ffc4ca9c4e946c927375d6">
+<index version="1" name="Stevie Scripts" commit="f4dc818715b21b6e0c222e3670aad682a09215d4">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -330,6 +330,44 @@
       <version name="1.0" author="Stephan Römer" time="2019-04-10T01:53:20Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/7160992343362ceb7e26d54d192a4853a6bf90cc/Items%20Editing/sr_Trim%20tail%20of%20item(s)%20and%20delete%20item(s)%20after%20mouse%20cursor.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Markers">
+    <reapack name="sr_Set end marker at cursor position.lua" type="script" desc="Set end marker at cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script sets the end marker to the current edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-04-13T01:08:29Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/f4dc818715b21b6e0c222e3670aad682a09215d4/Markers/sr_Set%20end%20marker%20at%20cursor%20position.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Set start marker at cursor position.lua" type="script" desc="Set start marker at cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script sets the start marker to the current edit cursor position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-04-13T01:08:29Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/f4dc818715b21b6e0c222e3670aad682a09215d4/Markers/sr_Set%20start%20marker%20at%20cursor%20position.lua</source>
       </version>
     </reapack>
   </category>
