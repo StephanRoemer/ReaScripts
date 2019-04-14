@@ -3,7 +3,7 @@
 -- @changelog
 --  * initial release
 -- @author Stephan Römer
--- @provides [midi_editor] .
+-- @provides [main=midi_editor] .
 -- @about
 --    # Description
 --    * This script stores the current MIDI grid setting in the project file.

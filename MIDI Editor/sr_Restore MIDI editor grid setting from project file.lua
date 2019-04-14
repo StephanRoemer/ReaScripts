@@ -3,7 +3,7 @@
 -- @changelog
 --  * initial release
 -- @author Stephan Römer
--- @provides [midi_editor] .
+-- @provides [main=midi_editor] .
 -- @about
 --    # Description
 --    * This script restores the current MIDI grid setting from the project file.
