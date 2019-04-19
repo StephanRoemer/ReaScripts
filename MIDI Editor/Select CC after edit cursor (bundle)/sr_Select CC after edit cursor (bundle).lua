@@ -1,0 +1,25 @@
+-- @description Select CC after edit cursor (bundle)
+-- @version 1.34
+-- @changelog
+--   + the scripts are now located in their own folder
+--   * smaller bug fixes and improvements
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] Select CC after edit cursor (bundle)/sr_Select CC1 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] Select CC after edit cursor (bundle)/sr_Select CC2 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] Select CC after edit cursor (bundle)/sr_Select CC7 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] Select CC after edit cursor (bundle)/sr_Select CC11 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] Select CC after edit cursor (bundle)/sr_Select CC64 after edit cursor.lua
+--  [main=main,midi_editor,midi_inlineeditor] Select CC after edit cursor (bundle)/sr_Select all CCs after edit cursor.lua
+--  [nomain] Select CC after edit cursor (bundle)/sr_Select CC after edit cursor function.lua
+--  [nomain] Select CC after edit cursor (bundle)/sr_Select CC after edit cursor (bundle).lua
+-- @about
+--    # Description
+--    * These scripts will select events in a specific CC lane or all CC lanes after the edit cursor in one or multiple items.
+--    * Assign the script in the main action list, as well. That way, the inline editor will be opened automatically, 
+--    and you can see your selection in the arrange view.
+--    * When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.
+--    * You can easily customize the values in the scripts.
+--    * The scripts work in the MIDI editor, inline editor and arrange view.
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

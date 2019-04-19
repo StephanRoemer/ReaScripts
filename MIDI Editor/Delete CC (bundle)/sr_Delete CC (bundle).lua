@@ -1,0 +1,23 @@
+-- @description Delete CC (bundle)
+-- @version 1.33
+-- @changelog
+--   + the scripts are now located in their own folder
+--   * smaller bug fixes and improvements
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] Delete CC (bundle)/sr_Delete CC1.lua
+--  [main=main,midi_editor,midi_inlineeditor] Delete CC (bundle)/sr_Delete CC2.lua
+--  [main=main,midi_editor,midi_inlineeditor] Delete CC (bundle)/sr_Delete CC7.lua
+--  [main=main,midi_editor,midi_inlineeditor] Delete CC (bundle)/sr_Delete CC11.lua
+--  [main=main,midi_editor,midi_inlineeditor] Delete CC (bundle)/sr_Delete CC64.lua
+--  [main=main,midi_editor,midi_inlineeditor] Delete CC (bundle)/sr_Delete all CCs.lua
+--  [nomain] Delete CC (bundle)/sr_Delete CC (bundle).lua
+--  [nomain] Delete CC (bundle)/sr_Delete CC function.lua
+-- @about
+--    # Description
+--    * These scripts will delete all events in a specific CC lane or in all CC lanes in one or multiple items.
+--    * When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.
+--    * You can easily customize the values in the scripts.
+--    * The scripts work in the MIDI editor, inline editor and arrange view.
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
