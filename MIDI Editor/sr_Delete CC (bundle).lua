@@ -1,5 +1,5 @@
 -- @description Delete CC (bundle)
--- @version 1.31
+-- @version 1.33
 -- @changelog
 --   now includes "Delete all CCs" scripts
 -- @author Stephan Römer

@@ -1,5 +1,5 @@
 -- @description Delete CC before edit cursor (bundle)
--- @version 1.33
+-- @version 1.34
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements

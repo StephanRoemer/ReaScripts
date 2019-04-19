@@ -1,5 +1,5 @@
 -- @description Increase CC (bundle)
--- @version 1.32
+-- @version 1.33
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements

@@ -1,5 +1,5 @@
 -- @description Nudge notes (bundle)
--- @version 1.61
+-- @version 1.62
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements

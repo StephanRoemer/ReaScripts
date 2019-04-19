@@ -1,5 +1,5 @@
 -- @description Quantize notes (bundle)
--- @version 1.51
+-- @version 1.52
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements

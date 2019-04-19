@@ -1,5 +1,5 @@
 -- @description Select CC (bundle)
--- @version 1.40
+-- @version 1.41
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements

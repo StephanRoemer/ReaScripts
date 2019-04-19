@@ -1,5 +1,5 @@
 -- @description Select CC within note selection (bundle)
--- @version 1.32
+-- @version 1.33
 -- @changelog
 --   + switched to MIDI_SetAllEvts
 --   + the scripts are now located in their own folder
