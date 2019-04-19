@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="23eeb06050b45f8af8e279caf327933d1e1ded5b">
+<index version="1" name="Stevie Scripts" commit="e83c62f505b48fed1c55915b27e2e99b5b35ade3">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -780,6 +780,17 @@ Instead the bundle has its own external function file.  ]]></changelog>
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20(bundle).lua</source>
         <source file="sr_Delete CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/56f22e600502471d54a9dd93abdbba1aebbe1c3c/MIDI%20Editor/sr_Delete%20CC%20function.lua</source>
+      </version>
+      <version name="1.33" author="Stephan Römer" time="2019-04-19T23:42:12Z">
+        <changelog><![CDATA[now includes "Delete all CCs" scripts]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20all%20CCs.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC%20(bundle).lua</source>
+        <source file="sr_Delete CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/e83c62f505b48fed1c55915b27e2e99b5b35ade3/MIDI%20Editor/sr_Delete%20CC%20function.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete notes after edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Delete notes after edit cursor (in selected item(s) or MIDI editor)">
