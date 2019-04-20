@@ -75,9 +75,11 @@ if window == "midi_editor" then -- MIDI editor focused
     
     else -- hovering inline editor (will ignore item selection and only change data in the hovered inline editor)
         take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
+
+        QuantizeMIDIEditor(take) -- quantize notes
+        
     end
 
-    QuantizeMIDIEditor(take) -- quantize notes
         
 else -- anywhere else (apply to selected items in arrane view)
     
