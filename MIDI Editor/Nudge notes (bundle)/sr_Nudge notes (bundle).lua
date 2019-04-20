@@ -1,0 +1,22 @@
+-- @description Nudge notes (bundle)
+-- @version 1.60
+-- @changelog
+--   + the scripts are now located in their own folder
+--   * smaller bug fixes and improvements
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] sr_Nudge notes left by 10 ticks.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Nudge notes right by 10 ticks.lua
+--  [nomain] sr_Nudge notes (bundle).lua
+--  [nomain] sr_Nudge notes function.lua
+-- @about
+--    # Description
+--    * These scripts nudge either all notes or selected notes left/right in one or multiple items.
+--    * In the arrange view (item view), selected events are not taken into account, because you can't see what is selected.
+--    * In the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL events will 
+--    be affected, instead of only the selected ones.
+--    * When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.
+--    * You can easily customize the values in the scripts.
+--    * The scripts work in the MIDI editor, inline editor and arrange view.
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

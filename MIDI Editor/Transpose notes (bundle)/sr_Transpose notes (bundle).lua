@@ -1,0 +1,44 @@
+-- @description Transpose notes (bundle)
+-- @version 1.60
+-- @changelog
+--   + the scripts are now located in their own folder
+--   * smaller bug fixes and improvements
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -3.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -4.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -6.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -7.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -8.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -9.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -10.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -11.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes -12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +3.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +4.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +6.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +7.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +8.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +9.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +10.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +11.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Transpose notes +12.lua
+--  [nomain] sr_Transpose notes (bundle).lua
+--  [nomain] sr_Transpose notes function.lua
+-- @about
+--    # Description
+--    * These scripts transposes either all notes or selected notes in one or multiple items.
+--    * In the arrange view (item view), selected events are not taken into account, because you can't see what is selected.
+--    * In the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL events will 
+--    be affected, instead of only the selected ones.
+--    * When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.
+--    * You can easily customize the values in the scripts.
+--    * The scripts work in the MIDI editor, inline editor and arrange view.
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
