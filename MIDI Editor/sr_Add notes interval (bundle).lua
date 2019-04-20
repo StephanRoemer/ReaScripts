@@ -1,5 +1,5 @@
 -- @description Add notes interval (bundle)
--- @version 1.53
+-- @version 1.55
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements
@@ -22,6 +22,3 @@
 --    * You can easily customize the values in the scripts.
 --    * The scripts work in the MIDI editor, inline editor and arrange view.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
-
-local script_name = ({reaper.get_action_context()})[2]:match("([^/\\_]+)%.lua$")
-local notes = tonumber(script_name:match("Add notes (%-?%d+)"))
