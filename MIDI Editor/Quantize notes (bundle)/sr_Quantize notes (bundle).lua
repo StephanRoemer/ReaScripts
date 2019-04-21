@@ -1,5 +1,5 @@
 -- @description Quantize notes (bundle)
--- @version 1.60
+-- @version 1.61
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements
@@ -15,7 +15,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - grid.lua
---  [nomain] sr_Quantize notes (bundle).lua
+--  [nomain] .
 --  [nomain] sr_Quantize notes function.lua
 -- @about
 --    # Description
