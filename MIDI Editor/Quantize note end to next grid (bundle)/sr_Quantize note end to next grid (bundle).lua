@@ -4,7 +4,7 @@
 --   + initial release
 -- @author Stephan Römer
 -- @metapackage
--- @provides [main=main,midi_editor,midi_inlineeditor]
+-- @provides
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to next grid - 1-1.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to next grid - 1-2.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to next grid - 1-4.lua
