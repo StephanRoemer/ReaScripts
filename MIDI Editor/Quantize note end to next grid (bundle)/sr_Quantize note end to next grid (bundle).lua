@@ -1,8 +1,9 @@
 -- @description Quantize note end to next grid (bundle)
--- @version 1.00
+-- @version 1.0
 -- @changelog
 --   + initial release
 -- @author Stephan Römer
+-- @metapackage
 -- @provides [main=main,midi_editor,midi_inlineeditor]
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to next grid - 1-1.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to next grid - 1-2.lua
