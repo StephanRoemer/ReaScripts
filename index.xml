@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="e0c31f82f432972ed48d7001e6b42ef5d608640d">
+<index version="1" name="Stevie Scripts" commit="dffbefdb22e90709b727a3d82f7fcf5d796f0ace">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1557,6 +1557,16 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+12.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+24.lua</source>
         <source file="sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20function.lua</source>
+      </version>
+      <version name="1.62" author="Stephan Römer" time="2019-04-21T19:08:28Z">
+        <changelog><![CDATA[+ the scripts are now located in their own folder
+* smaller bug fixes and improvements]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/dffbefdb22e90709b727a3d82f7fcf5d796f0ace/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="Add notes interval (bundle)/sr_Add notes -24.lua">https://github.com/StephanRoemer/ReaScripts/raw/dffbefdb22e90709b727a3d82f7fcf5d796f0ace/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20-24.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="Add notes interval (bundle)/sr_Add notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/dffbefdb22e90709b727a3d82f7fcf5d796f0ace/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20-12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="Add notes interval (bundle)/sr_Add notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/dffbefdb22e90709b727a3d82f7fcf5d796f0ace/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="Add notes interval (bundle)/sr_Add notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/dffbefdb22e90709b727a3d82f7fcf5d796f0ace/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+24.lua</source>
+        <source file="Add notes interval (bundle)/sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/dffbefdb22e90709b727a3d82f7fcf5d796f0ace/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20function.lua</source>
       </version>
     </reapack>
   </category>
