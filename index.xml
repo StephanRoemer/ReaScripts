@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="1791f82b94b70da9a57d789a8589296e6e15c791">
+<index version="1" name="Stevie Scripts" commit="e0c31f82f432972ed48d7001e6b42ef5d608640d">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1548,6 +1548,16 @@ v1.0 (2018-07-05)
         <source>https://github.com/StephanRoemer/ReaScripts/raw/7e657bb8c2c94746c4b760ab4e71c65987246805/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20(bundle).lua</source>
         <source file="sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/7e657bb8c2c94746c4b760ab4e71c65987246805/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-04-21T19:03:05Z">
+        <changelog><![CDATA[+ the scripts are now located in their own folder
+* smaller bug fixes and improvements]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes -24.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20-24.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20-12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+24.lua</source>
+        <source file="sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Change velocity (bundle)">
@@ -1581,6 +1591,20 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/7e657bb8c2c94746c4b760ab4e71c65987246805/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20-6.lua</source>
         <source>https://github.com/StephanRoemer/ReaScripts/raw/7e657bb8c2c94746c4b760ab4e71c65987246805/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20(bundle).lua</source>
         <source file="sr_Change velocity function.lua">https://github.com/StephanRoemer/ReaScripts/raw/7e657bb8c2c94746c4b760ab4e71c65987246805/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-04-21T19:03:05Z">
+        <changelog><![CDATA[+ the scripts are now located in their own folder
+* smaller bug fixes and improvements]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -1.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +1.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20+1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +2.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20+2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -2.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +5.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20+5.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -5.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20-5.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity +6.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20+6.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Change velocity -6.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20-6.lua</source>
+        <source file="sr_Change velocity function.lua">https://github.com/StephanRoemer/ReaScripts/raw/e0c31f82f432972ed48d7001e6b42ef5d608640d/MIDI%20Editor/Change%20velocity%20(bundle)/sr_Change%20velocity%20function.lua</source>
       </version>
     </reapack>
   </category>
