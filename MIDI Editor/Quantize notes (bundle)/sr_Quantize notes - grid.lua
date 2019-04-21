@@ -16,15 +16,9 @@ local function QuantizeMIDIEditor(take)
         closest_grid = reaper.BR_GetClosestGridDivision(note_start) -- get closest grid for current note (return value in seconds)
         closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
         
-        if notes_selected == true then -- if there is a note selection
-            if selected == true then -- filter out selected notes to quantize
-                if closest_grid_ppq ~= note_start_pos_ppq then -- if notes are not on the grid
-                    reaper.MIDI_SetNote(take, n, nil, nil, closest_grid_ppq, closest_grid_ppq+note_end_pos_ppq-note_start_pos_ppq, nil, nil, nil, true) -- quantize selected notes
-                end
-            end
-        else -- if there is no note selection
-            if closest_grid_ppq ~= note_start_pos_ppq then
-                reaper.MIDI_SetNote(take, n, nil, nil, closest_grid_ppq, closest_grid_ppq+note_end_pos_ppq-note_start_pos_ppq, nil, nil, nil, true) -- quantize all notes
+        if selected or not notes_selected then -- selected notes always move, unselected only move if no notes are selected
+            if closest_grid_ppq ~= note_start_pos_ppq then -- if notes are not on the grid
+                reaper.MIDI_SetNote(take, n, nil, nil, closest_grid_ppq, closest_grid_ppq+note_end_pos_ppq-note_start_pos_ppq, nil, nil, nil, true) -- quantize notes
             end
         end
     end
@@ -32,7 +26,7 @@ local function QuantizeMIDIEditor(take)
 end
 
 
--- quantize selected in arrange view (ignore note selection)
+-- quantize selected item(s) in arrange view (ignore note selection)
 
 local function QuantizeArrange(take)
     
