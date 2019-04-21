@@ -1,7 +1,7 @@
 -- @description Render VSTi item(s) without track FX
 -- @version 1.0
 -- @changelog
---   initial release
+--   + initial release
 -- @author Stephan Römer
 -- @provides [main].
 -- @about
