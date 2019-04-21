@@ -14,7 +14,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-16.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-16 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - grid.lua
---  [nomain] sr_Quantize note end to closest grid (bundle).lua
+--  [nomain] .
 --  [nomain] sr_Quantize note end to closest grid function.lua
 -- @about
 --    # Description
