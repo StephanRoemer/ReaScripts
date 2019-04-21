@@ -7,15 +7,15 @@
 -- @metapackage
 -- @provides
 --  [nomain] .
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity -1.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity +1.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity +2.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity -2.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity +5.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity -5.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity +6.lua
---  [main=main,midi_editor,midi_inlineeditor] Change velocity (bundle)/sr_Change velocity -6.lua
---  [nomain] Change velocity (bundle)/sr_Change velocity function.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -5.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity +6.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Change velocity -6.lua
+--  [nomain] sr_Change velocity function.lua
 -- @about
 --    # Description
 --    * These scripts increase/decrease the velocity of either all notes or selected notes in one or multiple items.

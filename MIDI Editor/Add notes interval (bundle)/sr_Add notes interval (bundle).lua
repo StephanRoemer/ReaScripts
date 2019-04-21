@@ -7,10 +7,10 @@
 -- @metapackage
 -- @provides
 --  [nomain] .
---  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes -24.lua
---  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes -12.lua
---  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes +12.lua
---  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes +24.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -24.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +24.lua
 --  [nomain] sr_Add notes interval function.lua
 -- @about
 --    # Description
