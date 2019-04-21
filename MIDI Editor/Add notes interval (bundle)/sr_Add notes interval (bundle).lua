@@ -1,16 +1,16 @@
 -- @description Add notes interval (bundle)
--- @version 1.60
+-- @version 1.61
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -24.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -12.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +12.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +24.lua
---  [nomain] sr_Add notes interval (bundle).lua
+--  [nomain] .
+--  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes -24.lua
+--  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes -12.lua
+--  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes +12.lua
+--  [main=main,midi_editor,midi_inlineeditor] Add notes interval (bundle)/sr_Add notes +24.lua
 --  [nomain] sr_Add notes interval function.lua
 -- @about
 --    # Description

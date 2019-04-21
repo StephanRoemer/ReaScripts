@@ -6,6 +6,7 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-1.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-2.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-4.lua
@@ -15,7 +16,6 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - 1-16 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes - grid.lua
---  [nomain] .
 --  [nomain] sr_Quantize notes function.lua
 -- @about
 --    # Description
