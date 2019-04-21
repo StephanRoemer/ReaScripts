@@ -1,5 +1,5 @@
 -- @description Add notes interval (bundle)
--- @version 1.61
+-- @version 1.62
 -- @changelog
 --   + the scripts are now located in their own folder
 --   * smaller bug fixes and improvements
@@ -7,11 +7,11 @@
 -- @metapackage
 -- @provides
 --  [nomain] .
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -24.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -12.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +12.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +24.lua
---  [nomain] sr_Add notes interval function.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -24.lua > Add notes interval (bundle)/sr_Add notes -24.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -12.lua > Add notes interval (bundle)/sr_Add notes -12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +12.lua > Add notes interval (bundle)/sr_Add notes +12.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +24.lua > Add notes interval (bundle)/sr_Add notes +24.lua
+--  [nomain] sr_Add notes interval function.lua > Add notes interval (bundle)/sr_Add notes interval function.lua
 -- @about
 --    # Description
 --    * These scripts add note intervals to all or selected events in a specific CC lane in one or multiple items.
