@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="1df244eb4d3954c33e16f0b36837427f1eddbfad">
+<index version="1" name="Stevie Scripts" commit="79ec3afe353e24304615293d76220dc9e32a319b">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1161,8 +1161,8 @@ v1.0 (2018-07-13)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes after the mouse cursor in the currently focused MIDI editor or inline editor.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrangement.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrangement, as stated above\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrange view.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrange view, as stated above\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1170,6 +1170,10 @@ v1.0 (2018-07-13)
       <version name="1.0" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-05T00:28:51Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/fd07a7ad1f28280e67c84bfd3fc8e3b88f2f49c4/MIDI%20Editor/sr_Select%20notes%20after%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
+      </version>
+      <version name="1.01" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-22T14:28:32Z">
+        <changelog><![CDATA[* small bug fixes and improvements]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/79ec3afe353e24304615293d76220dc9e32a319b/MIDI%20Editor/sr_Select%20notes%20after%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes and all CCs after edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Select notes and all CCs after edit cursor (in selected item(s) or MIDI editor)">
@@ -1243,8 +1247,8 @@ v1.0 (2018-07-13)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes after the mouse cursor in the currently focused MIDI editor or inline editor.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrangement.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrangement, as stated above\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrange view.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrange view, as stated above\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1252,6 +1256,10 @@ v1.0 (2018-07-13)
       <version name="1.0" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-22T13:50:25Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/1df244eb4d3954c33e16f0b36837427f1eddbfad/MIDI%20Editor/sr_Select%20notes%20before%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
+      </version>
+      <version name="1.01" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-22T14:28:32Z">
+        <changelog><![CDATA[* small bug fixes and improvements]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/79ec3afe353e24304615293d76220dc9e32a319b/MIDI%20Editor/sr_Select%20notes%20before%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes under edit cursor.lua" type="script" desc="Select notes under edit cursor">
@@ -1346,7 +1354,7 @@ v1.0 (2018-07-05)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script trims the head of all or selected notes at the mouse cursor.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor, inline editor and in the arrange view.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor, inline editor and arrange view.\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1354,6 +1362,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2019-04-14T19:04:51Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/5242dee501857f9289638862d07daa067ab3f673/MIDI%20Editor/sr_Trim%20head%20of%20note(s)%20at%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2019-04-22T14:28:32Z">
+        <changelog><![CDATA[* small bug fixes and improvements]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/79ec3afe353e24304615293d76220dc9e32a319b/MIDI%20Editor/sr_Trim%20head%20of%20note(s)%20at%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Trim tail of note(s) at mouse cursor (in take under mouse or in MIDI editor).lua" type="script" desc="Trim tail of note(s) at mouse cursor (in take under mouse or in MIDI editor)">
@@ -1364,7 +1376,7 @@ v1.0 (2018-07-05)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script trims the tail of all or selected notes at the mouse cursor.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor, inline editor and in the arrange view.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor, inline editor and arrange view.\sa180\par}
 }
 ]]></description>
         <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
@@ -1372,6 +1384,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2019-04-14T19:04:51Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/5242dee501857f9289638862d07daa067ab3f673/MIDI%20Editor/sr_Trim%20tail%20of%20note(s)%20at%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2019-04-22T14:28:32Z">
+        <changelog><![CDATA[* small bug fixes and improvements]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/79ec3afe353e24304615293d76220dc9e32a319b/MIDI%20Editor/sr_Trim%20tail%20of%20note(s)%20at%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Zoom MIDI editor to content.lua" type="script" desc="Zoom MIDI editor to content">
