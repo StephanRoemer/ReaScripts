@@ -1,13 +1,13 @@
 -- @description Trim head of note(s) at mouse cursor (in take under mouse or in MIDI editor)
--- @version 1.0
+-- @version 1.1
 -- @changelog
---  * initial release
+--  * small bug fixes and improvements
 -- @author Stephan Römer
 -- @provides [main=main,midi_editor,midi_inlineeditor] .
 -- @about
 --    # Description
 --    * This script trims the head of all or selected notes at the mouse cursor.
---    * This script works in the MIDI editor, inline editor and in the arrange view.
+--    * This script works in the MIDI editor, inline editor and arrange view.
 -- @link https://forums.cockos.com/showthread.php?p=1923923
 
 
@@ -34,7 +34,7 @@ local function GetTrimPosition(window, inline_editor, snap, mouse_pos, take)
 end
 
 
--- trim note tails, respect selected notes
+-- trim note head, respect selected notes
 
 local function TrimNoteHead(take, mouse_pos, trim_position_ppq)
     
@@ -60,7 +60,7 @@ local function TrimNoteHead(take, mouse_pos, trim_position_ppq)
 end
 
 
--- trim note tails, ignore selected notes
+-- trim note head, ignore selected notes
 
 local function TrimNoteHeadArrange(take, mouse_pos, trim_position_ppq)
     
@@ -81,30 +81,43 @@ local function TrimNoteHeadArrange(take, mouse_pos, trim_position_ppq)
 end
 
 
--- check, where the user wants to trim notes: MIDI editor, inline editor or arrange view
+-- check, where the user wants to change notes: MIDI editor, inline editor or arrange view (item)
 
-local snap, take, trim_position_ppq
-local window, _, _ = reaper.BR_GetMouseCursorContext() -- initialize cursor context
+local snap, take, trim_position_ppq, midi_editor
+local window, _, details = reaper.BR_GetMouseCursorContext() -- initialize cursor context
 local _, inline_editor, _, _, _, _ = reaper.BR_GetMouseCursorContext_MIDI() -- check if mouse hovers an inline editor
 local mouse_pos = reaper.BR_GetMouseCursorContext_Position() -- get mouse position
 
 if window == "midi_editor" and not inline_editor then -- MIDI editor is focused and its not the inline editor
-    local midi_editor = reaper.MIDIEditor_GetActive() -- get active MIDI editor
+    midi_editor = reaper.MIDIEditor_GetActive() -- get active MIDI editor
     take = reaper.MIDIEditor_GetTake(midi_editor) -- get take from active MIDI editor
     snap = reaper.MIDIEditor_GetSetting_int(midi_editor, "snap_enabled") -- get snap state
-    trim_position_ppq = GetTrimPosition(window, snap, mouse_pos, take) -- get trim position
-    TrimNoteHead(take, mouse_pos, trim_position_ppq) -- trim note tail
+    trim_position_ppq = GetTrimPosition(window, inline_editor, snap, mouse_pos, take) -- get trim position
+    TrimNoteHead(take, mouse_pos, trim_position_ppq) -- trim note head
     
-else -- common commands for inline editor and arrange view
+elseif details == "item" or inline_editor then -- if hovering item or inline editor
     take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
-    snap = reaper.GetToggleCommandState(1157) -- get arrange snap state
-    trim_position_ppq = GetTrimPosition(window, inline_editor, snap, mouse_pos, take)
     
-    if inline_editor then -- inline editor has focus
-        TrimNoteHead(take, mouse_pos, trim_position_ppq) -- trim note tails
-    else -- arrange view has focus
-        TrimNoteHeadArrange(take, mouse_pos, trim_position_ppq) -- trim note tails, ignore note selection!
+    if reaper.TakeIsMIDI(take) then -- is take MIDI?
+        snap = reaper.GetToggleCommandState(1157) -- get arrange snap state
+        trim_position_ppq = GetTrimPosition(window, inline_editor, snap, mouse_pos, take) -- get trim position
+        
+        if details == "item" then -- if hovering item
+            TrimNoteHeadArrange(take, mouse_pos, trim_position_ppq) -- trim note head, ignore note selection!
+
+        else -- hovering inline editor
+            TrimNoteHead(take, mouse_pos, trim_position_ppq) -- trim note head
+        end
+
+    else -- not hovering a MIDI take
+        reaper.ShowMessageBox("No MIDI take found. Please hover a MIDI take", "Error", 0)
+        return false
     end
+    
+else -- not hovering MIDI editor, inline editor nor item
+    reaper.ShowMessageBox("No MIDI take found. Please hover a MIDI take", "Error", 0)
+    return false
 end
+
 reaper.Undo_OnStateChange2(0, "Trim head of note(s) at mouse cursor (in take under mouse or in MIDI editor)")
 reaper.UpdateArrange()
