@@ -9,7 +9,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-1.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-2.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-4.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-4 triplets
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-4 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-8.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-8 triplets.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize note end to closest grid - 1-16.lua
