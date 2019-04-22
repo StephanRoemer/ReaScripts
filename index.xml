@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="87197e88370d50dc70414175ee26a60189c71605">
+<index version="1" name="Stevie Scripts" commit="365317099aac18af7d699a973635d4625dd02426">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1322,7 +1322,7 @@ v1.0]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/87197e88370d50dc70414175ee26a60189c71605/MIDI%20Editor/sr_Select%20notes%20and%20all%20CCs%20after%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Select notes and all CCs before edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Select notes before edit cursor (in selected item(s) or MIDI editor)">
+    <reapack name="sr_Select notes and all CCs before edit cursor (in selected item(s) or MIDI editor).lua" type="script" desc="Select notes and all CCs before edit cursor (in selected item(s) or MIDI editor)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
