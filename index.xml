@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="79ec3afe353e24304615293d76220dc9e32a319b">
+<index version="1" name="Stevie Scripts" commit="58eb6b066315ca1509a8bd36948c290df34282e3">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1016,6 +1016,44 @@ v1.0 (2018-07-13)
       <version name="1.0" author="Stephan Römer" time="2019-04-14T20:19:59Z">
         <changelog><![CDATA[* initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/5fb465d083ac0527931304e296eb103c93586eca/MIDI%20Editor/sr_Save%20MIDI%20editor%20grid%20setting%20in%20project%20file.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select all CCs after mouse cursor (in take under mouse or in MIDI editor).lua" type="script" desc="Select all CCs after mouse cursor (in take under mouse or in MIDI editor)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CCs after the mouse cursor in the currently focused MIDI editor or inline editor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the ararrange view.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view.\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-04-22T14:35:28Z">
+        <changelog><![CDATA[* initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/58eb6b066315ca1509a8bd36948c290df34282e3/MIDI%20Editor/sr_Select%20all%20CCs%20after%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select all CCs before mouse cursor (in take under mouse or in MIDI editor).lua" type="script" desc="Select all CCs before mouse cursor (in take under mouse or in MIDI editor)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all CCs before the mouse cursor in the currently focused MIDI editor or inline editor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the ararrange view.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view.\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2019-04-22T14:35:28Z">
+        <changelog><![CDATA[* initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/58eb6b066315ca1509a8bd36948c290df34282e3/MIDI%20Editor/sr_Select%20all%20CCs%20before%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select all events in CC lane after and under mouse cursor (exclusive).lua" type="script" desc="Select all events in CC lane after and under mouse cursor (exclusive)">
