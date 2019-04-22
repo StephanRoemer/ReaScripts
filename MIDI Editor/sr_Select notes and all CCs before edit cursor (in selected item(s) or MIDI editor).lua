@@ -1,4 +1,4 @@
--- @description Select notes before edit cursor (in selected item(s) or MIDI editor)
+-- @description Select notes and all CCs before edit cursor (in selected item(s) or MIDI editor)
 -- @version 1.0
 -- @changelog
 --  + initial release
