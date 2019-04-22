@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="341f204159c16c931c63f71276ccb7f8d35f8be3">
+<index version="1" name="Stevie Scripts" commit="1df244eb4d3954c33e16f0b36837427f1eddbfad">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -744,42 +744,6 @@ v1.0 (2018-07-02)
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/23eeb06050b45f8af8e279caf327933d1e1ded5b/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
       </version>
     </reapack>
-    <reapack name="sr_Delete notes after edit cursor.lua" type="script" desc="Delete notes after edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Delete all notes, that are located after the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab For obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[v1.0]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.1 (2017-12-16)
-+ added undo state]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-21T10:14:52Z">
-        <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
-        <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.3" author="Stephan Römer" time="2018-07-16T12:05:29Z">
-        <changelog><![CDATA[v1.3 (2018-07-15]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20notes%20after%20edit%20cursor.lua</source>
-      </version>
-    </reapack>
     <reapack name="sr_Delete notes after mouse cursor (in take under mouse or in MIDI editor).lua" type="script" desc="Delete notes after mouse cursor (in take under mouse or in MIDI editor)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -814,42 +778,6 @@ v1.0 (2018-07-02)
       <version name="1.31" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-19T23:38:40Z">
         <changelog><![CDATA[* smaller bug fixes and improvements]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/23eeb06050b45f8af8e279caf327933d1e1ded5b/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
-      </version>
-    </reapack>
-    <reapack name="sr_Delete notes before edit cursor.lua" type="script" desc="Delete notes before edit cursor">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Delete all notes, that are located before the edit cursor position\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in arrangement, MIDI Editor and Inline Editor\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab For obvious reasons, this script only works with a single item and will popup a message box, if you have more than one item selected or no item selected at all\sa180\par}
-}
-]]></description>
-        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
-      </metadata>
-      <version name="1.0" author="Stephan Römer" time="2017-12-16T03:35:54Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/2035fbbcac6b44a4588e88db3d7f5cf5c1ad8fa2/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.1" author="Stephan Römer" time="2017-12-16T13:49:34Z">
-        <changelog><![CDATA[v1.1 (2017-12-16)
-+ added undo state]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/140add578b897a7a85b4fa405bd274838c11855a/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.11" author="Stephan Römer" time="2017-12-21T10:14:52Z">
-        <changelog><![CDATA[v1.11 (2017-12-21)]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d776e6545dec1502f66dcf61f3769d9a33d3de46/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.2" author="Stephan Römer" time="2018-07-05T21:22:02Z">
-        <changelog><![CDATA[v1.2 (2018-07-05)]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9fac2644cc871dd76625f0354a6881a5c829ef1e/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
-      </version>
-      <version name="1.3" author="Stephan Römer" time="2018-07-16T12:05:29Z">
-        <changelog><![CDATA[v1.3 (2018-07-15]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/6402c3e2fbc72cd7c994b109c56c86a2dad1c1af/MIDI%20Editor/sr_Delete%20notes%20before%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete notes before mouse cursor (in take under mouse or in MIDI editor).lua" type="script" desc="Delete notes before mouse cursor (in take under mouse or in MIDI editor)">
@@ -1305,6 +1233,25 @@ v1.0 (2018-07-13)
 * better differentiation if user is in arrangement or MIDI editor
 * changed the script name to something more descriptive]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/d1324ae9c93e8ddfe049a3f88ed89aa8a10abe47/MIDI%20Editor/sr_Select%20notes%20before%20edit%20cursor%20(in%20selected%20item(s)%20or%20MIDI%20editor).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Select notes before mouse cursor (in take under mouse or in MIDI editor).lua" type="script" desc="Select notes before mouse cursor (in take under mouse or in MIDI editor)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script selects all notes after the mouse cursor in the currently focused MIDI editor or inline editor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically when hovering MIDI takes in the arrangement.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor and inline editor and partly in the arrangement, as stated above\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer, with a lot of help from FnA and Julian Sader" time="2019-04-22T13:50:25Z">
+        <changelog><![CDATA[* initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/1df244eb4d3954c33e16f0b36837427f1eddbfad/MIDI%20Editor/sr_Select%20notes%20before%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
       </version>
     </reapack>
     <reapack name="sr_Select notes under edit cursor.lua" type="script" desc="Select notes under edit cursor">
