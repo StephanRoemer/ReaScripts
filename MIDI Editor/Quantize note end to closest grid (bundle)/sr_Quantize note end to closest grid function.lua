@@ -108,9 +108,3 @@ function QuantizeNoteEnd()
     end
     reaper.UpdateArrange()
 end
-
-
-
-
-
-
