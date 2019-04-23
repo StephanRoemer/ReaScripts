@@ -1,11 +1,11 @@
 --  @noindex
 
-function QuantizeNoteEnd()
+function NudgeNoteEndLeft()
 
 
-    -- quantize take in MIDI/inline editor (respect note selection)
+    -- nudge note end in take in MIDI/inline editor (respect note selection)
 
-    local function QuantizeNoteEndMIDIEditor(take)
+    local function NudgeNoteEndLeftMIDIEditor(take)
 
         _, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
         
@@ -20,7 +20,7 @@ function QuantizeNoteEnd()
             
             if (selected or not notes_selected) -- selected notes always move, unselected only move if no notes are selected
             and not (prev_grid_ppq - note_start_pos_ppq < 1) then -- if new note length is bigger than 1 tick
-                reaper.MIDI_SetNote(take, n, nil, nil, nil, prev_grid_ppq, nil, nil, nil, true) -- quantize note end to the next grid
+                reaper.MIDI_SetNote(take, n, nil, nil, nil, prev_grid_ppq, nil, nil, nil, true) -- nudge note end to the next grid
                     
             end
         end
@@ -28,9 +28,9 @@ function QuantizeNoteEnd()
     end
 
 
-    -- quantize selected item(s) in arrange view (ignore note selection)
+    -- nudge note end in selected item(s) in arrange view (ignore note selection)
 
-    local function QuantizeNoteEndArrange(take)
+    local function NudgeNoteEndLeftArrange(take)
         
         _, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 
@@ -43,7 +43,7 @@ function QuantizeNoteEnd()
             
             if not (prev_grid_ppq - note_start_pos_ppq < 1) then -- if new note length is bigger than 1 tick
 
-                reaper.MIDI_SetNote(take, n, nil, nil, nil, prev_grid_ppq, nil, nil, nil, true) -- quantize note end to the next grid
+                reaper.MIDI_SetNote(take, n, nil, nil, nil, prev_grid_ppq, nil, nil, nil, true) -- nudge note end to the next grid
 
             end    
         end
@@ -53,7 +53,7 @@ function QuantizeNoteEnd()
 
     -- check, where the user wants to change notes: MIDI editor, inline editor or anywhere else
 
-    local take, item, save_project_grid, save_swing, save_swing_amt, grid
+    local take, item
     local window, _, _ = reaper.BR_GetMouseCursorContext() -- initialize cursor context
     local _, inline_editor, _, _, _, _ = reaper.BR_GetMouseCursorContext_MIDI() -- check if mouse hovers an inline editor
 
@@ -67,7 +67,7 @@ function QuantizeNoteEnd()
             take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
             
         end
-        QuantizeNoteEndMIDIEditor(take) -- quantize note end
+        NudgeNoteEndLeftMIDIEditor(take) -- nudge note end
             
     else -- anywhere else (apply to selected items in arrane view)
         
@@ -78,7 +78,7 @@ function QuantizeNoteEnd()
                 
                 if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
                     
-                    QuantizeNoteEndArrange(take) -- quantize note end
+                    NudgeNoteEndLeftArrange(take) -- nudge note end
 
                 else
                     reaper.ShowMessageBox("The selected item #".. i+1 .." does not contain a MIDI take and won't be altered", "Error", 0)

@@ -1,11 +1,11 @@
 --  @noindex
 
-function QuantizeNoteEnd()
+function NudgeNoteEndRight()
 
 
-    -- quantize take in MIDI/inline editor (respect note selection)
+    -- nudge note end in take in MIDI/inline editor (respect note selection)
 
-    local function QuantizeNoteEndMIDIEditor(take)
+    local function NudgeNoteEndRightMIDIEditor(take)
 
         _, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
         
@@ -20,7 +20,7 @@ function QuantizeNoteEnd()
             
             if selected or not notes_selected then -- selected notes always move, unselected only move if no notes are selected
             
-                reaper.MIDI_SetNote(take, n, nil, nil, nil, next_grid_ppq, nil, nil, nil, true) -- quantize note end to the next grid
+                reaper.MIDI_SetNote(take, n, nil, nil, nil, next_grid_ppq, nil, nil, nil, true) -- nudge note end to the next grid
                     
             end
         end
@@ -28,9 +28,9 @@ function QuantizeNoteEnd()
     end
 
 
-    -- quantize selected item(s) in arrange view (ignore note selection)
+    -- nudge note end in selected item(s) in arrange view (ignore note selection)
 
-    local function QuantizeNoteEndArrange(take)
+    local function NudgeNoteEndRightArrange(take)
         
         _, notes_count, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 
@@ -41,7 +41,7 @@ function QuantizeNoteEnd()
             next_grid = reaper.BR_GetNextGridDivision(note_end) -- get next grid for current note (return value in seconds)
             next_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, next_grid) -- convert next_grid to PPQ
             
-            reaper.MIDI_SetNote(take, n, nil, nil, nil, next_grid_ppq, nil, nil, nil, true) -- quantize note end to the next grid
+            reaper.MIDI_SetNote(take, n, nil, nil, nil, next_grid_ppq, nil, nil, nil, true) -- nudge note end to the next grid
                     
         end
         reaper.MIDI_Sort(take)
@@ -63,7 +63,7 @@ function QuantizeNoteEnd()
             take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
             
         end
-        QuantizeNoteEndMIDIEditor(take) -- quantize note end
+        NudgeNoteEndRightMIDIEditor(take) -- nudge note end
             
     else -- anywhere else (apply to selected items in arrane view)
         
@@ -74,7 +74,7 @@ function QuantizeNoteEnd()
                 
                 if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
                     
-                    QuantizeNoteEndArrange(take) -- quantize note end
+                    NudgeNoteEndRightArrange(take) -- nudge note end
 
                 else
                     reaper.ShowMessageBox("The selected item #".. i+1 .." does not contain a MIDI take and won't be altered", "Error", 0)
