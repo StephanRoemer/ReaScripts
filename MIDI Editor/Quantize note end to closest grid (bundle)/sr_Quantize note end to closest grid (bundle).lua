@@ -1,5 +1,5 @@
 -- @description Quantize note end to closest grid (bundle)
--- @version 1.0
+-- @version 1.1
 -- @changelog
 --   * minor fixes
 -- @author Stephan Römer
