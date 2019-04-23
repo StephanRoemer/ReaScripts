@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="fc742c3eee485214973f410fbb9d774304d0fd05">
+<index version="1" name="Stevie Scripts" commit="db09b2550969431e5744aa32298276fbde35c9be">
   <category name="FX">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1835,6 +1835,20 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf4369e07e3c83fb40834db2379843eabed2541c/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-16%20triplets.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf4369e07e3c83fb40834db2379843eabed2541c/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%20grid.lua</source>
         <source file="sr_Quantize note end to closest grid function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cf4369e07e3c83fb40834db2379843eabed2541c/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20function.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2019-04-23T13:33:31Z">
+        <changelog><![CDATA[* minor fixes]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-2.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-4.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-4.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-4 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-4%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-8.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-8.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-8 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-8%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-16.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-16.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - 1-16 triplets.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%201-16%20triplets.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Quantize note end to closest grid - grid.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20-%20grid.lua</source>
+        <source file="sr_Quantize note end to closest grid function.lua">https://github.com/StephanRoemer/ReaScripts/raw/db09b2550969431e5744aa32298276fbde35c9be/MIDI%20Editor/Quantize%20note%20end%20to%20closest%20grid%20(bundle)/sr_Quantize%20note%20end%20to%20closest%20grid%20function.lua</source>
       </version>
     </reapack>
   </category>
