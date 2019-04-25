@@ -1,7 +1,8 @@
 -- @description Send selected track(s) to BUS track and remove master send (bundle)
--- @version 1.1
+-- @version 1.2
 -- @changelog
---   The prefix length is no longer "limited" to 5 chars, instead the function will check for the prefix length and adapt accordingly
+--   * little improvements in the code
+--   + the scripts are now located in their own folder
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
@@ -25,6 +26,6 @@
 --  [nomain] sr_Send selected track(s) to BUS and remove master send function.lua
 -- @about
 --  # Description
---  This script bundle consists of 16 scripts that will send all selected tracks
---  to a BUS track prefixed with BUS01-16 and remove the parent/master send
+--  *  This script bundle consists of 16 scripts that will send all selected tracks
+--     to a BUS track prefixed with BUS01-16 and remove the parent/master send.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
