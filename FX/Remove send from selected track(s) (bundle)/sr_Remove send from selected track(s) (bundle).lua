@@ -1,7 +1,7 @@
 -- @description Remove send from selected track(s) (bundle)
--- @version 1.2
+-- @version 1.3
 -- @changelog
---   switched to external function file and put all scripts in a bundle
+--   + the scripts are now located in their own folder
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
@@ -13,5 +13,6 @@
 --  [nomain] sr_Remove send from selected track(s) function.lua
 -- @about
 --   # Description
---   This script bundle consists of 4 scripts that remove sends 1-4 from the selected track(s)
+--    * This script bundle consists of 4 scripts that remove sends 1-4 from the selected track(s).
+--    * You can easily customize the values in the scripts.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
