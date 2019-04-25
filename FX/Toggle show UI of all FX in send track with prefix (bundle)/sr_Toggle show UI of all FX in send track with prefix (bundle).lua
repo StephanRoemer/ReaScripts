@@ -1,7 +1,7 @@
 -- @description Toggle show UI of all FX in send track with prefix (bundle)
 -- @version 1.0
 -- @changelog
--- + initial release
+--   * initial release
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
