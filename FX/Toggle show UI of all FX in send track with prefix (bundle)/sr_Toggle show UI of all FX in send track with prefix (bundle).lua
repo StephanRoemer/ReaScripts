@@ -1,0 +1,18 @@
+-- @description Toggle show UI of all FX in send track with prefix (bundle)
+-- @version 1.0
+-- @changelog
+-- + initial release
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [nomain] .
+--  [main] sr_Toggle show UI of all FX in send track prefixed with FX1.lua
+--  [main] sr_Toggle show UI of all FX in send track prefixed with FX2.lua
+--  [main] sr_Toggle show UI of all FX in send track prefixed with FX3.lua
+--  [main] sr_Toggle show UI of all FX in send track prefixed with FX4.lua
+--  [nomain] sr_Toggle show UI of all FX in send track with prefix function.lua
+-- @about
+--   # Description
+--    * These scripts will show/hide all FX UIs of a send track (with a specific prefix) on a selected track.
+--    * You can easily customize the values in the scripts.
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
