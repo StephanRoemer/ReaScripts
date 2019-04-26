@@ -1,10 +1,12 @@
 -- @description Toggle mute by track prefix (bundle)
--- @version 1.0
+-- @version 1.1
 -- @changelog
---   Initial release
+--   * little improvements in the code
+--   + the scripts are now located in their own folder
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 --  [main] sr_Toggle mute BUS01.lua
 --  [main] sr_Toggle mute BUS02.lua
 --  [main] sr_Toggle mute BUS03.lua
@@ -37,12 +39,11 @@
 --  [main] sr_Toggle mute VCA14.lua
 --  [main] sr_Toggle mute VCA15.lua
 --  [main] sr_Toggle mute VCA16.lua
---  [nomain] sr_Toggle mute by track prefix (bundle).lua
 --  [nomain] sr_Toggle mute by track prefix function.lua
 -- @about
 --  # Description
---  - This script bundle consists of 32 scripts that will toggle mute tracks by their prefix
---  - There are 16 BUS and VCA presets per default, but you can easily adjust or create your own presets by
---  editing the files
---  - When adding the scripts to a toolbar, the buttons will reflect the toggle status
+--  * This script bundle consists of 32 scripts that will toggle mute tracks by their prefix.
+--  * There are 16 BUS and VCA presets per default, but you can easily adjust or create your own presets by
+--    editing the files.
+--  * When adding the scripts to a toolbar, the buttons will reflect the toggle status.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
