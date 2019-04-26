@@ -6,6 +6,7 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 --  [main] sr_Send selected track(s) to BUS01 and remove master send.lua
 --  [main] sr_Send selected track(s) to BUS02 and remove master send.lua
 --  [main] sr_Send selected track(s) to BUS03 and remove master send.lua
@@ -22,10 +23,10 @@
 --  [main] sr_Send selected track(s) to BUS14 and remove master send.lua
 --  [main] sr_Send selected track(s) to BUS15 and remove master send.lua
 --  [main] sr_Send selected track(s) to BUS16 and remove master send.lua
---  [nomain] sr_Send selected track(s) to BUS and remove master send (bundle).lua
 --  [nomain] sr_Send selected track(s) to BUS and remove master send function.lua
 -- @about
 --  # Description
---  *  This script bundle consists of 16 scripts that will send all selected tracks
---     to a BUS track prefixed with BUS01-16 and remove the parent/master send.
+--  * This script bundle consists of 16 scripts that will send all selected tracks
+--    to a BUS track prefixed with BUS01-16 and remove the parent/master send.
+--  * You can easily customize the values in the scripts.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

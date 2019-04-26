@@ -1,17 +1,19 @@
 -- @description Toggle show UI of all FX in send track (bundle)
--- @version 1.11
+-- @version 1.2
 -- @changelog
---   minor github issue fixed: scripts couldn't find external function
+--   * little improvements in the code
+--   + the scripts are now located in their own folder
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 --  [main] sr_Toggle show UI of all FX in send 1.lua
 --  [main] sr_Toggle show UI of all FX in send 2.lua
 --  [main] sr_Toggle show UI of all FX in send 3.lua
 --  [main] sr_Toggle show UI of all FX in send 4.lua
---  [nomain] sr_Toggle show UI of all FX in send (bundle).lua
 --  [nomain] sr_Toggle show UI of all FX in send function.lua
 -- @about
 --   # Description
---   This script bundle consists of 4 scripts that shows/hide the UI of all FX in send 1-4
+--   * This script bundle consists of 4 scripts that shows/hide the UI of all FX in send 1-4.
+--   * You can easily customize the values in the scripts.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

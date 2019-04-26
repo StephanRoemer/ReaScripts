@@ -5,14 +5,14 @@
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 --  [main] sr_Remove send 1 from selected track(s).lua
 --  [main] sr_Remove send 2 from selected track(s).lua
 --  [main] sr_Remove send 3 from selected track(s).lua
 --  [main] sr_Remove send 4 from selected track(s).lua
---  [nomain] sr_Remove send from selected track(s) (bundle).lua
 --  [nomain] sr_Remove send from selected track(s) function.lua
 -- @about
 --   # Description
---    * This script bundle consists of 4 scripts that remove sends 1-4 from the selected track(s).
---    * You can easily customize the values in the scripts.
+--   * This script bundle consists of 4 scripts that remove sends 1-4 from the selected track(s).
+--   * You can easily customize the values in the scripts.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923

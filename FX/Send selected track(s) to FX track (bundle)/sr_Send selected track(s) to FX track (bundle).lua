@@ -1,17 +1,19 @@
 -- @description Send selected track(s) to FX track (bundle)
--- @version 1.21
+-- @version 1.3
 -- @changelog
---   switched to external function file and put all scripts in a bundle
+--   * little improvements in the code
+--   + the scripts are now located in their own folder
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
+--  [nomain] .
 --  [main] sr_Send selected track(s) to FX1.lua
 --  [main] sr_Send selected track(s) to FX2.lua
 --  [main] sr_Send selected track(s) to FX3.lua
 --  [main] sr_Send selected track(s) to FX4.lua
---  [nomain] sr_Send selected track(s) to FX track (bundle).lua
 --  [nomain] sr_Send selected track(s) to FX track function.lua
 -- @about
 --   # Description
---   This script bundle consists of 4 scripts that will send all selected tracks to an FX track prefixed with FX1-4
+--   * This script bundle consists of 4 scripts that will send all selected tracks to an FX track prefixed with FX1-4.
+--   * You can easily customize the values in the scripts.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
