@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="7e0ca94825d184b19416bbe3933345b521a34502">
+<index version="1" name="Stevie Scripts" commit="b9c26a60e9c082002c99ca18bba3778334695446">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2482,6 +2482,8 @@ v1.0 (2018-07-05)
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/69570fd244d8d2c503bd712fb819c7e1e9994b08/Tracks%20Properties/sr_Toggle%20collapse%20selected%20folders.lua</source>
       </version>
     </reapack>
+  </category>
+  <category name="Tracks Properties/Toggle mute by track prefix (bundle)">
     <reapack name="sr_Toggle mute by track prefix (bundle).lua" type="script" desc="Toggle mute by track prefix (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -2489,51 +2491,54 @@ v1.0 (2018-07-05)
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of 32 scripts that will toggle mute tracks by their prefix\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab There are 16 BUS and VCA presets per default, but you can easily adjust or create your own presets by editing the files\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When adding the scripts to a toolbar, the buttons will reflect the toggle status\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of 32 scripts that will toggle mute tracks by their prefix.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab There are 16 BUS and VCA presets per default, but you can easily adjust or create your own presets by editing the files.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When adding the scripts to a toolbar, the buttons will reflect the toggle status.\sa180\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-20T15:44:06Z">
-        <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main" file="sr_Toggle mute BUS01.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS01.lua</source>
-        <source main="main" file="sr_Toggle mute BUS02.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS02.lua</source>
-        <source main="main" file="sr_Toggle mute BUS03.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS03.lua</source>
-        <source main="main" file="sr_Toggle mute BUS04.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS04.lua</source>
-        <source main="main" file="sr_Toggle mute BUS05.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS05.lua</source>
-        <source main="main" file="sr_Toggle mute BUS06.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS06.lua</source>
-        <source main="main" file="sr_Toggle mute BUS07.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS07.lua</source>
-        <source main="main" file="sr_Toggle mute BUS08.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS08.lua</source>
-        <source main="main" file="sr_Toggle mute BUS09.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS09.lua</source>
-        <source main="main" file="sr_Toggle mute BUS10.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS10.lua</source>
-        <source main="main" file="sr_Toggle mute BUS11.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS11.lua</source>
-        <source main="main" file="sr_Toggle mute BUS12.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS12.lua</source>
-        <source main="main" file="sr_Toggle mute BUS13.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS13.lua</source>
-        <source main="main" file="sr_Toggle mute BUS14.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS14.lua</source>
-        <source main="main" file="sr_Toggle mute BUS15.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS15.lua</source>
-        <source main="main" file="sr_Toggle mute BUS16.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20BUS16.lua</source>
-        <source main="main" file="sr_Toggle mute VCA01.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA01.lua</source>
-        <source main="main" file="sr_Toggle mute VCA02.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA02.lua</source>
-        <source main="main" file="sr_Toggle mute VCA03.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA03.lua</source>
-        <source main="main" file="sr_Toggle mute VCA04.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA04.lua</source>
-        <source main="main" file="sr_Toggle mute VCA05.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA05.lua</source>
-        <source main="main" file="sr_Toggle mute VCA06.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA06.lua</source>
-        <source main="main" file="sr_Toggle mute VCA07.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA07.lua</source>
-        <source main="main" file="sr_Toggle mute VCA08.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA08.lua</source>
-        <source main="main" file="sr_Toggle mute VCA09.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA09.lua</source>
-        <source main="main" file="sr_Toggle mute VCA10.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA10.lua</source>
-        <source main="main" file="sr_Toggle mute VCA11.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA11.lua</source>
-        <source main="main" file="sr_Toggle mute VCA12.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA12.lua</source>
-        <source main="main" file="sr_Toggle mute VCA13.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA13.lua</source>
-        <source main="main" file="sr_Toggle mute VCA14.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA14.lua</source>
-        <source main="main" file="sr_Toggle mute VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA15.lua</source>
-        <source main="main" file="sr_Toggle mute VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20VCA16.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20by%20track%20prefix%20(bundle).lua</source>
-        <source file="sr_Toggle mute by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/402c6320a13939fd63a51b705c032939a4aa2a32/Tracks%20Properties/sr_Toggle%20mute%20by%20track%20prefix%20function.lua</source>
+      <version name="1.1" author="Stephan Römer" time="2019-04-26T00:18:29Z">
+        <changelog><![CDATA[* little improvements in the code
++ the scripts are now located in their own folder]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20by%20track%20prefix%20(bundle).lua</source>
+        <source main="main" file="sr_Toggle mute BUS01.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS01.lua</source>
+        <source main="main" file="sr_Toggle mute BUS02.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS02.lua</source>
+        <source main="main" file="sr_Toggle mute BUS03.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS03.lua</source>
+        <source main="main" file="sr_Toggle mute BUS04.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS04.lua</source>
+        <source main="main" file="sr_Toggle mute BUS05.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS05.lua</source>
+        <source main="main" file="sr_Toggle mute BUS06.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS06.lua</source>
+        <source main="main" file="sr_Toggle mute BUS07.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS07.lua</source>
+        <source main="main" file="sr_Toggle mute BUS08.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS08.lua</source>
+        <source main="main" file="sr_Toggle mute BUS09.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS09.lua</source>
+        <source main="main" file="sr_Toggle mute BUS10.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS10.lua</source>
+        <source main="main" file="sr_Toggle mute BUS11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS11.lua</source>
+        <source main="main" file="sr_Toggle mute BUS12.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS12.lua</source>
+        <source main="main" file="sr_Toggle mute BUS13.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS13.lua</source>
+        <source main="main" file="sr_Toggle mute BUS14.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS14.lua</source>
+        <source main="main" file="sr_Toggle mute BUS15.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS15.lua</source>
+        <source main="main" file="sr_Toggle mute BUS16.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS16.lua</source>
+        <source main="main" file="sr_Toggle mute VCA01.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA01.lua</source>
+        <source main="main" file="sr_Toggle mute VCA02.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA02.lua</source>
+        <source main="main" file="sr_Toggle mute VCA03.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA03.lua</source>
+        <source main="main" file="sr_Toggle mute VCA04.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA04.lua</source>
+        <source main="main" file="sr_Toggle mute VCA05.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA05.lua</source>
+        <source main="main" file="sr_Toggle mute VCA06.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA06.lua</source>
+        <source main="main" file="sr_Toggle mute VCA07.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA07.lua</source>
+        <source main="main" file="sr_Toggle mute VCA08.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA08.lua</source>
+        <source main="main" file="sr_Toggle mute VCA09.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA09.lua</source>
+        <source main="main" file="sr_Toggle mute VCA10.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA10.lua</source>
+        <source main="main" file="sr_Toggle mute VCA11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA11.lua</source>
+        <source main="main" file="sr_Toggle mute VCA12.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA12.lua</source>
+        <source main="main" file="sr_Toggle mute VCA13.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA13.lua</source>
+        <source main="main" file="sr_Toggle mute VCA14.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA14.lua</source>
+        <source main="main" file="sr_Toggle mute VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA15.lua</source>
+        <source main="main" file="sr_Toggle mute VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA16.lua</source>
+        <source file="sr_Toggle mute by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20by%20track%20prefix%20function.lua</source>
       </version>
     </reapack>
+  </category>
+  <category name="Tracks Properties/Toggle solo by track prefix (bundle)">
     <reapack name="sr_Toggle solo by track prefix (bundle).lua" type="script" desc="Toggle solo by track prefix (bundle)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -2541,49 +2546,50 @@ v1.0 (2018-07-05)
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of 32 scripts that will toggle solo tracks by their prefix\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab There are 16 BUS and VCA presets per default, but you can easily adjust or create your own presets by editing the files\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When adding the scripts to a toolbar, the buttons will reflect the toggle status\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of 32 scripts that will toggle solo tracks by their prefix.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab There are 16 BUS and VCA presets per default, but you can easily adjust or create your own presets by editing the files.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When adding the scripts to a toolbar, the buttons will reflect the toggle status.\sa180\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
-      <version name="1.0" author="Stephan Römer" time="2018-09-20T14:53:04Z">
-        <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main" file="sr_Toggle solo BUS01.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS01.lua</source>
-        <source main="main" file="sr_Toggle solo BUS02.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS02.lua</source>
-        <source main="main" file="sr_Toggle solo BUS03.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS03.lua</source>
-        <source main="main" file="sr_Toggle solo BUS04.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS04.lua</source>
-        <source main="main" file="sr_Toggle solo BUS05.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS05.lua</source>
-        <source main="main" file="sr_Toggle solo BUS06.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS06.lua</source>
-        <source main="main" file="sr_Toggle solo BUS07.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS07.lua</source>
-        <source main="main" file="sr_Toggle solo BUS08.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS08.lua</source>
-        <source main="main" file="sr_Toggle solo BUS09.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS09.lua</source>
-        <source main="main" file="sr_Toggle solo BUS10.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS10.lua</source>
-        <source main="main" file="sr_Toggle solo BUS11.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS11.lua</source>
-        <source main="main" file="sr_Toggle solo BUS12.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS12.lua</source>
-        <source main="main" file="sr_Toggle solo BUS13.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS13.lua</source>
-        <source main="main" file="sr_Toggle solo BUS14.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS14.lua</source>
-        <source main="main" file="sr_Toggle solo BUS15.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS15.lua</source>
-        <source main="main" file="sr_Toggle solo BUS16.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20BUS16.lua</source>
-        <source main="main" file="sr_Toggle solo VCA01.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA01.lua</source>
-        <source main="main" file="sr_Toggle solo VCA02.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA02.lua</source>
-        <source main="main" file="sr_Toggle solo VCA03.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA03.lua</source>
-        <source main="main" file="sr_Toggle solo VCA04.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA04.lua</source>
-        <source main="main" file="sr_Toggle solo VCA05.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA05.lua</source>
-        <source main="main" file="sr_Toggle solo VCA06.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA06.lua</source>
-        <source main="main" file="sr_Toggle solo VCA07.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA07.lua</source>
-        <source main="main" file="sr_Toggle solo VCA08.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA08.lua</source>
-        <source main="main" file="sr_Toggle solo VCA09.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA09.lua</source>
-        <source main="main" file="sr_Toggle solo VCA10.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA10.lua</source>
-        <source main="main" file="sr_Toggle solo VCA11.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA11.lua</source>
-        <source main="main" file="sr_Toggle solo VCA12.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA12.lua</source>
-        <source main="main" file="sr_Toggle solo VCA13.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA13.lua</source>
-        <source main="main" file="sr_Toggle solo VCA14.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA14.lua</source>
-        <source main="main" file="sr_Toggle solo VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA15.lua</source>
-        <source main="main" file="sr_Toggle solo VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20VCA16.lua</source>
-        <source>https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20by%20track%20prefix%20(bundle).lua</source>
-        <source file="sr_Toggle solo by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/44927d1fd66be23a67860bf2bdee51f179bea4f4/Tracks%20Properties/sr_Toggle%20solo%20by%20track%20prefix%20function.lua</source>
+      <version name="1.1" author="Stephan Römer" time="2019-04-26T00:18:29Z">
+        <changelog><![CDATA[* little improvements in the code
++ the scripts are now located in their own folder]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20by%20track%20prefix%20(bundle).lua</source>
+        <source main="main" file="sr_Toggle solo BUS01.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS01.lua</source>
+        <source main="main" file="sr_Toggle solo BUS02.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS02.lua</source>
+        <source main="main" file="sr_Toggle solo BUS03.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS03.lua</source>
+        <source main="main" file="sr_Toggle solo BUS04.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS04.lua</source>
+        <source main="main" file="sr_Toggle solo BUS05.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS05.lua</source>
+        <source main="main" file="sr_Toggle solo BUS06.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS06.lua</source>
+        <source main="main" file="sr_Toggle solo BUS07.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS07.lua</source>
+        <source main="main" file="sr_Toggle solo BUS08.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS08.lua</source>
+        <source main="main" file="sr_Toggle solo BUS09.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS09.lua</source>
+        <source main="main" file="sr_Toggle solo BUS10.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS10.lua</source>
+        <source main="main" file="sr_Toggle solo BUS11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS11.lua</source>
+        <source main="main" file="sr_Toggle solo BUS12.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS12.lua</source>
+        <source main="main" file="sr_Toggle solo BUS13.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS13.lua</source>
+        <source main="main" file="sr_Toggle solo BUS14.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS14.lua</source>
+        <source main="main" file="sr_Toggle solo BUS15.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS15.lua</source>
+        <source main="main" file="sr_Toggle solo BUS16.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS16.lua</source>
+        <source main="main" file="sr_Toggle solo VCA01.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA01.lua</source>
+        <source main="main" file="sr_Toggle solo VCA02.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA02.lua</source>
+        <source main="main" file="sr_Toggle solo VCA03.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA03.lua</source>
+        <source main="main" file="sr_Toggle solo VCA04.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA04.lua</source>
+        <source main="main" file="sr_Toggle solo VCA05.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA05.lua</source>
+        <source main="main" file="sr_Toggle solo VCA06.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA06.lua</source>
+        <source main="main" file="sr_Toggle solo VCA07.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA07.lua</source>
+        <source main="main" file="sr_Toggle solo VCA08.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA08.lua</source>
+        <source main="main" file="sr_Toggle solo VCA09.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA09.lua</source>
+        <source main="main" file="sr_Toggle solo VCA10.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA10.lua</source>
+        <source main="main" file="sr_Toggle solo VCA11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA11.lua</source>
+        <source main="main" file="sr_Toggle solo VCA12.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA12.lua</source>
+        <source main="main" file="sr_Toggle solo VCA13.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA13.lua</source>
+        <source main="main" file="sr_Toggle solo VCA14.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA14.lua</source>
+        <source main="main" file="sr_Toggle solo VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA15.lua</source>
+        <source main="main" file="sr_Toggle solo VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA16.lua</source>
+        <source file="sr_Toggle solo by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20by%20track%20prefix%20function.lua</source>
       </version>
     </reapack>
   </category>
