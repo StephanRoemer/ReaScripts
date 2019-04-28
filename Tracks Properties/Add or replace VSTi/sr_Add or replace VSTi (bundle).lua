@@ -30,7 +30,7 @@
 --  [main] sr_Add or replace existing VSTi with Bazille.lua
 --  [main] sr_Add or replace existing VSTi with ACE.lua
 --  [main] sr_Add or replace existing VSTi with Addictive Drums 2.lua
---  [nomain] sr_Add or replace VSTi function function.lua
+--  [nomain] sr_Add or replace VSTi function.lua
 -- @about
 --  # Description
 --  * These scripts will add a VSTi or replace the 1st VSTi that's been found in the FX slot of a track.
