@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="234e8e416b1bb9c6986b6e18ec41af98b3ae1ef4">
+<index version="1" name="Stevie Scripts" commit="45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2328,6 +2328,52 @@ v1.0 (2018-07-05)
         <changelog><![CDATA[v1.0 (2018-01-21)
 + initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/69570fd244d8d2c503bd712fb819c7e1e9994b08/Tracks%20Properties/sr_Toggle%20collapse%20selected%20folders.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Tracks Properties/Add or replace VSTi">
+    <reapack name="sr_Add or replace VSTi (bundle).lua" type="script" desc="Add or replace VSTi">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts will add a VSTi or replace the 1st VSTi that's been found in the FX slot of a track.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab After the VSTi has been added, the floating plugin GUI will be shown.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab A bunch of scripts for some well known VSTis are already included and can easily be customized.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.1" author="Stephan Römer" time="2019-04-28T12:55:49Z">
+        <changelog><![CDATA[* improvements in the code
+* when a VSTi is replaced, the same used slot is used
+* when there is no VSTi found or no track FX, then the 1st slot will be used
+* the plugin GUI opens centered on the current screen
++ the scripts are now located in their own folder
++ added some new VSTis]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20VSTi%20(bundle).lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Kontakt.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Kontakt.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Kontakt 5.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Kontakt%205.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Komplete Kontrol.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Komplete%20Kontrol.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Engine 2.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Engine%202.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Play.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Play.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with UVI.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20UVI.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Vienna Instruments Pro.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Vienna%20Instruments%20Pro.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Omnisphere 2.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Omnisphere%202.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Trilian.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Trilian.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Keyscape.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Keyscape.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Stylus RMX.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Stylus%20RMX.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Zebra 2.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Zebra%202.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with ZebraHZ.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20ZebraHZ.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Diva.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Diva.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Repro-1.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Repro-1.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Repro-5.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Repro-5.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Bazille.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Bazille.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with ACE.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20ACE.lua</source>
+        <source main="main" file="sr_Add or replace existing VSTi with Addictive Drums 2.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20existing%20VSTi%20with%20Addictive%20Drums%202.lua</source>
+        <source file="sr_Add or replace VSTi function.lua">https://github.com/StephanRoemer/ReaScripts/raw/45cd0a48e7f4b1a5c8a3ae2ad1f3b9692d52d374/Tracks%20Properties/Add%20or%20replace%20VSTi/sr_Add%20or%20replace%20VSTi%20function.lua</source>
       </version>
     </reapack>
   </category>
