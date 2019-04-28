@@ -1,0 +1,39 @@
+-- @description Add or replace VSTi
+-- @version 1.1
+-- @changelog
+--   * improvements in the code
+--   * when a VSTi is replaced, the same used slot is used
+--   * when there is no VSTi found or no track FX, then the 1st slot will be used
+--   * the plugin GUI opens centered on the current screen
+--   + the scripts are now located in their own folder
+--   + added some new VSTis
+-- @author Stephan Römer
+-- @metapackage
+-- @provides
+--  [nomain] .
+--  [main] sr_Add or replace existing VSTi with Kontakt.lua
+--  [main] sr_Add or replace existing VSTi with Kontakt 5.lua
+--  [main] sr_Add or replace existing VSTi with Komplete Kontrol.lua
+--  [main] sr_Add or replace existing VSTi with Engine 2.lua
+--  [main] sr_Add or replace existing VSTi with Play.lua
+--  [main] sr_Add or replace existing VSTi with UVI.lua
+--  [main] sr_Add or replace existing VSTi with Vienna Instruments Pro.lua
+--  [main] sr_Add or replace existing VSTi with Omnisphere 2.lua
+--  [main] sr_Add or replace existing VSTi with Trilian.lua
+--  [main] sr_Add or replace existing VSTi with Keyscape.lua
+--  [main] sr_Add or replace existing VSTi with Stylus RMX.lua
+--  [main] sr_Add or replace existing VSTi with Zebra 2.lua
+--  [main] sr_Add or replace existing VSTi with ZebraHZ.lua
+--  [main] sr_Add or replace existing VSTi with Diva.lua
+--  [main] sr_Add or replace existing VSTi with Repro-1.lua
+--  [main] sr_Add or replace existing VSTi with Repro-5.lua
+--  [main] sr_Add or replace existing VSTi with Bazille.lua
+--  [main] sr_Add or replace existing VSTi with ACE.lua
+--  [main] sr_Add or replace existing VSTi with Addictive Drums 2.lua
+--  [nomain] sr_Add or replace VSTi function function.lua
+-- @about
+--  # Description
+--  * These scripts will add a VSTi or replace the 1st VSTi that's been found in the FX slot of a track.
+--  * After the VSTi has been added, the floating plugin GUI will be shown.
+--  * A bunch of scripts for some well known VSTis are already included and can easily be customized.
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
