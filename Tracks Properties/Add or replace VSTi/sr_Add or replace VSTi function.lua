@@ -48,16 +48,14 @@ function AddInstrument(vsti, track_name)
 		repeat -- wait and let time pass until the plugin GUI has opened (time varies depending on the plugin)
 		until (reaper.TrackFX_GetOpen(track, slot) == true) 
 		
-		
-		_, name = reaper.TrackFX_GetFXName(track, slot, "")
-		title = name .. ' - Track ' .. tostring(reaper.CSurf_TrackToID(track, false).. " \""..track_name.."\"")
-		-- fgw = reaper.JS_Window_GetForeground()
-		-- title = reaper.JS_Window_GetTitle(fgw)
+		_, fx_name = reaper.TrackFX_GetFXName(track, slot, "") -- get FX name
+		window_title = fx_name .. ' - Track ' .. tostring(reaper.CSurf_TrackToID(track, false).. " \""..track_name.."\"") -- 
+		hwnd = reaper.JS_Window_Find(window_title, true) -- get hwnd
 
-		hwnd = reaper.JS_Window_Find(title, true)
 		if hwnd then
   			got_val_ok, width, height = reaper.JS_Window_GetClientSize(hwnd) -- get size of plugin GUI
-  			if got_val_ok then -- if retrieving the plugin size values did work
+
+			  if got_val_ok then -- if retrieving the plugin size values did work
     			reaper.JS_Window_Move(hwnd, math.ceil(screen_w/2-width/2), math.ceil(screen_h/2-height/2)) -- move plugin GUI to the horizontal and vertical center of the screen 
   			end
 		end
