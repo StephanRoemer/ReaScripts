@@ -1,12 +1,7 @@
 -- @description Add or replace VSTi
--- @version 1.1
+-- @version 1.2
 -- @changelog
---   * improvements in the code
---   * when a VSTi is replaced, the same used slot is used
---   * when there is no VSTi found or no track FX, then the 1st slot will be used
---   * the plugin GUI opens centered on the current screen
---   + the scripts are now located in their own folder
---   + added some new VSTis
+--   * better method for catching the VSTi window for centering it (thanks Edgemeal!!!)
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

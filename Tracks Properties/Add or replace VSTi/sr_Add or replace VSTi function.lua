@@ -1,6 +1,6 @@
 -- @noindex
 
-function AddInstrument(vsti, plugin_name)
+function AddInstrument(vsti, track_name)
 
 
 	local function AddVSTi(track)
@@ -17,14 +17,14 @@ function AddInstrument(vsti, plugin_name)
 				reaper.TrackFX_AddByName(track, vsti, false, -1) -- add VSTi (in last FX slot)
 				
 				reaper.TrackFX_CopyToTrack(track, fx_count-1, track, instrument_idx, true) -- move new VSTi to original VSTi slot
-				reaper.GetSetMediaTrackInfo_String(track, "P_NAME", plugin_name, true) -- rename track to "plugin_name"
+				reaper.GetSetMediaTrackInfo_String(track, "P_NAME", track_name, true) -- rename track to "track_name"
 				replaced = true -- plugin has been replaced, relevant for different undo test
 				return instrument_idx, replaced
 
 			else -- if there's no VSTi
 				
 				reaper.TrackFX_AddByName(track, vsti, false, -1) -- add VSTi (in last FX slot)
-				reaper.GetSetMediaTrackInfo_String(track, "P_NAME", plugin_name, true) -- rename track to "plugin_name"
+				reaper.GetSetMediaTrackInfo_String(track, "P_NAME", track_name, true) -- rename track to "track_name"
 				reaper.TrackFX_CopyToTrack(track, fx_count, track, 0, true) -- move VSTi to the first slot. fx_count and not fx_count-1, because a new FX was added
 				replaced = false -- plugin has not been replaced but added, relevant for different undo test
 				return 0, replaced
@@ -32,7 +32,7 @@ function AddInstrument(vsti, plugin_name)
 			
 		else -- only insert VSTi, since they are no other FX
 			reaper.TrackFX_AddByName(track, vsti, false, -1) -- add VSTi (in last FX slot)
-			reaper.GetSetMediaTrackInfo_String(track, "P_NAME", plugin_name, true) -- rename track to "plugin_name"
+			reaper.GetSetMediaTrackInfo_String(track, "P_NAME", track_name, true) -- rename track to "track_name"
 			replaced = false -- plugin has not been replaced but added, relevant for different undo test
 			return 0, replaced
 		end
@@ -48,10 +48,18 @@ function AddInstrument(vsti, plugin_name)
 		repeat -- wait and let time pass until the plugin GUI has opened (time varies depending on the plugin)
 		until (reaper.TrackFX_GetOpen(track, slot) == true) 
 		
-		got_val_ok, width, height = reaper.JS_Window_GetClientSize(reaper.JS_Window_GetForeground()) -- get size of plugin GUI
+		
+		_, name = reaper.TrackFX_GetFXName(track, slot, "")
+		title = name .. ' - Track ' .. tostring(reaper.CSurf_TrackToID(track, false).. " \""..track_name.."\"")
+		-- fgw = reaper.JS_Window_GetForeground()
+		-- title = reaper.JS_Window_GetTitle(fgw)
 
-		if got_val_ok then -- if retrieving the plugin size values did work
-			reaper.JS_Window_Move(reaper.JS_Window_GetForeground(), math.ceil(screen_w/2-width/2), math.ceil(screen_h/2-height/2)) -- move plugin GUI to the horizontal and vertical center of the screen
+		hwnd = reaper.JS_Window_Find(title, true)
+		if hwnd then
+  			got_val_ok, width, height = reaper.JS_Window_GetClientSize(hwnd) -- get size of plugin GUI
+  			if got_val_ok then -- if retrieving the plugin size values did work
+    			reaper.JS_Window_Move(hwnd, math.ceil(screen_w/2-width/2), math.ceil(screen_h/2-height/2)) -- move plugin GUI to the horizontal and vertical center of the screen 
+  			end
 		end
 	end
 		
