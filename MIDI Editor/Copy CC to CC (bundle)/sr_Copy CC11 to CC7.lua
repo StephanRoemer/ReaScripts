@@ -7,4 +7,4 @@ local src_cc = 11 -- source CC
 local dest_cc = 7 -- destination CC
 
 CopySrcCCToDestCC(src_cc, dest_cc) -- call function
-reaper.Undo_OnStateChange2(proj, "Copy CC11 to CC7")
+reaper.Undo_OnStateChange2(proj, "Copy CC".. src_cc .. " to CC" .. dest_cc)
