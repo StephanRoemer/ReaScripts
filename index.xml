@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="3b92dacb0a348a7523eefd9701238178a2e69528">
+<index version="1" name="Stevie Scripts" commit="c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1571,6 +1571,23 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC2.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC7.lua</source>
         <source file="sr_Copy CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC%20to%20CC%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:00:34Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC%20to%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC1 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC1%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC1 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC1%20to%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC1 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC1%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC2 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC2%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC2 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC2%20to%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC2 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC2%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC7 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC7%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC7 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC7%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC7 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC7%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC7.lua</source>
+        <source file="sr_Copy CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC%20to%20CC%20function.lua</source>
       </version>
     </reapack>
   </category>
