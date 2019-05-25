@@ -1,8 +1,7 @@
 -- @description Move CC to CC (bundle)
--- @version 1.60
+-- @version 1.61
 -- @changelog
---   + the scripts are now located in their own folder
---   * smaller bug fixes and improvements
+--   * the undo function now uses the variable to describe the CC
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

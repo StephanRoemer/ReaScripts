@@ -6,7 +6,7 @@ require 'sr_Delete CC function'
 local dest_cc = 1 -- CC
 
 DeleteCC(dest_cc) -- call function
-reaper.Undo_OnStateChange2(proj, "Delete CC1")
+reaper.Undo_OnStateChange2(proj, "Delete CC" .. dest_cc)
 
 
 

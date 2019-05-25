@@ -6,4 +6,4 @@ require 'sr_Select CC after edit cursor function'
 local dest_cc = 64 -- CC
 
 SelectCCAfterEditCursor(dest_cc) -- call function
-reaper.Undo_OnStateChange2(proj, "Select CC64 after edit cursor")
+reaper.Undo_OnStateChange2(proj, "Select CC" .. dest_cc .. " after edit cursor")

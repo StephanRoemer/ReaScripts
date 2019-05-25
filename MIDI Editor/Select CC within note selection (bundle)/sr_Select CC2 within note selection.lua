@@ -7,4 +7,4 @@ local dest_cc = 2 -- destination CC
 
 SelectCCWithinNoteSelection(dest_cc) -- call function
 
-reaper.Undo_OnStateChange2(proj, "Select CC2 within note selection")
+reaper.Undo_OnStateChange2(proj, "Select CC" .. dest_cc " within note selection")

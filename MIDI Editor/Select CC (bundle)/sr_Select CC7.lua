@@ -6,8 +6,4 @@ require 'sr_Select CC function'
 local dest_cc = 7 -- CC
 
 SelectCC(dest_cc) -- call function
-reaper.Undo_OnStateChange2(proj, "Select CC7")
-
-
-
-
+reaper.Undo_OnStateChange2(proj, "Select CC" .. dest_cc)
