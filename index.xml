@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="c394f5137f645d9131e6e3dd831760b210347bdd">
+<index version="1" name="Stevie Scripts" commit="c277e3c1c847aec86a322305196a32d77b4833bf">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -696,14 +696,14 @@ v1.0 (2018-07-02)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script deletes all CCs that are not affecting any note data.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor, inline editor and arrange view.\sa180\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
       </metadata>
       <version name="1.0" author="Stephan Römer" time="2020-05-22T17:34:58Z">
         <changelog><![CDATA[initial release]]></changelog>
-        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/c394f5137f645d9131e6e3dd831760b210347bdd/MIDI%20Editor/sr_Delete%20all%20CCs%20not%20attached%20to%20notes.lua</source>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/c277e3c1c847aec86a322305196a32d77b4833bf/MIDI%20Editor/sr_Delete%20all%20CCs%20not%20attached%20to%20notes.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all events in CC lane under mouse cursor.lua" type="script" desc="Delete all events in CC lane under mouse cursor">
