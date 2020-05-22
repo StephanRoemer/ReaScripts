@@ -9,7 +9,7 @@
 -- @about
 --    # Description
 --    * This script deletes all CCs that are not affecting any note data.
---    * The scripts work in the MIDI editor, inline editor and arrange view.
+--    * This script works in the MIDI editor, inline editor and arrange view.
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 
 
