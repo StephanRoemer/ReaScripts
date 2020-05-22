@@ -1,7 +1,7 @@
 -- @description Delete all CCs not attached to notes
 -- @version 1.0
 -- @changelog
--- + initial release
+--  initial release
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
