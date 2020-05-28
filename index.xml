@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="f525d885b7077c62c4d3e74cd330a7140452ca56">
+<index version="1" name="Stevie Scripts" commit="1991f285e0a1cb9a862dad5f132b1a49b44173b5">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2344,6 +2344,36 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC11%20within%20note%20selection.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC64%20within%20note%20selection.lua</source>
         <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MIDI Editor/Toggle select CC (bundle)">
+    <reapack name="sr_Toggle select CC (bundle).lua" type="script" desc="Toggle select CC (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts will toggle select events in a specific CC lane or all CC lanes in one or multiple items.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically, and you can see your selection in the arrange view.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily customize the values in the scripts.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.00" author="Stephan Römer" time="2020-05-28T11:34:51Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20all%20CCs.lua</source>
+        <source file="sr_Toggle select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20function.lua</source>
       </version>
     </reapack>
   </category>
