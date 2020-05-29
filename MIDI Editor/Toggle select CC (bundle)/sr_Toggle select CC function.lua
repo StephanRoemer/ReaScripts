@@ -64,7 +64,7 @@ function ToggleSelectCC(dest_cc)
 						reaper.Main_OnCommand(40847, 0) -- open inline editor on selected item(s)
 					end
 
-					SelectDestCC(take, item) -- select CC
+					ToggleSelectDestCC(take, item) -- select CC
 
 				else 
 					reaper.ShowMessageBox("The selected item #".. i+1 .." does not contain a MIDI take and won't be altered", "Error", 0)
