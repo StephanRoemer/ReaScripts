@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="1991f285e0a1cb9a862dad5f132b1a49b44173b5">
+<index version="1" name="Stevie Scripts" commit="1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2374,6 +2374,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC64.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20all%20CCs.lua</source>
         <source file="sr_Toggle select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20function.lua</source>
+      </version>
+      <version name="1.01" author="Stephan Römer" time="2020-05-29T19:13:26Z">
+        <changelog><![CDATA[* typo fix]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20all%20CCs.lua</source>
+        <source file="sr_Toggle select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20function.lua</source>
       </version>
     </reapack>
   </category>
