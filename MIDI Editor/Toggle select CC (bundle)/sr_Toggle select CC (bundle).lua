@@ -1,7 +1,7 @@
 -- @description Toggle select CC (bundle)
--- @version 1.00
+-- @version 1.01
 -- @changelog
---   + Initial release
+--   * typo fix
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
