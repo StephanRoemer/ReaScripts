@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="3b92dacb0a348a7523eefd9701238178a2e69528">
+<index version="1" name="Stevie Scripts" commit="1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -686,6 +686,24 @@ v1.0 (2018-07-02)
       <version name="1.0" author="Stephan Römer" time="2018-09-16T14:06:23Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/1ea0fb5a889cd35c26ce5685722f5d87807c0d60/MIDI%20Editor/sr_Decrease%20events%20in%20CC%20lane%20under%20mouse%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Delete all CCs not attached to notes.lua" type="script" desc="Delete all CCs not attached to notes">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script deletes all CCs that are not affecting any note data.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works in the MIDI editor, inline editor and arrange view.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2020-05-22T17:34:58Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/c277e3c1c847aec86a322305196a32d77b4833bf/MIDI%20Editor/sr_Delete%20all%20CCs%20not%20attached%20to%20notes.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Delete all events in CC lane under mouse cursor.lua" type="script" desc="Delete all events in CC lane under mouse cursor">
@@ -1572,6 +1590,23 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC7.lua</source>
         <source file="sr_Copy CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC%20to%20CC%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:00:34Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC%20to%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC1 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC1%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC1 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC1%20to%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC1 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC1%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC2 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC2%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC2 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC2%20to%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC2 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC2%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC7 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC7%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC7 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC7%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC7 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC7%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Copy CC11 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC11%20to%20CC7.lua</source>
+        <source file="sr_Copy CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/c1918f6f66fb6dc5563b2caa584b4daf1fb5e95a/MIDI%20Editor/Copy%20CC%20to%20CC%20(bundle)/sr_Copy%20CC%20to%20CC%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Decrease CC (bundle)">
@@ -1601,6 +1636,15 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC7.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC11.lua</source>
         <source file="sr_Decrease CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Decrease CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC11.lua</source>
+        <source file="sr_Decrease CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Decrease%20CC%20(bundle)/sr_Decrease%20CC%20function.lua</source>
       </version>
     </reapack>
   </category>
@@ -1632,6 +1676,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20all%20CCs.lua</source>
         <source file="sr_Delete CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20all%20CCs.lua</source>
+        <source file="sr_Delete CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20(bundle)/sr_Delete%20CC%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Delete CC after edit cursor (bundle)">
@@ -1662,6 +1717,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
         <source file="sr_Delete CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC%20after%20edit%20cursor%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC64%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20all%20CCs%20after%20edit%20cursor.lua</source>
+        <source file="sr_Delete CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20after%20edit%20cursor%20(bundle)/sr_Delete%20CC%20after%20edit%20cursor%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Delete CC before edit cursor (bundle)">
@@ -1691,6 +1757,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
         <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC%20before%20edit%20cursor%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC64%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Delete all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20all%20CCs%20before%20edit%20cursor.lua</source>
+        <source file="sr_Delete CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Delete%20CC%20before%20edit%20cursor%20(bundle)/sr_Delete%20CC%20before%20edit%20cursor%20function.lua</source>
       </version>
     </reapack>
   </category>
@@ -1757,6 +1834,15 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Increase CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC11.lua</source>
         <source file="sr_Increase CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Increase CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Increase CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Increase CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Increase CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC11.lua</source>
+        <source file="sr_Increase CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Increase%20CC%20(bundle)/sr_Increase%20CC%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Move CC to CC (bundle)">
@@ -1794,6 +1880,23 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Move CC11 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC11%20to%20CC2.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Move CC11 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC11%20to%20CC7.lua</source>
         <source file="sr_Move CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC%20to%20CC%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC%20to%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC1 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC1%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC1 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC1%20to%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC1 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC1%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC2 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC2%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC2 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC2%20to%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC2 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC2%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC7 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC7%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC7 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC7%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC7 to CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC7%20to%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC11 to CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC11%20to%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC11 to CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC11%20to%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Move CC11 to CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC11%20to%20CC7.lua</source>
+        <source file="sr_Move CC to CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Move%20CC%20to%20CC%20(bundle)/sr_Move%20CC%20to%20CC%20function.lua</source>
       </version>
     </reapack>
   </category>
@@ -2107,6 +2210,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20all%20CCs.lua</source>
         <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20all%20CCs.lua</source>
+        <source file="sr_Select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20(bundle)/sr_Select%20CC%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Select CC after edit cursor (bundle)">
@@ -2137,6 +2251,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
         <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC%20after%20edit%20cursor%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC1%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC2%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC7%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC11%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC64%20after%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs after edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20all%20CCs%20after%20edit%20cursor.lua</source>
+        <source file="sr_Select CC after edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20after%20edit%20cursor%20(bundle)/sr_Select%20CC%20after%20edit%20cursor%20function.lua</source>
       </version>
     </reapack>
   </category>
@@ -2169,6 +2294,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
         <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
       </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC%20before%20edit%20cursor%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC1%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC2%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC7%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC11%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC64%20before%20edit%20cursor.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select all CCs before edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20all%20CCs%20before%20edit%20cursor.lua</source>
+        <source file="sr_Select CC before edit cursor function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20before%20edit%20cursor%20(bundle)/sr_Select%20CC%20before%20edit%20cursor%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="MIDI Editor/Select CC within note selection (bundle)">
@@ -2198,6 +2334,57 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/7b5d8964e123d572db38a110843f18da5a5cddd2/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC11%20within%20note%20selection.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/7b5d8964e123d572db38a110843f18da5a5cddd2/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC64%20within%20note%20selection.lua</source>
         <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/7b5d8964e123d572db38a110843f18da5a5cddd2/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
+      </version>
+      <version name="1.61" author="Stephan Römer" time="2019-05-25T16:46:53Z">
+        <changelog><![CDATA[* the undo function now uses the variable to describe the CC]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC%20within%20note%20selection%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC1 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC1%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC2 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC2%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC7 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC7%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC11 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC11%20within%20note%20selection.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Select CC64 within note selection.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC64%20within%20note%20selection.lua</source>
+        <source file="sr_Select CC within note selection function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b74db49390f45111a5e1a659722a1cfef68a9628/MIDI%20Editor/Select%20CC%20within%20note%20selection%20(bundle)/sr_Select%20CC%20within%20note%20selection%20function.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MIDI Editor/Toggle select CC (bundle)">
+    <reapack name="sr_Toggle select CC (bundle).lua" type="script" desc="Toggle select CC (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts will toggle select events in a specific CC lane or all CC lanes in one or multiple items.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Assign the script in the main action list, as well. That way, the inline editor will be opened automatically, and you can see your selection in the arrange view.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily customize the values in the scripts.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.00" author="Stephan Römer" time="2020-05-28T11:34:51Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20all%20CCs.lua</source>
+        <source file="sr_Toggle select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1991f285e0a1cb9a862dad5f132b1a49b44173b5/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20function.lua</source>
+      </version>
+      <version name="1.01" author="Stephan Römer" time="2020-05-29T19:13:26Z">
+        <changelog><![CDATA[* typo fix]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20(bundle).lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC1.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC1.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC2.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC2.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC7.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC7.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC11.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC11.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select CC64.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC64.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Toggle select all CCs.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20all%20CCs.lua</source>
+        <source file="sr_Toggle select CC function.lua">https://github.com/StephanRoemer/ReaScripts/raw/1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c/MIDI%20Editor/Toggle%20select%20CC%20(bundle)/sr_Toggle%20select%20CC%20function.lua</source>
       </version>
     </reapack>
   </category>
@@ -2454,6 +2641,43 @@ v1.0 (2018-07-05)
         <source main="main" file="sr_Toggle mute VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA16.lua</source>
         <source file="sr_Toggle mute by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20by%20track%20prefix%20function.lua</source>
       </version>
+      <version name="1.2" author="Stephan Römer" time="2020-05-22T18:49:25Z">
+        <changelog><![CDATA[* bugfix]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20by%20track%20prefix%20(bundle).lua</source>
+        <source main="main" file="sr_Toggle mute BUS01.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS01.lua</source>
+        <source main="main" file="sr_Toggle mute BUS02.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS02.lua</source>
+        <source main="main" file="sr_Toggle mute BUS03.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS03.lua</source>
+        <source main="main" file="sr_Toggle mute BUS04.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS04.lua</source>
+        <source main="main" file="sr_Toggle mute BUS05.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS05.lua</source>
+        <source main="main" file="sr_Toggle mute BUS06.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS06.lua</source>
+        <source main="main" file="sr_Toggle mute BUS07.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS07.lua</source>
+        <source main="main" file="sr_Toggle mute BUS08.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS08.lua</source>
+        <source main="main" file="sr_Toggle mute BUS09.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS09.lua</source>
+        <source main="main" file="sr_Toggle mute BUS10.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS10.lua</source>
+        <source main="main" file="sr_Toggle mute BUS11.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS11.lua</source>
+        <source main="main" file="sr_Toggle mute BUS12.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS12.lua</source>
+        <source main="main" file="sr_Toggle mute BUS13.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS13.lua</source>
+        <source main="main" file="sr_Toggle mute BUS14.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS14.lua</source>
+        <source main="main" file="sr_Toggle mute BUS15.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS15.lua</source>
+        <source main="main" file="sr_Toggle mute BUS16.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20BUS16.lua</source>
+        <source main="main" file="sr_Toggle mute VCA01.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA01.lua</source>
+        <source main="main" file="sr_Toggle mute VCA02.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA02.lua</source>
+        <source main="main" file="sr_Toggle mute VCA03.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA03.lua</source>
+        <source main="main" file="sr_Toggle mute VCA04.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA04.lua</source>
+        <source main="main" file="sr_Toggle mute VCA05.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA05.lua</source>
+        <source main="main" file="sr_Toggle mute VCA06.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA06.lua</source>
+        <source main="main" file="sr_Toggle mute VCA07.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA07.lua</source>
+        <source main="main" file="sr_Toggle mute VCA08.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA08.lua</source>
+        <source main="main" file="sr_Toggle mute VCA09.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA09.lua</source>
+        <source main="main" file="sr_Toggle mute VCA10.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA10.lua</source>
+        <source main="main" file="sr_Toggle mute VCA11.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA11.lua</source>
+        <source main="main" file="sr_Toggle mute VCA12.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA12.lua</source>
+        <source main="main" file="sr_Toggle mute VCA13.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA13.lua</source>
+        <source main="main" file="sr_Toggle mute VCA14.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA14.lua</source>
+        <source main="main" file="sr_Toggle mute VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA15.lua</source>
+        <source main="main" file="sr_Toggle mute VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20VCA16.lua</source>
+        <source file="sr_Toggle mute by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20mute%20by%20track%20prefix%20(bundle)/sr_Toggle%20mute%20by%20track%20prefix%20function.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="Tracks Properties/Toggle solo by track prefix (bundle)">
@@ -2508,6 +2732,43 @@ v1.0 (2018-07-05)
         <source main="main" file="sr_Toggle solo VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA15.lua</source>
         <source main="main" file="sr_Toggle solo VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA16.lua</source>
         <source file="sr_Toggle solo by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/b9c26a60e9c082002c99ca18bba3778334695446/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20by%20track%20prefix%20function.lua</source>
+      </version>
+      <version name="1.2" author="Stephan Römer" time="2020-05-22T18:49:25Z">
+        <changelog><![CDATA[* bugfix]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20by%20track%20prefix%20(bundle).lua</source>
+        <source main="main" file="sr_Toggle solo BUS01.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS01.lua</source>
+        <source main="main" file="sr_Toggle solo BUS02.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS02.lua</source>
+        <source main="main" file="sr_Toggle solo BUS03.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS03.lua</source>
+        <source main="main" file="sr_Toggle solo BUS04.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS04.lua</source>
+        <source main="main" file="sr_Toggle solo BUS05.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS05.lua</source>
+        <source main="main" file="sr_Toggle solo BUS06.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS06.lua</source>
+        <source main="main" file="sr_Toggle solo BUS07.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS07.lua</source>
+        <source main="main" file="sr_Toggle solo BUS08.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS08.lua</source>
+        <source main="main" file="sr_Toggle solo BUS09.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS09.lua</source>
+        <source main="main" file="sr_Toggle solo BUS10.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS10.lua</source>
+        <source main="main" file="sr_Toggle solo BUS11.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS11.lua</source>
+        <source main="main" file="sr_Toggle solo BUS12.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS12.lua</source>
+        <source main="main" file="sr_Toggle solo BUS13.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS13.lua</source>
+        <source main="main" file="sr_Toggle solo BUS14.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS14.lua</source>
+        <source main="main" file="sr_Toggle solo BUS15.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS15.lua</source>
+        <source main="main" file="sr_Toggle solo BUS16.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20BUS16.lua</source>
+        <source main="main" file="sr_Toggle solo VCA01.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA01.lua</source>
+        <source main="main" file="sr_Toggle solo VCA02.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA02.lua</source>
+        <source main="main" file="sr_Toggle solo VCA03.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA03.lua</source>
+        <source main="main" file="sr_Toggle solo VCA04.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA04.lua</source>
+        <source main="main" file="sr_Toggle solo VCA05.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA05.lua</source>
+        <source main="main" file="sr_Toggle solo VCA06.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA06.lua</source>
+        <source main="main" file="sr_Toggle solo VCA07.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA07.lua</source>
+        <source main="main" file="sr_Toggle solo VCA08.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA08.lua</source>
+        <source main="main" file="sr_Toggle solo VCA09.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA09.lua</source>
+        <source main="main" file="sr_Toggle solo VCA10.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA10.lua</source>
+        <source main="main" file="sr_Toggle solo VCA11.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA11.lua</source>
+        <source main="main" file="sr_Toggle solo VCA12.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA12.lua</source>
+        <source main="main" file="sr_Toggle solo VCA13.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA13.lua</source>
+        <source main="main" file="sr_Toggle solo VCA14.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA14.lua</source>
+        <source main="main" file="sr_Toggle solo VCA15.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA15.lua</source>
+        <source main="main" file="sr_Toggle solo VCA16.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20VCA16.lua</source>
+        <source file="sr_Toggle solo by track prefix function.lua">https://github.com/StephanRoemer/ReaScripts/raw/f525d885b7077c62c4d3e74cd330a7140452ca56/Tracks%20Properties/Toggle%20solo%20by%20track%20prefix%20(bundle)/sr_Toggle%20solo%20by%20track%20prefix%20function.lua</source>
       </version>
     </reapack>
   </category>

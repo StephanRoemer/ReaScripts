@@ -6,4 +6,4 @@ require 'sr_Delete CC after edit cursor function'
 local dest_cc = 2 -- destination CC
 
 DeleteCCAfterEditCursor(dest_cc) -- call function
-reaper.Undo_OnStateChange2(proj, "Delete CC2 after edit cursor")
+reaper.Undo_OnStateChange2(proj, "Delete CC" .. dest_cc .. " after edit cursor")

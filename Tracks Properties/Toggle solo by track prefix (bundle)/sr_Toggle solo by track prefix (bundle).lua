@@ -1,8 +1,7 @@
 -- @description Toggle solo by track prefix (bundle)
--- @version 1.1
+-- @version 1.2
 -- @changelog
---   * little improvements in the code
---   + the scripts are now located in their own folder
+--   * bugfix
 -- @author Stephan Römer
 -- @metapackage
 -- @provides

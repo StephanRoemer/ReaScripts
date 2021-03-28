@@ -7,4 +7,4 @@ local decrease = 1.1 -- value to decrease the CC event
 local dest_cc = 1 -- destination CC
 
 DecreaseCC(dest_cc, decrease) -- call function
-reaper.Undo_OnStateChange2(proj, "Decrease CC1")
+reaper.Undo_OnStateChange2(proj, "Decrease CC" .. dest_cc)

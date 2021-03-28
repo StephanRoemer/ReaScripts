@@ -2,7 +2,7 @@
 
 function ToggleSoloTrack(track_prefix)
 
-    local track_prefix
+    local track, track_name, track_count
     local script_id = ({reaper.get_action_context()})[4] -- get script id
 
 
