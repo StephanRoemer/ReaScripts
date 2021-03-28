@@ -1,0 +1,21 @@
+-- @description Copy and Paste timecode at edit cursor (bundle)
+-- @version 1.0
+-- @changelog
+--   initial release
+-- @author Stephan Römer
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
+-- @metapackage
+-- @provides
+--  [nomain] .
+--  [main] sr_Copy timecode at edit cursor.lua
+--  [main] sr_Paste timecode at edit cursor.lua
+-- @about
+--    # Description
+--
+--    * This script bundle consists of 2 scripts:
+--    the first will copy the timecode at the current edit cursor position and save it to a textfile in the script folder.
+--    the second one will parse the textfile and paste the timecode to current edit cursor position.
+--    * Additionally the script checks if a "Timecode Generator" item is present in the project and updates the item start offset to the new
+--    project offset.
+--    * Maybe it is obvious but just to mention it: only one Timecode Genereator item should be used in your project
+--    * The scripts work only in the arrange view.
