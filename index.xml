@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="1f33f52123a7c69b2e8a3833dd8cd2b7e699f63c">
+<index version="1" name="Stevie Scripts" commit="80f7035cbd22bc09d0f33f58e7ac6e97d1b12888">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -2435,6 +2435,30 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +11.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Transpose%20notes%20(bundle)/sr_Transpose%20notes%20+11.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Transpose notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Transpose%20notes%20(bundle)/sr_Transpose%20notes%20+12.lua</source>
         <source file="sr_Transpose notes function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Transpose%20notes%20(bundle)/sr_Transpose%20notes%20function.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Project Properties/Copy and Paste timecode at edit cursor (bundle)">
+    <reapack name="sr_Copy and Paste timecode at edit cursor (bundle).lua" type="script" desc="Copy and Paste timecode at edit cursor (bundle)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script bundle consists of 2 scripts: the first will copy the timecode at the current edit cursor position and save it to a textfile in the script folder. the second one will parse the textfile and paste the timecode to current edit cursor position.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Additionally the script checks if a "Timecode Generator" item is present in the project and updates the item start offset to the new project offset.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Maybe it is obvious but just to mention it: only one Timecode Genereator item should be used in your project\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work only in the arrange view.\sa180\par}
+}
+]]></description>
+        <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer" time="2021-03-28T22:43:41Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/9b1752e8fafa5171c8a63d70e52dcafabc28092a/Project%20Properties/Copy%20and%20Paste%20timecode%20at%20edit%20cursor%20(bundle)/sr_Copy%20and%20Paste%20timecode%20at%20edit%20cursor%20(bundle).lua</source>
+        <source main="main" file="sr_Copy timecode at edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/9b1752e8fafa5171c8a63d70e52dcafabc28092a/Project%20Properties/Copy%20and%20Paste%20timecode%20at%20edit%20cursor%20(bundle)/sr_Copy%20timecode%20at%20edit%20cursor.lua</source>
+        <source main="main" file="sr_Paste timecode at edit cursor.lua">https://github.com/StephanRoemer/ReaScripts/raw/9b1752e8fafa5171c8a63d70e52dcafabc28092a/Project%20Properties/Copy%20and%20Paste%20timecode%20at%20edit%20cursor%20(bundle)/sr_Paste%20timecode%20at%20edit%20cursor.lua</source>
       </version>
     </reapack>
   </category>
