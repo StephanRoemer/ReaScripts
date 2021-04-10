@@ -20,7 +20,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-8 - swing 70 percent.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16 triplets.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16 - swing 70 percent.luas
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - grid.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-1.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-2.lua
@@ -32,7 +32,7 @@
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-8 - swing 70 percent.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16 triplets.lua
---  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16 - swing 70 percent.luas
 --  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - grid.lua
 --  [nomain] sr_Quantize notes function.lua
 -- @about
