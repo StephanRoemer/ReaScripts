@@ -1,0 +1,46 @@
+-- @description Quantize notes (bundle)
+-- @version 2.02
+-- @changelog
+--   + Bugfix: in the MIDI Editor, the grid presets were not applied correctly
+-- @author Stephan Römer
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
+-- @metapackage
+-- @provides
+--  [nomain] .
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-4.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-4 triplets.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-4 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-8.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-8 triplets.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-8 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16 triplets.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - 1-16 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 50 percent - grid.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-1.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-2.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-4.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-4 triplets.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-4 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-8.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-8 triplets.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-8 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16 triplets.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - 1-16 - swing 70 percent.lua
+--  [main=main,midi_editor,midi_inlineeditor] sr_Quantize notes 100 percent - grid.lua
+--  [nomain] sr_Quantize notes function.lua
+-- @about
+--    # Description
+--
+--    * These scripts quantize either all notes (in arrange / razor selection) or selected / all notes in the MIDI editors.
+--    * In the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL notes will 
+--    be quantized, instead of only the selected ones.
+--    * When hovering an inline editor, only the take under the mouse cursor will be affected, the item selection will be ignored.
+--    * You can easily customize the values in the scripts in the "User Configuration Area" and create your own presets.
+--    * The scripts work in the MIDI editor, inline editor and arrange view. Razor selection is also supported.
+-- 
+--    * Thanks a lot to Leon aka lb0 for advice to optimize some bits of the code.
+--    * Thanks to BirdBird and all the people in the Razor Edit Scripts forum thread
