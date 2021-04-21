@@ -361,7 +361,6 @@ end
 
 	local function Main()
 			
-		reaper.PreventUIRefresh(1)
 
 		local take, item, midi_editor
 		local window, _, _ = reaper.BR_GetMouseCursorContext() -- initialize cursor context
@@ -420,10 +419,12 @@ end
 				end
 			end
 		end
-
-		reaper.PreventUIRefresh(-1)
-		reaper.UpdateArrange()
 	end
 
+	reaper.PreventUIRefresh(1)
+
 	Main()
+
+	reaper.PreventUIRefresh(-1)
+	reaper.UpdateArrange()
 end

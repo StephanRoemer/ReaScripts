@@ -298,9 +298,7 @@ local function Main()
     -- Visible grid settings backup
     grid_linked, grid_minimum, grid_min_changed = SetVisibleGrid()
 
-    reaper.PreventUIRefresh(1)
-    
-    
+       
     -- ----------------------------------------------- MIDI editor focused ---------------------------------------------- --
     
     if window == "midi_editor" then -- MIDI editor focused
@@ -351,6 +349,9 @@ local function Main()
                     end
                 end
             else
+                -- restore grid minimum user value, if necessary
+                RestoreVisibleGrid(grid_linked, grid_minimum, grid_min_changed)
+
                 reaper.ShowMessageBox("Please select at least one item or create a razor selection", "Error", 0)
                 return false
             end
@@ -359,10 +360,12 @@ local function Main()
     
     -- restore grid minimum user value, if necessary
     RestoreVisibleGrid(grid_linked, grid_minimum, grid_min_changed)
-    
-    reaper.PreventUIRefresh(-1)
-    reaper.UpdateArrange()
-    reaper.Undo_OnStateChange2(proj, undo_text)
 end
 
+reaper.PreventUIRefresh(1)
+
 Main()
+
+reaper.PreventUIRefresh(-1)
+reaper.UpdateArrange()
+reaper.Undo_OnStateChange2(proj, undo_text)

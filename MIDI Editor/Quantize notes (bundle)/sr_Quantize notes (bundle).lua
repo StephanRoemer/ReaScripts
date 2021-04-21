@@ -1,7 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.02
+-- @version 2.03
 -- @changelog
---   + Bugfix: in the MIDI Editor, the grid presets were not applied correctly
+--   + Bugfix: current arrange grid wouldn't restore, when the script exists due to missing item/razor selection 
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
