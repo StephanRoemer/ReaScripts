@@ -1,7 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.1
+-- @version 2.10
 -- @changelog
--- + Support for multiple items opened in the MIDI editor 
+--   + Support for multiple items opened in the MIDI editor 
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
