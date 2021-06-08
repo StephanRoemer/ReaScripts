@@ -1,7 +1,7 @@
 -- @description Transpose notes (bundle)
--- @version 1.70
+-- @version 1.71
 -- @changelog
--- + Support for multiple items opened in the MIDI editor 
+--   + Support for multiple items opened in the MIDI editor 
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
