@@ -162,36 +162,37 @@ function Transpose(interval)
 
 	local function TransposeRazorSelection(items_table)	
 
-		for index, value in pairs(items_table) do
-			local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
+		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+			for index, value in pairs(items_table) do
+				local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
 
-			local take = reaper.GetActiveTake(item)
+				local take = reaper.GetActiveTake(item)
 
-			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
-				local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
+				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+					local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
+					local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
 
-				local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
+					local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 
-				reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
+					reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
 
-				for n = 0, notecnt do
-					local _, _, _, note_start_ppq, _, _, pitch, _ = reaper.MIDI_GetNote(take, n)
-					local new_pitch = pitch + interval
+					for n = 0, notecnt do
+						local _, _, _, note_start_ppq, _, _, pitch, _ = reaper.MIDI_GetNote(take, n)
+						local new_pitch = pitch + interval
 
 
-					-- if notes lie within razor selection and do not exceed the note range
-					if note_start_ppq >= razor_left_ppq 
-					and note_start_ppq < razor_right_ppq
-					and new_pitch >= 1 and new_pitch <= 127 then
-						reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, new_pitch, nil, true)
+						-- if notes lie within razor selection and do not exceed the note range
+						if note_start_ppq >= razor_left_ppq 
+						and note_start_ppq < razor_right_ppq
+						and new_pitch >= 1 and new_pitch <= 127 then
+							reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, new_pitch, nil, true)
+						end
 					end
+					reaper.MIDI_Sort(take)
 				end
-				reaper.MIDI_Sort(take)
-			end
-		end		
+			end		
+		end
 	end
-
 
 
 
@@ -224,7 +225,7 @@ function Transpose(interval)
 					take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, 0)) -- get take from selected item
 					TransposeMIDIEditor(take) --transpose notes
 
-				-- Multiple items selected
+					-- Multiple items selected
 
 				elseif item_cnt >= 1 then
 
@@ -251,30 +252,27 @@ function Transpose(interval)
 
 
 
-						-- -------------------------------------------- No MIDI editor is focused ------------------------------------------- --
+			-- -------------------------------------------- No MIDI editor is focused ------------------------------------------- --
 
-					else
-
-
-						-- --------------------------------------------- Razor selection exists --------------------------------------------- --
-
-						if CheckForRazorSelection() then
-							local items_table = GetRazorEditItems()
-							TransposeRazorSelection(items_table)  -- transpose notes
+		else
 
 
+			-- --------------------------------------------- Razor selection exists --------------------------------------------- --
 
-							-- ---------------------------------- Item selection and NO razor selection exists ---------------------------------- --
+			if CheckForRazorSelection() then
+				local items_table = GetRazorEditItems()
+				TransposeRazorSelection(items_table)  -- transpose notes
 
-						else
-							if item_cnt ~= 0 then
+
+
+				-- ---------------------------------- Item selection and NO razor selection exists ---------------------------------- --
+
+			else
+				if item_cnt ~= 0 then
 					for i = 0, item_cnt - 1 do -- loop through all selected items
 						item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
 						take = reaper.GetActiveTake(item)
-
-						if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-							TransposeArrange(take)  -- transpose notes
-						end
+						TransposeArrange(take)  -- transpose notes
 					end
 				else
 					reaper.ShowMessageBox("Please select at least one item or create a razor selection", "Error", 0)
