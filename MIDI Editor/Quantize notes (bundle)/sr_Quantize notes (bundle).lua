@@ -1,7 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.11
+-- @version 2.12
 -- @changelog
---   + Oops, inline editor quantize did not work, deleted a line by accident
+--   + Oops, fixed another small misfit...
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
