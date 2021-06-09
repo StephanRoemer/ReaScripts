@@ -454,7 +454,6 @@ function Quantize(grid, swing, swing_amt, strength)
 						item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
 						take = reaper.GetActiveTake(item)
 						QuantizeArrange(take) -- quantize notes
-						end
 					end
 				else
 					reaper.ShowMessageBox("Please select at least one item or create a razor selection", "Error", 0)
