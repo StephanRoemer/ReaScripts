@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="86f5911c01d05fa1d7c2bf43ee65bdc3d6e51ebe">
+<index version="1" name="Stevie Scripts" commit="e2b7a3612fe2fdb30ca556ec681e156ac35fbca4">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1471,12 +1471,11 @@ v1.0 (2018-07-05)
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts add note intervals to all or selected events in a specific CC lane in one or multiple items.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab In the arrange view (item view), selected events are not taken into account, because you can't see what is selected.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab These scripts add note intervals to either all notes (in arrange / razor selection) or selected / all notes in the MIDI editors.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab In the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL events will be affected, instead of only the selected ones.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily customize the values in the scripts.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can easily customize the values in the scripts in the "User Configuration Area" and create your own presets.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The scripts work in the MIDI editor, inline editor and arrange view. Razor selection is also supported.\sa180\par}
 }
 ]]></description>
         <link rel="website" href="https://forums.cockos.com/showthread.php?p=1923923">Forum Thread</link>
@@ -1490,6 +1489,17 @@ v1.0 (2018-07-05)
         <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+12.lua</source>
         <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+24.lua</source>
         <source file="sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/cbc2c99a72bf4232b1b8295678714f83467bd108/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20function.lua</source>
+      </version>
+      <version name="1.70" author="Stephan Römer, LBX" time="2021-06-09T16:25:38Z">
+        <changelog><![CDATA[+ Support for multiple items opened in the MIDI editor
++ Prevent duplicate notes being created (a huge thanks goes out to LBX for optimizing the code!)
++ Support for razor edits]]></changelog>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes -24.lua">https://github.com/StephanRoemer/ReaScripts/raw/e2b7a3612fe2fdb30ca556ec681e156ac35fbca4/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20-24.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes -12.lua">https://github.com/StephanRoemer/ReaScripts/raw/e2b7a3612fe2fdb30ca556ec681e156ac35fbca4/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20-12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +12.lua">https://github.com/StephanRoemer/ReaScripts/raw/e2b7a3612fe2fdb30ca556ec681e156ac35fbca4/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+12.lua</source>
+        <source main="main midi_inlineeditor midi_editor" file="sr_Add notes +24.lua">https://github.com/StephanRoemer/ReaScripts/raw/e2b7a3612fe2fdb30ca556ec681e156ac35fbca4/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20+24.lua</source>
+        <source>https://github.com/StephanRoemer/ReaScripts/raw/e2b7a3612fe2fdb30ca556ec681e156ac35fbca4/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20(bundle).lua</source>
+        <source file="sr_Add notes interval function.lua">https://github.com/StephanRoemer/ReaScripts/raw/e2b7a3612fe2fdb30ca556ec681e156ac35fbca4/MIDI%20Editor/Add%20notes%20interval%20(bundle)/sr_Add%20notes%20interval%20function.lua</source>
       </version>
     </reapack>
   </category>
