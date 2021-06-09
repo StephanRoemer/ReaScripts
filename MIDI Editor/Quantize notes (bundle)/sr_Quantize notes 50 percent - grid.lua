@@ -266,35 +266,37 @@ end
 
 local function QuantizeRazorSelection(items_table)
 
-    for index, value in pairs(items_table) do
-        local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
+    if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+        for index, value in pairs(items_table) do
+            local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
 
-        local take = reaper.GetActiveTake(item)
+            local take = reaper.GetActiveTake(item)
 
-        if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-            local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
-            local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
+            if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+                local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
+                local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
 
-            local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
+                local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
 
-            reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
+                reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
 
-            for n = 0, notecnt - 1 do -- loop through all notes
-                local _, _, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note positions
+                for n = 0, notecnt - 1 do -- loop through all notes
+                    local _, _, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note positions
 
-                local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
-                local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
-                local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
+                    local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
+                    local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
+                    local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
 
-                -- if notes are not on the grid and in between the razor selection
-                if note_start_ppq >= razor_left_ppq 
-                and note_start_ppq < razor_right_ppq 
-                and closest_grid_ppq ~= note_start_ppq then 
-                    reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize all notes
+                    -- if notes are not on the grid and in between the razor selection
+                    if note_start_ppq >= razor_left_ppq 
+                    and note_start_ppq < razor_right_ppq 
+                    and closest_grid_ppq ~= note_start_ppq then 
+                        reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize all notes
+                    end
                 end
+                CorrectOverlappingNotes(take, notecnt)
+                reaper.MIDI_Sort(take)
             end
-            CorrectOverlappingNotes(take, notecnt)
-            reaper.MIDI_Sort(take)
         end
     end
 end

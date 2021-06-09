@@ -1,7 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.10
+-- @version 2.11
 -- @changelog
---   + Support for multiple items opened in the MIDI editor 
+--   + Oops, inline editor quantize did not work, deleted a line by accident
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
