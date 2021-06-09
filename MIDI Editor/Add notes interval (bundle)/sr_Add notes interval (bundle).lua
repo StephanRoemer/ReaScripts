@@ -1,24 +1,25 @@
 -- @description Add notes interval (bundle)
--- @version 1.60
+-- @version 1.70
 -- @changelog
---   + the scripts are now located in their own folder
---   * smaller bug fixes and improvements
--- @author Stephan Römer
+--   + Support for multiple items opened in the MIDI editor
+--   + Prevent duplicate notes being created (a huge thanks goes out to LBX for optimizing the code!)
+--   + Support for razor edits
+-- @author Stephan Römer, LBX
+-- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
 -- @provides
---  [nomain] .
 --  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -24.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Add notes -12.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +12.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Add notes +24.lua
+--  [nomain] sr_Add notes interval (bundle).lua
 --  [nomain] sr_Add notes interval function.lua
 -- @about
 --    # Description
---    * These scripts add note intervals to all or selected events in a specific CC lane in one or multiple items.
---    * In the arrange view (item view), selected events are not taken into account, because you can't see what is selected.
+-- 
+--    * These scripts add note intervals to either all notes (in arrange / razor selection) or selected / all notes in the MIDI editors.
 --    * In the inline editor, you MUST hover the mouse over the active inline editor, otherwise ALL events will 
 --    be affected, instead of only the selected ones.
 --    * When hovering an inline editor, only the take under the mouse cursor will be affected, regardles of the item selection.
---    * You can easily customize the values in the scripts.
---    * The scripts work in the MIDI editor, inline editor and arrange view.
--- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
+--    * You can easily customize the values in the scripts in the "User Configuration Area" and create your own presets.
+--    * The scripts work in the MIDI editor, inline editor and arrange view. Razor selection is also supported.
