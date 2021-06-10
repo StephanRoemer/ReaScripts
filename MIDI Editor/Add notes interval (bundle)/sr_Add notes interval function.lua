@@ -320,8 +320,6 @@ function AddNotesInterval(interval)
 
 		if window == "midi_editor" then -- MIDI editor focused
 
-			midi_editor = reaper.MIDIEditor_GetActive()
-
 			if not inline_editor then -- MIDI editor focused
 			
 				-- 1 Item selected
@@ -329,8 +327,9 @@ function AddNotesInterval(interval)
 				if item_cnt == 1 then
 					take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, 0)) -- get take from selected item
 					AddNotesIntervalMIDIEditor(take) -- add notes interval
+	
 
-					-- Multiple items selected
+				-- Multiple items selected
 
 				elseif item_cnt >= 1 then
 
@@ -360,7 +359,6 @@ function AddNotesInterval(interval)
 
 		else 
 
-			
 			-- --------------------------------------------- Razor selection exists --------------------------------------------- --
 
 			if CheckForRazorSelection() then
@@ -372,10 +370,9 @@ function AddNotesInterval(interval)
 			-- ---------------------------------- Item selection and NO razor selection exists ---------------------------------- --
 
 			else
-				if reaper.CountSelectedMediaItems(0) ~= 0 then
-					for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-						item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-						take = reaper.GetActiveTake(item)
+				if item_cnt ~= 0 then
+					for i = 0, item_cnt - 1 do -- loop through all selected items
+						take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, i)) -- get take of selected item
 						AddNotesIntervalArrange(take) -- add notes interval
 					end
 				else

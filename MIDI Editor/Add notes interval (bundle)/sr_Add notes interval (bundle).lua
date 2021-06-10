@@ -1,9 +1,7 @@
 -- @description Add notes interval (bundle)
--- @version 1.70
+-- @version 1.71
 -- @changelog
---   + Support for multiple items opened in the MIDI editor
---   + Prevent duplicate notes being created (a huge thanks goes out to LBX for optimizing the code!)
---   + Support for razor edits
+--   + Code tydying
 -- @author Stephan Römer, LBX
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
