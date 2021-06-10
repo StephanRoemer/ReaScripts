@@ -205,7 +205,7 @@ function Transpose(interval)
 
 		reaper.PreventUIRefresh(1)
 
-		local take, item, item_cnt, interval, selnotes_items 
+		local take, item, item_cnt, selnotes_items 
 		local window, _, _ = reaper.BR_GetMouseCursorContext() -- initialize cursor context
 		local _, inline_editor, _, _, _, _ = reaper.BR_GetMouseCursorContext_MIDI() -- check if mouse hovers an inline editor
 
@@ -213,9 +213,8 @@ function Transpose(interval)
 
 		-- ----------------------------------------------- MIDI editor focused ---------------------------------------------- --
 
-		if window == "midi_editor" then 
 
-			items_sel_notes = CheckItemsForSelectedNotes(item_cnt)
+		if window == "midi_editor" then 
 
 			if not inline_editor then -- MIDI editor focused
 
@@ -225,7 +224,8 @@ function Transpose(interval)
 					take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, 0)) -- get take from selected item
 					TransposeMIDIEditor(take) --transpose notes
 
-					-- Multiple items selected
+
+				-- Multiple items selected
 
 				elseif item_cnt >= 1 then
 
@@ -242,8 +242,7 @@ function Transpose(interval)
 				end
 
 
-
-				-- ---------------------------------------------- Inline Editor focused --------------------------------------------- --
+			-- ---------------------------------------------- Inline Editor focused --------------------------------------------- --
 
 			else
 				take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
@@ -252,7 +251,7 @@ function Transpose(interval)
 
 
 
-			-- -------------------------------------------- No MIDI editor is focused ------------------------------------------- --
+		-- -------------------------------------------- No MIDI editor is focused ------------------------------------------- --
 
 		else
 
@@ -265,13 +264,12 @@ function Transpose(interval)
 
 
 
-				-- ---------------------------------- Item selection and NO razor selection exists ---------------------------------- --
+			-- ---------------------------------- Item selection and NO razor selection exists ---------------------------------- --
 
 			else
 				if item_cnt ~= 0 then
 					for i = 0, item_cnt - 1 do -- loop through all selected items
-						item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-						take = reaper.GetActiveTake(item)
+						take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, i)) -- get take of selected item
 						TransposeArrange(take)  -- transpose notes
 					end
 				else

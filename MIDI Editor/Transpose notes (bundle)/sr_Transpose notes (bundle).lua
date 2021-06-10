@@ -1,7 +1,7 @@
 -- @description Transpose notes (bundle)
--- @version 1.72
+-- @version 1.73
 -- @changelog
---   + removed an unnecessary check
+--   + Code tydying
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
