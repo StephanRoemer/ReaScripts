@@ -1,7 +1,10 @@
 -- @description Change note length by ticks (bundle)
--- @version 1.0
+-- @version 1.2
 -- @changelog
---   * initial release
+--   + Reverted back to MIDI_SetNote()
+--   + Prevent overlapping notes
+--   + Razor selection support
+--   + Support for multiple items opened in the MIDI editor
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
