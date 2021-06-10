@@ -3,7 +3,18 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_Change velocity function'
 
-local new_velocity = 5
+-- ================================================================================================================== --
+--                                               User Configuration Area                                              --
+-- ================================================================================================================== --
 
-ChangeVelocity(new_velocity) -- call function
-reaper.Undo_OnStateChange2(proj, "Change velocity +5")
+-- Set your prefered value here and save this script under a different name. You should also change the undo text 
+
+local velocity_val = 5
+local undo_text = "Change velocity +5"
+
+-- ================================================================================================================== --
+--                                                   Code Execution                                                   --
+-- ================================================================================================================== --
+
+ChangeVelocity(velocity_val) -- call function
+reaper.Undo_OnStateChange2(proj, undo_text)
