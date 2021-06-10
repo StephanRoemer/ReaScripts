@@ -1,7 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.12
+-- @version 2.13
 -- @changelog
---   + Oops, fixed another small misfit...
+--   + Code tydying
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage

@@ -407,7 +407,8 @@ function Quantize(grid, swing, swing_amt, strength)
 					take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, 0)) -- get take from selected item
 					QuantizeMIDIEditor(take, midi_editor) -- quantize notes
 
-					-- Multiple items selected
+
+				-- Multiple items selected
 
 				elseif item_cnt >= 1 then
 
@@ -451,8 +452,7 @@ function Quantize(grid, swing, swing_amt, strength)
 			else
 				if reaper.CountSelectedMediaItems(0) ~= 0 then
 					for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-						item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-						take = reaper.GetActiveTake(item)
+						take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, i))
 						QuantizeArrange(take) -- quantize notes
 					end
 				else
