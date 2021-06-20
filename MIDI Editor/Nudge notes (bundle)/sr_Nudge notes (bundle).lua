@@ -1,14 +1,15 @@
 -- @description Nudge notes (bundle)
--- @version 1.60
+-- @version 1.70
 -- @changelog
---   + the scripts are now located in their own folder
---   * smaller bug fixes and improvements
+--  + Prevent overlapping notes
+--  + When selected, CC data will move along with notes
+--  + Looped, locked and non-MIDI items are ignored 
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
---  [nomain] .
 --  [main=main,midi_editor,midi_inlineeditor] sr_Nudge notes left by 10 ticks.lua
 --  [main=main,midi_editor,midi_inlineeditor] sr_Nudge notes right by 10 ticks.lua
+--  [nomain] sr_Nudge notes (bundle).lua
 --  [nomain] sr_Nudge notes function.lua
 -- @about
 --    # Description
