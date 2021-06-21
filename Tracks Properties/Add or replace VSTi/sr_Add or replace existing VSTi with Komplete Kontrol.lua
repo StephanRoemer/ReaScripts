@@ -17,4 +17,4 @@ else
     undo_text = "Add "
 end
 
-reaper.Undo_EndBlock(undo_text..track_name, 0)
+reaper.Undo_EndBlock(undo_text..track_name, 1)

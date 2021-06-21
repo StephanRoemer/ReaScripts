@@ -3,8 +3,8 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_Add or replace VSTi function'
 
-local vsti = "Diva (u-he)" -- VSTi identifier
-local track_name = "Diva" -- new track name
+local vsti = "VST3:Keyscape (Spectrasonics) (18 out)" -- VSTi identifier
+local track_name = "Keyscape" -- new track name
 
 
 reaper.Undo_BeginBlock()

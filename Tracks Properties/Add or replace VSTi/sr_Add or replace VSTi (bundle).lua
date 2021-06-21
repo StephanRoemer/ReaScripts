@@ -1,30 +1,40 @@
 -- @description Add or replace VSTi
--- @version 1.2
+-- @version 1.35
 -- @changelog
---   * better method for catching the VSTi window for centering it (thanks Edgemeal!!!)
+--   * Respect Reaticulate JSFX, that needs to be one slot above VSTis
+--   * Adjusted the Spectrasonics VST names to 18 outputs
+--   + Added Orchestral Tools SINE and VSL Synchron Player
+--   + Added VST3 presets for Kontakt, Omnisphere, Keyscape, Trilian and Stylus RMX
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
 --  [nomain] .
---  [main] sr_Add or replace existing VSTi with Kontakt.lua
---  [main] sr_Add or replace existing VSTi with Kontakt 5.lua
---  [main] sr_Add or replace existing VSTi with Komplete Kontrol.lua
---  [main] sr_Add or replace existing VSTi with Engine 2.lua
---  [main] sr_Add or replace existing VSTi with Play.lua
---  [main] sr_Add or replace existing VSTi with UVI.lua
---  [main] sr_Add or replace existing VSTi with Vienna Instruments Pro.lua
---  [main] sr_Add or replace existing VSTi with Omnisphere 2.lua
---  [main] sr_Add or replace existing VSTi with Trilian.lua
---  [main] sr_Add or replace existing VSTi with Keyscape.lua
---  [main] sr_Add or replace existing VSTi with Stylus RMX.lua
---  [main] sr_Add or replace existing VSTi with Zebra 2.lua
---  [main] sr_Add or replace existing VSTi with ZebraHZ.lua
---  [main] sr_Add or replace existing VSTi with Diva.lua
---  [main] sr_Add or replace existing VSTi with Repro-1.lua
---  [main] sr_Add or replace existing VSTi with Repro-5.lua
---  [main] sr_Add or replace existing VSTi with Bazille.lua
+--  [main] sr_Add or replace existing VST3i with Keyscape.lua
+--  [main] sr_Add or replace existing VST3i with Kontakt.lua
+--  [main] sr_Add or replace existing VST3i with Omnisphere 2.lua
+--  [main] sr_Add or replace existing VST3i with Stylus RMX.lua
+--  [main] sr_Add or replace existing VST3i with Trilian.lua
 --  [main] sr_Add or replace existing VSTi with ACE.lua
 --  [main] sr_Add or replace existing VSTi with Addictive Drums 2.lua
+--  [main] sr_Add or replace existing VSTi with Bazille.lua
+--  [main] sr_Add or replace existing VSTi with Diva.lua
+--  [main] sr_Add or replace existing VSTi with Engine 2.lua
+--  [main] sr_Add or replace existing VSTi with Keyscape.lua
+--  [main] sr_Add or replace existing VSTi with Komplete Kontrol.lua
+--  [main] sr_Add or replace existing VSTi with Kontakt.lua
+--  [main] sr_Add or replace existing VSTi with Kontakt 5.lua
+--  [main] sr_Add or replace existing VSTi with Omnisphere 2.lua
+--  [main] sr_Add or replace existing VSTi with Play.lua
+--  [main] sr_Add or replace existing VSTi with Repro-1.lua
+--  [main] sr_Add or replace existing VSTi with Repro-5.lua
+--  [main] sr_Add or replace existing VSTi with SINE.lua
+--  [main] sr_Add or replace existing VSTi with Stylus RMX.lua
+--  [main] sr_Add or replace existing VSTi with Synchron Player.lua
+--  [main] sr_Add or replace existing VSTi with Trilian.lua
+--  [main] sr_Add or replace existing VSTi with UVI.lua
+--  [main] sr_Add or replace existing VSTi with Vienna Instruments Pro.lua
+--  [main] sr_Add or replace existing VSTi with Zebra 2.lua
+--  [main] sr_Add or replace existing VSTi with ZebraHZ.lua
 --  [nomain] sr_Add or replace VSTi function.lua
 -- @about
 --  # Description

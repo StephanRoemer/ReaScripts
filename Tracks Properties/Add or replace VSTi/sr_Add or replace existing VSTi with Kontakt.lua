@@ -3,7 +3,8 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_Add or replace VSTi function'
 
-local vsti = "Kontakt (Native Instruments GmbH) (64 out)" -- VSTi identifier
+-- local vsti = "Kontakt (Native Instruments GmbH) (64 out)" -- VSTi identifier
+local vsti = "Kontakt (Native Instruments) (64 out)" -- VSTi identifier
 local track_name = "Kontakt" -- new track name
 
 
@@ -17,4 +18,4 @@ else
     undo_text = "Add "
 end
 
-reaper.Undo_EndBlock(undo_text..track_name, 0)
+reaper.Undo_EndBlock(undo_text..track_name, 1)

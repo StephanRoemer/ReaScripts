@@ -3,7 +3,7 @@
 package.path = debug.getinfo(1,"S").source:match[[^@?(.*[\/])[^\/]-$]] .."?.lua;".. package.path
 require 'sr_Add or replace VSTi function'
 
-vsti = "StylusRMX (Spectrasonics) (16 out)" -- VSTi identifier
+vsti = "StylusRMX (Spectrasonics) (18 out)" -- VSTi identifier
 track_name = "Stylus RMX" -- new track name
 
 
@@ -17,4 +17,4 @@ else
     undo_text = "Add "
 end
 
-reaper.Undo_EndBlock(undo_text..track_name, 0)
+reaper.Undo_EndBlock(undo_text..track_name, 1)
