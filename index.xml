@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="ce49d73a7d0c8a10f276fb1e6874b76beb81f182">
+<index version="1" name="Stevie Scripts" commit="d8166dd76837c8b950e8dd54f080bd2c571bba89">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -3154,7 +3154,7 @@ v1.0 (2018-07-05)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script puts the edit / play cursor to the marker named "=END"\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries or my own script "sr_Set start and end marker to items in project.lua" (both available via ReaPack)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
 }
 ]]></description>
@@ -3163,6 +3163,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2019-01-20T19:58:54Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/Transport/sr_Go%20to%20end%20marker.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2021-06-21T11:20:54Z">
+        <changelog><![CDATA[+ Code optimizations]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/d8166dd76837c8b950e8dd54f080bd2c571bba89/Transport/sr_Go%20to%20end%20marker.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Go to start marker.lua" type="script" desc="Go to start marker">
@@ -3173,7 +3177,7 @@ v1.0 (2018-07-05)
 
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script puts the edit / play cursor to the marker named "=START"\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab I use this in conjunction with "X-Raym_Insert or update start and end marker from time selection.lua" to create the project boundaries or my own script "sr_Set start and end marker to items in project.lua" (both available via ReaPack)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script works only in the arrangement\sa180\par}
 }
 ]]></description>
@@ -3182,6 +3186,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer" time="2019-01-20T19:58:54Z">
         <changelog><![CDATA[initial release]]></changelog>
         <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/4c36f0db5d006af9cee21e7643e45ad1fd4623ad/Transport/sr_Go%20to%20start%20marker.lua</source>
+      </version>
+      <version name="1.1" author="Stephan Römer" time="2021-06-21T11:20:54Z">
+        <changelog><![CDATA[+ Code optimizations]]></changelog>
+        <source main="main">https://github.com/StephanRoemer/ReaScripts/raw/d8166dd76837c8b950e8dd54f080bd2c571bba89/Transport/sr_Go%20to%20start%20marker.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Move cursor to start of selected item and preserve play state.lua" type="script" desc="Move cursor to start of selected item and preserve play state">
