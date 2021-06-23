@@ -1,7 +1,7 @@
 -- @description Transpose notes (bundle)
--- @version 1.73
+-- @version 1.74
 -- @changelog
---   + Code tydying
+--   + Small fix with razor edit
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage

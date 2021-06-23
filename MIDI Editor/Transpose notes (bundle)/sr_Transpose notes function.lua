@@ -162,36 +162,33 @@ function Transpose(interval)
 
 	local function TransposeRazorSelection(items_table)	
 
-		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-			for index, value in pairs(items_table) do
-				local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
+		for index, value in pairs(items_table) do
+			local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
 
-				local take = reaper.GetActiveTake(item)
+			local take = reaper.GetActiveTake(item)
+			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+				local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
+				local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
 
-				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-					local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
-					local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
+				local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 
-					local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
+				reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
 
-					reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
-
-					for n = 0, notecnt do
-						local _, _, _, note_start_ppq, _, _, pitch, _ = reaper.MIDI_GetNote(take, n)
-						local new_pitch = pitch + interval
+				for n = 0, notecnt do
+					local _, _, _, note_start_ppq, _, _, pitch, _ = reaper.MIDI_GetNote(take, n)
+					local new_pitch = pitch + interval
 
 
-						-- if notes lie within razor selection and do not exceed the note range
-						if note_start_ppq >= razor_left_ppq 
-						and note_start_ppq < razor_right_ppq
-						and new_pitch >= 1 and new_pitch <= 127 then
-							reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, new_pitch, nil, true)
-						end
+					-- if notes lie within razor selection and do not exceed the note range
+					if note_start_ppq >= razor_left_ppq 
+					and note_start_ppq < razor_right_ppq
+					and new_pitch >= 1 and new_pitch <= 127 then
+						reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, new_pitch, nil, true)
 					end
-					reaper.MIDI_Sort(take)
 				end
-			end		
-		end
+				reaper.MIDI_Sort(take)
+			end
+		end		
 	end
 
 
