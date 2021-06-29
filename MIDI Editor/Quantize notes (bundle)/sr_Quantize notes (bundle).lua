@@ -1,7 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.13
+-- @version 2.14
 -- @changelog
---   + Code tydying
+--   + Razor quantize fix
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage

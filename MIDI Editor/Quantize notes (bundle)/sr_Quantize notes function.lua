@@ -325,55 +325,53 @@ function Quantize(grid, swing, swing_amt, strength)
 
 	local function QuantizeRazorSelection(items_table)
 
-		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
 
-			-- --------------------------------------------------- Grid Backup -------------------------------------------------- --
+		-- --------------------------------------------------- Grid Backup -------------------------------------------------- --
 
-			-- set grid, after grid sync has been enabled, also backup previous arrange grid setting
-			local arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed = SetGridAndBackup()
-
-
-			-- ---------------------------------------------------- Quantize ---------------------------------------------------- --
+		-- set grid, after grid sync has been enabled, also backup previous arrange grid setting
+		local arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed = SetGridAndBackup()
 
 
-			for index, value in pairs(items_table) do
-				local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
+		-- ---------------------------------------------------- Quantize ---------------------------------------------------- --
 
-				local take = reaper.GetActiveTake(item)
 
-				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-					local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
-					local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
+		for index, value in pairs(items_table) do
+			local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
 
-					local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
+			local take = reaper.GetActiveTake(item)
 
-					reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
+			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+				local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
+				local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
 
-					for n = 0, notecnt - 1 do -- loop through all notes
-						local _, _, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note positions
+				local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
 
-						local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
-						local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
-						local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
+				reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
 
-						-- if notes are not on the grid and in between the razor selection
-						if note_start_ppq >= razor_left_ppq 
-						and note_start_ppq < razor_right_ppq 
-						and closest_grid_ppq ~= note_start_ppq then 
-							reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize all notes
-						end
+				for n = 0, notecnt - 1 do -- loop through all notes
+					local _, _, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note positions
+
+					local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
+					local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
+					local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
+
+					-- if notes are not on the grid and in between the razor selection
+					if note_start_ppq >= razor_left_ppq 
+					and note_start_ppq < razor_right_ppq 
+					and closest_grid_ppq ~= note_start_ppq then 
+						reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize all notes
 					end
-
-					CorrectOverlappingNotes(take, notecnt)
-					reaper.MIDI_Sort(take)
 				end
+
+				CorrectOverlappingNotes(take, notecnt)
+				reaper.MIDI_Sort(take)
 			end
-
-			-- -------------------------------------------------- Grid Restore -------------------------------------------------- --
-
-			-- restore grid minimum user value, if necessary
-			GridRestore(arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed)
 		end
+
+		-- -------------------------------------------------- Grid Restore -------------------------------------------------- --
+
+		-- restore grid minimum user value, if necessary
+		GridRestore(arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed)
 	end
 
 
