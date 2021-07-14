@@ -171,44 +171,42 @@ function ChangeVelocity(velocity_val)
 -- ------------ Change velocity of notes within razor selections in arrange view (ignore note selection) ------------ --
 
 	local function ChangeVelocityRazorSelection(items_table)	
-			
-		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-			for index, value in pairs(items_table) do
-				local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
-				
-				local take = reaper.GetActiveTake(item)
 
-				if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-					local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
-					local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
+		for index, value in pairs(items_table) do
+			local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
 
-					local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
+			local take = reaper.GetActiveTake(item)
 
-					reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
+			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+				local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
+				local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
 
-					for n = 0, notecnt do
-						local _, _, _, note_start_ppq, _, _, _, velocity = reaper.MIDI_GetNote(take, n)
-						local new_velocity = velocity + velocity_val
+				local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notes_count
 
-						
-						-- if notes lie within razor selection and do not exceed the note range
-						if note_start_ppq >= razor_left_ppq 
-						and note_start_ppq < razor_right_ppq then
+				reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
 
-							if new_velocity < 1 then -- set velocity to 1, if current velocity + new velocity gets smaller than 1
-								reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, nil, 1, true)
-							elseif new_velocity > 127 then	-- set velocity to 127, if current velocity + new velocity gets bigger than 127
-								reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, nil, 127, true)
-							else  -- increase velocity by velocity_val
-								reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, nil, new_velocity, true)
-							end
-						
+				for n = 0, notecnt do
+					local _, _, _, note_start_ppq, _, _, _, velocity = reaper.MIDI_GetNote(take, n)
+					local new_velocity = velocity + velocity_val
+
+
+					-- if notes lie within razor selection and do not exceed the note range
+					if note_start_ppq >= razor_left_ppq 
+					and note_start_ppq < razor_right_ppq then
+
+						if new_velocity < 1 then -- set velocity to 1, if current velocity + new velocity gets smaller than 1
+							reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, nil, 1, true)
+						elseif new_velocity > 127 then	-- set velocity to 127, if current velocity + new velocity gets bigger than 127
+							reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, nil, 127, true)
+						else  -- increase velocity by velocity_val
+							reaper.MIDI_SetNote(take, n, nil, nil, nil, nil, nil, nil, new_velocity, true)
 						end
+
 					end
-					reaper.MIDI_Sort(take)
 				end
-			end		
-		end
+				reaper.MIDI_Sort(take)
+			end
+		end		
 	end
 
 

@@ -1,8 +1,7 @@
 -- @description Change velocity (bundle)
--- @version 1.70
+-- @version 1.71
 -- @changelog
---   + Razor selection support
---   + Support for multiple items opened in the MIDI editor
+--   + Razor selection fix
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
