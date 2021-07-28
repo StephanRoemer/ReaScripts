@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="3787ecafe2e0a7f18097dd4dadb77e0effa62130">
+<index version="1" name="Stevie Scripts" commit="55b0a02a6e6aee6da464a44a3b9f20b13bd43e44">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1438,6 +1438,50 @@ v1.0 (2018-07-05)
       <version name="1.1" author="Stephan Römer" time="2019-04-22T14:28:32Z">
         <changelog><![CDATA[* small bug fixes and improvements]]></changelog>
         <source main="main midi_inlineeditor midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/79ec3afe353e24304615293d76220dc9e32a319b/MIDI%20Editor/sr_Trim%20tail%20of%20note(s)%20at%20mouse%20cursor%20(in%20take%20under%20mouse%20or%20in%20MIDI%20editor).lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Velocity crescendo.lua" type="script" desc="Velocity crescendo">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script creates a velocity crescendo based on all or selected notes.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The velocity of the last note (in the item, or selected note) will always be the target velocity!\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Avoid selecting groups of notes with gaps in between. If you want to apply multiple crescendi, select the note groups\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab consecutively and apply the script each time.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script only works in the MIDI Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Thanks a lot to Leon Bradley for nailing the main algo, without his help this script wouldn't exist!\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer, Leon Bradley (LBX)" time="2021-07-28T06:12:19Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/55b0a02a6e6aee6da464a44a3b9f20b13bd43e44/MIDI%20Editor/sr_Velocity%20crescendo.lua</source>
+      </version>
+    </reapack>
+    <reapack name="sr_Velocity decrescendo.lua" type="script" desc="Velocity crescendo">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script creates a velocity decrescendo based on all or selected notes.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The velocity of the first note (in the item, or selected note) will always be the start velocity!\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Avoid selecting groups of notes with gaps in between. If you want to apply multiple decrescendi, select the note groups\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab consecutively and apply the script each time.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab This script only works in the MIDI Editor\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Thanks a lot to Leon Bradley for nailing the main algo, without his help this script wouldn't exist!\sa180\par}
+}
+]]></description>
+        <link rel="website">https://forums.cockos.com/showthread.php?p=1923923</link>
+      </metadata>
+      <version name="1.0" author="Stephan Römer, Leon Bradley (LBX)" time="2021-07-28T06:12:19Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/55b0a02a6e6aee6da464a44a3b9f20b13bd43e44/MIDI%20Editor/sr_Velocity%20decrescendo.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Zoom MIDI editor to content.lua" type="script" desc="Zoom MIDI editor to content">
