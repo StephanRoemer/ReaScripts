@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Stevie Scripts" commit="55b0a02a6e6aee6da464a44a3b9f20b13bd43e44">
+<index version="1" name="Stevie Scripts" commit="9b535626a07974453ae5d1d121d564cd87232d5d">
   <category name="FX/Remove send from selected track(s) (bundle)">
     <reapack name="sr_Remove send from selected track(s) (bundle).lua" type="script" desc="Remove send from selected track(s) (bundle)">
       <metadata>
@@ -1461,6 +1461,10 @@ v1.0 (2018-07-05)
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/55b0a02a6e6aee6da464a44a3b9f20b13bd43e44/MIDI%20Editor/sr_Velocity%20crescendo.lua</source>
       </version>
+      <version name="1.01" author="Stephan Römer, Leon Bradley (LBX)" time="2021-07-28T06:30:26Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9b535626a07974453ae5d1d121d564cd87232d5d/MIDI%20Editor/sr_Velocity%20crescendo.lua</source>
+      </version>
     </reapack>
     <reapack name="sr_Velocity decrescendo.lua" type="script" desc="Velocity crescendo">
       <metadata>
@@ -1482,6 +1486,10 @@ v1.0 (2018-07-05)
       <version name="1.0" author="Stephan Römer, Leon Bradley (LBX)" time="2021-07-28T06:12:19Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/55b0a02a6e6aee6da464a44a3b9f20b13bd43e44/MIDI%20Editor/sr_Velocity%20decrescendo.lua</source>
+      </version>
+      <version name="1.01" author="Stephan Römer, Leon Bradley (LBX)" time="2021-07-28T06:30:26Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="midi_editor">https://github.com/StephanRoemer/ReaScripts/raw/9b535626a07974453ae5d1d121d564cd87232d5d/MIDI%20Editor/sr_Velocity%20decrescendo.lua</source>
       </version>
     </reapack>
     <reapack name="sr_Zoom MIDI editor to content.lua" type="script" desc="Zoom MIDI editor to content">
