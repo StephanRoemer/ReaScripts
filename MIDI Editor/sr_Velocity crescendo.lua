@@ -1,5 +1,5 @@
 -- @description Velocity crescendo
--- @version 1.0
+-- @version 1.01
 -- @changelog
 --  + initial release
 -- @author Stephan Römer, Leon Bradley (LBX)
@@ -70,7 +70,9 @@ local function Main()
     local take = reaper.MIDIEditor_GetTake(reaper.MIDIEditor_GetActive())
     local note_tbl = GetTargetNotes(take)
 
+    reaper.Undo_BeginBlock()
     VelocityCrescendo(take, note_tbl)
+    reaper.Undo_EndBlock("Velocity crescendo", 4)
 end
 
 Main()
