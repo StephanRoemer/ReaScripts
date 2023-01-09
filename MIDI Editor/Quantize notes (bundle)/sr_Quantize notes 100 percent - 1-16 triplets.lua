@@ -9,10 +9,11 @@ require 'sr_Quantize notes function'
 
 -- Set your prefered values here and save this script under a different name.
 
-local grid = 1/24       -- 1/16 triplets grid
-local swing = 0         -- swing off
-local swing_amt = 0     -- swing amount
-local strength = 100     -- strength value in percent
+local use_cur_grid = false  -- use custom values for grid
+local grid = 1/24           -- 1/16 triplets grid
+local swing = 0             -- swing off
+local swing_amt = 0         -- swing amount
+local strength = 100        -- strength value in percent
 local undo_text = "Quantize notes 100% - 1/16 triplets"
 
 
@@ -20,5 +21,5 @@ local undo_text = "Quantize notes 100% - 1/16 triplets"
 --                                                   Code Execution                                                   --
 -- ================================================================================================================== --
 
-Quantize(grid, swing, swing_amt, strength) -- call function
+Quantize(grid, swing, swing_amt, strength, use_cur_grid) -- call function
 reaper.Undo_OnStateChange2(proj, undo_text)

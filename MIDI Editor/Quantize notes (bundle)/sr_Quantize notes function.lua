@@ -1,467 +1,501 @@
 --  @noindex
 
-function Quantize(grid, swing, swing_amt, strength)
+function Quantize(newGrid, newSwing, newSwingAmt, strength, useCurGrid)
 
-	-- ================================================================================================================== --
-	--                                                  Helper Functions                                                  --
-	-- ================================================================================================================== --
+  -- sockmonkey72's MIDIUtils init and settings
+  package.path = reaper.GetResourcePath() .. '/Scripts/sockmonkey72 Scripts/MIDI/?.lua'
+  local mu = require 'MIDIUtils'
+  mu.CORRECT_OVERLAPS = true
 
 
+  --  ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+  --  ║                                         Helper Functions                                         ║
+  --  ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-	-- -------------------------------------------- Correct overlapping notes ------------------------------------------- --
+  -- Check if item can be modified (= is neither looped, locked or not MIDI)
 
-	-- This function only works for notes where the note off overlaps next note on (same pitch)
-	-- and not with a note off that crosses another note off (same pitch).
-	-- It is only needed for the arrange, because in the MIDI editor there is a dedicated action
+  local function ItemModifiable(item, take)
 
-	local function CorrectOverlappingNotes(take, notecnt)
+    -- Get loop status for item
+    local IsLooped = reaper.GetMediaItemInfo_Value(item, "B_LOOPSRC")
+    local isLocked = reaper.GetMediaItemInfo_Value(item, "C_LOCK")
+    local isMidi = reaper.TakeIsMIDI(take)
 
-		for i = notecnt-1, 0, -1 do -- outter note loop
+    if IsLooped == 1.0 or isLocked == 1.0 or isMidi == false then
+      return false
+    else
+      return true
+    end
+  end
+
+
+  -- Round to an arbitrary number of digits. Thanks Leon!
+
+  function Round(num, idp)
+    local mult = 10 ^ (idp or 0)
+    return math.floor(num * mult + 0.5) / mult
+  end
+
+
+  -- Store take within razor selection to table
+
+  local function GetRazorTakes()
+
+    local trackCnt = reaper.CountTracks(0)
+    local razorItems = {}
 
-			for j = i-1, 0, -1 do -- inner note loop
+    for t = 0, trackCnt - 1 do
+      local track = reaper.GetTrack(0, t)
+      local trackItemCnt = reaper.CountTrackMediaItems(track)
+      local isFreemode = reaper.GetMediaTrackInfo_Value(track, "B_FREEMODE")
 
-				local _, _, _, i_start_pos, _, _, i_pitch, _ = reaper.MIDI_GetNote(take, i) -- get "stationary" note
-				local _, _, _, j_start_pos, j_end_pos, _, j_pitch, _ = reaper.MIDI_GetNote(take, j) -- get "moving" note
+      -- Track is set to single lane
+      if isFreemode == 0 then
+
+        local razorOk, razorStr = reaper.GetSetMediaTrackInfo_String(track, "P_RAZOREDITS", "", false)
+        if razorOk and #razorStr ~= 0 then
+
+          -- Parse string for razor selection
+
+          for razorLeft, razorRight, envGuid in razorStr:gmatch([[([%d%.]+) ([%d%.]+) "([^"]*)"]]) do
+            if envGuid == "" then -- ignore envelope razor selection
+              razorLeft, razorRight = tonumber(razorLeft), tonumber(razorRight)
+
+              -- Go thru all items on current track and check if they overlap with razor boundaries
 
+              for i = 0, trackItemCnt - 1 do
+                local item = reaper.GetTrackMediaItem(track, i)
+                local itemStart = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
+                local itemEnd = itemStart + reaper.GetMediaItemInfo_Value(item, "D_LENGTH")
+                local take = reaper.GetActiveTake(item)
 
-				-- if notes have the same pitch
+                -- Store found items to table
 
-				if i_pitch == j_pitch then
+                if itemStart < razorRight
+                  and itemEnd > razorLeft
+                  and ItemModifiable(item, take)
+                then
+                  razorItems[#razorItems + 1] = {
+                    take = take,
+                    razorLeft = razorLeft,
+                    razorRight = razorRight
+                  }
+                end
+              end
+            end
+          end
+        end
 
-					-- if note end of previous note is not overlapping, break loop (go to next note)
-					if j_end_pos < i_start_pos then
-						break
+        -- Track is set to multi (fixed) lanes
+      else
+        local razorOk, razorStr = reaper.GetSetMediaTrackInfo_String(track, "P_RAZOREDITS_EXT", "", false)
+        if razorOk and #razorStr ~= 0 then
 
-						-- if start pos of both notes is the same
-					elseif i_start_pos == j_start_pos then 
-						reaper.MIDI_DeleteNote(take, j) -- delete latter note
-						break -- 
+          -- Parse string for razor selection
 
-						-- if end pos of previous note exceeds start of next note
-					elseif j_end_pos > i_start_pos then 
-						reaper.MIDI_SetNote(take, j, nil, nil, nil, i_start_pos, nil, nil, nil, nil) -- shorten overlapping note
-						break 
-					end
-				end
-			end
-		end
-	end
+          for razorLeft, razorRight, envGuid, razorTop, razorBottom in razorStr:gmatch([[([%d%.]+) ([%d%.]+) "([^"]*)" ([%d%.]+) ([%d%.]+)]]) do
+            if envGuid == "" then -- ignore envelope razor selection
 
+              razorLeft, razorRight, razorTop, razorBottom = tonumber(razorLeft), tonumber(razorRight), tonumber(razorTop), tonumber(razorBottom)
 
+              for i = 0, trackItemCnt - 1 do
+                local item = reaper.GetTrackMediaItem(track, i)
+                local take = reaper.GetActiveTake(item)
+                local itemStart = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
+                local itemEnd = itemStart + reaper.GetMediaItemInfo_Value(item, "D_LENGTH")
+                local itemTop = reaper.GetMediaItemInfo_Value(item, 'F_FREEMODE_Y')
+                local itemTopR = Round(itemTop, 6) -- round to 6 decimals, because the razor value is truncated at 6 decimals (=string)
+                local itemHeight = reaper.GetMediaItemInfo_Value(item, 'F_FREEMODE_H')
+                local itemBottomR = Round(itemTop + itemHeight, 6)
+
+                -- Store found items to table
 
-	-- --------------------------------- Check for selected notes in multiple items ------------------------------- --
+                if itemTopR >= razorTop
+                  and itemBottomR <= razorBottom
+                  and itemStart < razorRight
+                  and itemEnd > razorLeft
+                  and ItemModifiable(item, take)
+                then
+                  razorItems[#razorItems + 1] = {
+                    take = take,
+                    razorLeft = razorLeft,
+                    razorRight = razorRight
+                  }
+                end
+              end
+            end
+          end
+        end
+      end
+    end
 
-	-- This function is needed in order to decide if selected or all notes of multiple items should be affected. 
+    if next(razorItems) ~= nil then -- table not empty?
+      return razorItems
+    else
+      return false
+    end
+  end
 
-	local function CheckItemsForSelectedNotes(item_cnt)
 
-		local sel_item_cnt = 0
+  -- Extend item end, if (all or selected) notes will exceed take end
 
-		for i = 0, item_cnt - 1 do -- loop through all selected items
-			local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
-			local take = reaper.GetActiveTake(item)
+  local function ExtendItem(take, rightmostNEnd)
 
-			if reaper.MIDI_EnumSelNotes(take, -1) ~= -1 then 
-				sel_item_cnt = sel_item_cnt + 1
-			end
-		end
-		return sel_item_cnt
-	end
+    local item = reaper.GetMediaItemTake_Item(take)
 
+    -- Get item end boundary in ppq
+    local itemStart = reaper.GetMediaItemInfo_Value(item, "D_POSITION") -- get item position
+    local itemEnd = itemStart + reaper.GetMediaItemInfo_Value(item, "D_LENGTH") -- calculate item end position
+    local itemEndPpq = reaper.MIDI_GetPPQPosFromProjTime(take, itemEnd) -- convert item end position to ppq
 
-	-- --------------------- Set / backup grid settings (necessary for SnapToGrid() to work) --------------------- --
+    if rightmostNEnd > itemEndPpq then -- if note that is closest to item end exceeds item, extend item end
+      local rightmostNEndPt = reaper.MIDI_GetProjTimeFromPPQPos(take, rightmostNEnd) -- convert closest note end to project time
+      local nextGridPos = reaper.SnapToGrid(0, rightmostNEndPt) -- snap note end to closest grid
+      nextGridPos = reaper.BR_GetNextGridDivision(nextGridPos) -- from there, add another grid division
+      reaper.MIDI_SetItemExtents(item, reaper.TimeMap2_timeToQN(0, itemStart), reaper.TimeMap2_timeToQN(0, nextGridPos)) -- extend item to next grid position
+    end
+  end
 
-	local function SetGridAndBackup()
-		local grid_linked, grid_minimum, grid_min_changed
 
+  --  ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+  --  ║                                 Grid store and restore functions                                 ║
+  --  ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-		-- backup arrange grid settings
-		local _, arr_grid, arr_swing, arr_swing_amt = reaper.GetSetProjectGrid(proj, false) 
 
-		-- set new grid settings, provided by aux script
-		reaper.GetSetProjectGrid(proj, true, grid, swing, swing_amt) 
+  -- Set / backup grid settings (necessary for SnapToGrid() to work)
 
-		-- if snap doesn't follow grid visiblity, enable it
-		if reaper.GetToggleCommandState(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS")) == 0 then
-			reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS"))
-			grid_linked = true
-		end
+  local function SetArrangeGrid()
 
+    local gridVisLinked, gridMinimum, gridMinChanged
 
-		-- get grid minimum, if value is higher than 0, then project zoom will define the visible grid
-		grid_minimum = reaper.SNM_GetIntConfigVar('projgridmin', 0) 
-		if grid_minimum > 0 then 
-			reaper.SNM_SetIntConfigVar('projgridmin', 0) -- set minimum to 0 so that the project zoom doesn't affect SnapToGrid()
-			grid_min_changed = true
-		end
+    -- Backup Arrange grid settings
+    local _, arrGrid, arrSwing, arrSwingAmt = reaper.GetSetProjectGrid(0, false)
 
-		return arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed
-	end
+    -- Set new grid settings, provided by aux script
+    reaper.GetSetProjectGrid(0, true, newGrid, newSwing, newSwingAmt)
 
+    -- If snap doesn't follow grid visiblity, enable it
+    if reaper.GetToggleCommandState(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS")) == 0 then
+      reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS"), 0)
+      gridVisLinked = true
+    end
 
-	-- -------------------------------------- Restore altered arange grid settings -------------------------------------- --
+    -- Get grid minimum, if value is higher than 0, then project zoom will define the visible grid
+    gridMinimum = reaper.SNM_GetIntConfigVar('projgridmin', 0)
+    if gridMinimum > 0 then
+      reaper.SNM_SetIntConfigVar('projgridmin', 0) -- set minimum to 0 so that the project zoom doesn't affect SnapToGrid()
+      gridMinChanged = true
+    end
 
-	local function GridRestore(arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed)
+    return arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged
+  end
 
-		if grid_min_changed == true then
-			reaper.SNM_SetIntConfigVar('projgridmin', grid_minimum)
-		end
 
-		-- toggle off "snap follows grid visiblity"
-		if grid_linked == true then
-			reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS"))
-		end
+  -- Restore Arrange grid settings
 
-		-- restore saved arrange grid settings
-		reaper.GetSetProjectGrid(proj, true, arr_grid, arr_swing, arr_swing_amt) 
-	end
+  local function RestoreArrangeGrid(arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged)
 
+    if gridMinChanged == true then
+      reaper.SNM_SetIntConfigVar('projgridmin', gridMinimum)
+    end
 
-	-- ------------------------------- Backup MIDI Editor grid and then sync with arrange ------------------------------- --
+    -- Toggle off "snap follows grid visiblity"
+    if gridVisLinked == true then
+      reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS"), 0)
+    end
 
-	-- In order to apply swing to the MIDI Editor, it is necessary to temporarily sync the ME grid with the arrange, because there is no
-	-- API to set the swing amount. 
+    -- Finally, restore Arrange grid settings
+    reaper.GetSetProjectGrid(0, true, arrGrid, arrSwing, arrSwingAmt)
+  end
 
-	-- This function won't apply to the Inline Editor, because retrieving the toggle state will return -1, which is good,
-	-- since the Inline Editor uses the arrange grid.
-	-- MIDIGridRestore() won't be called either from QuantizeMIDIEditor(), because grid_sync is a condition and will be nil.
-	-- Also, if the user has enabled grid sync, it won't be changed.
 
-	local function MIDIGridBackup(take, midi_editor)
+  -- Set / backup MIDI Editor grid and then sync with arrange
 
-		local midi_swing, grid_sync
+  -- In order to apply swing to the MIDI Editor, it is necessary to temporarily sync the MIDI Editor grid with the Arrange,
+  -- because there is no API to set the swing amount in the MIDI Editor.
 
-		-- if MIDI Editor and arrange grid aren't synced, temporarily sync it
-		if reaper.GetToggleCommandStateEx(32060, 41022) == 0 then
+  local function SetMIDIEditorGrid(take, midiEditor)
 
-			--  backup MIDI grid setting
-			local midi_grid, midi_swing_amt, _ = reaper.MIDI_GetGrid(take)
+    local midiGrid, midiSwingAmt, midiSwing, gridSync, gridVisLinked, gridMinimum, gridMinChanged
 
-			-- MIDI_GetGrid() has no setting for swing on/off, instead: if swing amount is bigger than 0, then swing is turned on
-			if midi_swing_amt > 0 then midi_swing = 1 else midi_swing = 0 end
+    -- Backup arrange grid settings
+    local _, arrGrid, arrSwing, arrSwingAmt = reaper.GetSetProjectGrid(0, false)
 
-			reaper.MIDIEditor_OnCommand(midi_editor, 41022) -- toggle on: use same grid settings for MIDI Editor and arrange
+    -- If snap doesn't follow grid visiblity, enable it
+    if reaper.GetToggleCommandState(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS")) == 0 then
+      reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS"), 0)
+      gridVisLinked = true
+    end
 
-			grid_sync = true -- indicate that grid sync was necessary, in order to restore it later
+    -- Get grid minimum, if value is higher than 0, then project zoom will define the visible grid
+    gridMinimum = reaper.SNM_GetIntConfigVar('projgridmin', 0)
+    if gridMinimum > 0 then
+      reaper.SNM_SetIntConfigVar('projgridmin', 0) -- set minimum to 0 so that the project zoom doesn't affect SnapToGrid()
+      gridMinChanged = true
+    end
 
-			return grid_sync, midi_grid/4, midi_swing, midi_swing_amt
-		end 
-	end
 
+    -- If MIDI Editor and Arrange grid aren't synced, store MIDI grid and temporarily sync it
+    if reaper.GetToggleCommandStateEx(32060, 41022) == 0 then
 
-	-- -------------------------------- Restore MIDI Editor grid and unsync from arrange -------------------------------- --
+      -- Backup MIDI Editor grid settings
+      midiGrid, midiSwingAmt, _ = reaper.MIDI_GetGrid(take)
+      midiGrid = midiGrid / 4 -- QN to PPQ
 
-	local function MIDIGridRestore(midi_editor, midi_grid, midi_swing, midi_swing_amt)
+      -- MIDI_GetGrid() has no setting for swing on/off, instead: if swing amount is bigger than 0, then swing is turned on
+      if midiSwingAmt > 0 then midiSwing = 1 else midiSwing = 0 end
 
-		-- restore MIDI Editor grid setting
-		reaper.GetSetProjectGrid(proj, true, midi_grid, midi_swing, midi_swing_amt)
+      -- Toggle on: use same grid settings for MIDI Editor and arrange
+      reaper.MIDIEditor_OnCommand(midiEditor, 41022)
 
-		-- then, turn off use same grid settings for MIDI Editor and arrange
-		reaper.MIDIEditor_OnCommand(midi_editor, 41022) 
+      gridSync = true -- indicate that grid sync was necessary, in order to restore it later
+    end
 
-	end
 
+    -- Use current grid or external values
+    if useCurGrid == true then
+      reaper.GetSetProjectGrid(0, true, midiGrid, midiSwing, midiSwingAmt) -- set Arrange to MIDI Editor grid settings
+    else
+      reaper.GetSetProjectGrid(0, true, newGrid, newSwing, newSwingAmt) -- set Arrange to grid values, provided by external script
+    end
 
+    return gridSync, midiGrid, midiSwing, midiSwingAmt, arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged
+  end
 
 
-	-- --------------------------------------- Check for existing razor selection --------------------------------------- --
+  -- Restore MIDI Editor grid and unsync from arrange
 
-	local function CheckForRazorSelection()
+  local function RestoreMIDIEditorGrid(midiEditor, gridSync, midiGrid, midiSwing, midiSwingAmt, arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged)
 
-		for t = 0, reaper.CountTracks(0)-1 do
-			local track = reaper.GetTrack(0, t)
-			local razor_ok, razor_str = reaper.GetSetMediaTrackInfo_String(track, "P_RAZOREDITS", "", false)
-			if #razor_str ~= 0 then
-				return true
-			end
-		end
-	end
+    if gridMinChanged == true then
+      reaper.SNM_SetIntConfigVar('projgridmin', gridMinimum)
+    end
 
+    -- Toggle off "snap follows grid visiblity"
+    if gridVisLinked == true then
+      reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_OPTIONS_SNAP_FOLLOW_GRID_VIS"), 0)
+    end
 
+    -- If grid sync was previously off, restore MIDI Editor grid settings and disable grid sync
+    if gridSync == true then
+      reaper.GetSetProjectGrid(0, true, midiGrid, midiSwing, midiSwingAmt) -- restore MIDI Editor grid setting
+      reaper.MIDIEditor_OnCommand(midiEditor, 41022) -- disable grid sync
+    end
 
-	-- --------------------------- Store all items that cross the razor selections in a table --------------------------- --
+    -- Finally, restore Arrange grid settings
+    reaper.GetSetProjectGrid(0, true, arrGrid, arrSwing, arrSwingAmt)
+  end
 
-	local function GetRazorEditItems()
 
-		local items_table = {}
+  --  ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+  --  ║                                        Quantize Functions                                        ║
+  --  ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
+  local function Quantize(take, notesSelected)
 
-		-- go thru all tracks and save razor edits into a table
+    mu.MIDI_OpenWriteTransaction(take)
 
-		for t = 0, reaper.CountTracks(0)-1 do
-			local track = reaper.GetTrack(0, t)
-			local razor_ok, razor_str = reaper.GetSetMediaTrackInfo_String(track, "P_RAZOREDITS", "", false)
-			if razor_ok and #razor_str ~= 0 then
-				-- parse string for razor edits
-				for razor_left, razor_right, env_guid in razor_str:gmatch([[([%d%.]+) ([%d%.]+) "([^"]*)"]]) do
-					if env_guid == "" then -- ignore envelope razor selection
-						local razor_left, razor_right = tonumber(razor_left), tonumber(razor_right)
+    local rightmostNEnd = 0 -- start value for note boundary
 
-						-- go thru all items on current track and check if they overlap with razor boundaries
+    local _, noteCnt, _, _ = mu.MIDI_CountEvts(take)
 
-						for i = 0, reaper.CountTrackMediaItems(track)-1 do
-							local item = reaper.GetTrackMediaItem(track, i)
-							local item_start = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
-							local item_end = item_start + reaper.GetMediaItemInfo_Value(item, "D_LENGTH")
-							if item_start < razor_right 
-							and item_end > razor_left then
-								table.insert(items_table, {item = item, razor_left = razor_left, razor_right =  razor_right})
-							end
-						end
-					end
-				end
-			end
-		end
-		return items_table
-	end
+    for n = 0, noteCnt - 1 do -- loop through all notes
+      local _, selected, _, nStart, nEnd, _, _, _ = mu.MIDI_GetNote(take, n) -- get selection status and positions
 
+      local noteStartPt = reaper.MIDI_GetProjTimeFromPPQPos(take, nStart) -- convert note start to seconds
+      local closestGridPt = reaper.SnapToGrid(0, noteStartPt) -- get closest grid (this function relies on visible grid)
+      local closestGrid = reaper.MIDI_GetPPQPosFromProjTime(take, closestGridPt) -- convert closest grid to PPQ
 
+      if selected or not notesSelected -- selected notes always move, unselected only move if no notes are selected
+        and closestGrid ~= nStart -- if notes are not on the grid
+      then
+        mu.MIDI_SetNote(take, n, nil, nil, nStart + (closestGrid - nStart) * strength / 100, nStart + (closestGrid - nStart) * strength / 100 + nEnd - nStart, nil, nil, nil, nil) -- quantize notes
 
-	-- ================================================================================================================== --
-	--                                                 Quantize Functions                                                 --
-	-- ================================================================================================================== --
+        -- While iterating, also store note end boundary in order to extend the item, if necessary
+        if nStart + (closestGrid - nStart) * strength / 100 + nEnd - nStart > rightmostNEnd then
+          rightmostNEnd = nStart + (closestGrid - nStart) * strength / 100 + nEnd - nStart
+        end
+      end
+    end
+    mu.MIDI_CommitWriteTransaction(take)
+    ExtendItem(take, rightmostNEnd)
+  end
 
 
-	-- -------------------------- Quantize take in MIDI/inline editor (respect note selection) -------------------------- --
+  local function QuantizeRazorSelection(take, razorLeft, razorRight)
 
-	local function QuantizeMIDIEditor(take, midi_editor)
+    mu.MIDI_OpenWriteTransaction(take)
 
-		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+    local razorLeftPpq = reaper.MIDI_GetPPQPosFromProjTime(take, razorLeft) -- convert left razor to PPQ
+    local razorRightPpq = reaper.MIDI_GetPPQPosFromProjTime(take, razorRight) -- convert left razor to PPQ
+    local _, noteCnt, _, _ = mu.MIDI_CountEvts(take) -- count notes and save amount to notecnt
+    local rightmostNEnd = 0
 
-			-- --------------------------------------------------- Grid Backup -------------------------------------------------- --
+    for n = 0, noteCnt - 1 do -- loop through all notes
+      local _, _, _, nStart, nEnd, _, _, _ = mu.MIDI_GetNote(take, n) -- get note positions
+      local noteStartPt = reaper.MIDI_GetProjTimeFromPPQPos(take, nStart) -- convert note start to seconds
+      local closestGridPt = reaper.SnapToGrid(0, noteStartPt) -- get closest grid (this function relies on visible grid)
+      local closestGrid = reaper.MIDI_GetPPQPosFromProjTime(take, closestGridPt) -- convert closest grid to PPQ
 
-			-- backup MIDI Editor grid settings, will be restored at the end of this function BEFORE grid sync is disabled again
-			local grid_sync, midi_grid, midi_swing, midi_swing_amt = MIDIGridBackup(take, midi_editor)
+      -- If notes are on the grid and in between the razor selection
+      if nStart >= razorLeftPpq
+        and nStart < razorRightPpq
+        and closestGrid ~= nStart then
+        mu.MIDI_SetNote(take, n, nil, nil, nStart + (closestGrid - nStart) * strength / 100, nStart + (closestGrid - nStart) * strength / 100 + nEnd - nStart, nil, nil, nil, nil) -- quantize all notes
 
-			-- set grid, after grid sync has been enabled, also backup previous arrange grid setting
-			local arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed = SetGridAndBackup()
+        -- While iterating, also store note end boundary in order to extend the item, if necessary
+        if nStart + (closestGrid - nStart) * strength / 100 + nEnd - nStart > rightmostNEnd then
+          rightmostNEnd = nStart + (closestGrid - nStart) * strength / 100 + nEnd - nStart
+        end
+      end
+    end
+    mu.MIDI_CommitWriteTransaction(take)
+    ExtendItem(take, rightmostNEnd)
+  end
 
 
+  --  ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+  --  ║                                     Process Focus Functions                                      ║
+  --  ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-			-- ---------------------------------------------------- Quantize ---------------------------------------------------- --
+  local function ProcessMIDIEditor()
 
-			local notes_selected
+    local takeTbl = {}
+    local notesSelected
+    local takeCntSelNotes = 0
+    local midiEditor = reaper.MIDIEditor_GetActive()
+    local gridSync, midiGrid, midiSwing, midiSwingAmt
+    local arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged
 
-			local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
+    -- Write all takes into a table. 1st iteration gets all editable takes and note selection,
+    -- 2nd iteration processes the takes.
 
-			if reaper.MIDI_EnumSelNotes(take, -1) ~= -1 then notes_selected = true end -- check, if there are selected notes, set notes_selected to true
+    for i = 0, math.huge do -- iterate to infinity
+      local take = reaper.MIDIEditor_EnumTakes(midiEditor, i, true) -- get editable takes
 
-			reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
+      -- As long as there are takes and items are modifiable
+      if take ~= nil and ItemModifiable(reaper.GetMediaItemTake_Item(take), take) then
 
-			for n = 0, notecnt - 1 do -- loop through all notes
-				local _, selected, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status and positions
+        -- If at least a single event is selected, set true
+        notesSelected = mu.MIDI_EnumSelNotes(take, -1) ~= -1
+        if notesSelected then takeCntSelNotes = takeCntSelNotes + 1 end -- take with selected notes? increase variable
 
-				local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
-				local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
-				local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
+        -- Store all relevant data into takes table
+        takeTbl[i + 1] = {
+          take = take,
+          notesSelected = notesSelected
+        }
 
-				if selected or not notes_selected then -- selected notes always move, unselected only move if no notes are selected
-					if closest_grid_ppq ~= note_start_ppq then -- if notes are not on the grid
-						reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize notes
-					end
-				end
-			end
-			reaper.MIDI_Sort(take)
-			reaper.MIDIEditor_OnCommand(midi_editor, 40659) -- correct overlapping notes
+      else
+        break
+      end
+    end
 
+    -- Set Arrange to MIDI grid and backup. With multiple takes in the MIDI editor, it's sufficient to retrieve the grid
+    -- from the  first take (take_tbl[1]).take), since all takes share the same grid.
+    gridSync, midiGrid, midiSwing, midiSwingAmt, arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged = SetMIDIEditorGrid(takeTbl[1].take, midiEditor)
 
+    -- process all takes in table
+    for i = 1, #takeTbl do
+      if takeCntSelNotes == 0 -- no selected notes in all takes? Move all notes
+        or takeTbl[i].notesSelected -- selected notes in at least 1 take? Move selected notes only
+      then
+        Quantize(takeTbl[i].take, takeTbl[i].notesSelected)
+      end
+    end
+    RestoreMIDIEditorGrid(midiEditor, gridSync, midiGrid, midiSwing, midiSwingAmt, arrGrid, arrSwing, arrSwingAmt, gridVisLinked, gridMinimum, gridMinChanged)
+  end
 
-			-- -------------------------------------------------- Grid Restore -------------------------------------------------- --
 
-			-- restore ME grid settings (if user had grid sync enabled OR was using Inline Editor, grid_sync would be nil)
-			if grid_sync ~= nil then
-				MIDIGridRestore(midi_editor, midi_grid, midi_swing, midi_swing_amt)
-			end
+  local function ProcessInlineEditor()
 
-			-- restore grid minimum user value, if necessary
-			GridRestore(arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed)
-		end
-	end
+    local take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
+    local item = reaper.GetMediaItemTake_Item(take)
+    local notesSelected = mu.MIDI_EnumSelNotes(take, -1) ~= -1
 
+    local arrGrid, arrSwing, arrSwingAmt, gridLinked, gridMinimum, gridMinChanged = SetArrangeGrid()
 
-	-- ------------------------ Quantize selected item(s) in arrange view (ignore note selection) ----------------------- --
+    if ItemModifiable(item, take) then
+      Quantize(take, notesSelected)
+    end
+    RestoreArrangeGrid(arrGrid, arrSwing, arrSwingAmt, gridLinked, gridMinimum, gridMinChanged)
+  end
 
-	local function QuantizeArrange(take)
 
-		if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
+  local function ProcessArrange()
 
-			-- --------------------------------------------------- Grid Backup -------------------------------------------------- --
+    local itemCnt = reaper.CountSelectedMediaItems(0)
 
-			-- set grid, after grid sync has been enabled, also backup previous arrange grid setting
-			local arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed = SetGridAndBackup()
+    if itemCnt ~= 0 then
 
+      local arrGrid, arrSwing, arrSwingAmt, gridLinked, gridMinimum, gridMinChanged = SetArrangeGrid()
 
-			-- ---------------------------------------------------- Quantize ---------------------------------------------------- --
+      for i = 0, itemCnt - 1 do -- loop through all selected items
+        local item = reaper.GetSelectedMediaItem(0, i) -- get current selected item
+        local take = reaper.GetActiveTake(item) -- get take of item
 
-			local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
+        -- Ignore note selection by using "-1"
+        if ItemModifiable(item, take) then
+          Quantize(take, false)
+        end
+      end
+      RestoreArrangeGrid(arrGrid, arrSwing, arrSwingAmt, gridLinked, gridMinimum, gridMinChanged)
+    else
+      reaper.ShowMessageBox("Please select at least one item", "Error", 0)
+      return false
+    end
+  end
 
-			reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
 
-			for n = 0, notecnt - 1 do -- loop through all notes
-				local _, _, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get selection status and positions
+  local function ProcessRazorSelection(razorItems)
 
-				local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
-				local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
-				local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
+    local tblLen = #razorItems
 
-				if closest_grid_ppq ~= note_start_ppq then -- if notes are not on the grid
-					reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize all notes
-				end
-			end
+    local arrGrid, arrSwing, arrSwingAmt, gridLinked, gridMinimum, gridMinChanged = SetArrangeGrid()
 
-			CorrectOverlappingNotes(take, notecnt)
-			reaper.MIDI_Sort(take)
+    -- Iterate thru the razor items table
+    for t = 1, tblLen do
+      local take, razorLeft, razorRight = razorItems[t].take, razorItems[t].razorLeft, razorItems[t].razorRight
+      QuantizeRazorSelection(take, razorLeft, razorRight)
+    end
+    RestoreArrangeGrid(arrGrid, arrSwing, arrSwingAmt, gridLinked, gridMinimum, gridMinChanged)
+  end
 
 
-			-- -------------------------------------------------- Grid Restore -------------------------------------------------- --
+  --  ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
+  --  ║                                               Main                                               ║
+  --  ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 
-			-- restore grid minimum user value, if necessary
-			GridRestore(arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed)
-		end
-	end
 
+  local function Main()
 
-	-- --------------- Quantize all notes within razor selections in arrange view (ignore note selection) --------------- --
+    local window, _, _ = reaper.BR_GetMouseCursorContext() -- initialize cursor context
+    local _, inlineEditor, _, _, _, _ = reaper.BR_GetMouseCursorContext_MIDI() -- check if mouse hovers an inline editor
 
-	local function QuantizeRazorSelection(items_table)
+    reaper.PreventUIRefresh(1)
 
+    if window == "midi_editor" then
 
-		-- --------------------------------------------------- Grid Backup -------------------------------------------------- --
+      -- MIDI editor focused
+      if not inlineEditor then
+        ProcessMIDIEditor()
 
-		-- set grid, after grid sync has been enabled, also backup previous arrange grid setting
-		local arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed = SetGridAndBackup()
+        -- Inline Editor focused
+      else
+        ProcessInlineEditor()
+      end
+    else
+      local razorTakes = GetRazorTakes()
+      if razorTakes then -- if table has elements (=not false)
+        ProcessRazorSelection(razorTakes)
+      else
+        ProcessArrange()
+      end
+    end
 
+    reaper.UpdateArrange()
+    reaper.PreventUIRefresh(-1)
+  end
 
-		-- ---------------------------------------------------- Quantize ---------------------------------------------------- --
-
-
-		for index, value in pairs(items_table) do
-			local item, razor_left, razor_right = value.item, value.razor_left, value.razor_right -- get razor item values from table
-
-			local take = reaper.GetActiveTake(item)
-
-			if reaper.TakeIsMIDI(take) then -- make sure, that take is MIDI
-				local razor_left_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_left) -- convert left razor to PPQ
-				local razor_right_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, razor_right) -- convert left razor to PPQ
-
-				local _, notecnt, _, _ = reaper.MIDI_CountEvts(take) -- count notes and save amount to notecnt
-
-				reaper.MIDI_DisableSort(take) -- disabling sorting improves execution speed
-
-				for n = 0, notecnt - 1 do -- loop through all notes
-					local _, _, _, note_start_ppq, note_end_ppq, _, _, _ = reaper.MIDI_GetNote(take, n) -- get note positions
-
-					local note_start = reaper.MIDI_GetProjTimeFromPPQPos(take, note_start_ppq) -- convert note start to seconds
-					local closest_grid = reaper.SnapToGrid(0, note_start) -- get closest grid (this function relies on visible grid)
-					local closest_grid_ppq = reaper.MIDI_GetPPQPosFromProjTime(take, closest_grid) -- convert closest grid to PPQ
-
-					-- if notes are not on the grid and in between the razor selection
-					if note_start_ppq >= razor_left_ppq 
-					and note_start_ppq < razor_right_ppq 
-					and closest_grid_ppq ~= note_start_ppq then 
-						reaper.MIDI_SetNote(take, n, nil, nil, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100, note_start_ppq+(closest_grid_ppq-note_start_ppq)*strength/100+note_end_ppq-note_start_ppq, nil, nil, nil, nil) -- quantize all notes
-					end
-				end
-
-				CorrectOverlappingNotes(take, notecnt)
-				reaper.MIDI_Sort(take)
-			end
-		end
-
-		-- -------------------------------------------------- Grid Restore -------------------------------------------------- --
-
-		-- restore grid minimum user value, if necessary
-		GridRestore(arr_grid, arr_swing, arr_swing_amt, grid_linked, grid_minimum, grid_min_changed)
-	end
-
-
-
-	-- ================================================================================================================== --
-	--                                                        Main                                                        --
-	-- ================================================================================================================== --
-
-
-	local function Main()
-
-		reaper.PreventUIRefresh(1)
-
-		local take, item, item_cnt, selnotes_items, midi_editor
-		local window, _, _ = reaper.BR_GetMouseCursorContext() -- initialize cursor context
-		local _, inline_editor, _, _, _, _ = reaper.BR_GetMouseCursorContext_MIDI() -- check if mouse hovers an inline editor
-
-		item_cnt = reaper.CountSelectedMediaItems(0)
-
-		-- ----------------------------------------------- MIDI editor focused ---------------------------------------------- --
-
-		if window == "midi_editor" then
-
-			midi_editor = reaper.MIDIEditor_GetActive()
-
-			if not inline_editor then -- MIDI editor focused
-
-				-- 1 Item selected
-
-				if item_cnt == 1 then
-					take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, 0)) -- get take from selected item
-					QuantizeMIDIEditor(take, midi_editor) -- quantize notes
-
-
-				-- Multiple items selected
-
-				elseif item_cnt >= 1 then
-
-					selnotes_items = CheckItemsForSelectedNotes(item_cnt)
-
-					for i = 0, item_cnt - 1 do -- loop through all selected items
-						take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, i))
-
-						-- Quantize either all items (no selected notes) or only items with selected notes 
-						if selnotes_items == 0 or reaper.MIDI_EnumSelNotes(take, -1) ~= -1 then
-							QuantizeMIDIEditor(take, midi_editor)
-						end
-					end
-				end
-
-
-			-- ---------------------------------------------- Inline Editor focused --------------------------------------------- --
-
-			else
-				take = reaper.BR_GetMouseCursorContext_Take() -- get take from mouse
-				QuantizeMIDIEditor(take, midi_editor)
-			end
-
-
-
-		-- -------------------------------------------- No MIDI editor is focused ------------------------------------------- --
-
-		else
-
-
-			-- --------------------------------------------- Razor selection exists --------------------------------------------- --
-
-			if CheckForRazorSelection() then
-				local items_table = GetRazorEditItems()
-				QuantizeRazorSelection(items_table)
-
-
-
-			-- ---------------------------------- Item selection and NO razor selection exists ---------------------------------- --
-
-			else
-				if reaper.CountSelectedMediaItems(0) ~= 0 then
-					for i = 0, reaper.CountSelectedMediaItems(0)-1 do -- loop through all selected items
-						take = reaper.GetActiveTake(reaper.GetSelectedMediaItem(0, i))
-						QuantizeArrange(take) -- quantize notes
-					end
-				else
-					reaper.ShowMessageBox("Please select at least one item or create a razor selection", "Error", 0)
-					return false
-				end
-			end
-		end
-		reaper.PreventUIRefresh(-1)
-		reaper.UpdateArrange()
-	end
-
-	Main()
+  Main()
 end
