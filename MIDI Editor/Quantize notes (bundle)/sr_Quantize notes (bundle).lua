@@ -1,10 +1,7 @@
 -- @description Quantize notes (bundle)
--- @version 2.50
+-- @version 2.51
 -- @changelog
---   + Now requires sockmonkey72's MIDIUtils API as a dependency. Add this repo to ReaPack and install "MIDIUtils": https://github.com/jeremybernstein/ReaScripts/raw/main/index.xml
---   + Support for MIDIEditor_EnumTakes(), in order to apply the script to all editable takes in the MIDI Editor (requires REAPER v6.37)
---   + Support for fixed item lanes (requires latest dev release)
---   + The clunky "quantize grid" scripts are now auxiliary scripts and the functions are outsourced to the functions.lua
+--   * Fixed a bug with restoring the arrange / ME grid sync, which resulted in issues with swing
 -- @author Stephan Römer
 -- @link Forum Thread https://forums.cockos.com/showthread.php?p=1923923
 -- @metapackage
