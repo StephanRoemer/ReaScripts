@@ -3,8 +3,8 @@
 package.path = debug.getinfo(1, "S").source:match([[^@?(.*[\/])[^\/]-$]]) .. "?.lua;" .. package.path
 require("sr_Add or replace VSTi function")
 
-local vsti = "Kontakt (Native Instruments) (64 out)" -- VSTi identifier
-local track_name = "Kontakt" -- new track name
+local vsti = "VST3:Opus (East West)" -- VSTi identifier
+local track_name = "Opus" -- new track name
 
 reaper.Undo_BeginBlock()
 

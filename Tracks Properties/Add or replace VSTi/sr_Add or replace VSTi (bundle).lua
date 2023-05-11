@@ -1,10 +1,7 @@
 -- @description Add or replace VSTi
--- @version 1.35
+-- @version 1.37
 -- @changelog
---   * Respect Reaticulate JSFX, that needs to be one slot above VSTis
---   * Adjusted the Spectrasonics VST names to 18 outputs
---   + Added Orchestral Tools SINE and VSL Synchron Player
---   + Added VST3 presets for Kontakt, Omnisphere, Keyscape, Trilian and Stylus RMX
+--   + Added Opus VST3i and UVI VST3i
 -- @author Stephan Römer
 -- @metapackage
 -- @provides
@@ -14,6 +11,8 @@
 --  [main] sr_Add or replace existing VST3i with Omnisphere 2.lua
 --  [main] sr_Add or replace existing VST3i with Stylus RMX.lua
 --  [main] sr_Add or replace existing VST3i with Trilian.lua
+--  [main] sr_Add or replace existing VST3i with Opus.lua
+--  [main] sr_Add or replace existing VST3i with UVI.lua
 --  [main] sr_Add or replace existing VSTi with ACE.lua
 --  [main] sr_Add or replace existing VSTi with Addictive Drums 2.lua
 --  [main] sr_Add or replace existing VSTi with Bazille.lua
